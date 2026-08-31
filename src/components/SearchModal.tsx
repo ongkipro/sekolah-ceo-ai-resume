@@ -1,14 +1,24 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { 
+  Search, 
+  X, 
+  CornerDownLeft, 
+  Video, 
+  FileText, 
+  BookMarked, 
+  Wrench, 
+  Sparkles, 
+  Clock 
+} from 'lucide-react';
 import Fuse from 'fuse.js';
-import { Search, X, Video, FileText, Wrench, Sparkles, CornerDownLeft, BookMarked } from 'lucide-react';
 import sessionsData from '../data/sessions.json';
+import glossaryData from '../data/glossary.json';
 import promptsData from '../data/prompts.json';
 import toolsData from '../data/tools.json';
-import glossaryData from '../data/glossary.json';
 
 interface SearchItem {
   id: string;
-  type: 'session' | 'topic' | 'prompt' | 'tool' | 'glossary';
+  type: 'session' | 'topic' | 'glossary' | 'prompt' | 'tool';
   title: string;
   subtitle: string;
   badge: string;
@@ -22,8 +32,8 @@ export default function SearchModal() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Flatten all searchable items
-  const items: SearchItem[] = useMemo(() => {
+  // Build searchable index
+  const items = useMemo<SearchItem[]>(() => {
     const list: SearchItem[] = [];
 
     // 1. Sessions & Topics
@@ -157,12 +167,14 @@ export default function SearchModal() {
   if (!isOpen) {
     return (
       <button
+        type="button"
         onClick={() => setIsOpen(true)}
-        className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium text-slate-500 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-700 transition-colors"
+        className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 text-xs font-medium text-slate-500 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer shrink-0"
+        aria-label="Cari materi"
       >
         <Search className="w-3.5 h-3.5" />
-        <span className="hidden sm:inline">Cari materi & prompt...</span>
-        <kbd className="px-1.5 py-0.5 text-[10px] font-mono bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded text-slate-400">
+        <span className="hidden sm:inline">Cari materi...</span>
+        <kbd className="px-1.5 py-0.5 text-[9px] sm:text-[10px] font-mono bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded text-slate-400">
           ⌘K
         </kbd>
       </button>
@@ -170,11 +182,11 @@ export default function SearchModal() {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 p-4 bg-slate-950/60 backdrop-blur-sm animate-in fade-in duration-150">
-      <div className="relative w-full max-w-2xl bg-white dark:bg-slate-900 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-20 p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-150">
+      <div className="relative w-full max-w-xl bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 overflow-hidden">
         {/* Search Header */}
-        <div className="flex items-center px-4 py-3 border-b border-slate-200 dark:border-slate-800">
-          <Search className="w-5 h-5 text-slate-400 mr-3" />
+        <div className="flex items-center px-4 py-3.5 border-b border-slate-200 dark:border-slate-800">
+          <Search className="w-5 h-5 text-slate-400 mr-2.5 shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -195,21 +207,23 @@ export default function SearchModal() {
                 handleSelect(results[selectedIndex]);
               }
             }}
-            placeholder="Ketik topik, kamus awam, prompt, pembicara, atau tools..."
-            className="w-full text-sm bg-transparent text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none"
+            placeholder="Cari topik, kamus awam, prompt, atau tools..."
+            className="w-full text-xs sm:text-sm bg-transparent text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none"
           />
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
-            className="p-1 rounded-md text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+            className="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer shrink-0"
+            aria-label="Tutup pencarian"
           >
             <X className="w-4 h-4" />
           </button>
         </div>
 
         {/* Results List */}
-        <div className="max-h-96 overflow-y-auto p-2 divide-y divide-slate-100 dark:divide-slate-800/50">
+        <div className="max-h-80 sm:max-h-96 overflow-y-auto p-2 divide-y divide-slate-100 dark:divide-slate-800/50">
           {results.length === 0 ? (
-            <div className="py-8 text-center text-sm text-slate-400">
+            <div className="py-8 text-center text-xs sm:text-sm text-slate-400">
               Tidak ada hasil yang cocok dengan &quot;{query}&quot;
             </div>
           ) : (
@@ -218,28 +232,28 @@ export default function SearchModal() {
                 key={item.id}
                 onClick={() => handleSelect(item)}
                 onMouseEnter={() => setSelectedIndex(idx)}
-                className={`flex items-start gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
+                className={`flex items-start gap-3 p-3 rounded-xl cursor-pointer transition-colors ${
                   idx === selectedIndex
                     ? 'bg-blue-50 dark:bg-blue-950/40 text-blue-900 dark:text-blue-100'
                     : 'hover:bg-slate-50 dark:hover:bg-slate-800/50 text-slate-700 dark:text-slate-300'
                 }`}
               >
-                <div className="mt-0.5 p-1.5 rounded-md bg-slate-100 dark:bg-slate-800">
+                <div className="mt-0.5 p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 shrink-0">
                   {getItemIcon(item.type)}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-sm truncate">{item.title}</span>
-                    <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap">
+                    <span className="font-semibold text-xs sm:text-sm truncate">{item.title}</span>
+                    <span className="text-[9px] sm:text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 whitespace-nowrap shrink-0">
                       {item.badge}
                     </span>
                   </div>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
+                  <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 line-clamp-1 mt-0.5">
                     {item.subtitle}
                   </p>
                 </div>
                 {idx === selectedIndex && (
-                  <CornerDownLeft className="w-4 h-4 text-blue-500 self-center" />
+                  <CornerDownLeft className="w-4 h-4 text-blue-500 self-center shrink-0 hidden sm:inline" />
                 )}
               </div>
             ))
@@ -247,13 +261,13 @@ export default function SearchModal() {
         </div>
 
         {/* Footer info */}
-        <div className="flex items-center justify-between px-4 py-2 bg-slate-50 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-800 text-[11px] text-slate-400">
-          <div className="flex gap-3">
-            <span>↑↓ Navigasi</span>
-            <span>↵ Buka Halaman</span>
+        <div className="flex items-center justify-between px-4 py-2 bg-slate-50 dark:bg-slate-950/60 border-t border-slate-200 dark:border-slate-800 text-[10px] sm:text-[11px] text-slate-400">
+          <div className="flex gap-2 sm:gap-3">
+            <span>↑↓ Pilih</span>
+            <span>↵ Buka</span>
             <span>ESC Tutup</span>
           </div>
-          <span>Sekolah CEO AI Masterclass Hub</span>
+          <span className="truncate">Sekolah CEO AI Masterclass Hub</span>
         </div>
       </div>
     </div>
