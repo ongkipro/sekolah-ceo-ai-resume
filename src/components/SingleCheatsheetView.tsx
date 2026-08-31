@@ -29,7 +29,9 @@ export default function SingleCheatsheetView({ sessionId }: Props) {
   const currentSlugObj = sessionSlugs.find((s) => s.id === activeData.sessionId);
 
   const handleCopyPrompt = (promptText: string) => {
-    navigator.clipboard.writeText(promptText);
+    if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(promptText).catch(() => {});
+    }
     setCopiedPrompt(true);
     setTimeout(() => setCopiedPrompt(false), 2000);
   };
@@ -144,7 +146,7 @@ export default function SingleCheatsheetView({ sessionId }: Props) {
           <span>Ingin menonton rekaman lengkap video sesi ini?</span>
           <a
             href={`/curriculum/${currentSlugObj?.slug || activeData.sessionId}`}
-            className="inline-flex items-center gap-1.5 font-bold text-blue-600 dark:text-blue-400 hover:underline"
+            className="inline-flex items-center gap-1.5 font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
           >
             <Video className="w-4 h-4" />
             <span>Tonton Video & Detik Sinkronisasi</span>
@@ -158,7 +160,7 @@ export default function SingleCheatsheetView({ sessionId }: Props) {
         {prevSlug ? (
           <a
             href={`/cheatsheet/${prevSlug.slug}`}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors w-full sm:w-auto justify-center"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors w-full sm:w-auto justify-center cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Contekkan Sebelumnya ({prevSlug.slug.toUpperCase()})</span>
@@ -168,7 +170,7 @@ export default function SingleCheatsheetView({ sessionId }: Props) {
         {nextSlug ? (
           <a
             href={`/cheatsheet/${nextSlug.slug}`}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm w-full sm:w-auto justify-center"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold transition-all shadow-sm w-full sm:w-auto justify-center cursor-pointer"
           >
             <span>Contekkan Berikutnya ({nextSlug.slug.toUpperCase()})</span>
             <ArrowRight className="w-4 h-4" />

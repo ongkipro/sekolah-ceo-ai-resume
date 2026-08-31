@@ -33,7 +33,10 @@ export default function SinglePromptView({ promptId }: Props) {
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(getCompiledPrompt());
+    const text = getCompiledPrompt();
+    if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(() => {});
+    }
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2000);
   };
@@ -122,7 +125,7 @@ export default function SinglePromptView({ promptId }: Props) {
         {prevSlug ? (
           <a
             href={`/prompts/${prevSlug.slug}`}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors w-full sm:w-auto justify-center"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors w-full sm:w-auto justify-center cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Prompt Sebelumnya</span>
@@ -132,7 +135,7 @@ export default function SinglePromptView({ promptId }: Props) {
         {nextSlug ? (
           <a
             href={`/prompts/${nextSlug.slug}`}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-sm w-full sm:w-auto justify-center"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-sm w-full sm:w-auto justify-center cursor-pointer"
           >
             <span>Prompt Berikutnya</span>
             <ArrowRight className="w-4 h-4" />
