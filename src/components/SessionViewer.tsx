@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
   Play, 
+  Pause,
   Clock, 
   User, 
   CheckCircle2, 
@@ -10,42 +11,179 @@ import {
   Quote, 
   MessageSquare, 
   Lightbulb,
-  Video,
-  ListOrdered
+  ListOrdered,
+  RotateCcw,
+  RotateCw,
+  Gauge,
+  Volume2,
+  VolumeX
 } from 'lucide-react';
 import sessionsData from '../data/sessions.json';
 import SessionResumeActionPlan from './SessionResumeActionPlan';
+
+declare global {
+  interface Window {
+    YT: any;
+    onYouTubeIframeAPIReady: () => void;
+  }
+}
 
 export default function SessionViewer() {
   const [activeSessionId, setActiveSessionId] = useState<string>('d1s1');
   const [currentTimestampSeconds, setCurrentTimestampSeconds] = useState<number>(0);
   const [activeTopicId, setActiveTopicId] = useState<string | null>(null);
-  const videoPlayerRef = useRef<HTMLDivElement>(null);
+  const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  const [playbackRate, setPlaybackRate] = useState<number>(1.0);
+  const [isMuted, setIsMuted] = useState<boolean>(false);
+  const [apiReady, setApiReady] = useState<boolean>(false);
+
+  const playerRef = useRef<any>(null);
+  const videoPlayerContainerRef = useRef<HTMLDivElement>(null);
 
   const activeSession = sessionsData.find((s) => s.id === activeSessionId) || sessionsData[0];
 
+  // Initialize YouTube Iframe API
+  useEffect(() => {
+    if (!window.YT) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag);
+
+      window.onYouTubeIframeAPIReady = () => {
+        setApiReady(true);
+      };
+    } else {
+      setApiReady(true);
+    }
+  }, []);
+
+  // Create or update YouTube player instance
+  useEffect(() => {
+    if (!apiReady || !window.YT) return;
+
+    if (playerRef.current && typeof playerRef.current.destroy === 'function') {
+      try {
+        playerRef.current.destroy();
+      } catch (e) {
+        // ignore
+      }
+    }
+
+    try {
+      playerRef.current = new window.YT.Player('yt-embedded-player', {
+        videoId: activeSession.youtubeId,
+        playerVars: {
+          autoplay: 1,
+          start: currentTimestampSeconds,
+          playsinline: 1,
+          rel: 0,
+          modestbranding: 1,
+          controls: 1,
+        },
+        events: {
+          onReady: (event: any) => {
+            event.target.setPlaybackRate(playbackRate);
+            event.target.playVideo();
+            setIsPlaying(true);
+          },
+          onStateChange: (event: any) => {
+            // 1: playing, 2: paused
+            if (event.data === 1) setIsPlaying(true);
+            else if (event.data === 2) setIsPlaying(false);
+          },
+          onPlaybackRateChange: (event: any) => {
+            setPlaybackRate(event.data);
+          }
+        },
+      });
+    } catch (err) {
+      console.warn('YT Player init error:', err);
+    }
+
+    return () => {
+      if (playerRef.current && typeof playerRef.current.destroy === 'function') {
+        try {
+          playerRef.current.destroy();
+        } catch (e) {}
+      }
+    };
+  }, [apiReady, activeSession.id]);
+
+  // Jump event handler from outside
   useEffect(() => {
     const handleJump = (e: any) => {
       const { sessionId, timestampSeconds } = e.detail;
-      if (sessionId) setActiveSessionId(sessionId);
-      if (typeof timestampSeconds === 'number') {
-        setCurrentTimestampSeconds(timestampSeconds);
+      if (sessionId && sessionId !== activeSessionId) {
+        setActiveSessionId(sessionId);
       }
-      // Scroll to video smoothly on mobile
-      if (videoPlayerRef.current && window.innerWidth < 1024) {
-        videoPlayerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (typeof timestampSeconds === 'number') {
+        jumpToTime(timestampSeconds);
+      }
+      if (videoPlayerContainerRef.current && window.innerWidth < 1024) {
+        videoPlayerContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     };
     window.addEventListener('jumpToTimestamp', handleJump);
     return () => window.removeEventListener('jumpToTimestamp', handleJump);
-  }, []);
+  }, [activeSessionId]);
+
+  const jumpToTime = (secs: number) => {
+    setCurrentTimestampSeconds(secs);
+    if (playerRef.current && typeof playerRef.current.seekTo === 'function') {
+      playerRef.current.seekTo(secs, true);
+      playerRef.current.playVideo();
+      setIsPlaying(true);
+    }
+  };
 
   const handleTopicClick = (topic: any) => {
     setActiveTopicId(topic.id);
-    setCurrentTimestampSeconds(topic.timestampSeconds);
-    // Scroll to video on small screens
-    if (videoPlayerRef.current && window.innerWidth < 1024) {
-      videoPlayerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    jumpToTime(topic.timestampSeconds);
+    if (videoPlayerContainerRef.current && window.innerWidth < 1024) {
+      videoPlayerContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  const togglePlayPause = () => {
+    if (!playerRef.current) return;
+    if (isPlaying) {
+      if (typeof playerRef.current.pauseVideo === 'function') {
+        playerRef.current.pauseVideo();
+        setIsPlaying(false);
+      }
+    } else {
+      if (typeof playerRef.current.playVideo === 'function') {
+        playerRef.current.playVideo();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const changeSpeed = (rate: number) => {
+    setPlaybackRate(rate);
+    if (playerRef.current && typeof playerRef.current.setPlaybackRate === 'function') {
+      playerRef.current.setPlaybackRate(rate);
+    }
+  };
+
+  const seekRelative = (deltaSeconds: number) => {
+    if (playerRef.current && typeof playerRef.current.getCurrentTime === 'function') {
+      const now = playerRef.current.getCurrentTime() || 0;
+      const target = Math.max(0, now + deltaSeconds);
+      playerRef.current.seekTo(target, true);
+      setCurrentTimestampSeconds(Math.floor(target));
+    }
+  };
+
+  const toggleMute = () => {
+    if (!playerRef.current) return;
+    if (isMuted) {
+      playerRef.current.unMute();
+      setIsMuted(false);
+    } else {
+      playerRef.current.mute();
+      setIsMuted(true);
     }
   };
 
@@ -55,9 +193,7 @@ export default function SessionViewer() {
     return `${m}:${s < 10 ? '0' : ''}${s}`;
   };
 
-  const getYoutubeEmbedUrl = (videoId: string, startSec: number) => {
-    return `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startSec}&enablejsapi=1&rel=0`;
-  };
+  const speedOptions = [1.0, 1.25, 1.5, 1.75, 2.0];
 
   return (
     <div className="w-full space-y-8">
@@ -92,13 +228,13 @@ export default function SessionViewer() {
         })}
       </div>
 
-      {/* 2. TOP HERO: Video Player Stage (Coursera / Masterclass Style) */}
-      <div ref={videoPlayerRef} className="space-y-3">
-        <div className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-xl">
+      {/* 2. TOP HERO: Video Player Stage with Touch Controls & Speed Controller */}
+      <div ref={videoPlayerContainerRef} className="space-y-3">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-2xl relative group">
           {/* Top Video Stage Bar */}
           <div className="p-3.5 sm:p-4 bg-slate-950 text-white flex items-center justify-between gap-3 border-b border-slate-800">
             <div className="flex items-center gap-2.5 min-w-0">
-              <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse shrink-0"></span>
+              <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${isPlaying ? 'bg-red-500 animate-pulse' : 'bg-amber-500'}`}></span>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-300 uppercase tracking-wider">
                   <span>Day {activeSession.day} Sesi {activeSession.sessionNum}</span>
@@ -112,7 +248,8 @@ export default function SessionViewer() {
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
-              <span className="font-mono bg-slate-850 border border-slate-750 px-2.5 py-1 rounded-lg text-blue-400 font-bold text-xs">
+              <span className="font-mono bg-slate-800 border border-slate-700 px-2.5 py-1 rounded-lg text-blue-400 font-bold text-xs">
+                {playbackRate !== 1.0 && <span className="text-amber-400 font-bold mr-1">[{playbackRate}x]</span>}
                 ▶ {formatTime(currentTimestampSeconds)}
               </span>
               <a
@@ -126,16 +263,95 @@ export default function SessionViewer() {
             </div>
           </div>
 
-          {/* 16:9 Cinematic Video Player */}
+          {/* 16:9 Cinematic Video Container */}
           <div className="relative aspect-video w-full bg-black">
-            <iframe
-              key={`${activeSession.youtubeId}-${currentTimestampSeconds}`}
-              src={getYoutubeEmbedUrl(activeSession.youtubeId, currentTimestampSeconds)}
-              title={activeSession.title}
-              className="absolute inset-0 w-full h-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+            <div id="yt-embedded-player" className="w-full h-full"></div>
+          </div>
+
+          {/* DEDICATED QUICK SPEED & PLAYBACK BAR (Touch & Web View Friendly) */}
+          <div className="p-3 sm:p-4 bg-slate-900 text-white border-t border-slate-800 flex flex-wrap items-center justify-between gap-3 shadow-inner">
+            {/* Left: Play/Pause (Off) & Skip Controls */}
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={togglePlayPause}
+                className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-md ${
+                  isPlaying 
+                    ? 'bg-amber-600 hover:bg-amber-700 text-white ring-1 ring-amber-400' 
+                    : 'bg-emerald-600 hover:bg-emerald-700 text-white ring-1 ring-emerald-400 animate-pulse'
+                }`}
+                title={isPlaying ? 'Jeda / Off Video' : 'Putar Video'}
+              >
+                {isPlaying ? (
+                  <>
+                    <Pause className="w-4 h-4 fill-current" />
+                    <span>Jeda Video (Off)</span>
+                  </>
+                ) : (
+                  <>
+                    <Play className="w-4 h-4 fill-current" />
+                    <span>Putar Video (Play)</span>
+                  </>
+                )}
+              </button>
+
+              {/* Rewind -10s */}
+              <button
+                type="button"
+                onClick={() => seekRelative(-10)}
+                className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer border border-slate-700 text-xs flex items-center gap-1"
+                title="Mundur 10 Detik"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span className="font-mono text-[11px]">-10s</span>
+              </button>
+
+              {/* Forward +10s */}
+              <button
+                type="button"
+                onClick={() => seekRelative(10)}
+                className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer border border-slate-700 text-xs flex items-center gap-1"
+                title="Maju 10 Detik"
+              >
+                <RotateCw className="w-3.5 h-3.5" />
+                <span className="font-mono text-[11px]">+10s</span>
+              </button>
+
+              {/* Mute Toggle */}
+              <button
+                type="button"
+                onClick={toggleMute}
+                className="p-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer border border-slate-700 text-xs hidden sm:flex items-center"
+                title={isMuted ? 'Nyalakan Suara' : 'Bisukan Suara'}
+              >
+                {isMuted ? <VolumeX className="w-4 h-4 text-red-400" /> : <Volume2 className="w-4 h-4 text-slate-300" />}
+              </button>
+            </div>
+
+            {/* Right: Percepat Video Speed Selector (1.0x -> 2.0x) */}
+            <div className="flex items-center gap-1.5 bg-slate-950 p-1 rounded-xl border border-slate-800">
+              <span className="text-[11px] font-semibold text-slate-400 px-2 flex items-center gap-1">
+                <Gauge className="w-3.5 h-3.5 text-blue-400" />
+                <span className="hidden xs:inline">Kecepatan:</span>
+              </span>
+              {speedOptions.map((speed) => {
+                const isActive = playbackRate === speed;
+                return (
+                  <button
+                    key={speed}
+                    type="button"
+                    onClick={() => changeSpeed(speed)}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-mono font-bold transition-all cursor-pointer ${
+                      isActive
+                        ? 'bg-blue-600 text-white shadow-md scale-105'
+                        : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                    }`}
+                  >
+                    {speed}x
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           {/* Timestamp Quick-Jumps Bar Under Player */}
@@ -261,7 +477,7 @@ export default function SessionViewer() {
                       <div className="flex flex-wrap items-center gap-2 mb-1.5">
                         <button
                           type="button"
-                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition-transform active:scale-95"
+                          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-mono font-bold bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition-transform active:scale-95 cursor-pointer"
                           title="Lompat ke video di atas"
                         >
                           <Play className="w-3 h-3 fill-current" />
