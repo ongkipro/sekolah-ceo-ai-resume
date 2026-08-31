@@ -8,10 +8,9 @@ import {
   ShieldCheck, 
   Copy, 
   Check, 
-  ChevronDown, 
-  ChevronUp, 
   FileCode,
-  ArrowRight
+  ArrowRight,
+  ExternalLink
 } from 'lucide-react';
 import glossaryData from '../data/glossary.json';
 
@@ -20,8 +19,10 @@ interface GlossaryItem {
   englishName: string;
   category: string;
   laymanAnalogy: string;
-  technicalDefinition: string;
+  technicalDefinition?: string;
   businessImpact: string;
+  targetUrl?: string;
+  actionLabel?: string;
   practicalPrompt?: string;
 }
 
@@ -29,7 +30,6 @@ export default function LaymanGlossary() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Semua');
   const [copiedTerm, setCopiedTerm] = useState<string | null>(null);
-  const [expandedPrompts, setExpandedPrompts] = useState<{ [key: string]: boolean }>({});
 
   const categories = useMemo(() => {
     const set = new Set<string>();
@@ -38,7 +38,7 @@ export default function LaymanGlossary() {
   }, []);
 
   const filteredItems = useMemo(() => {
-    return glossaryData.filter((item) => {
+    return (glossaryData as GlossaryItem[]).filter((item) => {
       const matchCat = selectedCategory === 'Semua' || item.category === selectedCategory;
       const matchQuery =
         !searchQuery.trim() ||
@@ -50,13 +50,6 @@ export default function LaymanGlossary() {
       return matchCat && matchQuery;
     });
   }, [searchQuery, selectedCategory]);
-
-  const toggleExpand = (term: string) => {
-    setExpandedPrompts((prev) => ({
-      ...prev,
-      [term]: !prev[term],
-    }));
-  };
 
   const handleCopyPrompt = (term: string, promptText: string) => {
     if (typeof navigator !== 'undefined' && navigator.clipboard && navigator.clipboard.writeText) {
@@ -122,7 +115,6 @@ export default function LaymanGlossary() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
         {filteredItems.map((item) => {
           const isCopied = copiedTerm === item.term;
-          const isExpanded = expandedPrompts[item.term] ?? true; // expanded by default for executive clarity
 
           return (
             <div
@@ -135,9 +127,21 @@ export default function LaymanGlossary() {
                   <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-bold border border-emerald-200 dark:border-emerald-900/80 shrink-0">
                     {item.category}
                   </span>
-                  <span className="text-xs font-mono text-slate-400 truncate max-w-[160px] text-right font-medium">
-                    {item.englishName}
-                  </span>
+                  
+                  {item.targetUrl ? (
+                    <a
+                      href={item.targetUrl}
+                      className="text-xs font-mono text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors truncate max-w-[160px] text-right font-medium hover:underline flex items-center gap-1 justify-end"
+                      title={`Buka ${item.englishName}`}
+                    >
+                      <span className="truncate">{item.englishName}</span>
+                      <ExternalLink className="w-3 h-3 shrink-0" />
+                    </a>
+                  ) : (
+                    <span className="text-xs font-mono text-slate-400 truncate max-w-[160px] text-right font-medium">
+                      {item.englishName}
+                    </span>
+                  )}
                 </div>
 
                 {/* Term Title */}
@@ -200,15 +204,26 @@ export default function LaymanGlossary() {
                 )}
               </div>
 
-              {/* Bottom Quick Action */}
+              {/* Bottom Quick Action: Direct Link to Specific Module */}
               <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
-                <span>Sekolah CEO AI</span>
+                {item.targetUrl ? (
+                  <a
+                    href={item.targetUrl}
+                    className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
+                  >
+                    <span>{item.actionLabel || 'Buka Modul'}</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </a>
+                ) : (
+                  <span>Sekolah CEO AI</span>
+                )}
+
                 <button
                   type="button"
                   onClick={() => handleCopyPrompt(item.term, item.practicalPrompt || item.term)}
                   className="font-bold text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center gap-1 cursor-pointer"
                 >
-                  <span>{isCopied ? 'Tersalin!' : 'Copy Template'}</span>
+                  <span>{isCopied ? 'Tersalin!' : 'Copy Prompt'}</span>
                   <Copy className="w-3 h-3" />
                 </button>
               </div>

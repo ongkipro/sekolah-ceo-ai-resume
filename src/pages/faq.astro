@@ -1,14 +1,29 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
+import SectionSubNav from '../components/SectionSubNav.astro';
 import ExecutiveFAQ from '../components/ExecutiveFAQ';
 import { HelpCircle } from 'lucide-react';
 
-const title = "Executive FAQ & Bisnis - Sekolah CEO AI (Agustus 2026)";
-const description = "Jawaban lugas seputar keamanan data rahasia perusahaan, biaya langganan, dan mitigasi risiko bagi pemilik bisnis.";
+const title = "Executive FAQ - Pertanyaan Kunci CEO & Pimpinan Bisnis";
+const description = "Jawaban strategis atas 12 pertanyaan paling sering diajukan C-Level tentang adopsi AI: keamanan data, pemangkasan karyawan, ROI, dan legalitas.";
+
+const subNavItems = [
+  { name: 'Tes Kematangan', href: '/quiz' },
+  { name: 'Roadmap Aksi', href: '/roadmap' },
+  { name: 'Kamus Awam', href: '/glossary' },
+  { name: 'AI Tools', href: '/tools' },
+];
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'Executive FAQ' }]}>
   <div class="space-y-6">
+    <SectionSubNav
+      currentPath="/faq"
+      hubHref="/faq"
+      hubLabel="Executive FAQ"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
@@ -16,18 +31,18 @@ const description = "Jawaban lugas seputar keamanan data rahasia perusahaan, bia
           <HelpCircle className="w-4 h-4" />
         </span>
         <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
-          Executive Q&A
+          Executive FAQ
         </span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-        Tanya Jawab Eksekutif & Mitigasi Risiko
+        Pertanyaan Kunci C-Level seputar AI
       </h1>
       <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-        Jawaban lugas dan faktual untuk pertanyaan paling krusial seputar kerahasiaan data finansial perusahaan, legalitas copyright AI, dan anggaran biaya bulanan.
+        Jawaban lugas dan strategis atas kekhawatiran terbesar para pimpinan perusahaan: dari mitigasi kebocoran data rahasia hingga hukum ketenagakerjaan dan headcount reduction.
       </p>
     </div>
 
-    <!-- FAQ Accordion Island -->
+    <!-- Interactive FAQ Island -->
     <ExecutiveFAQ client:load />
   </div>
 </AppLayout>

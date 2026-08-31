@@ -1,14 +1,30 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
+import SectionSubNav from '../components/SectionSubNav.astro';
 import ToolsMatrix from '../components/ToolsMatrix';
 import { Wrench } from 'lucide-react';
 
-const title = "AI Tools Directory & Comparison Matrix - Sekolah CEO AI";
-const description = "Direktori software AI rekomendasi instruktur (Claude, Lovable, Kling, Suno, HeyGen, ManyChat, N8N, NotebookLM) lengkap dengan harga dan difficulty level.";
+const title = "AI Tools & Software Matrix - Sekolah CEO AI";
+const description = "Direktori software AI rekomendasi instruktur (Claude Desktop, NotebookLM, Lovable, Kling, HeyGen, Suno, ManyChat, N8N) dengan rincian harga, use case, dan tingkat kesulitan.";
+
+const subNavItems = [
+  { name: 'Kamus Awam', href: '/glossary' },
+  { name: 'Prompt Vault', href: '/prompts' },
+  { name: 'Arsitektur', href: '/architecture' },
+  { name: 'Simulator', href: '/simulator' },
+  { name: 'Roadmap', href: '/roadmap' },
+];
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'AI Tools Directory' }]}>
   <div class="space-y-6">
+    <SectionSubNav
+      currentPath="/tools"
+      hubHref="/tools"
+      hubLabel="AI Tools"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
@@ -16,18 +32,18 @@ const description = "Direktori software AI rekomendasi instruktur (Claude, Lovab
           <Wrench className="w-4 h-4" />
         </span>
         <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
-          AI Tools Matrix
+          Tools Directory
         </span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-        Direktori & Matriks Tools AI
+        Direktori Software AI & Starter Prompts
       </h1>
       <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-        Kurasi 8 software AI terbaik yang diajarkan dalam masterclass, lengkap dengan skor dampak bisnis, model harga langganan, dan tingkat kesulitan integrasi.
+        Pilihan software AI terbaik yang direkomendasikan para instruktur untuk eksekusi operasional, marketing, audit keuangan, dan prototipe aplikasi internal.
       </p>
     </div>
 
-    <!-- Tools Matrix Island -->
+    <!-- Interactive Tools Matrix Island -->
     <ToolsMatrix client:load />
   </div>
 </AppLayout>

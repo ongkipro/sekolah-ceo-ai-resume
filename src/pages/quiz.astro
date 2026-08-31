@@ -1,33 +1,48 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
+import SectionSubNav from '../components/SectionSubNav.astro';
 import ExecutiveQuiz from '../components/ExecutiveQuiz';
 import { Award } from 'lucide-react';
 
-const title = "Tes Kematangan AI Eksekutif - Sekolah CEO AI (Agustus 2026)";
-const description = "5 Pertanyaan skenario studi kasus riil untuk mengukur insting arsitektur AI dan kesiapan delegasi operasional C-Level.";
+const title = "Tes Kematangan AI Bisnis (Self-Assessment) - Sekolah CEO AI";
+const description = "Evaluasi mandiri kesiapan organisasi Anda dalam mengadopsi AI: dari skor kematangan, level risiko, hingga rekomendasi tindakan prioritas.";
+
+const subNavItems = [
+  { name: 'Roadmap 30-60-90', href: '/roadmap' },
+  { name: 'CEO Simulator', href: '/simulator' },
+  { name: 'Jalur Peran', href: '/pathways' },
+  { name: 'Executive FAQ', href: '/faq' },
+];
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'Tes Kematangan AI' }]}>
   <div class="space-y-6">
+    <SectionSubNav
+      currentPath="/quiz"
+      hubHref="/quiz"
+      hubLabel="Tes Kematangan"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
-        <span class="p-1.5 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400">
+        <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
           <Award className="w-4 h-4" />
         </span>
-        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 font-mono">
-          Executive Readiness Quiz
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
+          Executive Self-Assessment
         </span>
       </div>
       <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
-        Tes Kematangan AI Eksekutif
+        Tes Kematangan & Kesiapan AI Bisnis
       </h1>
       <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-        Jawab 5 skenario masalah bisnis nyata untuk menguji apakah Anda sudah berpikir seperti Arsitek Sistem AI atau masih terjebak sebagai operator manual.
+        Jawab 6 pertanyaan evaluasi strategis di bawah untuk mengetahui level adopsi AI di perusahaan Anda (Level 1: AI Novice hingga Level 4: Autonomous Enterprise).
       </p>
     </div>
 
-    <!-- Quiz Island -->
+    <!-- Interactive Quiz Island -->
     <ExecutiveQuiz client:load />
   </div>
 </AppLayout>
