@@ -13,7 +13,8 @@
       "Review kontrak & NDA",
       "Command Center via Option+Space"
     ],
-    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang, reasoning tingkat tinggi, dan integrasi folder file system fisik."
+    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang, reasoning tingkat tinggi, dan integrasi folder file system fisik.",
+    "starterPrompt": "Analisa dokumen laporan keuangan terlampir. Identifikasi 3 pos pengeluaran terbesar yang mengalami kenaikan tidak wajar dibandingkan bulan lalu, serta susun draf rekomendasi efisiensi berformat tabel untuk C-Level."
   },
   {
     "name": "Lovable.dev / Cursor / V0",
@@ -28,7 +29,8 @@
       "Dashboard monitoring bisnis",
       "Prototipe aplikasi B2B tanpa vendor software"
     ],
-    "summary": "Platform no-code/low-code AI untuk membangun prototipe sistem web lengkap dalam hitungan menit."
+    "summary": "Platform no-code/low-code AI untuk membangun prototipe sistem web lengkap dalam hitungan menit.",
+    "starterPrompt": "Build an executive analytics dashboard for a retail company in Next.js + Tailwind CSS. Include KPI summary cards for Revenue, Gross Margin, and Headcount Efficiency, a time-series chart, and a responsive data table."
   },
   {
     "name": "Google NotebookLM",
@@ -43,7 +45,8 @@
       "Ubah SOP jadi podcast audio",
       "Cerna transkrip rapat C-Level"
     ],
-    "summary": "AI research assistant berbasis Google Gemini yang mampu mengubah ratusan halaman dokumen menjadi audio diskusi 2 orang."
+    "summary": "AI research assistant berbasis Google Gemini yang mampu mengubah ratusan halaman dokumen menjadi audio diskusi 2 orang.",
+    "starterPrompt": "Jadikan seluruh dokumen SOP operasional ini sebagai dasar pengetahuan. Ekstrak 5 poin paling krusial yang harus dipatuhi karyawan baru pada hari pertama kerja dan buatkan 3 pertanyaan kuis evaluasinya."
   },
   {
     "name": "Kling AI / Seedance / Runway",
@@ -58,7 +61,8 @@
       "Motion visual komersial",
       "Aset visual tanpa shooting fisik"
     ],
-    "summary": "Generasi video AI mutakhir dengan kontrol pergerakan kamera dinamis untuk produksi iklan berkualitas tinggi."
+    "summary": "Generasi video AI mutakhir dengan kontrol pergerakan kamera dinamis untuk produksi iklan berkualitas tinggi.",
+    "starterPrompt": "Cinematic product commercial video, slow motion 4k, professional studio lighting, showing luxury packaging opening with elegant mist and premium reflection."
   },
   {
     "name": "Suno AI",
@@ -73,7 +77,8 @@
       "Background music komersial",
       "Campaign awareness audio"
     ],
-    "summary": "Mesin pembuat lagu dan jingle komersial berkualitas studio lengkap dengan lirik dan aransemen dalam 30 detik."
+    "summary": "Mesin pembuat lagu dan jingle komersial berkualitas studio lengkap dengan lirik dan aransemen dalam 30 detik.",
+    "starterPrompt": "[Upbeat Acoustic Pop, Catchy Jingle] Jingle komersial 15 detik tentang layanan cuci sepatu express terpercaya, lirik ceria dan mudah diingat: 'Sepatu kotor langsung bersih, jalan percaya diri'."
   },
   {
     "name": "HeyGen",
@@ -88,7 +93,8 @@
       "Produksi video edukasi massal",
       "Video onboarding & training"
     ],
-    "summary": "Platform kloning video dan suara digital untuk memproduksi puluhan video personal tanpa perlu shooting fisik."
+    "summary": "Platform kloning video dan suara digital untuk memproduksi puluhan video personal tanpa perlu shooting fisik.",
+    "starterPrompt": "Halo rekan-rekan tim! Selamat datang di program orientasi eksekutif AI. Dalam 3 menit ke depan, saya akan menjelaskan 3 pilar transformasi digital perusahaan kita tahun ini."
   },
   {
     "name": "ManyChat",
@@ -103,7 +109,8 @@
       "Lead generation gratis dari konten viral",
       "Auto-distribusi PDF & link"
     ],
-    "summary": "Otomasi funnel media sosial yang mengubah komentar konten viral menjadi pesan penawaran langsung di DM."
+    "summary": "Otomasi funnel media sosial yang mengubah komentar konten viral menjadi pesan penawaran langsung di DM.",
+    "starterPrompt": "Terima kasih sudah meninggalkan komentar di postingan kami! Ini dia link download gratis PDF 'Executive Playbook Sekolah CEO AI 2026' khusus untuk Anda: [LINK_PLAYBOOK]. Jangan ragu hubungi kami jika butuh konsultasi."
   },
   {
     "name": "N8N / Zapier",
@@ -118,6 +125,7 @@
       "Koran Perusahaan 07.00 pagi",
       "Sinkronisasi POS kasir & Telegram"
     ],
-    "summary": "Workflow engine untuk menghubungkan sensor hardware, database, Telegram, dan agen LLM secara 24/7."
+    "summary": "Workflow engine untuk menghubungkan sensor hardware, database, Telegram, dan agen LLM secara 24/7.",
+    "starterPrompt": "Trigger: Cron tiap jam 07.00 WIB -> Node HTTP Request: Tarik data omset kemarin dari database PostgreSQL -> Node OpenAI: Formatkan ke template 'Koran Perusahaan' -> Node Telegram: Kirim pesan ke Channel CEO."
   }
 ]
