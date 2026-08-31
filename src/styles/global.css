@@ -53,6 +53,15 @@
   p {
     color: var(--text-secondary);
   }
+
+  /* Prevent iOS Safari auto-zoom on input focus */
+  @media screen and (max-width: 767px) {
+    input,
+    textarea,
+    select {
+      font-size: 16px !important;
+    }
+  }
 }
 
 /* Minimalist Clean Utilities */
@@ -99,7 +108,7 @@ pre, code {
     background: #ffffff !important;
     color: #000000 !important;
   }
-  header, footer, .no-print, button, iframe, .lg\\:hidden, aside {
+  header, footer, .no-print, button, iframe, .lg\:hidden, aside {
     display: none !important;
   }
   .print-only {

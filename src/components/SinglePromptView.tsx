@@ -99,7 +99,7 @@ export default function SinglePromptView({ promptId }: Props) {
                     type="text"
                     value={variableValues[v.key] ?? v.defaultValue}
                     onChange={(e) => handleVarChange(v.key, e.target.value)}
-                    className="w-full px-3.5 py-2 text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm"
+                    className="w-full px-3.5 py-2.5 sm:py-2 text-base sm:text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm transition-colors"
                   />
                 </div>
               ))}

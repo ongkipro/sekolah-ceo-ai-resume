@@ -258,7 +258,7 @@ export default function SearchModal() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Ketik kata kunci (contoh: N8N, Auto-PO, Audit, Satya, Prompt, CEO)..."
-                className="flex-1 bg-transparent text-sm sm:text-base text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none"
+                className="flex-1 bg-transparent text-base text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none"
               />
               {query && (
                 <button
