@@ -1,0 +1,93 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import simulatorData from '../../data/simulator.json';
+import { Calculator, ArrowRight, Cpu, TrendingUp } from 'lucide-react';
+
+const title = "CEO Decision & Job Deconstruction Simulator - Sekolah CEO AI";
+const description = "Simulasi interaktif bagaimana dekonstruksi job deskripsi memangkas jam kerja repetitif dan menghemat anggaran gaji hingga 90%.";
+---
+
+<AppLayout title={title} description={description} breadcrumbs={[{ label: 'CEO Simulator' }]}>
+  <div class="space-y-8">
+    <!-- Header Strip -->
+    <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex items-center gap-2">
+        <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+          <Calculator className="w-4 h-4" />
+        </span>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
+          Executive Decision Simulator
+        </span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        Simulasi Dekonstruksi Pekerjaan & ROI AI
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Pilih posisi kunci di bawah untuk melihat rincian micro-tasks: mana yang dialihkan 100% ke AI, mana yang hybrid, dan kalkulasi penghematan jam kerja per minggu.
+      </p>
+    </div>
+
+    <!-- Simulator Roles Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+      {simulatorData.map((sim) => {
+        const totalHours = sim.tasks.reduce((sum, t) => sum + t.hoursPerWeek, 0);
+        const aiHours = sim.tasks.filter((t) => t.type === 'ai').reduce((sum, t) => sum + t.hoursPerWeek, 0);
+        const efficiencyPercent = Math.round((aiHours / totalHours) * 100);
+        const monthlySaved = Math.round(sim.baseSalary * (efficiencyPercent / 100));
+        const slugUrl = `/simulator/${sim.slug}`;
+
+        return (
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-blue-500/60 dark:hover:border-blue-500/60 transition-all flex flex-col justify-between space-y-5 group">
+            <div class="space-y-4">
+              <!-- Top Metadata -->
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
+                  {sim.department}
+                </span>
+                <span class="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                  +{efficiencyPercent}% Efisiensi
+                </span>
+              </div>
+
+              <!-- Title & Salary -->
+              <div>
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {sim.roleName}
+                </h2>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-mono">
+                  Gaji Acuan: Rp {(sim.baseSalary / 1000000).toFixed(0)} Juta/bln • {sim.tasks.length} Micro-Tasks
+                </div>
+              </div>
+
+              <!-- Metrics Box -->
+              <div class="grid grid-cols-2 gap-2 pt-1 text-center">
+                <div class="p-2.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/60">
+                  <div class="text-base font-black text-blue-700 dark:text-blue-300 font-mono">{aiHours} Jam/mgg</div>
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400">Dipangkas AI</div>
+                </div>
+                <div class="p-2.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-900/60">
+                  <div class="text-base font-black text-emerald-700 dark:text-emerald-300 font-mono">Rp {(monthlySaved / 1000000).toFixed(1)} Jt</div>
+                  <div class="text-[10px] text-slate-500 dark:text-slate-400">Hemat Biaya/bln</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Link -->
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-mono">
+                {sim.slug.toUpperCase()}
+              </span>
+              <a
+                href={slugUrl}
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all group-hover:translate-x-0.5"
+              >
+                <span>Buka Simulasi Penuh</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</AppLayout>

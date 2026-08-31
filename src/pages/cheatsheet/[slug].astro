@@ -1,0 +1,29 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import SingleCheatsheetView from '../../components/SingleCheatsheetView';
+import cheatsheetsData from '../../data/cheatsheets.json';
+import { sessionSlugs } from '../../lib/slugs';
+
+export async function getStaticPaths() {
+  return sessionSlugs.map(({ slug, id }) => {
+    const sheet = cheatsheetsData.find((c) => c.sessionId === id);
+    return {
+      params: { slug },
+      props: { sheet, slug },
+    };
+  });
+}
+
+const { sheet, slug } = Astro.props;
+const title = `${sheet.theme} - Contekkan 3 Menit Sekolah CEO AI`;
+const description = `Contekkan 3 menit eksekutif untuk ${sheet.sessionTitle}: do tomorrow, fatal mistakes, 3 key metrics, dan master prompt.`;
+
+const breadcrumbs = [
+  { label: 'Contekkan 3 Menit', href: '/cheatsheet' },
+  { label: sheet.sessionTitle.split('-')[0].trim() }
+];
+---
+
+<AppLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <SingleCheatsheetView client:load sessionId={sheet.sessionId} />
+</AppLayout>

@@ -1,0 +1,101 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import cheatsheetsData from '../../data/cheatsheets.json';
+import { sessionSlugs } from '../../lib/slugs';
+import { Zap, Clock, ArrowRight, CheckCircle2, AlertTriangle, TrendingUp } from 'lucide-react';
+
+const title = "Contekkan 3 Menit Eksekutif - Sekolah CEO AI (Agustus 2026)";
+const description = "Ringkasan super padat 3 menit per sesi masterclass: prioritas aksi besok pagi, kesalahan fatal, metrik dampak, dan master prompt.";
+---
+
+<AppLayout title={title} description={description} breadcrumbs={[{ label: 'Contekkan 3 Menit' }]}>
+  <div class="space-y-8">
+    <!-- Header Strip -->
+    <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex items-center gap-2">
+        <span class="p-1.5 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-600 dark:text-amber-400">
+          <Zap className="w-4 h-4" />
+        </span>
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 font-mono">
+          Executive Cheatsheets
+        </span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        Contekkan Eksekutif 3 Menit
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Pilih sesi di bawah untuk membaca intisari 3 menit: apa yang wajib dilakukan besok pagi, kesalahan fatal yang harus dihindari, dan master prompt siap pakai.
+      </p>
+    </div>
+
+    <!-- Cheatsheet Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+      {cheatsheetsData.map((sheet) => {
+        const slugObj = sessionSlugs.find(s => s.id === sheet.sessionId);
+        const slugUrl = `/cheatsheet/${slugObj?.slug || sheet.sessionId}`;
+
+        return (
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-amber-500/60 dark:hover:border-amber-500/60 transition-all flex flex-col justify-between space-y-5 group">
+            <div class="space-y-4">
+              <!-- Top Metadata -->
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
+                  {sheet.sessionTitle.split('-')[0].trim()}
+                </span>
+                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 font-mono">
+                  <Clock className="w-3.5 h-3.5 text-amber-500" />
+                  <span>{sheet.readTime}</span>
+                </div>
+              </div>
+
+              <!-- Title & Theme -->
+              <div>
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                  {sheet.theme}
+                </h2>
+                <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                  {sheet.sessionTitle.split('-')[1]?.trim() || sheet.sessionTitle}
+                </div>
+              </div>
+
+              <!-- Must Do Tomorrow Preview -->
+              <div class="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-900/40 text-xs text-slate-800 dark:text-slate-200 space-y-1">
+                <div className="flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300 font-bold uppercase tracking-wider text-[10px]">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                  <span>Lakukan Besok Pagi:</span>
+                </div>
+                <p className="line-clamp-2 font-medium leading-relaxed">
+                  {sheet.mustDoTomorrow}
+                </p>
+              </div>
+
+              <!-- Metrics -->
+              <div class="grid grid-cols-3 gap-2 pt-1 text-center">
+                {sheet.threeKeyNumbers.map((num) => (
+                  <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50">
+                    <div class="text-xs font-mono font-black text-blue-600 dark:text-blue-400 truncate">{num.metric}</div>
+                    <div class="text-[9px] text-slate-400 line-clamp-1 mt-0.5">{num.meaning}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Bottom Link -->
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-mono">
+                {sheet.sessionId.toUpperCase()}
+              </span>
+              <a
+                href={slugUrl}
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-sm transition-all group-hover:translate-x-0.5"
+              >
+                <span>Buka Contekkan Penuh</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</AppLayout>

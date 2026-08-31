@@ -1,0 +1,98 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import promptsData from '../../data/prompts.json';
+import { promptSlugs } from '../../lib/slugs';
+import { FileText, ArrowRight, Copy, Sliders, Sparkles } from 'lucide-react';
+
+const title = "Executive Prompt Vault - Sekolah CEO AI (Agustus 2026)";
+const description = "8 Master Prompt standar industri untuk internal audit keuangan .docx, sales objection extractor, AI job description allocator, dan dynamic pricing.";
+---
+
+<AppLayout title={title} description={description} breadcrumbs={[{ label: 'Prompt Vault' }]}>
+  <div class="space-y-8">
+    <!-- Header Strip -->
+    <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex items-center gap-2">
+        <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+          <FileText className="w-4 h-4" />
+        </span>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
+          Master Prompt Vault
+        </span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        8 Koleksi Master Prompt Eksekutif
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Pilih prompt di bawah untuk membuka halaman kustomisasi variabel inline, menyesuaikan nama perusahaan dan parameter bisnis, lalu salin instan ke Claude / ChatGPT / Gemini.
+      </p>
+    </div>
+
+    <!-- Prompts Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+      {promptsData.map((prompt) => {
+        const slugObj = promptSlugs.find(p => p.id === prompt.id);
+        const slugUrl = `/prompts/${slugObj?.slug || prompt.id}`;
+
+        return (
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-blue-500/60 dark:hover:border-blue-500/60 transition-all flex flex-col justify-between space-y-5 group">
+            <div class="space-y-4">
+              <!-- Top Metadata -->
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
+                  {prompt.framework}
+                </span>
+                <span class="text-xs text-slate-400 font-medium">Instruktur: {prompt.speaker}</span>
+              </div>
+
+              <!-- Title & Category -->
+              <div>
+                <div class="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-1">
+                  {prompt.category}
+                </div>
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {prompt.title}
+                </h2>
+              </div>
+
+              <!-- Description -->
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                {prompt.description}
+              </p>
+
+              <!-- Variables Preview -->
+              {prompt.variables.length > 0 && (
+                <div class="space-y-1 pt-2 border-t border-slate-100 dark:border-slate-800">
+                  <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                    Variabel Kustom ({prompt.variables.length}):
+                  </div>
+                  <div class="flex flex-wrap gap-1.5">
+                    {prompt.variables.map((v) => (
+                      <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                        {`{${v.key}}`}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <!-- Bottom Link -->
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-mono">
+                {prompt.id}
+              </span>
+              <a
+                href={slugUrl}
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all group-hover:translate-x-0.5"
+              >
+                <span>Buka & Kustomisasi</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</AppLayout>

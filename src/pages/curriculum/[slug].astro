@@ -1,0 +1,29 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import SingleSessionView from '../../components/SingleSessionView';
+import sessionsData from '../../data/sessions.json';
+import { sessionSlugs } from '../../lib/slugs';
+
+export async function getStaticPaths() {
+  return sessionSlugs.map(({ slug, id }) => {
+    const session = sessionsData.find((s) => s.id === id);
+    return {
+      params: { slug },
+      props: { session, slug },
+    };
+  });
+}
+
+const { session, slug } = Astro.props;
+const title = `${session.title} - Sekolah CEO AI Masterclass`;
+const description = `Rekaman video lengkap, sinkronisasi detik topik, analogi awam, dan action plan untuk sesi ${session.title}.`;
+
+const breadcrumbs = [
+  { label: 'Kurikulum', href: '/curriculum' },
+  { label: `Day ${session.day} Sesi ${session.sessionNum}` }
+];
+---
+
+<AppLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <SingleSessionView client:load sessionId={session.id} />
+</AppLayout>

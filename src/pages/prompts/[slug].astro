@@ -1,0 +1,29 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import SinglePromptView from '../../components/SinglePromptView';
+import promptsData from '../../data/prompts.json';
+import { promptSlugs } from '../../lib/slugs';
+
+export async function getStaticPaths() {
+  return promptSlugs.map(({ slug, id }) => {
+    const prompt = promptsData.find((p) => p.id === id);
+    return {
+      params: { slug },
+      props: { prompt, slug },
+    };
+  });
+}
+
+const { prompt, slug } = Astro.props;
+const title = `${prompt.title} - Executive Prompt Vault`;
+const description = prompt.description;
+
+const breadcrumbs = [
+  { label: 'Prompt Vault', href: '/prompts' },
+  { label: prompt.title.slice(0, 30) + '...' }
+];
+---
+
+<AppLayout title={title} description={description} breadcrumbs={breadcrumbs}>
+  <SinglePromptView client:load promptId={prompt.id} />
+</AppLayout>

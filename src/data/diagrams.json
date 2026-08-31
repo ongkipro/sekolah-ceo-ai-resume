@@ -1,0 +1,58 @@
+[
+  {
+    "id": "growth-funnel",
+    "slug": "growth-funnel",
+    "title": "The Zero-CAC Organic Growth Funnel",
+    "speaker": "Mas Anjas Maradita",
+    "subtitle": "Mengubah tren audio dan avatar AI menjadi database prospek dan konversi instan tanpa bakar budget iklan.",
+    "nodes": [
+      { "step": 1, "title": "Viral Sound Branding", "description": "Membuat jingle komersial dan audio viral berkualitas studio dalam 30 detik.", "tool": "Suno AI", "icon": "🎵" },
+      { "step": 2, "title": "Avatar Video Production", "description": "Memproduksi puluhan video edukasi founder/presenter tanpa biaya sewa studio.", "tool": "HeyGen / Kling AI", "icon": "🎬" },
+      { "step": 3, "title": "Social Algorithmic Hook", "description": "Upload ke TikTok & Instagram dengan CTA: 'Komen [KATA KUNCI] untuk dapat PDF'.", "tool": "TikTok / IG Reels", "icon": "📱" },
+      { "step": 4, "title": "Comment-to-DM Loop", "description": "Bot otomatis mengirimkan link penawaran, PDF materi, dan direct checkout ke DM.", "tool": "ManyChat Automation", "icon": "💬" },
+      { "step": 5, "title": "Lead Ingestion to CRM", "description": "Data leads tersimpan di database penjualan untuk follow-up closing otomatis.", "tool": "CRM / Google Sheets", "icon": "📈" }
+    ]
+  },
+  {
+    "id": "koran-perusahaan",
+    "slug": "koran-perusahaan",
+    "title": "The AI Morning Intelligence Engine ('Koran Perusahaan')",
+    "speaker": "Mas Satya Pradana",
+    "subtitle": "Sintesis otomatis seluruh divisi bisnis menjadi 1 halaman briefing terpadu jam 07.00 pagi untuk CEO.",
+    "nodes": [
+      { "step": 1, "title": "Multi-Source Data Feeds", "description": "Data sales harian, absensi fingerprint, tiket komplain pelanggan, dan stok gudang.", "tool": "POS / Fingerprint / DB", "icon": "📊" },
+      { "step": 2, "title": "N8N Pipeline Orchestration", "description": "Workflow otomatis menarik data mentah setiap jam 06.00 pagi.", "tool": "N8N / Webhooks", "icon": "⚡" },
+      { "step": 3, "title": "LLM Synthesis Agent", "description": "Claude / GPT menganalisis anomali, ringkasan omset, dan red-flag operasional.", "tool": "Claude / 9Router", "icon": "🧠" },
+      { "step": 4, "title": "Telegram Executive Dispatch", "description": "Koran 1 halaman dikirim ke Telegram pribadi CEO tepat jam 07.00 pagi.", "tool": "Telegram Bot API", "icon": "📰" },
+      { "step": 5, "title": "1-Click Executive Action", "description": "CEO membaca dalam 3 menit dan memutuskan persetujuan PO/Deal tanpa meeting pagi.", "tool": "CEO Decision", "icon": "🎯" }
+    ]
+  },
+  {
+    "id": "desktop-command",
+    "slug": "desktop-command",
+    "title": "Local-First Desktop AI Command Center",
+    "speaker": "Pak Natali Ardianto",
+    "subtitle": "Integrasi folder Google Drive lokal dengan Claude Desktop dan shortcut global Option+Space tanpa cognitive friction.",
+    "nodes": [
+      { "step": 1, "title": "Physical File Sync", "description": "Google Drive / OneDrive dipasang sinkron fisik di harddisk komputer.", "tool": "Google Drive Desktop", "icon": "📁" },
+      { "step": 2, "title": "Claude Projects Context", "description": "Menghubungkan folder fisik laporan keuangan dan dokumen ke Claude Desktop.", "tool": "Claude Desktop Projects", "icon": "🖥️" },
+      { "step": 3, "title": "Global Hotkey Invocation", "description": "Menekan Option+Space (Mac) atau Ctrl+Alt+Space (Win) di atas aplikasi apa pun.", "tool": "Global Keyboard Shortcut", "icon": "⌨️" },
+      { "step": 4, "title": "B.R.I.E.F. Prompting", "description": "Memberikan instruksi terstruktur dengan persona Senior Finance / Forensic Auditor.", "tool": "B.R.I.E.F. Framework", "icon": "📝" },
+      { "step": 5, "title": "Instant .docx Memo Output", "description": "AI langsung menghasilkan Memo Audit Word resmi lengkap dengan kop surat dan tabel.", "tool": "Microsoft Word .docx", "icon": "📄" }
+    ]
+  },
+  {
+    "id": "auto-po",
+    "slug": "auto-po",
+    "title": "Automated Supply Chain & Auto-PO Purchasing Engine",
+    "speaker": "Mas Satya Pradana",
+    "subtitle": "Otomatisasi pemesanan barang ke vendor rekanan saat inventaris gudang menyentuh batas minimum.",
+    "nodes": [
+      { "step": 1, "title": "Warehouse Sensor Trigger", "description": "Sistem mendeteksi Current Stock <= Reorder Threshold pada SKU tertentu.", "tool": "Inventory Database", "icon": "📦" },
+      { "step": 2, "title": "Optimal Reorder Calculation", "description": "AI menghitung jumlah pemesanan optimal (Max Stock - Current Stock).", "tool": "AI Logic Agent", "icon": "🔢" },
+      { "step": 3, "title": "Best Vendor Selection", "description": "Mencocokkan harga kontrak terendah dengan lead time tercepat.", "tool": "Vendor Database", "icon": "🏢" },
+      { "step": 4, "title": "Auto-Draft Purchase Order", "description": "Menyusun dokumen PO lengkap dengan nomor PO, termin pembayaran, dan itemized list.", "tool": "PDF / PO Generator", "icon": "📋" },
+      { "step": 5, "title": "Manager 1-Click Approval", "description": "Manajer purchasing menerima draft di ponsel dan mengonfirmasi pemesanan 1-klik.", "tool": "Mobile Approval App", "icon": "✅" }
+    ]
+  }
+]

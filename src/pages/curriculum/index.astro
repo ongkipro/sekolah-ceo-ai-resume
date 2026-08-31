@@ -1,0 +1,109 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import sessionsData from '../../data/sessions.json';
+import { sessionSlugs } from '../../lib/slugs';
+import { Video, Clock, ArrowRight, Play, CheckCircle2, User, Sparkles } from 'lucide-react';
+
+const title = "Kurikulum & Masterclass Video - Sekolah CEO AI (Agustus 2026)";
+const description = "Daftar 4 sesi masterclass Sekolah CEO AI (~12+ jam) dilengkapi sinkronisasi detik video YouTube, analogi awam, dan to-do list eksekusi.";
+---
+
+<AppLayout title={title} description={description} breadcrumbs={[{ label: 'Kurikulum' }]}>
+  <div class="space-y-8">
+    <!-- Header Strip -->
+    <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex items-center gap-2">
+        <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+          <Video className="w-4 h-4" />
+        </span>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
+          Masterclass Curriculum
+        </span>
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        Kurikulum Lengkap 4 Sesi (~12+ Jam)
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Pilih sesi di bawah untuk menonton rekaman video YouTube dengan sinkronisasi per detik, penjelasan bahasa orang awam, kutipan penting, dan to-do list aksi terarah.
+      </p>
+    </div>
+
+    <!-- Sessions Grid List -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+      {sessionsData.map((session) => {
+        const slugObj = sessionSlugs.find(s => s.id === session.id);
+        const slugUrl = `/curriculum/${slugObj?.slug || session.id}`;
+
+        return (
+          <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-blue-500/60 dark:hover:border-blue-500/60 transition-all flex flex-col justify-between space-y-5 group">
+            <div class="space-y-4">
+              <!-- Top Metadata -->
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
+                  Day {session.day} • Sesi {session.sessionNum}
+                </span>
+                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 font-mono">
+                  <Clock className="w-3.5 h-3.5 text-slate-400" />
+                  <span>{session.duration}</span>
+                </div>
+              </div>
+
+              <!-- Title & Speaker -->
+              <div>
+                <h2 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {session.title}
+                </h2>
+                <div class="flex items-center gap-2 mt-2 text-xs text-slate-600 dark:text-slate-300">
+                  <span class="text-lg">{session.speaker.avatar}</span>
+                  <div>
+                    <span class="font-bold">{session.speaker.name}</span>
+                    <span class="text-slate-400"> ({session.speaker.role})</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Summary -->
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
+                {session.summary}
+              </p>
+
+              <!-- Topics List -->
+              <div class="space-y-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                  Topik Bahasan ({session.topics.length} Tersinkronisasi):
+                </div>
+                <div class="flex flex-wrap gap-1.5">
+                  {session.topics.slice(0, 3).map((t) => (
+                    <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-medium truncate max-w-[200px]">
+                      {t.title}
+                    </span>
+                  ))}
+                  {session.topics.length > 3 && (
+                    <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-400 font-mono">
+                      +{session.topics.length - 3} lainnya
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Action Button -->
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+              <span class="text-xs text-slate-400 font-mono">
+                {session.id.toUpperCase()}
+              </span>
+              <a
+                href={slugUrl}
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all group-hover:translate-x-0.5"
+              >
+                <Play className="w-3.5 h-3.5 fill-current" />
+                <span>Buka Video & Materi</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</AppLayout>

@@ -18,17 +18,20 @@ import {
   Award,
   Sparkles,
   X,
-  Menu
+  Menu,
+  ChevronRight
 } from 'lucide-react';
 
 interface Props {
   title?: string;
   description?: string;
+  breadcrumbs?: Array<{ label: string; href?: string }>;
 }
 
 const {
   title = "Sekolah CEO AI Hub - Executive Knowledge Base",
   description = "Panduan operasional dan resume lengkap masterclass Sekolah CEO AI bersama Mas Anjas Maradita, Mas Satya Pradana, dan Pak Natali Ardianto.",
+  breadcrumbs,
 } = Astro.props;
 
 const pathname = Astro.url.pathname;
@@ -38,15 +41,15 @@ const menuGroups = [
     group: 'Akselerator Belajar',
     items: [
       { name: 'Dashboard', href: '/', icon: LayoutDashboard, badge: 'Home' },
-      { name: 'Contekkan 3 Menit', href: '/cheatsheet', icon: Zap, badge: 'Quick' },
-      { name: 'Jalur Belajar Peran', href: '/pathways', icon: Compass, badge: 'Role' },
+      { name: 'Contekkan 3 Menit', href: '/cheatsheet', icon: Zap, badge: 'Ringkas' },
+      { name: 'Jalur Belajar Peran', href: '/pathways', icon: Compass, badge: 'Peran' },
       { name: 'Tes Kematangan AI', href: '/quiz', icon: Award, badge: 'Kuis' },
     ]
   },
   {
     group: 'Kurikulum & Materi',
     items: [
-      { name: 'Kurikulum & Video Sync', href: '/curriculum', icon: Video, badge: '12+ Jam' },
+      { name: 'Kurikulum Masterclass', href: '/curriculum', icon: Video, badge: '4 Sesi' },
       { name: 'Kamus Istilah Awam', href: '/glossary', icon: BookMarked, badge: 'A-Z' },
       { name: 'Arsitektur Sistem', href: '/architecture', icon: Layers, badge: '4 Alur' },
     ]
@@ -57,7 +60,7 @@ const menuGroups = [
       { name: 'Prompt Vault', href: '/prompts', icon: FileText, badge: '8 Prompt' },
       { name: 'CEO Simulator', href: '/simulator', icon: Calculator, badge: 'ROI Calc' },
       { name: 'AI Tools Directory', href: '/tools', icon: Wrench, badge: '8 Tools' },
-      { name: '30-60-90 Roadmap', href: '/roadmap', icon: Target, badge: 'Action' },
+      { name: '30-60-90 Roadmap', href: '/roadmap', icon: Target, badge: 'Aksi' },
       { name: 'Executive FAQ', href: '/faq', icon: HelpCircle, badge: 'Q&A' },
     ]
   }
@@ -65,14 +68,14 @@ const menuGroups = [
 
 const bottomNavItems = [
   { name: 'Home', href: '/', icon: LayoutDashboard },
-  { name: 'Video', href: '/curriculum', icon: Video },
+  { name: 'Kurikulum', href: '/curriculum', icon: Video },
   { name: 'Contekkan', href: '/cheatsheet', icon: Zap },
   { name: 'Prompt', href: '/prompts', icon: FileText },
 ];
 ---
 
 <!doctype html>
-<html lang="id" class="dark">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -89,19 +92,19 @@ const bottomNavItems = [
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Theme Script -->
+    <!-- Theme Script (Defaults to Light) -->
     <script is:inline>
       const theme = (() => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
           return localStorage.getItem('theme');
         }
-        return 'dark';
+        return 'light';
       })();
 
-      if (theme === 'light') {
-        document.documentElement.classList.remove('dark');
-      } else {
+      if (theme === 'dark') {
         document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
       }
     </script>
   </head>
@@ -114,102 +117,102 @@ const bottomNavItems = [
       <!-- Desktop Sidebar -->
       <SidebarNav />
 
-      <!-- Page Content Area with Mobile Safe Bottom Padding -->
-      <main class="flex-1 min-w-0 p-3.5 sm:p-6 lg:p-8 space-y-8 pb-28 lg:pb-12">
+      <!-- Page Content Area with Minimalist Spacing -->
+      <main class="flex-1 min-w-0 p-4 sm:p-6 lg:p-8 space-y-6 pb-28 lg:pb-12 max-w-full">
+        {breadcrumbs && breadcrumbs.length > 0 && (
+          <nav class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 overflow-x-auto no-scrollbar pb-1">
+            <a href="/" class="hover:text-slate-900 dark:hover:text-white transition-colors">Home</a>
+            {breadcrumbs.map((b, i) => (
+              <span class="flex items-center gap-1.5 shrink-0">
+                <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+                {b.href ? (
+                  <a href={b.href} class="hover:text-slate-900 dark:hover:text-white transition-colors">
+                    {b.label}
+                  </a>
+                ) : (
+                  <span class="font-semibold text-slate-900 dark:text-white">{b.label}</span>
+                )}
+              </span>
+            ))}
+          </nav>
+        )}
         <slot />
       </main>
     </div>
 
-    <!-- Mobile Bottom Navigation Bar (5 Items with Menu Drawer Trigger) -->
-    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-2 flex items-center justify-between shadow-lg">
-      {bottomNavItems.map((m) => {
-        const Icon = m.icon;
-        const active = m.href === '/' ? pathname === '/' : pathname.startsWith(m.href);
-        return (
-          <a
-            href={m.href}
-            class={`flex flex-col items-center py-1 px-2.5 rounded-xl text-[10px] font-medium transition-all ${
-              active
-                ? 'text-blue-600 dark:text-blue-400 font-bold scale-105'
-                : 'text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200'
-            }`}
-          >
-            <Icon className="w-4 h-4 mb-0.5" />
-            <span>{m.name}</span>
-          </a>
-        );
-      })}
+    <!-- Minimalist Clean Footer -->
+    <Footer />
 
-      <!-- Open All Menu Button (Mobile Bottom) -->
-      <button
-        type="button"
-        class="drawer-open-btn flex flex-col items-center py-1 px-2.5 rounded-xl text-[10px] font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
-        aria-label="Buka Semua Menu"
-      >
-        <Menu className="w-4 h-4 mb-0.5" />
-        <span>Menu</span>
-      </button>
-    </div>
-
-    <!-- NATIVE BULLETPROOF MOBILE DRAWER (Zero-lag, 100% Reliable) -->
-    <div id="mobile-drawer-root" class="fixed inset-0 z-50 pointer-events-none transition-all duration-300">
+    <!-- Native Hardware-Accelerated Mobile Slide-Over Drawer -->
+    <div
+      id="mobile-drawer-root"
+      class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-200 opacity-0"
+      aria-hidden="true"
+    >
       <!-- Backdrop -->
-      <div 
-        id="drawer-backdrop" 
-        class="absolute inset-0 bg-slate-950/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 cursor-pointer"
+      <div
+        id="drawer-backdrop"
+        class="absolute inset-0 bg-slate-950/40 backdrop-blur-sm pointer-events-auto"
       ></div>
 
       <!-- Slide-Over Panel -->
-      <div 
-        id="drawer-panel" 
-        class="absolute top-0 bottom-0 left-0 w-4/5 max-w-xs bg-white dark:bg-slate-900 shadow-2xl flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-out border-r border-slate-200 dark:border-slate-800 pointer-events-auto"
+      <div
+        id="drawer-panel"
+        class="absolute inset-y-0 left-0 w-4/5 max-w-xs bg-white dark:bg-[#090d16] border-r border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col pointer-events-auto transform -translate-x-full transition-transform duration-200 ease-out"
       >
-        <!-- Header -->
-        <div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <!-- Drawer Header -->
+        <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold">
-              <Sparkles className="w-4 h-4 text-amber-300" />
+            <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
+              AI
             </div>
             <div>
-              <div class="font-bold text-sm text-slate-900 dark:text-white">SEKOLAH CEO AI</div>
-              <div class="text-[10px] text-slate-400 font-mono">Executive Hub 2026</div>
+              <div class="font-bold text-sm text-slate-900 dark:text-white">Sekolah CEO AI</div>
+              <div class="text-[10px] text-slate-500 dark:text-slate-400 font-mono">Executive Hub 2026</div>
             </div>
           </div>
+
           <button
-            type="button"
             id="drawer-close-btn"
-            class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 cursor-pointer"
+            type="button"
+            class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label="Tutup Menu"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <!-- Scrollable Navigation List -->
-        <div class="flex-1 overflow-y-auto p-4 space-y-6">
+        <!-- Drawer Nav Items -->
+        <div class="flex-1 overflow-y-auto p-4 space-y-5">
           {menuGroups.map((group) => (
-            <div class="space-y-2">
-              <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-2 font-mono">
+            <div class="space-y-1">
+              <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-3 py-1">
                 {group.group}
               </div>
-              <div class="space-y-1">
+              <div class="space-y-0.5">
                 {group.items.map((item) => {
                   const Icon = item.icon;
-                  const active = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
+                  const isActive = item.href === '/' 
+                    ? pathname === '/' 
+                    : pathname.startsWith(item.href);
                   return (
                     <a
                       href={item.href}
-                      class={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-semibold transition-colors ${
-                        active
-                          ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800'
-                          : 'text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60'
+                      class={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${
+                        isActive
+                          ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-800'
+                          : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60'
                       }`}
                     >
-                      <div class="flex items-center gap-2.5 min-w-0">
-                        <Icon className={`w-4 h-4 shrink-0 ${active ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}`} />
-                        <span class="truncate">{item.name}</span>
+                      <div class="flex items-center gap-2.5">
+                        <Icon className={`w-4 h-4 ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}`} />
+                        <span>{item.name}</span>
                       </div>
-                      <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-400">
+                      <span class={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
+                        isActive 
+                          ? 'bg-blue-200/60 dark:bg-blue-900 text-blue-800 dark:text-blue-200' 
+                          : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
+                      }`}>
                         {item.badge}
                       </span>
                     </a>
@@ -220,78 +223,80 @@ const bottomNavItems = [
           ))}
         </div>
 
-        <!-- Footer inside Drawer -->
-        <div class="p-4 border-t border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between">
-          <span class="text-[11px]">12 Modul Siap Akses</span>
-          <span class="font-mono text-emerald-500 font-bold text-[10px]">● Online</span>
+        <!-- Drawer Footer -->
+        <div class="p-4 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 text-center">
+          Sekolah CEO AI (Agustus 2026)
         </div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <Footer />
+    <!-- Mobile Bottom Navigation Bar (Minimalist) -->
+    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-[#090d16]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-2">
+      <div class="flex items-center justify-around max-w-md mx-auto">
+        {bottomNavItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = item.href === '/' 
+            ? pathname === '/' 
+            : pathname.startsWith(item.href);
+          return (
+            <a
+              href={item.href}
+              class={`flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg text-[10px] font-medium transition-colors ${
+                isActive
+                  ? 'text-blue-600 dark:text-blue-400 font-bold'
+                  : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <Icon className="w-4 h-4" />
+              <span>{item.name}</span>
+            </a>
+          );
+        })}
 
-    <!-- Pure Native Drawer Controller Script (100% Reliable, Zero Dependency) -->
+        <!-- 5th Item: Menu Drawer Trigger -->
+        <button
+          type="button"
+          class="drawer-open-btn flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg text-[10px] font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+        >
+          <Menu className="w-4 h-4" />
+          <span>Menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Global Mobile Drawer Scripts -->
     <script is:inline>
-      (() => {
-        const root = document.getElementById('mobile-drawer-root');
-        const backdrop = document.getElementById('drawer-backdrop');
-        const panel = document.getElementById('drawer-panel');
-        const closeBtn = document.getElementById('drawer-close-btn');
-        const openBtns = document.querySelectorAll('.drawer-open-btn');
+      const drawerRoot = document.getElementById('mobile-drawer-root');
+      const drawerPanel = document.getElementById('drawer-panel');
+      const backdrop = document.getElementById('drawer-backdrop');
+      const closeBtn = document.getElementById('drawer-close-btn');
+      const openBtns = document.querySelectorAll('.drawer-open-btn');
 
-        function openDrawer() {
-          if (!root || !backdrop || !panel) return;
-          root.classList.remove('pointer-events-none');
-          backdrop.classList.remove('opacity-0');
-          backdrop.classList.add('opacity-100');
-          panel.classList.remove('-translate-x-full');
-          panel.classList.add('translate-x-0');
-          document.body.style.overflow = 'hidden';
-        }
+      function openDrawer() {
+        if (!drawerRoot || !drawerPanel) return;
+        drawerRoot.classList.remove('opacity-0', 'pointer-events-none');
+        drawerRoot.classList.add('opacity-100');
+        drawerPanel.classList.remove('-translate-x-full');
+        drawerPanel.classList.add('translate-x-0');
+        document.body.style.overflow = 'hidden';
+      }
 
-        function closeDrawer() {
-          if (!root || !backdrop || !panel) return;
-          backdrop.classList.remove('opacity-100');
-          backdrop.classList.add('opacity-0');
-          panel.classList.remove('translate-x-0');
-          panel.classList.add('-translate-x-full');
-          setTimeout(() => {
-            root.classList.add('pointer-events-none');
-            document.body.style.overflow = 'auto';
-          }, 300);
-        }
+      function closeDrawer() {
+        if (!drawerRoot || !drawerPanel) return;
+        drawerRoot.classList.add('opacity-0', 'pointer-events-none');
+        drawerRoot.classList.remove('opacity-100');
+        drawerPanel.classList.add('-translate-x-full');
+        drawerPanel.classList.remove('translate-x-0');
+        document.body.style.overflow = '';
+      }
 
-        openBtns.forEach((btn) => {
-          btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            openDrawer();
-          });
-        });
+      openBtns.forEach((btn) => btn.addEventListener('click', openDrawer));
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
 
-        if (closeBtn) {
-          closeBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            closeDrawer();
-          });
-        }
-
-        if (backdrop) {
-          backdrop.addEventListener('click', (e) => {
-            e.preventDefault();
-            closeDrawer();
-          });
-        }
-
-        // Global Event Listener
-        window.addEventListener('openMobileDrawer', openDrawer);
-        window.addEventListener('closeMobileDrawer', closeDrawer);
-
-        // Escape Key
-        window.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closeDrawer();
-        });
-      })();
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeDrawer();
+      });
     </script>
   </body>
 </html>

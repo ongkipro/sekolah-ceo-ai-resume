@@ -1,34 +1,33 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
 import ExecutiveFAQ from '../components/ExecutiveFAQ';
-import { HelpCircle, ArrowLeft } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
+
+const title = "Executive FAQ & Bisnis - Sekolah CEO AI (Agustus 2026)";
+const description = "Jawaban lugas seputar keamanan data rahasia perusahaan, biaya langganan, dan mitigasi risiko bagi pemilik bisnis.";
 ---
 
-<AppLayout title="Executive FAQ & Panduan Bisnis - Sekolah CEO AI">
-  <!-- Page Header -->
-  <div class="space-y-2 pb-6 border-b border-slate-200 dark:border-slate-800">
-    <div class="flex items-center gap-2">
-      <a href="/" class="text-xs font-semibold text-slate-400 hover:text-blue-600 flex items-center gap-1">
-        <ArrowLeft className="w-3.5 h-3.5" /> Dashboard
-      </a>
-      <span class="text-slate-300 dark:text-slate-700">/</span>
-      <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Modul 08</span>
-    </div>
-    <div class="flex items-center gap-2.5">
-      <div class="w-10 h-10 rounded-xl bg-amber-100 dark:bg-amber-900/60 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold">
-        <HelpCircle className="w-5 h-5" />
+<AppLayout title={title} description={description} breadcrumbs={[{ label: 'Executive FAQ' }]}>
+  <div class="space-y-6">
+    <!-- Header Strip -->
+    <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
+      <div class="flex items-center gap-2">
+        <span class="p-1.5 rounded-lg bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+          <HelpCircle className="w-4 h-4" />
+        </span>
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">
+          Executive Q&A
+        </span>
       </div>
-      <div>
-        <h1 class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-          Executive FAQ & Panduan Bisnis
-        </h1>
-        <p class="text-xs text-slate-500 dark:text-slate-400">
-          Jawaban lugas seputar keamanan data rahasia perusahaan, biaya langganan, mitigasi risiko salah hitung, dan peran staf manusia.
-        </p>
-      </div>
+      <h1 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">
+        Tanya Jawab Eksekutif & Mitigasi Risiko
+      </h1>
+      <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Jawaban lugas dan faktual untuk pertanyaan paling krusial seputar kerahasiaan data finansial perusahaan, legalitas copyright AI, dan anggaran biaya bulanan.
+      </p>
     </div>
-  </div>
 
-  <!-- Interactive FAQ Island -->
-  <ExecutiveFAQ client:load />
+    <!-- FAQ Accordion Island -->
+    <ExecutiveFAQ client:load />
+  </div>
 </AppLayout>
