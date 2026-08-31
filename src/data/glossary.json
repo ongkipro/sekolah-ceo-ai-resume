@@ -1,0 +1,86 @@
+[
+  {
+    "term": "LLM (Large Language Model)",
+    "englishName": "Large Language Model",
+    "laymanAnalogy": "Seperti kalkulator kata pintar yang membaca miliaran buku di dunia. Dia tidak punya 'perasaan', tapi sangat jago menebak kata berikutnya yang paling masuk akal secara matematika.",
+    "businessImpact": "Bisa disuruh bikin draf email, analisa laporan keuangan, atau jawab chat pelanggan dalam hitungan detik.",
+    "category": "Dasar AI"
+  },
+  {
+    "term": "AI Hallucination (Halusinasi AI)",
+    "englishName": "AI Hallucination",
+    "laymanAnalogy": "Kondisi saat AI 'mengarang bebas' dengan nada yang sangat meyakinkan, padahal faktanya salah. Seperti staf yang sok tahu saat ditanya bos.",
+    "businessImpact": "CEO tidak boleh percaya 100% tanpa cek data asli (prinsip: Trust, but Verify).",
+    "category": "Risiko & Keamanan"
+  },
+  {
+    "term": "Persona Injection",
+    "englishName": "Persona Injection",
+    "laymanAnalogy": "Menyuruh AI memakai 'topeng profesi tertentu'. Misalnya: 'Kamu adalah Akuntan Senior Big 4'. AI langsung otomatis memakai kosakata profesional dan teliti.",
+    "businessImpact": "Membuat jawaban AI jauh lebih akurat, formal, dan sesuai standar industri.",
+    "category": "Prompting"
+  },
+  {
+    "term": "Framework B.R.I.E.F.",
+    "englishName": "B.R.I.E.F. Framework",
+    "laymanAnalogy": "Rumus 5 langkah memberi perintah ke AI (Background, Role, Instructions, Examples, Format) agar hasilnya persis seperti yang dimau bos.",
+    "businessImpact": "Menghilangkan kebiasaan prompt asal-asalan yang hasilnya mengecewakan.",
+    "category": "Prompting"
+  },
+  {
+    "term": "Koran Perusahaan",
+    "englishName": "Daily Executive Digest",
+    "laymanAnalogy": "Laporan ringkas 1 halaman yang dikirim AI ke Telegram CEO tiap jam 07.00 pagi. Berisi rekap omset kemarin, absensi staf, barang gudang yang mau habis, dan masalah supplier.",
+    "businessImpact": "CEO tidak perlu meeting koordinasi pagi yang buang waktu 1-2 jam.",
+    "category": "Operasional"
+  },
+  {
+    "term": "Auto-PO (Purchase Order Otomatis)",
+    "englishName": "Automated Purchase Order",
+    "laymanAnalogy": "Sistem otomatis yang memesan barang ke supplier saat stok di gudang sudah mau habis, tanpa perlu staf ngetik surat pesanan dari nol.",
+    "businessImpact": "Mencegah toko/pabrik kehabisan stok dan memangkas tugas admin purchasing.",
+    "category": "Operasional"
+  },
+  {
+    "term": "Zero-CAC Funnel (ManyChat + Suno/HeyGen)",
+    "englishName": "Organic Comment-to-DM Loop",
+    "laymanAnalogy": "Bikin video/lagu viral gratis di medsos, lalu saat penonton komen 'MAU', robot AI langsung kirim penawaran ke DM mereka tanpa bayar iklan Meta/TikTok Ads.",
+    "businessImpact": "Mendapatkan ribuan calon pembeli baru dengan biaya iklan mendekati Rp0.",
+    "category": "Marketing & Sales"
+  },
+  {
+    "term": "Kloning Top Sales",
+    "englishName": "Sales Objection Handling Extractor",
+    "laymanAnalogy": "Merekam cara ngomong sales nomor 1 di perusahaan saat meyakinkan pembeli yang ragu, lalu dimasukkan ke otak chatbot AI.",
+    "businessImpact": "Ribuan calon pembeli yang tanya di chat dilayani dengan standar closing sales terbaik.",
+    "category": "Marketing & Sales"
+  },
+  {
+    "term": "Parkinson's Law (Pura-Pura Kerja)",
+    "englishName": "Parkinson's Law & Fake Work",
+    "laymanAnalogy": "Kecenderungan manusia menghabiskan waktu 8 jam di kantor, padahal tugas aslinya bisa selesai dalam 1 jam kalau pakai AI. 7 jam sisanya habis untuk pura-pura sibuk.",
+    "businessImpact": "Peluang bagi CEO untuk memangkas biaya operasional hingga 90% atau menaikkan output 10x.",
+    "category": "Manajemen & SDM"
+  },
+  {
+    "term": "Dekonstruksi Job Desk (Yes/No Framework)",
+    "englishName": "Micro-Task Allocation Matrix",
+    "laymanAnalogy": "Membedah tugas karyawan jadi bagian-bagian kecil: tugas ketik/rekap data diserahkan 100% ke AI, sedangkan tugas ketemu orang dan negosiasi tetap dipegang manusia.",
+    "businessImpact": "Karyawan tidak lembur untuk urusan sepele dan bisa fokus cari omset baru.",
+    "category": "Manajemen & SDM"
+  },
+  {
+    "term": "Dynamic Pricing (Harga Dinamis)",
+    "englishName": "Dynamic Pricing & Yield Management",
+    "laymanAnalogy": "Sistem yang otomatis menaikkan harga saat barang/kamar laris (seperti tarif Gojek saat hujan) dan memberi diskon saat sepi agar tidak ada slot terbuang.",
+    "businessImpact": "Mendongkrak margin keuntungan bersih bisnis hotel, villa, sewa, atau jasa.",
+    "category": "Strategi Bisnis"
+  },
+  {
+    "term": "Desktop Command Center (Option+Space)",
+    "englishName": "Global Hotkey AI Invocation",
+    "laymanAnalogy": "Menekan tombol cepat di keyboard laptop untuk memanggil AI seketika di atas aplikasi apa pun tanpa harus buka browser dan login.",
+    "businessImpact": "CEO bisa langsung tanya, cek dokumen, atau periksa angka tanpa kehilangan fokus kerja.",
+    "category": "Produktivitas"
+  }
+]

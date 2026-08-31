@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Apakah data keuangan dan rahasia perusahaan kami aman jika dimasukkan ke AI?",
+    "answer": "Aman jika menggunakan akun berbayar resmi (Claude Pro/Team/Enterprise atau OpenAI API). Penyedia model terikat kontrak bahwa data Anda TIDAK AKAN dipakai untuk melatih AI publik. Untuk data super sensitif (seperti formula obat Dexa Medica), perusahaan bisa membuat perjanjian Private Cloud atau memakai server lokal sendiri."
+  },
+  {
+    "question": "Apakah adopsi AI artinya kita harus mem-PHK semua karyawan?",
+    "answer": "Bukan mem-PHK, tapi mengalihkan peran. Tugas mengetik laporan, bikin gambar dasar, dan rekap spreadsheet dialihkan ke AI. Karyawan yang ada dialihkan untuk tugas bernilai tinggi: negosiasi tatap muka, melayani klien VIP, quality control fisik, dan mencari ekspansi pasar baru."
+  },
+  {
+    "question": "Berapa biaya awal yang harus dikeluarkan perusahaan untuk memulai sistem AI ini?",
+    "answer": "Sangat terjangkau. Modal awal cukup langganan Claude Pro / ChatGPT ($20 atau ~Rp320.000/bulan) per eksekutif, dan platform no-code seperti Lovable atau ManyChat (~Rp250.000 - Rp500.000/bulan). Penghematannya bisa puluhan juta dibanding bayar software house atau lembur staf manual."
+  },
+  {
+    "question": "Bagaimana jika AI salah menganalisis laporan keuangan atau salah hitung?",
+    "answer": "Gunakan prinsip 'Trust, but Verify' dan framework B.R.I.E.F. Minta AI menyertakan tabel referensi angka dan nomor transaksi aslinya. AI bertindak sebagai auditor internal junior yang menyusun draf memo, sementara tanda tangan dan persetujuan akhir tetap di tangan CFO/CEO."
+  },
+  {
+    "question": "Saya gaptek dan tidak paham koding, apakah saya bisa membuat portal web sendiri?",
+    "answer": "Bisa 100%. Di workshop dicontohkan menggunakan Lovable.dev atau Cursor. Anda cukup mengetikkan perintah dalam bahasa Indonesia/Inggris biasa (misal: 'Buatkan dasbor penjualan warna biru dengan tabel stok barang'), dan AI akan menyusun seluruh tampilan serta fungsinya dalam hitungan menit."
+  },
+  {
+    "question": "Dari mana langkah pertama yang harus dilakukan CEO hari ini?",
+    "answer": "Ikuti Roadmap Fase 1: Pasang Claude Desktop di laptop, hubungkan ke folder kerja harian, aktifkan hotkey cepat (Option+Space), dan coba buat draf memo audit internal atau ringkasan dokumen tebal menggunakan Google NotebookLM."
+  }
+]

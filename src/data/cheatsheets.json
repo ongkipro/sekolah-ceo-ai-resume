@@ -1,0 +1,94 @@
+[
+  {
+    "sessionId": "d1s1",
+    "sessionTitle": "Day 1 Sesi 1 - Mas Anjas Maradita",
+    "readTime": "3 Menit Baca",
+    "theme": "Enterprise AI, Rapid Prototyping & Zero-CAC Growth",
+    "mustDoTomorrow": "Buka Lovable.dev, ketik kebutuhan portal web/dasbor internal Anda dalam bahasa Indonesia biasa, dan lihat prototipenya selesai dalam 15 menit.",
+    "fatalMistakeToAvoid": "Mengotomasi proses bisnis yang dari awal memang kacau atau percaya mentah-mentah pada output AI tanpa verifikasi data (Trust, but Verify).",
+    "threeKeyNumbers": [
+      {
+        "metric": "Rp 100 Miliar",
+        "meaning": "Nilai adopsi Claude Enterprise oleh KPMG (276k karyawan)"
+      },
+      {
+        "metric": "< 15 Menit",
+        "meaning": "Waktu bangun portal web fungsional di Lovable.dev"
+      },
+      {
+        "metric": "Rp 0 CAC",
+        "meaning": "Biaya iklan dengan ManyChat Comment-to-DM loop"
+      }
+    ],
+    "keyPrompt": "Anda adalah Senior Product Architect. Buatkan PRD dan prototipe dasbor B2B dengan fitur tracking order dan filter kategori dalam bahasa Indonesia."
+  },
+  {
+    "sessionId": "d1s2",
+    "sessionTitle": "Day 1 Sesi 2 - Mas Anjas & Tim Teknis",
+    "readTime": "3 Menit Baca",
+    "theme": "Video AI Komersial & Scraping Data Terstruktur",
+    "mustDoTomorrow": "Coba buat 1 video iklan produk fisik menggunakan Kling AI / Seedance dengan prompt pergerakan kamera sinematik (slow pan, studio lighting).",
+    "fatalMistakeToAvoid": "Menilai dan mempromosikan karyawan hanya berdasarkan jam lembur, bukan dari kemampuan mereka melipatgandakan output lewat AI.",
+    "threeKeyNumbers": [
+      {
+        "metric": "5-10x",
+        "meaning": "Multiplier output developer senior yang mengorkestrasi AI"
+      },
+      {
+        "metric": "100%",
+        "meaning": "Hak komersial atas video/audio dengan akun berbayar resmi"
+      },
+      {
+        "metric": "< 1 Menit",
+        "meaning": "Waktu scraping ratusan data harga web ke spreadsheet"
+      }
+    ],
+    "keyPrompt": "Ekstrak seluruh daftar produk, spesifikasi, dan harga dari teks web berikut ke dalam format tabel rapi dengan kolom: Nama, SKU, Harga, dan Stok."
+  },
+  {
+    "sessionId": "d2s1",
+    "sessionTitle": "Day 2 Sesi 1 - Mas Satya Pradana",
+    "readTime": "3 Menit Baca",
+    "theme": "90% Cost Cut, Koran Perusahaan & Auto-PO Purchasing",
+    "mustDoTomorrow": "Rancang format 'Koran Perusahaan' 1 halaman yang dikirim AI ke Telegram Anda setiap jam 07.00 pagi merangkum sales kemarin, absensi, dan kas.",
+    "fatalMistakeToAvoid": "Membiarkan meeting koordinasi pagi berlangsung 1-2 jam padahal informasinya bisa disintesis AI dalam 3 menit.",
+    "threeKeyNumbers": [
+      {
+        "metric": "90%",
+        "meaning": "Potensi pemangkasan biaya operasional repetitif"
+      },
+      {
+        "metric": "Jam 07.00",
+        "meaning": "Waktu terima intelligence digest harian di HP CEO"
+      },
+      {
+        "metric": "1-Click",
+        "meaning": "Persetujuan draf Purchase Order ke vendor rekanan"
+      }
+    ],
+    "keyPrompt": "Anda adalah Chief of Staff AI. Sintesis data sales harian, presensi staf, dan posisi kas kemarin menjadi 4 kuadran ringkasan keputusan untuk CEO."
+  },
+  {
+    "sessionId": "d2s2",
+    "sessionTitle": "Day 2 Sesi 2 - Pak Natali Ardianto",
+    "readTime": "3 Menit Baca",
+    "theme": "Desktop Command Center, Audit .docx & CEO Yes/No Matrix",
+    "mustDoTomorrow": "Pasang Claude Desktop di komputer, hubungkan ke folder Google Drive fisik, dan aktifkan shortcut Option+Space di Mac (atau Ctrl+Alt+Space di Win).",
+    "fatalMistakeToAvoid": "Membuat prompt tanpa persona ahli dan instruksi terstruktur (selalu gunakan rumus B.R.I.E.F.).",
+    "threeKeyNumbers": [
+      {
+        "metric": "Option+Space",
+        "meaning": "Shortcut panggil AI instan tanpa buka browser"
+      },
+      {
+        "metric": "< 10 Menit",
+        "meaning": "Waktu screening objektif 14 CV pelamar kerja"
+      },
+      {
+        "metric": ".docx Resmi",
+        "meaning": "Format output instan memo audit lengkap tanda tangan"
+      }
+    ],
+    "keyPrompt": "Anda adalah Senior Forensic Auditor Big 4. Lakukan audit pengeluaran 12 bulan ini, temukan anomali split-bill, dan susun Memo Audit Word resmi (.docx)."
+  }
+]

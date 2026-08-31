@@ -1,0 +1,114 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import SidebarNav from '../components/SidebarNav.astro';
+import { 
+  LayoutDashboard, 
+  Video, 
+  BookMarked, 
+  FileText, 
+  Calculator, 
+  Wrench, 
+  Target, 
+  HelpCircle,
+  Layers
+} from 'lucide-react';
+
+interface Props {
+  title?: string;
+  description?: string;
+  activeSection?: string;
+}
+
+const {
+  title = "Sekolah CEO AI Hub - Executive Knowledge Base",
+  description = "Panduan operasional dan resume lengkap masterclass Sekolah CEO AI bersama Mas Anjas Maradita, Mas Satya Pradana, dan Pak Natali Ardianto.",
+  activeSection = "Dashboard"
+} = Astro.props;
+
+const pathname = Astro.url.pathname;
+const mobileNavItems = [
+  { name: 'Home', href: '/', icon: LayoutDashboard },
+  { name: 'Video', href: '/curriculum', icon: Video },
+  { name: 'Kamus', href: '/glossary', icon: BookMarked },
+  { name: 'Prompt', href: '/prompts', icon: FileText },
+  { name: 'Simulator', href: '/simulator', icon: Calculator },
+  { name: 'Roadmap', href: '/roadmap', icon: Target },
+];
+---
+
+<!doctype html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Theme Script -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        return 'dark';
+      })();
+
+      if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 transition-colors selection:bg-blue-600 selection:text-white">
+    <!-- Top Global Header -->
+    <Header />
+
+    <!-- Main Shell with Sidebar -->
+    <div class="flex-1 flex max-w-7xl w-full mx-auto">
+      <!-- Desktop Sidebar -->
+      <SidebarNav />
+
+      <!-- Page Content Area -->
+      <main class="flex-1 min-w-0 p-4 sm:p-6 lg:p-8 space-y-8 pb-20 lg:pb-12">
+        <slot />
+      </main>
+    </div>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-2 py-1.5 flex items-center justify-around">
+      {mobileNavItems.map((m) => {
+        const Icon = m.icon;
+        const active = m.href === '/' ? pathname === '/' : pathname.startsWith(m.href);
+        return (
+          <a
+            href={m.href}
+            class={`flex flex-col items-center py-1 px-2 rounded-lg text-[10px] font-medium transition-colors ${
+              active
+                ? 'text-blue-600 dark:text-blue-400 font-bold'
+                : 'text-slate-500 dark:text-slate-400'
+            }`}
+          >
+            <Icon className="w-4 h-4 mb-0.5" />
+            <span>{m.name}</span>
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- Footer -->
+    <Footer />
+  </body>
+</html>

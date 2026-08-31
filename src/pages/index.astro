@@ -1,0 +1,249 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import BentoHero from '../components/BentoHero.astro';
+import { 
+  Video, 
+  BookMarked, 
+  Layers, 
+  FileText, 
+  Calculator, 
+  Wrench, 
+  Target, 
+  HelpCircle,
+  ArrowRight,
+  Sparkles,
+  Zap,
+  Compass,
+  Award
+} from 'lucide-react';
+import sessionsData from '../data/sessions.json';
+
+const learningModules = [
+  {
+    title: 'Contekkan 3 Menit Eksekutif',
+    description: 'Ringkasan instan untuk C-Level yang super sibuk: apa yang harus dilakukan besok, 1 kesalahan fatal yang harus dihindari, dan 1 master prompt kunci.',
+    href: '/cheatsheet',
+    icon: Zap,
+    badge: 'Quick 3-Min Read',
+    color: 'amber'
+  },
+  {
+    title: 'Jalur Belajar Berdasarkan Peran',
+    description: 'Kurikulum terkurasi khusus untuk CEO/Owner, CFO/Finance, CMO/Marketing, dan COO/Operations agar langsung relevan dengan tanggung jawab Anda.',
+    href: '/pathways',
+    icon: Compass,
+    badge: 'Role Personalized',
+    color: 'blue'
+  },
+  {
+    title: 'Uji Keputusan Eksekutif & Kematangan AI',
+    description: '5 Skenario kasus bisnis nyata untuk menguji insting keputusan dan strategi adopsi AI Anda dengan instant scoring & maturity badge.',
+    href: '/quiz',
+    icon: Award,
+    badge: 'Assessment Mandiri',
+    color: 'emerald'
+  }
+];
+
+const modules = [
+  {
+    num: '01',
+    title: 'Kurikulum & Video Synchronizer',
+    description: '4 Sesi Masterclass (~12+ jam) lengkap dengan sinkronisasi detik video YouTube, poin kunci, resume mendalam, dan to-do list aksi.',
+    href: '/curriculum',
+    icon: Video,
+    badge: '12+ Jam Rekaman'
+  },
+  {
+    num: '02',
+    title: 'Kamus Istilah AI Bahasa Awam',
+    description: '12+ Istilah teknis (LLM, Halusinasi, Auto-PO, ManyChat) yang dijelaskan dengan analogi kehidupan nyata.',
+    href: '/glossary',
+    icon: BookMarked,
+    badge: 'Analogi Sederhana'
+  },
+  {
+    num: '03',
+    title: 'Visual Architecture Blueprints',
+    description: 'Peta alur operasional: 0-CAC Funnel, Sistem Koran Perusahaan, Local Command Center, & Auto-PO Purchasing.',
+    href: '/architecture',
+    icon: Layers,
+    badge: '4 Alur Bisnis'
+  },
+  {
+    num: '04',
+    title: 'Executive Prompt Vault',
+    description: '8 Master Prompts dengan kustomisasi variabel inline untuk audit keuangan .docx, sales extractor, dan dynamic pricing.',
+    href: '/prompts',
+    icon: FileText,
+    badge: '8 Master Prompts'
+  },
+  {
+    num: '05',
+    title: 'CEO Decision Simulator',
+    description: 'Kalkulator interaktif dekonstruksi job desk: hitung jam kerja terpangkas dan estimasi efisiensi biaya hingga 90%.',
+    href: '/simulator',
+    icon: Calculator,
+    badge: 'ROI & Headcount'
+  },
+  {
+    num: '06',
+    title: 'AI Tools Directory & Matrix',
+    description: 'Direktori software AI rekomendasi instruktur (Claude, Lovable, Kling, Suno, HeyGen, ManyChat, N8N, NotebookLM).',
+    href: '/tools',
+    icon: Wrench,
+    badge: '8+ Tools Rekomendasi'
+  },
+  {
+    num: '07',
+    title: '30-60-90 Days Action Plan',
+    description: 'Panduan eksekusi bertahap C-Level dengan checklist interaktif tersimpan di browser dan siap diekspor PDF.',
+    href: '/roadmap',
+    icon: Target,
+    badge: 'Eksekusi Bertahap'
+  },
+  {
+    num: '08',
+    title: 'Executive FAQ & Bisnis',
+    description: 'Jawaban lugas seputar keamanan data rahasia perusahaan, biaya langganan, dan mitigasi risiko bagi pemilik bisnis.',
+    href: '/faq',
+    icon: HelpCircle,
+    badge: 'Q&A Mitigasi Risiko'
+  }
+];
+---
+
+<AppLayout title="Sekolah CEO AI (Agustus 2026) - Executive Knowledge Hub & Masterclass Resume">
+  <!-- Bento Hero Overview -->
+  <BentoHero />
+
+  <!-- Fast Learning Accelerator Strip -->
+  <div class="space-y-4 pt-2">
+    <div class="flex items-center justify-between pb-2">
+      <div>
+        <h2 class="text-lg font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+          <Zap className="w-5 h-5 text-amber-500" />
+          Akselerator Belajar Cepat (Fast-Track Learning)
+        </h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          Pilih metode belajar yang paling pas dengan ketersediaan waktu dan peran kepemimpinan Anda.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {learningModules.map((item) => {
+        const Icon = item.icon;
+        return (
+          <a
+            href={item.href}
+            class="p-5 rounded-2xl bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950 border border-slate-200 dark:border-slate-800 hover:border-blue-500/60 dark:hover:border-blue-500/60 transition-all shadow-sm flex flex-col justify-between space-y-3 group"
+          >
+            <div>
+              <div className="flex items-center justify-between text-xs mb-2">
+                <span className="p-2 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-600 dark:text-blue-400">
+                  <Icon className="w-4 h-4" />
+                </span>
+                <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                  {item.badge}
+                </span>
+              </div>
+              <h3 className="font-bold text-base text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+
+            <div className="pt-2 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
+              <span>Buka Sekarang</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- Master Modules Grid -->
+  <div class="space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+    <div class="flex items-center justify-between pb-2">
+      <div>
+        <h2 class="text-lg font-black text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+          <Sparkles className="w-5 h-5 text-blue-500" />
+          Seluruh 8 Modul Lengkap Masterclass
+        </h2>
+        <p class="text-xs text-slate-500 dark:text-slate-400">
+          Eksplorasi modul spesifik dengan kurikulum, prompt vault, tools, dan simulator.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {modules.map((mod) => {
+        return (
+          <a
+            href={mod.href}
+            class="group p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:border-blue-500/60 dark:hover:border-blue-500/60 hover:shadow-md transition-all flex flex-col justify-between space-y-4"
+          >
+            <div class="space-y-3">
+              <div class="flex items-start justify-between gap-2">
+                <span class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-mono font-bold text-xs flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  {mod.num}
+                </span>
+                <span className="text-[10px] font-semibold font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+                  {mod.badge}
+                </span>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-base text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {mod.title}
+                </h3>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-3 leading-relaxed">
+                  {mod.description}
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-xs font-semibold text-blue-600 dark:text-blue-400">
+              <span>Buka Modul</span>
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+
+  <!-- Speaker Quotes Section -->
+  <div class="space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">
+      Kutipan Prinsip dari Para Instruktur Masterclass
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {sessionsData.slice(0, 3).map((session) => (
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">{session.speaker.avatar}</span>
+            <div>
+              <div class="font-bold text-sm text-slate-900 dark:text-white">{session.speaker.name}</div>
+              <div class="text-[11px] text-slate-400">{session.speaker.company}</div>
+            </div>
+          </div>
+          <p class="text-xs text-slate-600 dark:text-slate-300 italic leading-relaxed">
+            &quot;{session.quote}&quot;
+          </p>
+          <div class="pt-2 border-t border-slate-100 dark:border-slate-800 text-[11px] text-blue-600 dark:text-blue-400 font-semibold">
+            <a href="/curriculum" class="hover:underline flex items-center gap-1">
+              Lihat Materi Sesi Ini <ArrowRight className="w-3 h-3" />
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</AppLayout>

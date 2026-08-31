@@ -1,0 +1,107 @@
+[
+  {
+    "id": "q1",
+    "scenario": "Perusahaan Anda menerima proposal tender setebal 250 halaman yang harus diputuskan dalam waktu 2 jam saat Anda sedang dalam perjalanan ke bandara. Apa tindakan paling efisien?",
+    "options": [
+      {
+        "text": "Menyuruh sekretaris membaca kilat dan membuat ringkasan manual (butuh 4 jam).",
+        "isCorrect": false,
+        "explanation": "Metode konvensional lambat dan rentan bias personal staf."
+      },
+      {
+        "text": "Mengunggah PDF ke Google NotebookLM dan mendengarkan Audio Overview dialog 2 orang saat di mobil.",
+        "isCorrect": true,
+        "explanation": "Tepat! Google NotebookLM merangkum dokumen ratusan halaman menjadi dialog audio yang mudah diserap saat mobile."
+      },
+      {
+        "text": "Menolak tender karena waktu evaluasi terlalu sempit.",
+        "isCorrect": false,
+        "explanation": "Melewatkan peluang bisnis besar karena keterbatasan proses manual."
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "scenario": "Bagian gudang Anda sering mengalami kehabisan stok bahan baku karena staf admin lupa menyusun surat Purchase Order (PO) tepat waktu. Bagaimana arsitektur solusi AI-nya?",
+    "options": [
+      {
+        "text": "Menambah 2 staf admin baru untuk mencatat stok setiap jam.",
+        "isCorrect": false,
+        "explanation": "Menambah biaya tetap tanpa menyelesaikan akar masalah (Parkinson's Law)."
+      },
+      {
+        "text": "Menetapkan aturan Auto-PO: saat stok menyentuh titik minimum, sistem AI otomatis membuat draf PO ke vendor rekanan untuk di-approve 1-klik oleh manajer.",
+        "isCorrect": true,
+        "explanation": "Tepat! Ini alur Auto-PO yang diajarkan Mas Satya Pradana untuk mencegah stock-out dan menghemat ratusan jam admin."
+      },
+      {
+        "text": "Memaksa vendor mengirim barang setiap hari tanpa jadwal.",
+        "isCorrect": false,
+        "explanation": "Merusak cash flow dan menambah biaya simpan gudang."
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "scenario": "Mengapa dalam framework prompt B.R.I.E.F., kita harus mengawali perintah dengan Persona Ahli (misal: 'Anda adalah Senior Forensic Auditor')?",
+    "options": [
+      {
+        "text": "Agar AI merasa dihargai dan bekerja lebih sopan.",
+        "isCorrect": false,
+        "explanation": "AI tidak memiliki perasaan; AI adalah model probabilitas matematika."
+      },
+      {
+        "text": "Secara matematis mengunci distribusi probabilitas kata berikutnya agar AI hanya memilih terminologi dan logika audit standar industri.",
+        "isCorrect": true,
+        "explanation": "Tepat! Sesuai penjelasan Pak Natali Ardianto tentang sifat mekanika matematika LLM (Next Token Prediction)."
+      },
+      {
+        "text": "Hanya sebagai formalitas agar prompt terlihat panjang.",
+        "isCorrect": false,
+        "explanation": "Prompt panjang tanpa persona justru bisa memicu halusinasi acak."
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "scenario": "Tim marketing Anda ingin meluncurkan 20 video promosi produk baru, tapi biaya sewa studio dan model presenter mencapai puluhan juta rupiah. Solusi zero-cost yang diajarkan di masterclass adalah:",
+    "options": [
+      {
+        "text": "Menggunakan Kling AI / Seedance untuk video sinematik dan HeyGen untuk avatar founder, lalu ManyChat untuk auto-closing di DM.",
+        "isCorrect": true,
+        "explanation": "Tepat! Kombinasi video gen AI + avatar presenter + ManyChat memangkas biaya CAC mendekati Rp0."
+      },
+      {
+        "text": "Membatalkan peluncuran sampai ada anggaran promosi besar.",
+        "isCorrect": false,
+        "explanation": "Menghambat pertumbuhan bisnis di tengah persaingan cepat."
+      },
+      {
+        "text": "Membuat video seadanya dengan kamera HP tanpa editan dan tanpa alur konversi.",
+        "isCorrect": false,
+        "explanation": "Menurunkan citra brand dan tidak menghasilkan lead yang terorganisir."
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "scenario": "CEO ingin menghilangkan rapat koordinasi pagi yang membuang waktu 1-2 jam setiap hari. Sistem apa yang direkomendasikan Mas Satya Pradana?",
+    "options": [
+      {
+        "text": "Mewajibkan semua manajer mengirim voice note panjang di grup WhatsApp.",
+        "isCorrect": false,
+        "explanation": "Malah menimbulkan noise dan membuang waktu CEO mendengarkan rekaman acak."
+      },
+      {
+        "text": "Pipeline 'Koran Perusahaan' jam 07.00 pagi yang menyintesis sales, absensi, stok kritis, dan posisi kas menjadi 1 halaman briefing keputusan.",
+        "isCorrect": true,
+        "explanation": "Tepat! CEO cukup membaca 3 menit di pagi hari dan langsung mengambil keputusan kunci."
+      },
+      {
+        "text": "Menghapus semua komunikasi antar divisi.",
+        "isCorrect": false,
+        "explanation": "Menyebabkan silo data dan ketiadaan transparansi operasional."
+      }
+    ]
+  }
+]

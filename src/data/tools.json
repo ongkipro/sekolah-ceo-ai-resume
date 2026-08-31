@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Claude Desktop (Projects + Local Files)",
+    "category": "Executive Intelligence",
+    "pricing": "$20/user/mo",
+    "difficulty": "Easy",
+    "impactScore": 5,
+    "url": "https://claude.ai/download",
+    "speaker": "Pak Natali Ardianto",
+    "useCases": [
+      "Audit internal keuangan",
+      "Pembuatan memo resmi .docx",
+      "Review kontrak & NDA",
+      "Command Center via Option+Space"
+    ],
+    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang, reasoning tingkat tinggi, dan integrasi folder file system fisik."
+  },
+  {
+    "name": "Lovable.dev / Cursor / V0",
+    "category": "Rapid Prototyping",
+    "pricing": "Freemium / $20/mo",
+    "difficulty": "Easy to Medium",
+    "impactScore": 5,
+    "url": "https://lovable.dev",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Bikin portal web internal",
+      "Dashboard monitoring bisnis",
+      "Prototipe aplikasi B2B tanpa vendor software"
+    ],
+    "summary": "Platform no-code/low-code AI untuk membangun prototipe sistem web lengkap dalam hitungan menit."
+  },
+  {
+    "name": "Google NotebookLM",
+    "category": "Audio & Research",
+    "pricing": "Free",
+    "difficulty": "Easy",
+    "impactScore": 5,
+    "url": "https://notebooklm.google.com",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Ingest dokumen tender tebal",
+      "Ubah SOP jadi podcast audio",
+      "Cerna transkrip rapat C-Level"
+    ],
+    "summary": "AI research assistant berbasis Google Gemini yang mampu mengubah ratusan halaman dokumen menjadi audio diskusi 2 orang."
+  },
+  {
+    "name": "Kling AI / Seedance / Runway",
+    "category": "Video Generation",
+    "pricing": "Freemium / Credit based",
+    "difficulty": "Medium",
+    "impactScore": 4,
+    "url": "https://klingai.com",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Iklan video produk sinematik",
+      "Motion visual komersial",
+      "Aset visual tanpa shooting fisik"
+    ],
+    "summary": "Generasi video AI mutakhir dengan kontrol pergerakan kamera dinamis untuk produksi iklan berkualitas tinggi."
+  },
+  {
+    "name": "Suno AI",
+    "category": "Sound & Jingle Branding",
+    "pricing": "Freemium / $10/mo",
+    "difficulty": "Easy",
+    "impactScore": 4,
+    "url": "https://suno.com",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Pembuatan jingle brand viral",
+      "Background music komersial",
+      "Campaign awareness audio"
+    ],
+    "summary": "Mesin pembuat lagu dan jingle komersial berkualitas studio lengkap dengan lirik dan aransemen dalam 30 detik."
+  },
+  {
+    "name": "HeyGen",
+    "category": "Avatar & Video Scaling",
+    "pricing": "$29/mo",
+    "difficulty": "Easy",
+    "impactScore": 5,
+    "url": "https://heygen.com",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Kloning avatar founder/presenter",
+      "Produksi video edukasi massal",
+      "Video onboarding & training"
+    ],
+    "summary": "Platform kloning video dan suara digital untuk memproduksi puluhan video personal tanpa perlu shooting fisik."
+  },
+  {
+    "name": "ManyChat",
+    "category": "Traffic & Conversion",
+    "pricing": "Freemium / $15/mo",
+    "difficulty": "Easy",
+    "impactScore": 5,
+    "url": "https://manychat.com",
+    "speaker": "Mas Anjas Maradita",
+    "useCases": [
+      "Comment-to-DM di IG & TikTok",
+      "Lead generation gratis dari konten viral",
+      "Auto-distribusi PDF & link"
+    ],
+    "summary": "Otomasi funnel media sosial yang mengubah komentar konten viral menjadi pesan penawaran langsung di DM."
+  },
+  {
+    "name": "N8N / Zapier",
+    "category": "System Automation",
+    "pricing": "Open Source / Cloud",
+    "difficulty": "Medium to Advanced",
+    "impactScore": 5,
+    "url": "https://n8n.io",
+    "speaker": "Mas Satya & Mas Anjas",
+    "useCases": [
+      "Otomasi Auto-PO",
+      "Koran Perusahaan 07.00 pagi",
+      "Sinkronisasi POS kasir & Telegram"
+    ],
+    "summary": "Workflow engine untuk menghubungkan sensor hardware, database, Telegram, dan agen LLM secara 24/7."
+  }
+]

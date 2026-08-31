@@ -1,0 +1,195 @@
+[
+  {
+    "id": "p-brief-audit",
+    "title": "Executive Internal Audit & Fraud Detection Memo (.docx)",
+    "speaker": "Pak Natali Ardianto",
+    "category": "Finance & Audit",
+    "framework": "B.R.I.E.F.",
+    "description": "Menganalisis laporan keuangan mentah, mencari anomali pengeluaran, mendeteksi potensi fraud terlama tanpa ketahuan, dan langsung menghasilkan memo internal audit resmi dalam format .docx.",
+    "template": "Anda adalah Senior Forensic Auditor dan Senior Finance Manager dengan pengalaman 15 tahun di Big 4.\n\n[BACKGROUND]\nPerusahaan kami {COMPANY_NAME} bergerak di bidang {INDUSTRY}. Berikut adalah data rincian transaksi pengeluaran dan laporan keuangan selama {PERIOD}:\n{RAW_FINANCIAL_DATA}\n\n[INSTRUCTIONS]\n1. Lakukan rekonsiliasi data dan temukan transaksi yang memiliki pola anomali (misal: split-bill di bawah threshold approval, vendor ganda, kenaikan biaya tidak wajar).\n2. Analisis potensi kelemahan sistem administrasi dan sebutkan modus fraud apa yang secara statistik paling mungkin berjalan paling lama tanpa terdeteksi.\n3. Susun draf Memo Audit Internal resmi yang ditujukan kepada Dewan Direksi.\n4. Sertakan tabel ringkasan temuan, skor risiko (Low/Medium/High), dan langkah perbaikan sistem (SOP & kontrol).\n\n[OUTPUT FORMAT]\nBuat output dalam format dokumen Word (.docx) atau Markdown terstruktur dengan format Memo Resmi siap cetak:\n- Nomor Memo & Tanggal\n- Kepada & Dari\n- Ringkasan Eksekutif Temuan\n- Tabel Detail Anomali\n- Rekomendasi Tindakan Korektif (Immediate & Long-term)",
+    "variables": [
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Perusahaan",
+        "defaultValue": "PT Mahakarya Digital"
+      },
+      {
+        "key": "INDUSTRY",
+        "label": "Industri",
+        "defaultValue": "Retail & Distribution"
+      },
+      {
+        "key": "PERIOD",
+        "label": "Periode Laporan",
+        "defaultValue": "Semester 1 2026"
+      }
+    ]
+  },
+  {
+    "id": "p-koran-perusahaan",
+    "title": "AI Morning Executive Digest ('Koran Perusahaan' 07.00 Pagi)",
+    "speaker": "Mas Satya Pradana",
+    "category": "Executive Intelligence",
+    "framework": "Intelligence Synthesis",
+    "description": "Menyintesis data mentah sales harian, absensi fingerprint, tiket komplain, stok gudang, dan posisi kas menjadi 1 halaman briefing harian CEO.",
+    "template": "Anda adalah Executive Chief of Staff & Business Intelligence AI untuk CEO {COMPANY_NAME}.\n\n[BACKGROUND]\nTugas Anda adalah membaca seluruh raw feed operasional kemarin ({YESTERDAY_DATE}) dan menyusun 'Koran Perusahaan' 1 halaman yang ringkas, tajam, dan berorientasi keputusan untuk dibaca CEO pada jam 07.00 pagi.\n\n[INPUT OPERASIONAL]\n- Data Transaksi & Pipeline Sales: {SALES_FEED}\n- Data Presensi & Karyawan Telat: {ATTENDANCE_FEED}\n- Isu Gudang & Supplier: {SUPPLY_FEED}\n- Posisi Kas & Piutang Jatuh Tempo: {CASH_FEED}\n\n[INSTRUCTIONS]\nSusun ringkasan dengan format 4 kuadran:\n1. \ud83c\udfaf REVENUE & DEALS: Total omset kemarin vs target, deal terbesar yang closing, dan 2 deal macet yang butuh atensi CEO.\n2. \u26a0\ufe0f OPERATIONAL RED FLAGS: Karyawan dengan anomali absensi, barang gudang yang stoknya kritis, dan komplain pelanggan berulang.\n3. \ud83d\udcb5 CASH & LIQUIDITY: Saldo kas efektif hari ini, pengeluaran prioritas hari ini, dan piutang yang harus ditagih.\n4. \u26a1 3 KEPUTUSAN KUNCI HARI INI: 3 hal spesifik yang wajib diputuskan CEO hari ini dalam bentuk pilihan Yes/No.",
+    "variables": [
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Perusahaan",
+        "defaultValue": "High Group Holdings"
+      },
+      {
+        "key": "YESTERDAY_DATE",
+        "label": "Tanggal Data",
+        "defaultValue": "Kemarin"
+      }
+    ]
+  },
+  {
+    "id": "p-sales-extractor",
+    "title": "Top 1% Sales Performer Knowledge & Objection Handling Extractor",
+    "speaker": "Mas Satya Pradana",
+    "category": "Sales & Closing",
+    "framework": "Persona Cloning",
+    "description": "Mengekstrak percakapan sales nomor 1 di perusahaan menjadi bot AI standar kelas dunia untuk melayani ribuan prospek secara instan.",
+    "template": "Anda adalah Konsultan Penjualan Kelas Dunia dan Spesialis Sales Intelligence.\n\n[BACKGROUND]\nKami ingin mengkloning keahlian sales terbaik kami ({TOP_SALES_NAME}) untuk produk {PRODUCT_NAME} dengan target audiens {TARGET_AUDIENCE}.\n\nBerikut adalah transkrip percakapan nyata saat sales terbaik kami berhasil closing:\n{SALES_TRANSCRIPT}\n\n[INSTRUCTIONS]\n1. Bedah formula psikologi closing yang digunakan: hook awal, cara membangun rapport, dan cara memvalidasi kebutuhan prospek.\n2. Buat Master Objection Handling Matrix untuk keberatan umum:\n   - \"Harganya kemahalan / di luar budget\"\n   - \"Saya perlu diskusi dulu sama pasangan / atasan\"\n   - \"Saya bandingkan dulu dengan kompetitor X\"\n   - \"Belum butuh sekarang, mungkin bulan depan\"\n3. Tuliskan System Prompt untuk Chatbot AI Customer Service kami agar dapat membalas chat pelanggan dengan gaya bahasa, empati, dan teknik closing persis seperti sales terbaik ini.",
+    "variables": [
+      {
+        "key": "TOP_SALES_NAME",
+        "label": "Nama Sales Terbaik",
+        "defaultValue": "Budi Santoso"
+      },
+      {
+        "key": "PRODUCT_NAME",
+        "label": "Nama Produk / Jasa",
+        "defaultValue": "Paket SaaS Enterprise ERP"
+      },
+      {
+        "key": "TARGET_AUDIENCE",
+        "label": "Target Pelanggan",
+        "defaultValue": "Owner Pabrik & Manufaktur"
+      }
+    ]
+  },
+  {
+    "id": "p-jobdesk-allocator",
+    "title": "CEO Yes/No Job Description Deconstruction & AI Allocation Matrix",
+    "speaker": "Pak Natali Ardianto & Mas Satya Pradana",
+    "category": "HR & Operations",
+    "framework": "CEO Decision Matrix",
+    "description": "Mendekonstruksi job description karyawan menjadi 15-20 micro-tasks dan membaginya secara presisi antara tugas AI (100% otomatis) vs tugas Manusia (strategis/empati).",
+    "template": "Anda adalah Organization Design & Workforce Transformation Consultant.\n\n[BACKGROUND]\nKami ingin merestrukturisasi divisi {DEPARTMENT_NAME} dengan posisi {JOB_TITLE} di perusahaan {COMPANY_NAME} agar biaya operasional terpangkas dan output meningkat 10x melalui leverage AI.\n\nBerikut adalah Job Description saat ini:\n{CURRENT_JOB_DESCRIPTION}\n\n[INSTRUCTIONS]\n1. Dekonstruksi posisi ini menjadi 15-20 micro-tasks harian dan mingguan yang spesifik.\n2. Buat tabel matriks dengan kolom:\n   - [Nama Micro-Task]\n   - [Tipe Pekerjaan: Kognitif Repetitif / Komunikasi / Negosiasi Fisik / Strategi]\n   - [Alokasi: 100% AI / Hybrid AI+Manusia / 100% Manusia]\n   - [Tool AI Rekomendasi]\n   - [Estimasi Penghematan Waktu (%)]\n3. Buat rancangan baru Job Description posisi ini yang berfokus pada peran 'AI Orchestrator & Strategic Relationship Manager'.",
+    "variables": [
+      {
+        "key": "DEPARTMENT_NAME",
+        "label": "Nama Divisi",
+        "defaultValue": "Marketing & Content"
+      },
+      {
+        "key": "JOB_TITLE",
+        "label": "Posisi Karyawan",
+        "defaultValue": "Content Creator & Copywriter"
+      },
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Perusahaan",
+        "defaultValue": "PT Retail Sukses Mandiri"
+      }
+    ]
+  },
+  {
+    "id": "p-dynamic-pricing",
+    "title": "Dynamic Pricing & Yield Margin Optimization Model",
+    "speaker": "Pak Natali Ardianto",
+    "category": "Pricing & Revenue",
+    "framework": "Yield Management",
+    "description": "Menyusun formula algoritma dynamic pricing (surge, last-minute, seasonal, tiering) untuk memaksimalkan yield margin bisnis jasa/properti/hotel.",
+    "template": "Anda adalah Pricing Strategist & Revenue Optimization Specialist.\n\n[BACKGROUND]\nBisnis kami {COMPANY_NAME} memiliki inventaris {INVENTORY_TYPE} dengan kapasitas dasar {BASE_CAPACITY} unit/slot dan base price Rp{BASE_PRICE}/unit.\n\n[INSTRUCTIONS]\nRancang arsitektur formula Dynamic Pricing dengan parameter:\n1. Occupancy Trigger: Jika kapasitas terjual > 75%, naikkan harga bertahap +{SURGE_PERCENT}%.\n2. Time Decay (Last-Minute): Jika H-1 kapasitas masih < 40%, terapkan diskon dinamis dengan batas margin minimal (floor price).\n3. Customer Lifetime Value (LTV) Tiering: Berikan loyal customer priority booking tanpa diskon merusak harga.\n4. Buat kode script logika Python / JavaScript sederhana yang bisa diintegrasikan ke sistem POS atau portal booking.",
+    "variables": [
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Bisnis",
+        "defaultValue": "Villa Luxury & Co"
+      },
+      {
+        "key": "INVENTORY_TYPE",
+        "label": "Jenis Inventaris",
+        "defaultValue": "Kamar Hotel / Sewa Ruangan"
+      },
+      {
+        "key": "BASE_PRICE",
+        "label": "Harga Dasar (Rp)",
+        "defaultValue": "1500000"
+      },
+      {
+        "key": "SURGE_PERCENT",
+        "label": "Persentase Surge (%)",
+        "defaultValue": "25"
+      }
+    ]
+  },
+  {
+    "id": "p-contract-scanner",
+    "title": "Automated Contract & NDA Red-Flag Scanner",
+    "speaker": "Pak Natali Ardianto",
+    "category": "Legal & Risk",
+    "framework": "Risk Guardrail",
+    "description": "Memindai dokumen perjanjian kerja sama, kontrak vendor, dan NDA untuk menemukan klausul jebakan sebelum ditandatangani direksi.",
+    "template": "Anda adalah Corporate Legal Counsel & Contract Risk Specialist.\n\n[BACKGROUND]\nPerusahaan kami {COMPANY_NAME} menerima draf perjanjian {CONTRACT_TYPE} dari mitra berikut:\n{DRAFT_CONTRACT_TEXT}\n\n[INSTRUCTIONS]\nLakukan audit hukum komprehensif dan identifikasi:\n1. KLAUSUL BERBAHAYA (RED FLAGS): Penalti tidak proporsional, klausul non-compete berlebihan, yurisdiksi sengketa yang merugikan, atau klausul perpindahan hak kekayaan intelektual (IP).\n2. KLAUSUL AMBIGU: Terminologi multi-tafsir terkait SLA, batas waktu pembayaran, atau force majeure.\n3. DRAF REVISI KOREKTIF: Tuliskan pasal tandingan yang lebih menguntungkan dan melindungi aset perusahaan kami.",
+    "variables": [
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Perusahaan",
+        "defaultValue": "PT Antigravity Inovasi"
+      },
+      {
+        "key": "CONTRACT_TYPE",
+        "label": "Jenis Kontrak",
+        "defaultValue": "Perjanjian Kerjasama Distribusi B2B"
+      }
+    ]
+  },
+  {
+    "id": "p-lovable-spec",
+    "title": "Rapid Web/App PRD & Prompt Generator for Lovable.dev / V0",
+    "speaker": "Mas Anjas Maradita",
+    "category": "Product & Tech",
+    "framework": "Rapid Prototyping",
+    "description": "Menyusun prompt spesifikasi sistem lengkap yang siap di-paste ke Lovable.dev untuk membangun aplikasi web fungsional dalam <15 menit.",
+    "template": "Anda adalah Senior Product Architect & Fullstack AI Prototyper.\n\n[BACKGROUND]\nSaya ingin membuat prototipe sistem web {APP_NAME} untuk kebutuhan internal {COMPANY_NAME}.\nTarget pengguna: {TARGET_USERS}\n\n[BRAND GUIDELINE]\n- Primary Color: {BRAND_COLOR} (Hex)\n- Style: Modern, clean executive dashboard, dark mode friendly, minimal cognitive load.\n\n[CORE FEATURES & USER JOURNEY]\n{FEATURE_LIST}\n\n[INSTRUCTIONS FOR LOVABLE / V0]\nSusun Master Prompt lengkap dalam bahasa Inggris untuk dimasukkan ke Lovable.dev yang mencakup:\n1. Component Hierarchy & Layout (Sidebar, Topbar, Data Table, KPI Cards).\n2. State Management & Mock Data Structure (TypeScript interfaces).\n3. Interactive Filtering, Sorting, and Modal Drawers.\n4. Step-by-step questions for the AI to clarify before building.",
+    "variables": [
+      {
+        "key": "APP_NAME",
+        "label": "Nama Aplikasi",
+        "defaultValue": "B2B Order & Inventory Portal"
+      },
+      {
+        "key": "COMPANY_NAME",
+        "label": "Nama Perusahaan",
+        "defaultValue": "PT Sukses Distribusi"
+      },
+      {
+        "key": "BRAND_COLOR",
+        "label": "Kode Warna Utama (Hex)",
+        "defaultValue": "#2563eb"
+      }
+    ]
+  },
+  {
+    "id": "p-auto-po",
+    "title": "Automated Reorder & Purchase Order (Auto-PO) Logic",
+    "speaker": "Mas Satya Pradana",
+    "category": "Supply Chain & Ops",
+    "framework": "Event-Driven Automation",
+    "description": "Instruksi agen AI untuk memantau data stok inventaris dan secara otomatis menyusun draf Purchase Order ketika stok menyentuh titik reorder.",
+    "template": "Anda adalah Supply Chain & Procurement Intelligence Agent.\n\n[INPUT DATA]\nData Inventaris Gudang Waktu Riil:\n{INVENTORY_DATA}\n\nDaftar Vendor & Kontrak Harga:\n{VENDOR_CONTRACTS}\n\n[LOGIKA OTOMASI]\n1. Identifikasi SKU barang yang memiliki Current_Stock <= Reorder_Point.\n2. Hitung jumlah pemesanan optimal: Order_Qty = (Max_Stock - Current_Stock).\n3. Pilih vendor terbaik berdasarkan kriteria: Harga Terendah dengan Lead Time <= {MAX_LEAD_TIME} hari.\n4. Buat draf Purchase Order resmi dengan format:\n   - PO Number: PO-{YYYYMMDD}-{SKU}\n   - Vendor Name & Contact\n   - Itemized Table (SKU, Deskripsi, Qty, Unit Price, Total)\n   - Estimated Delivery Date\n   - Payment Terms (misal: Net 30)\n5. Generate draf ringkasan 3 baris untuk dikirim ke manajer via Telegram/WhatsApp guna persetujuan '1-Click Approve'.",
+    "variables": [
+      {
+        "key": "MAX_LEAD_TIME",
+        "label": "Batas Maksimal Pengiriman (Hari)",
+        "defaultValue": "3"
+      }
+    ]
+  }
+]

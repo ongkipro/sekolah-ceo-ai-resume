@@ -1,0 +1,118 @@
+[
+  {
+    "role": "CEO & Business Owner",
+    "title": "Jalur CEO: Kepemimpinan, Efisiensi 90% & Pengambilan Keputusan Cepat",
+    "icon": "\ud83d\udc51",
+    "color": "blue",
+    "summary": "Fokus pada penghapusan birokrasi, sistem intelijen harian, penghematan anggaran besar, dan dekonstruksi struktur organisasi.",
+    "recommendedModules": [
+      {
+        "name": "Sistem Koran Perusahaan Jam 07.00",
+        "route": "/architecture",
+        "desc": "Ketahui kondisi bisnis setiap pagi tanpa rapat bertele-tele."
+      },
+      {
+        "name": "CEO Decision & Headcount Simulator",
+        "route": "/simulator",
+        "desc": "Hitung potensi efisiensi biaya hingga 90% di tiap divisi."
+      },
+      {
+        "name": "30-60-90 Days Roadmap",
+        "route": "/roadmap",
+        "desc": "Panduan langkah demi langkah memimpin transisi AI di perusahaan."
+      },
+      {
+        "name": "Kamus Istilah Bahasa Awam",
+        "route": "/glossary",
+        "desc": "Pahami istilah AI tanpa perlu belajar koding teknis."
+      }
+    ]
+  },
+  {
+    "role": "CFO & Finance Director",
+    "title": "Jalur CFO: Audit Forensik Keuangan, Deteksi Fraud & Dynamic Pricing",
+    "icon": "\ud83d\udcb5",
+    "color": "emerald",
+    "summary": "Fokus pada otomatisasi rekonsiliasi kas, pelacakan anomali split-bill, penerbitan memo audit .docx resmi, dan optimasi margin harga.",
+    "recommendedModules": [
+      {
+        "name": "Executive Internal Audit Prompt (.docx)",
+        "route": "/prompts",
+        "desc": "Ekstrak anomali transaksi 12 bulan langsung jadi memo Word resmi."
+      },
+      {
+        "name": "Dynamic Pricing & Yield Model",
+        "route": "/prompts",
+        "desc": "Formula surge pricing otomatis untuk maksimalkan margin keuntungan."
+      },
+      {
+        "name": "Kurikulum Day 2 Sesi 2 (Pak Natali)",
+        "route": "/curriculum",
+        "desc": "Demo live audit keuangan 12 bulan dan mekanika LLM matematika."
+      },
+      {
+        "name": "Contract & NDA Red-Flag Scanner",
+        "route": "/prompts",
+        "desc": "Pindai pasal jebakan dalam kontrak vendor sebelum tanda tangan."
+      }
+    ]
+  },
+  {
+    "role": "CMO & Growth Lead",
+    "title": "Jalur CMO: Mesin Akuisisi 0-CAC, Avatar Video & Jingle Viral",
+    "icon": "\ud83d\udce3",
+    "color": "purple",
+    "summary": "Fokus pada produksi massal konten video iklan, audio branding, dan konversi otomatis dari komentar media sosial ke penjualan di DM.",
+    "recommendedModules": [
+      {
+        "name": "The Zero-CAC Growth Funnel",
+        "route": "/architecture",
+        "desc": "Alur Suno AI -> HeyGen -> TikTok -> ManyChat Comment-to-DM."
+      },
+      {
+        "name": "AI Video & Audio Tools (Kling, Suno)",
+        "route": "/tools",
+        "desc": "Produksi iklan produk sinematik tanpa biaya sewa studio."
+      },
+      {
+        "name": "Top-1% Sales Objection Prompt",
+        "route": "/prompts",
+        "desc": "Tanamkan keahlian closing sales terbaik ke chatbot WhatsApp."
+      },
+      {
+        "name": "Kurikulum Day 1 Sesi 1 & 2 (Mas Anjas)",
+        "route": "/curriculum",
+        "desc": "Praktek pembuatan video komersial dan strategi B2B vs Retail."
+      }
+    ]
+  },
+  {
+    "role": "COO & Operations Lead",
+    "title": "Jalur COO: Otomasi Supply Chain, Auto-PO & Eliminasi Jam Kerja Repetitif",
+    "icon": "\u2699\ufe0f",
+    "color": "amber",
+    "summary": "Fokus pada pengawasan stok gudang otomatis, percepatan pengadaan barang ke supplier, dan peningkatan produktivitas staf operasional.",
+    "recommendedModules": [
+      {
+        "name": "Automated Supply Chain & Auto-PO",
+        "route": "/architecture",
+        "desc": "Sistem pembuat Purchase Order otomatis berbasis batas stok."
+      },
+      {
+        "name": "Rapid Prototyping di Lovable.dev",
+        "route": "/tools",
+        "desc": "Buat portal dasbor internal divisi sendiri dalam 15 menit."
+      },
+      {
+        "name": "Job Desk Micro-Task Allocation",
+        "route": "/simulator",
+        "desc": "Pilah tugas operasional yang 100% dialihkan ke agen AI."
+      },
+      {
+        "name": "Executive FAQ Keamanan Data",
+        "route": "/faq",
+        "desc": "Mitigasi risiko kebocoran data operasional perusahaan."
+      }
+    ]
+  }
+]

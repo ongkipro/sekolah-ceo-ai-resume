@@ -1,0 +1,91 @@
+{
+  "phases": [
+    {
+      "phase": 1,
+      "title": "Fase 1: Hari 1\u201330 (Personal CEO Intelligence & Executive Hotkeys)",
+      "subtitle": "Bangun kebiasaan kerja eksekutif berbasis AI & eliminasi friction kognitif.",
+      "items": [
+        {
+          "id": "r1-1",
+          "task": "Install Claude Desktop & Pasang Shortcut Global (Option+Space di Mac / Ctrl+Alt+Space di Windows)",
+          "detail": "Hubungkan folder Google Drive lokal ke Claude Projects agar file kerja tersinkron fisik.",
+          "speaker": "Pak Natali"
+        },
+        {
+          "id": "r1-2",
+          "task": "Terapkan Standar Prompt B.R.I.E.F. di Seluruh Instruksi Harian",
+          "detail": "Wajibkan konteks Background, Role, Instructions, Examples/Constraints, dan Format pada setiap prompt.",
+          "speaker": "Pak Natali"
+        },
+        {
+          "id": "r1-3",
+          "task": "Gunakan Google NotebookLM untuk Mencerna Laporan Audit & Tender Ratusan Halaman",
+          "detail": "Ubah dokumen tebal menjadi Audio Overview podcast untuk didengarkan saat bermobilitas.",
+          "speaker": "Mas Anjas"
+        },
+        {
+          "id": "r1-4",
+          "task": "Dekonstruksi Job Description dari 3 Posisi Paling Gemuk di Kantor",
+          "detail": "Pecah job desk menjadi 15-20 micro-tasks dan petakan mana tugas 100% AI vs 100% Manusia.",
+          "speaker": "Mas Satya"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "title": "Fase 2: Hari 31\u201360 (Operational Intelligence & Growth Flywheels)",
+      "subtitle": "Mulai integrasikan otomasi divisi sales, marketing, dan pelaporan harian.",
+      "items": [
+        {
+          "id": "r2-1",
+          "task": "Bangun Prototipe Internal Dashboard di Lovable.dev",
+          "detail": "Buat dasbor ringkas untuk memantau performa bisnis tanpa menunggu antrean vendor software.",
+          "speaker": "Mas Anjas"
+        },
+        {
+          "id": "r2-2",
+          "task": "Pasang Otomasi Comment-to-DM ManyChat pada Akun Media Sosial",
+          "detail": "Gunakan hook konten viral + Suno sound untuk mengumpulkan leads gratis via DM otomatis.",
+          "speaker": "Mas Anjas"
+        },
+        {
+          "id": "r2-3",
+          "task": "Luncurkan Sistem 'Koran Perusahaan' Versi 1.0",
+          "detail": "Sintesis rekap harian jam 07.00 pagi berisi deals sales, absensi tim, stok gudang, dan posisi kas.",
+          "speaker": "Mas Satya"
+        },
+        {
+          "id": "r2-4",
+          "task": "Setup Folder Pengawasan Dokumen Masuk (Incoming Legal & NDA Ingestion)",
+          "detail": "Otomatisasi pemindaian red-flag pada kontrak dan NDA mitra sebelum masuk ke tim legal.",
+          "speaker": "Pak Natali"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "title": "Fase 3: Hari 61\u201390 (System Integration & Organizational Reshaping)",
+      "subtitle": "Otomasi rantai pasok, kloning sales terbaik, dan restrukturisasi headcount.",
+      "items": [
+        {
+          "id": "r3-1",
+          "task": "Implementasi Auto-PO Purchasing Berbasis Sensor Minimum Stok",
+          "detail": "Hubungkan notifikasi batas stok gudang ke agen N8N untuk generate draft PO vendor secara otomatis.",
+          "speaker": "Mas Satya"
+        },
+        {
+          "id": "r3-2",
+          "task": "Kloning Objeksi Sales Terbaik ke Knowledge Base Chatbot AI",
+          "detail": "Ekstrak skrip closing sales nomor 1 agar CS/Sales bot bisa menangani ribuan prospek secara instan.",
+          "speaker": "Mas Satya"
+        },
+        {
+          "id": "r3-3",
+          "task": "Evaluasi Headcount & Alihkan Staf Repetitif ke Peran Ekspansi Pasar",
+          "detail": "Terapkan Sense of Urgency leadership: alihkan waktu yang dihemat AI ke negosiasi fisik & relasi strategis.",
+          "speaker": "Mas Satya & Pak Natali"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+[
+  {
+    "id": "d1s1",
+    "slug": "day-1-sesi-1",
+    "title": "AI Foundation, Enterprise Shift & Rapid Product / Marketing Engine",
+    "day": 1,
+    "sessionNum": 1,
+    "speaker": {
+      "name": "Mas Anjas Maradita",
+      "role": "CEO Daunnet Media & Co-Founder Pekerja.AI",
+      "company": "Daunnet Media / Rubrik Grafis",
+      "avatar": "\ud83d\udc68\u200d\ud83d\udcbc",
+      "tagline": "Pioneer of Indonesian AI Creative & Enterprise Automation"
+    },
+    "duration": "2h 48m",
+    "youtubeId": "hhYAv9s1cMg",
+    "summary": "Membongkar alasan korporasi global seperti KPMG menggelontorkan ~Rp100 Miliar untuk Claude Enterprise, mitigasi halusinasi AI, rapid prototyping sistem internal tanpa coding via Lovable.dev, riset mendalam dengan Google NotebookLM, serta mesin pertumbuhan organik dengan Suno, HeyGen, dan ManyChat.",
+    "corePillars": [
+      "Enterprise AI Adoption Economics (KPMG & Anthropic)",
+      "Rapid Prototyping (Lovable.dev / Cursor / V0)",
+      "Audio-First Deep Research (Google NotebookLM)",
+      "Zero-Cost Social Arbitrage (Suno + HeyGen + ManyChat)"
+    ],
+    "quote": "Semakin besar perusahaan, semakin susah mengadopsi hal baru. Tapi ketika KPMG yang punya 276.000 karyawan rela bayar 100 Miliar untuk Claude, itu bukti efisiensi kognitif bukan lagi pilihan, tapi keharusan.",
+    "topics": [
+      {
+        "id": "d1s1-1",
+        "title": "Adopsi AI Masif KPMG & Urgensi C-Level",
+        "timestamp": "000:17",
+        "timestampSeconds": 17,
+        "category": "Enterprise",
+        "keyTakeaways": [
+          "KPMG (276.000 karyawan) bermitra langsung dengan Anthropic dengan nilai investasi mencapai ~Rp100 Miliar/tahun.",
+          "Korporasi audit & akuntansi konservatif mengadopsi AI karena efisiensi kognitif bernilai eksponensial.",
+          "Jika korporasi besar beranggotakan ratusan ribu orang bisa bergerak, UKM/mid-market yang lambat akan tergilas."
+        ],
+        "verbatimHighlight": "KPMG ini 276.000 karyawan. Berarti kalau langganan Claude Enterprise 300.000 per orang per bulan, itu hampir 100 Miliar setahun yang mereka keluarkan. KPMG perusahaan sangat konservatif. Kenapa mereka mau? Karena dampaknya terhadap kecepatan analisis luar biasa.",
+        "laymanExplanation": "KPMG (perusahaan audit raksasa) rela bayar Rp100 Miliar setahun buat AI karena karyawan mereka bisa analisa berkas 10x lebih cepat. Kalau perusahaan raksasa saja pakai AI, bisnis kecil yang diam saja pasti ketinggalan."
+      },
+      {
+        "id": "d1s1-2",
+        "title": "Game AI Hallucination: Trust, But Verify",
+        "timestamp": "030:00",
+        "timestampSeconds": 1800,
+        "category": "Mindset",
+        "keyTakeaways": [
+          "LLM secara alami adalah mesin pembuat teks yang sangat meyakinkan (confident bullshitting), bukan basis data absolut.",
+          "CEO wajib menanamkan budaya validasi data dan guardrails sebelum menyerahkan keputusan ke AI."
+        ],
+        "verbatimHighlight": "Semua vonis di layar ini kebalikannya. AI bisa sangat meyakinkan saat berbohong. Sebagai CEO, kita tidak boleh menelan mentah-mentah output AI tanpa proses verifikasi data.",
+        "laymanExplanation": "AI itu seperti staf baru yang pintar bicara tapi kadang 'sok tahu'. Jadi sebagai CEO, kita harus selalu cek bukti datanya dan jangan percaya 100% tanpa verifikasi."
+      },
+      {
+        "id": "d1s1-3",
+        "title": "Root Cause Analysis: Jangan Automasi Proses Rusak",
+        "timestamp": "055:00",
+        "timestampSeconds": 3300,
+        "category": "Management",
+        "keyTakeaways": [
+          "Otomasi pada proses bisnis yang buruk hanya akan mempercepat kebocoran.",
+          "CEO harus membedah bottleneck data dan kebocoran cash flow sebelum menyusun prompt."
+        ],
+        "verbatimHighlight": "Proses mencari penyakit asli ini disebut Good Cause Analysis atau Root Cause Analysis. Perbaiki dulu proses bisnisnya, temukan bottleneck-nya, baru automate. Bukan sebaliknya.",
+        "laymanExplanation": "Jangan menyuruh AI mengotomasikan alur kerja kantor yang dari awal memang kacau. Rapikan dulu alur kerja dan cari kebocoran uangnya, baru pasang AI."
+      },
+      {
+        "id": "d1s1-4",
+        "title": "Live Demo: Bikin Web & Dashboard dalam <15 Menit di Lovable.dev",
+        "timestamp": "090:51",
+        "timestampSeconds": 5451,
+        "category": "Prototyping",
+        "keyTakeaways": [
+          "Pemilik bisnis non-teknis bisa membangun prototipe sistem web dan dasbor internal fungsional dalam hitungan menit.",
+          "Masukkan brand guideline, warna, user journey, dan jawab pertanyaan AI secara spesifik.",
+          "Studi kasus peserta menghemat puluhan juta dari vendor software house dengan membuat portal B2B sendiri."
+        ],
+        "verbatimHighlight": "Kita orang non-teknis tinggal masukin request, brand guideline, dan warna. Let AI do the magic. Peserta tadi cerita sudah minta RFQ software house puluhan juta, tapi iseng coba di Lovable berbekal dokumen ICP dan ABM langsung jadi portal B2B-nya.",
+        "laymanExplanation": "Sekarang orang yang tidak bisa koding sama sekali bisa bikin website atau dasbor bisnis sendiri dalam 15 menit cukup dengan mengetik apa yang diinginkan ke AI."
+      },
+      {
+        "id": "d1s1-5",
+        "title": "Google NotebookLM: Rangkuman Dokumen Ratusan Halaman Jadi Podcast C-Level",
+        "timestamp": "110:00",
+        "timestampSeconds": 6600,
+        "category": "Intelligence",
+        "keyTakeaways": [
+          "Mengunggah dokumen tender tebal, SOP, dan laporan keuangan ke Google NotebookLM.",
+          "Fitur Audio Overviews mengubah teks tebal menjadi dialog podcast 2 orang yang didengarkan saat bermobilitas."
+        ],
+        "verbatimHighlight": "Dokumen tender atau SOP 200 halaman dimasukkan ke NotebookLM, langsung diubah jadi format podcast audio dialog 2 orang. CEO bisa dengerin di mobil saat berangkat kerja dan langsung paham intisari keputusannya.",
+        "laymanExplanation": "Daripada pusing membaca berkas proposal atau laporan 200 halaman, masukkan ke Google NotebookLM dan ubah jadi rekaman suara podcast yang bisa didengarkan sambil nyetir mobil."
+      },
+      {
+        "id": "d1s1-6",
+        "title": "Growth Engine: Suno AI, HeyGen & ManyChat Comment-to-DM Loop",
+        "timestamp": "135:20",
+        "timestampSeconds": 8120,
+        "category": "Growth",
+        "keyTakeaways": [
+          "Suno AI: Membuat jingle musik komersial viral dalam hitungan detik untuk brand recall.",
+          "HeyGen: Kloning avatar video founder untuk produksi puluhan video tanpa sewa studio.",
+          "ManyChat: Otomasi komen-ke-DM di TikTok/IG yang memangkas biaya CAC mendekati Rp0."
+        ],
+        "verbatimHighlight": "Nobody cares about your business; they care about their problems. Kita pakai Suno untuk bikin jingle viral, HeyGen untuk clone video presenter tanpa shooting, dan ManyChat untuk ubah orang yang komen jadi pembeli di DM tanpa bakar duit iklan.",
+        "laymanExplanation": "Bikin lagu viral pakai Suno AI, bikin video presenter tanpa sewa studio pakai HeyGen, lalu saat penonton komen di medsos, ManyChat otomatis jualan ke DM mereka tanpa biaya iklan."
+      },
+      {
+        "id": "d1s1-7",
+        "title": "Hak Cipta, Lisensi Komersial & Privasi Data Enterprise",
+        "timestamp": "145:00",
+        "timestampSeconds": 8700,
+        "category": "Legal",
+        "keyTakeaways": [
+          "Langganan berbayar (Suno Pro, HeyGen Enterprise) memberikan hak komersial penuh atas aset.",
+          "Studi kasus Dexa Medica bermitra dengan Google Cloud untuk menjamin formula obat tidak bocor ke model publik."
+        ],
+        "verbatimHighlight": "Ketika berlangganan akun komersial, kita memiliki hak komersial penuh. Untuk data rahasia seperti Dexa Medica, mereka tanda tangan kontrak private cloud dengan Google agar formulasi obat tidak bocor ke publik.",
+        "laymanExplanation": "Kalau langganan AI resmi, hasil gambarnya boleh dipakai jualan secara hukum. Kalau data perusahaan sangat rahasia (seperti resep obat), pakai jalur private cloud agar tidak bocor."
+      }
+    ],
+    "executiveResume": {
+      "title": "Resume Eksekutif: Transformasi Enterprise, Rapid Web Prototyping & Zero-CAC Growth",
+      "overview": "Sesi pembuka oleh Mas Anjas Maradita membedah bagaimana AI telah bergeser dari sekadar 'alat bantu eksperimen' menjadi sistem operasi wajib bagi korporasi skala global dan UKM lincah.",
+      "keyPillarsExploration": [
+        {
+          "title": "1. Ekonomi Adopsi AI Korporat (Studi Kasus KPMG)",
+          "content": "KPMG dengan 276.000 karyawan mengalokasikan ~Rp100 Miliar/tahun untuk Claude Enterprise. Bagi bisnis jasa profesional dan audit konservatif, investasi ini sangat rasional karena menghemat jutaan jam kognitif dalam menelaah regulasi, audit pembukuan, dan sintesis dokumen klien."
+        },
+        {
+          "title": "2. Mitigasi Risiko AI Hallucination & Root Cause Analysis",
+          "content": "LLM bekerja berdasarkan probabilitas kata (next-token prediction), bukan basis data absolut. CEO harus menerapkan budaya 'Trust, but Verify' dan tidak boleh mengotomasikan alur kerja yang cacat. Temukan bottleneck proses bisnisnya terlebih dahulu sebelum menerapkan otomatisasi."
+        },
+        {
+          "title": "3. Rapid Prototyping Sistem Internal (<15 Menit di Lovable.dev)",
+          "content": "Membangun prototipe portal B2B, dasbor inventaris, atau sistem tracking pesanan kini tidak butuh software house puluhan juta. Pemilik bisnis cukup memasukkan PRD teks sederhana, brand guideline, dan alur interaksi ke Lovable.dev untuk menghasilkan aplikasi web fungsional dalam hitungan menit."
+        },
+        {
+          "title": "4. Zero-Cost Social Arbitrage (Suno + HeyGen + ManyChat)",
+          "content": "Membangun mesin akuisisi pelanggan tanpa bakar anggaran iklan: Suno AI membuat jingle audio komersial viral dalam 30 detik; HeyGen memproduksi puluhan video avatar presenter tanpa sewa studio; ManyChat secara instan mengirimkan link penawaran ke ribuan komentar audiens di Instagram/TikTok."
+        }
+      ],
+      "strategicTakeaway": "Kecepatan eksekusi non-teknis adalah keunggulan kompetitif baru. CEO tidak perlu bisa koding, tetapi wajib mampu menyusun spesifikasi kebutuhan bisnis (PRD) yang jelas untuk diwujudkan oleh AI."
+    },
+    "actionPlan": [
+      {
+        "id": "d1s1-act-1",
+        "task": "Aktivasi Akun AI Berbayar untuk Eksekutif Kunci",
+        "pic": "CEO / General Affairs",
+        "timeframe": "Hari ke 1-2",
+        "output": "Akun Claude Pro / ChatGPT Team aktif untuk Direksi dan Manajer Kunci dengan data privacy terjamin."
+      },
+      {
+        "id": "d1s1-act-2",
+        "task": "Uji Coba Google NotebookLM untuk Dokumen Tebal",
+        "pic": "C-Level / Sekretaris Eksekutif",
+        "timeframe": "Hari ke 3-4",
+        "output": "Mengunggah 1 dokumen SOP/Tender 200+ halaman ke Google NotebookLM dan mendengarkan Audio Overview saat perjalanan kerja."
+      },
+      {
+        "id": "d1s1-act-3",
+        "task": "Buat 1 Prototipe Web Internal di Lovable.dev",
+        "pic": "Product Owner / Founder",
+        "timeframe": "Minggu ke-1",
+        "output": "Prototipe portal dasbor pesanan / inventaris internal yang bisa diklik dan diuji coba tim."
+      },
+      {
+        "id": "d1s1-act-4",
+        "task": "Eksperimen Produksi Jingle & Video Avatar Presenter",
+        "pic": "Marketing Lead",
+        "timeframe": "Minggu ke-2",
+        "output": "1 audio jingle komersial dari Suno AI dan 1 video promosi avatar founder dari HeyGen siap tayang."
+      },
+      {
+        "id": "d1s1-act-5",
+        "task": "Pasang Alur ManyChat Comment-to-DM di Medsos",
+        "pic": "Social Media Lead / CS",
+        "timeframe": "Minggu ke-2",
+        "output": "Otomasi balasan komentar 'MAU' di Instagram/TikTok yang mengirimkan penawaran PDF/voucher ke DM calon pembeli."
+      }
+    ]
+  },
+  {
+    "id": "d1s2",
+    "slug": "day-1-sesi-2",
+    "title": "Technical Workshop, Video Gen AI & Data Structuring",
+    "day": 1,
+    "sessionNum": 2,
+    "speaker": {
+      "name": "Mas Anjas Maradita & Tim Teknis",
+      "role": "AI Technical Specialists",
+      "company": "Pekerja.AI / Daunnet",
+      "avatar": "\u26a1",
+      "tagline": "Practical Workflows, Video Models & System Integration"
+    },
+    "duration": "2h 46m",
+    "youtubeId": "Pw38RtyGUZ0",
+    "summary": "Praktik langsung pembuatan iklan produk sinematik berbasis model video AI (Kling, Seedance, Runway), ekstraksi data web ke format terstruktur (Excel/JSON), strategi konten B2B vs Retail, serta pergeseran dinamika tim engineering dan matriks promosi karyawan di era AI.",
+    "corePillars": [
+      "Commercial AI Video Ads (Kling, Seedance 2.5, Runway)",
+      "Unstructured Web Data to Structured Sheets / DB",
+      "B2B vs B2C High-Trust Content Architecture",
+      "Engineering Team Reshaping & AI Promotion Matrix"
+    ],
+    "quote": "Sekarang senior developer yang pakai AI bisa menggantikan 5 sampai 10 orang. Karyawan yang kita pertahankan dan kita promosi bukan yang lembur paling lama, tapi yang bisa mengorkestrasi AI.",
+    "topics": [
+      {
+        "id": "d1s2-1",
+        "title": "Kling AI, Seedance & Runway: Iklan Video Sinematik Tanpa Shooting",
+        "timestamp": "030:15",
+        "timestampSeconds": 1815,
+        "category": "VideoAI",
+        "keyTakeaways": [
+          "Pergeseran dari AI gambar statis ke video fotorealistik gerak kamera dinamis (pan, zoom, slow motion).",
+          "Membuat aset iklan produk fisik dengan pencahayaan studio tanpa perlu menyewa fotografer profesional."
+        ],
+        "verbatimHighlight": "Kita masukin model video seperti Seedance 2.5 atau Kling. Gerakan kameranya sinematik, produk terlihat nyata dengan lighting studio tanpa perlu alat kamera mahal.",
+        "laymanExplanation": "Dulu bikin video iklan butuh kamera mahal, model, dan sewa studio. Sekarang cukup ketik perintah di AI, video iklannya langsung jadi dengan kualitas sinematik."
+      },
+      {
+        "id": "d1s2-2",
+        "title": "Otomasi Scraping Data & Penyusunan Database Kompetitor",
+        "timestamp": "045:30",
+        "timestampSeconds": 2730,
+        "category": "Automation",
+        "keyTakeaways": [
+          "Mengekstrak ribuan data dari web kompetitor ke format Excel/Google Sheets secara otomatis.",
+          "Mengeliminasi pekerjaan admin entri data manual yang tidak bernilai tambah."
+        ],
+        "verbatimHighlight": "Data scraping yang dulu butuh koding rumit sekarang bisa langsung diubah AI jadi format spreadsheet terstruktur. Pekerjaan admin entry data berhari-hari selesai dalam hitungan detik.",
+        "laymanExplanation": "AI bisa menyalin ribuan daftar harga dan produk kompetitor dari internet lalu merapikannya ke file Excel rapi dalam hitungan detik tanpa perlu staf ngetik manual."
+      },
+      {
+        "id": "d1s2-3",
+        "title": "Strategi Konten B2B vs Retail Commerce",
+        "timestamp": "075:00",
+        "timestampSeconds": 4500,
+        "category": "Growth",
+        "keyTakeaways": [
+          "Retail/B2C: Mengandalkan volume tinggi, emotional hook, sound viral Suno, dan konversi cepat ManyChat.",
+          "B2B/High-Ticket: Mengandalkan authority-building, whitepaper/PDF AI, dan persona kredibel."
+        ],
+        "verbatimHighlight": "Cara jualan B2B beda dengan retail. Kalau B2B butuh trust, whitepaper, dan edukasi mendalam. Retail butuh volume, hook cepat, dan direct checkout.",
+        "laymanExplanation": "Kalau jualan ke perorangan (Retail), pakai konten seru dan promo cepat. Kalau jualan ke perusahaan (B2B), gunakan dokumen edukasi resmi dan bangun rasa percaya."
+      },
+      {
+        "id": "d1s2-4",
+        "title": "Pergeseran Tim Developer: Senior vs Junior di Era AI",
+        "timestamp": "105:00",
+        "timestampSeconds": 6300,
+        "category": "Management",
+        "keyTakeaways": [
+          "Senior engineer dengan AI melipatgandakan output hingga setara 5-10 developer tradisional.",
+          "Karyawan dinilai dan dipromosikan berdasarkan kemampuan mengorkestrasi AI, bukan jam lembur."
+        ],
+        "verbatimHighlight": "Sekarang senior engineer dengan AI output-nya gila-gilaan. Yang junior harus cepat adaptasi jadi sistem integrator. Karyawan yang dipromosikan adalah mereka yang bisa mengorkestrasi AI secara efektif.",
+        "laymanExplanation": "Zaman sekarang karyawan dinilai bukan dari siapa yang pulang paling malam, tapi siapa yang paling pintar menyuruh AI untuk menyelesaikan banyak tugas sekaligus."
+      }
+    ],
+    "executiveResume": {
+      "title": "Resume Eksekutif: Produksi Video AI Sinematik, Data Scraping & Transformasi Tim Engineering",
+      "overview": "Sesi teknis mendalam bersama Mas Anjas dan Tim Teknis membedah implementasi model video generasi terbaru, konversi data web tidak terstruktur menjadi database terorganisir, serta pergeseran dinamika tim engineering di era AI.",
+      "keyPillarsExploration": [
+        {
+          "title": "1. Iklan Video Sinematik Tanpa Alat Shooting (Kling & Seedance 2.5)",
+          "content": "Model video AI modern mampu menggerakkan kamera (pan, tilt, zoom, drone shot) dan mempertahankan konsistensi produk fisik dengan pencahayaan studio tanpa perlu menyewa studio, model, atau tim videografer profesional."
+        },
+        {
+          "title": "2. Otomasi Scraping Data Web ke Spreadsheet Terstruktur",
+          "content": "Mengeliminasi pekerjaan admin input data manual. AI dapat mengekstrak ribuan katalog produk, harga kompetitor, dan ulasan pasar dari berbagai situs web lalu merapikannya ke format Excel/Google Sheets dalam hitungan detik."
+        },
+        {
+          "title": "3. Arsitektur Konten B2B High-Trust vs B2C High-Volume",
+          "content": "Pemisahan strategi: Retail/B2C mengandalkan hook viral, emotional resonance, dan direct checkout ManyChat; sedangkan B2B/High-Ticket mengandalkan authority, riset mendalam, whitepaper terstruktur, dan edukasi formal."
+        },
+        {
+          "title": "4. Restrukturisasi Tim Developer & Matriks Promosi Karyawan",
+          "content": "Satu senior developer yang mengorkestrasi AI mampu menandingi output 5-10 developer konvensional. Karyawan yang dipertahankan dan dipromosikan bukan yang menghabiskan jam lembur terbanyak, melainkan mereka yang paling efektif mengorkestrasi AI."
+        }
+      ],
+      "strategicTakeaway": "Evaluasi tim Anda berdasarkan efisiensi output per jam kerja AI, bukan jam lembur manual. Bebaskan staf dari pekerjaan input data mekanis agar fokus pada negosiasi dan kualitas produk."
+    },
+    "actionPlan": [
+      {
+        "id": "d1s2-act-1",
+        "task": "Produksi 3 Variasi Video Iklan Produk di Kling / Seedance",
+        "pic": "Creative / Video Lead",
+        "timeframe": "Minggu ke-1",
+        "output": "3 aset video iklan produk format vertikal (9:16) dengan pencahayaan studio tanpa sesi shooting fisik."
+      },
+      {
+        "id": "d1s2-act-2",
+        "task": "Automasi Monitoring Harga 5 Kompetitor Utama",
+        "pic": "Market Research / Admin Ops",
+        "timeframe": "Minggu ke-2",
+        "output": "Google Sheets yang otomatis ter-update dengan data harga dan promosi kompetitor."
+      },
+      {
+        "id": "d1s2-act-3",
+        "task": "Penyusunan Whitepaper Edukasi untuk Lead B2B",
+        "pic": "Content Strategist / Sales Lead",
+        "timeframe": "Minggu ke-2",
+        "output": "Dokumen PDF panduan solusi industri yang dibagikan ke calon klien korporat."
+      },
+      {
+        "id": "d1s2-act-4",
+        "task": "Pembaruan Standar KPI & Penilaian Karyawan Berbasis AI",
+        "pic": "HRD / COO",
+        "timeframe": "Minggu ke-3",
+        "output": "Matriks evaluasi kinerja baru yang mengukur adopsi AI dan efisiensi waktu penyelesaian tugas."
+      }
+    ]
+  },
+  {
+    "id": "d2s1",
+    "slug": "day-2-sesi-1",
+    "title": "Business Operations, Headcount Optimization & The AI-Driven Organization",
+    "day": 2,
+    "sessionNum": 1,
+    "speaker": {
+      "name": "Mas Satya Pradana",
+      "role": "Founder High Group & Ex-CFO Strategist",
+      "company": "High Group / Pekerja.AI",
+      "avatar": "\ud83d\udcc8",
+      "tagline": "Financial Engineering, Operational Restructuring & Solo Enterprise"
+    },
+    "duration": "2h 55m",
+    "youtubeId": "uB4NCCuDtx8",
+    "summary": "Strategi memangkas biaya operasional repetitif hingga 90%, mengikis 'Parkinson Law' dan budaya pura-pura kerja, pembuatan intelligence digest harian ('Koran Perusahaan'), sistem Auto-PO Purchasing otomatis, kloning keahlian top-performer sales ke AI, serta kepemimpinan transformasional berbasis Sense of Urgency.",
+    "corePillars": [
+      "90% Operational Cost Reduction & Anti-Fake Work",
+      "Daily Executive Digest: Koran Perusahaan",
+      "Auto-PO Purchasing & Hardware Sensor Triggers",
+      "Cloning Top 1% Sales Performer Knowledge"
+    ],
+    "quote": "Tiap pagi saya baca 'Koran Perusahaan' saya jam 07.00. Ada apa kemarin di cabang, omset berapa, karyawan mana yang telat, supplier mana yang bermasalah. Saya gak perlu lagi meeting pagi bertele-tele.",
+    "topics": [
+      {
+        "id": "d2s1-1",
+        "title": "Mengikis 'Pura-Pura Kerja' & Paradigma 90% Cost Reduction",
+        "timestamp": "027:53",
+        "timestampSeconds": 1673,
+        "category": "Operations",
+        "keyTakeaways": [
+          "Riset 10.000 pekerja eksekutif di Inggris membuktikan karyawan sering hanya kerja efektif 1-2 jam dan 6-7 jam sisanya pura-pura kerja.",
+          "Dengan AI, tugas 8 jam selesai dalam 15 menit. CEO bisa melipatgandakan output 10-20x atau memangkas biaya 90%."
+        ],
+        "verbatimHighlight": "Riset di Inggris terhadap 10.000 tenaga kerja: mereka kerja efektif cuma 1 jam, 7 jam sisanya pura-pura kerja. Dengan AI, desain yang tadinya seharian kelar 15 menit. Biaya operasional repetitif bisa kita turunkan hingga 90%.",
+        "laymanExplanation": "Banyak karyawan kantor sebenarnya cuma kerja beneran 1-2 jam sehari, sisanya pura-pura sibuk. Dengan AI, tugas harian selesai cepat sehingga biaya operasional bisa dihemat sampai 90%."
+      },
+      {
+        "id": "d2s1-2",
+        "title": "Sistem Koran Perusahaan: Executive Briefing Tiap Jam 07.00 Pagi",
+        "timestamp": "120:00",
+        "timestampSeconds": 7200,
+        "category": "Intelligence",
+        "keyTakeaways": [
+          "Setiap pagi jam 07.00, CEO membaca ringkasan 1 halaman berisi: sales pipeline, absensi karyawan, isu supplier, dan posisi kas.",
+          "Tidak perlu rapat koordinasi pagi bertele-tele atau membuka 10 dasbor berbeda."
+        ],
+        "verbatimHighlight": "Tiap pagi saya baca koran perusahaan saya. Ada kejadian apa kemarin? Omset berapa, supplier apa, ada deal apa? Dirangkum AI tiap pagi jam 07.00, CEO tinggal ambil keputusan.",
+        "laymanExplanation": "Tiap jam 07.00 pagi, AI mengirim ringkasan 1 halaman ke HP bos: omset kemarin berapa, siapa yang telat, stok apa yang mau habis. Bos tidak perlu rapat pagi yang buang waktu."
+      },
+      {
+        "id": "d2s1-3",
+        "title": "Otomasi Purchasing: Auto-PO Berbasis Batas Minimum Stok",
+        "timestamp": "133:44",
+        "timestampSeconds": 8024,
+        "category": "Operations",
+        "keyTakeaways": [
+          "Sensor gudang mendeteksi stok menipis -> AI otomatis menyusun Purchase Order (PO) ke vendor terbaik.",
+          "Manajer pembelian cukup melakukan one-click approval tanpa membuat draft manual dari nol."
+        ],
+        "verbatimHighlight": "Ketika stok minim di gudang, AI langsung buat PO ke vendor rekanan. Manajer purchasing tinggal klik approve. Ini menghemat ratusan jam kerja dan mencegah stok kosong.",
+        "laymanExplanation": "Saat stok barang di gudang tinggal sedikit, robot AI otomatis bikin surat pesanan ke supplier termurah. Manajer tinggal klik tombol 'Setuju' di HP."
+      },
+      {
+        "id": "d2s1-4",
+        "title": "Kloning Sales Terbaik: Bot AI Standar Kelas Dunia",
+        "timestamp": "082:25",
+        "timestampSeconds": 4945,
+        "category": "Sales",
+        "keyTakeaways": [
+          "Mengekstrak skrip percakapan dan teknik objection handling dari top-performer sales nomor 1.",
+          "Bot AI mampu menangani ribuan prospek dengan kualitas closing konsisten tanpa tergantung mood manusia."
+        ],
+        "verbatimHighlight": "Sales terbaik di kantor kita ekstrak pemikirannya secara detail. Sehingga bot yang jawab punya standar sales nomor satu dunia: kalau pelanggan bilang mahal jawabnya gimana, kalau bilang nanti dulu jawabnya apa.",
+        "laymanExplanation": "Rekam cara ngomong sales terbaik Anda saat closing, lalu ajarkan ke robot AI. Hasilnya, ribuan chat calon pembeli dilayani dengan kemampuan sales nomor 1."
+      },
+      {
+        "id": "d2s1-5",
+        "title": "Kepemimpinan Transformasional: Sense of Urgency (Studi Kasus Ignatius Jonan)",
+        "timestamp": "069:16",
+        "timestampSeconds": 4156,
+        "category": "Leadership",
+        "keyTakeaways": [
+          "Studi kasus Ignatius Jonan membalikkan kerugian PT KAI menjadi untung dalam 1 tahun dengan framework Sense of Urgency.",
+          "Migrasi organisasi ke AI butuh kepemimpinan tegas (authoritative) karena resistensi karyawan terhadap perubahan sangat tinggi."
+        ],
+        "verbatimHighlight": "Kenapa puluhan tahun KAI rugi lalu Pak Jonan masuk langsung untung di tahun pertama? Karena framework Sense of Urgency. Mau bangun culture AI, leader harus tegas menentukan arah.",
+        "laymanExplanation": "Seperti Pak Jonan membenahi kereta api, memimpin transisi ke AI butuh ketegasan. Pemimpin harus menetapkan aturan jelas agar semua tim mau berubah."
+      },
+      {
+        "id": "d2s1-6",
+        "title": "Solo Enterprise & Global Arbitrage (Raja Domba USD)",
+        "timestamp": "108:50",
+        "timestampSeconds": 6530,
+        "category": "Strategy",
+        "keyTakeaways": [
+          "Membangun bisnis dengan tim sangat ramping yang menjual jasa/produk ke pasar global dalam mata uang Dolar (USD).",
+          "Memanfaatkan arbitrase biaya operasional rendah di Indonesia dengan leverage AI."
+        ],
+        "verbatimHighlight": "Bikin website 'Raja Domba Nusantara', jual dalam bahasa Inggris ke luar negeri dapatnya Dolar. Desain, video, laporan, semua dibuat AI. Arbitrase biaya lokal vs pendapatan USD.",
+        "laymanExplanation": "Peluang bisnis zaman now: tim kecil di Indonesia tapi menjual jasa/produk ke luar negeri dengan harga Dolar (USD) karena semua pekerjaan dibantu AI."
+      }
+    ],
+    "executiveResume": {
+      "title": "Resume Eksekutif: Pemangkasan 90% Biaya, Koran Perusahaan, Auto-PO & Kepemimpinan Jonan",
+      "overview": "Mas Satya Pradana (Founder High Group & Ex-CFO) membagikan cetak biru operasional tanpa ampun untuk memangkas kebocoran biaya hingga 90%, mengikis budaya pura-pura kerja, dan membangun sistem solo-enterprise bernilai tinggi.",
+      "keyPillarsExploration": [
+        {
+          "title": "1. Mengikis Budaya 'Pura-Pura Kerja' (Parkinson's Law)",
+          "content": "Riset membuktikan banyak staf hanya bekerja efektif 1-2 jam dan 6-7 jam sisanya dihabiskan untuk tampak sibuk. Dengan AI, beban kognitif repetitif diselesaikan dalam 15 menit, membuka peluang efisiensi biaya operasional hingga 90% atau peningkatan output 10x."
+        },
+        {
+          "title": "2. Sistem 'Koran Perusahaan' (Briefing Harian Jam 07.00)",
+          "content": "Sintesis otomatis seluruh divisi (sales harian, absensi fingerprint, tiket komplain, stok gudang, posisi kas) menjadi 1 halaman ringkasan yang dikirim ke Telegram CEO tepat jam 07.00 pagi. Menghilangkan kebutuhan meeting koordinasi pagi yang membuang waktu."
+        },
+        {
+          "title": "3. Otomasi Purchasing (Auto-PO Berbasis Sensor Stok)",
+          "content": "Ketika inventaris gudang menyentuh batas minimum, sistem AI secara otomatis menghitung kuantitas pesanan optimal dan menyusun draf Purchase Order ke vendor rekanan terbaik. Manajer pembelian cukup melakukan one-click approval di ponsel."
+        },
+        {
+          "title": "4. Kloning Pengetahuan Top-1% Sales Performer",
+          "content": "Mengekstrak teknik komunikasi, psikologi closing, dan penanganan keberatan (objection handling) dari sales terbaik di kantor, lalu menanamkannya ke chatbot AI agar ribuan prospek dilayani dengan standar closing juara dunia."
+        },
+        {
+          "title": "5. Kepemimpinan Transformasional: Sense of Urgency (Jonan)",
+          "content": "Mengadopsi kepemimpinan tegas ala Ignatius Jonan saat mentransformasi PT KAI. Migrasi ke organisasi AI membutuhkan komitmen otoritatif dari pimpinan tertinggi agar resistensi budaya lama dapat dipatahkan."
+        }
+      ],
+      "strategicTakeaway": "Hilangkan birokrasi berlebih dan meeting koordinasi panjang. Gantilah dengan intelligence digest harian dan keputusan 1-klik yang didukung data riil."
+    },
+    "actionPlan": [
+      {
+        "id": "d2s1-act-1",
+        "task": "Rancang Pipeline Telegram 'Koran Perusahaan' Jam 07.00 Pagi",
+        "pic": "Chief of Staff / Tech Lead",
+        "timeframe": "Minggu ke-1",
+        "output": "Format ringkasan 1 halaman di Telegram CEO berisi omset kemarin, absensi, stok kritis, dan posisi kas."
+      },
+      {
+        "id": "d2s1-act-2",
+        "task": "Implementasikan Logika Auto-PO pada 10 SKU Terlaris",
+        "pic": "Head of Supply Chain / Purchasing",
+        "timeframe": "Minggu ke-2",
+        "output": "Sistem otomatis pembuat draf PO ke vendor saat stok gudang menyentuh safety stock."
+      },
+      {
+        "id": "d2s1-act-3",
+        "task": "Ekstraksi Skrip Closing Sales Terbaik ke Chatbot AI",
+        "pic": "Head of Sales & Marketing",
+        "timeframe": "Minggu ke-2",
+        "output": "Master Objection Handling Prompt terpasang di bot WhatsApp / CRM customer service."
+      },
+      {
+        "id": "d2s1-act-4",
+        "task": "Audit Divisi Operasional untuk Eliminasi Meeting Pagi",
+        "pic": "CEO / COO",
+        "timeframe": "Minggu ke-3",
+        "output": "Penghapusan rapat koordinasi manual pagi digantikan dengan laporan digital asynchronous."
+      }
+    ]
+  },
+  {
+    "id": "d2s2",
+    "slug": "day-2-sesi-2",
+    "title": "LLM Mechanics, Desktop Command Center & C-Suite Executive Decision Systems",
+    "day": 2,
+    "sessionNum": 2,
+    "speaker": {
+      "name": "Pak Natali Ardianto",
+      "role": "Co-Founder Tiket.com & CEO Lifepack",
+      "company": "natali.id / Lifepack / Tiket.com",
+      "avatar": "\ud83d\udcbb",
+      "tagline": "20+ Years Serial Tech Entrepreneur & AI Power User"
+    },
+    "duration": "3h 48m",
+    "youtubeId": "nr_gxbSrCPs",
+    "summary": "Membedah mekanika matematika LLM (kenapa persona injection bekerja), membangun Desktop AI Command Center terintegrasi folder lokal via Claude Desktop + Hotkey Option+Space, framework prompt B.R.I.E.F., demo live audit keuangan menghasilkan memo .docx resmi dan red-flag fraud, dynamic pricing, screening 14 CV <10 menit, serta CEO Yes/No Decision Framework.",
+    "corePillars": [
+      "Mathematical Nature of LLMs & Persona Injection",
+      "Frictionless Desktop Command Center (Option+Space)",
+      "Automated Internal Audit & .docx Memo Generation",
+      "CEO Yes/No Micro-Task Allocation Matrix"
+    ],
+    "quote": "Pola kerja LLM itu matematika probabilitas. Kalau kita awali dengan persona 'Senior Finance Manager', kita mengunci kata-kata berikutnya agar logis, akurat, dan profesional.",
+    "topics": [
+      {
+        "id": "d2s2-1",
+        "title": "Matematika LLM & Mengapa Persona Injection Bekerja",
+        "timestamp": "020:00",
+        "timestampSeconds": 1200,
+        "category": "Technical",
+        "keyTakeaways": [
+          "LLM adalah kalkulator probabilitas matematika pemilih kata berikutnya (next token prediction).",
+          "Prompt 'Anda adalah Senior Finance Manager' secara matematis mengunci ruang distribusi kata agar AI hanya memilih terminologi dan logika audit standar."
+        ],
+        "verbatimHighlight": "Kenapa prompt harus diawali 'Anda adalah senior finance accounting manager'? Karena pola kerja LLM itu matematika. Kata berikutnya muncul berdasarkan probabilitas kata sebelumnya.",
+        "laymanExplanation": "AI bekerja seperti kalkulator kata. Kalau kita awali dengan kalimat 'Kamu adalah Akuntan Ahli', AI otomatis memilih kata-kata dan perhitungan yang sangat teliti."
+      },
+      {
+        "id": "d2s2-2",
+        "title": "Desktop AI Command Center: Claude Desktop + Local Folder Sync + Hotkey",
+        "timestamp": "040:00",
+        "timestampSeconds": 2400,
+        "category": "Productivity",
+        "keyTakeaways": [
+          "Google Drive / local files disinkronkan fisik di komputer -> dihubungkan ke Claude Desktop via Projects.",
+          "Gunakan shortcut global (Option+Space di Mac / Ctrl+Alt+Space di Windows) untuk memanggil AI instan tanpa kehilangan fokus kerja."
+        ],
+        "verbatimHighlight": "Saya pasang Google Drive sinkron fisik di folder lokal. Kapan pun butuh, tinggal Option+Space di Mac, langsung tanya ke AI. Cepat sekali tanpa perlu buka tab browser dan ganti fokus.",
+        "laymanExplanation": "Pasang tombol pintas di keyboard laptop (Option+Space). Kapan pun butuh bantuan, AI langsung muncul di layar tanpa perlu buka browser dan login ulang."
+      },
+      {
+        "id": "d2s2-3",
+        "title": "Framework Prompting Eksekutif: B.R.I.E.F.",
+        "timestamp": "063:50",
+        "timestampSeconds": 3830,
+        "category": "Prompting",
+        "keyTakeaways": [
+          "Background: Konteks situasi bisnis.",
+          "Role: Peran spesifik (Forensic Auditor, Legal Counsel).",
+          "Instructions: Langkah terukur berurutan.",
+          "Examples/Constraints: Batasan yang tidak boleh dilanggar.",
+          "Format: Output spesifik (Markdown, .docx, JSON)."
+        ],
+        "verbatimHighlight": "Framework B.R.I.E.F.: Background, Role, Instructions, Examples, Format. Ini standar prompt yang wajib dipakai agar output AI selalu terstruktur dan siap eksekusi.",
+        "laymanExplanation": "Gunakan rumus B.R.I.E.F. saat memberi perintah ke AI: jelaskan latarnya, beri dia peran, kasih instruksi jelas, beri contoh, dan tentukan bentuk laporannya."
+      },
+      {
+        "id": "d2s2-4",
+        "title": "Live Demo: Audit Internal 12 Bulan Laporan Keuangan Menghasilkan Memo .docx",
+        "timestamp": "080:00",
+        "timestampSeconds": 4800,
+        "category": "Audit",
+        "keyTakeaways": [
+          "Input data laporan pengeluaran 12 bulan -> minta AI mencari transaksi anomali dan modus fraud paling lama bertahan.",
+          "Claude langsung menyusun memo audit resmi Microsoft Word (.docx) lengkap dengan nomor surat, tabel temuan, dan rekomendasi tanda tangan."
+        ],
+        "verbatimHighlight": "Kalau saya klik, file .docx langsung dibuka. Langsung dibuatkan Memo Audit Internal pemeriksaan pengeluaran semester 1, lengkap dengan nomor surat dan tabel temuan anomali siap tanda tangan direksi.",
+        "laymanExplanation": "Masukkan laporan keuangan 12 bulan ke AI, dalam 2 menit AI langsung membuat dokumen Word resmi (.docx) lengkap dengan tanda tangan dan daftar kecurangan pengeluaran."
+      },
+      {
+        "id": "d2s2-5",
+        "title": "Algoritma Dynamic Pricing & Yield Management",
+        "timestamp": "180:00",
+        "timestampSeconds": 10800,
+        "category": "Strategy",
+        "keyTakeaways": [
+          "Membuat formula dynamic pricing (surge, last-minute discount, customer tiering) untuk memaksimalkan yield margin bisnis properti/jasa."
+        ],
+        "verbatimHighlight": "Dari formula dynamic pricing ini, kita bisa buat sistem penetapan harga dinamis seperti last-minute booking atau surge pricing untuk memaksimalkan margin keuntungan.",
+        "laymanExplanation": "Otomatis naikkan harga saat pesanan lagi ramai dan beri diskon saat sepi (seperti tarif ojek online saat hujan) agar keuntungan bisnis maksimal."
+      },
+      {
+        "id": "d2s2-6",
+        "title": "Screening 14 CV Pelamar Kerja dalam <10 Menit",
+        "timestamp": "068:13",
+        "timestampSeconds": 4093,
+        "category": "HR",
+        "keyTakeaways": [
+          "Hard filter umur, skill matrix, dan pengalaman langsung dievaluasi AI dari file PDF.",
+          "Memangkas waktu HR dari 3 hari menjadi 10 menit dengan scoring objektif."
+        ],
+        "verbatimHighlight": "Menyortir 14 CV dengan hard filter usia dan keahlian spesifik hanya memakan waktu tidak sampai 10 menit, langsung muncul ranking kandidat terbaik.",
+        "laymanExplanation": "Menyeleksi puluhan berkas lamaran kerja (CV) yang biasanya butuh 3 hari, sekarang selesai dalam 10 menit dengan penilaian yang sangat adil dan akurat."
+      },
+      {
+        "id": "d2s2-7",
+        "title": "CEO Yes/No Decision Framework: Matriks Alokasi AI vs Manusia",
+        "timestamp": "200:00",
+        "timestampSeconds": 12000,
+        "category": "Leadership",
+        "keyTakeaways": [
+          "Dekonstruksi setiap job desk menjadi micro-tasks.",
+          "Tugas repetitif/kognitif standar -> 100% serahkan ke AI.",
+          "Tugas relasi, empati, negosiasi tatap muka, dan keputusan etis/legal final -> Wajib manusia."
+        ],
+        "verbatimHighlight": "Kata kuncinya: breakdown semua job desk jadi micro-tasks, lalu pilah mana yang ke AI dan mana yang tetap dipegang manusia. Yang dipegang manusia: empati, relasi fisik, negosiasi, dan keputusan final.",
+        "laymanExplanation": "Tugas ketik-mengetik dan rekap data serahkan 100% ke AI. Tugas manusia tinggal yang butuh tatap muka, empati, negosiasi, dan keputusan penting."
+      }
+    ],
+    "executiveResume": {
+      "title": "Resume Eksekutif: Matematika LLM, Desktop Command Center, Audit .docx & CEO Yes/No Matrix",
+      "overview": "Pak Natali Ardianto (Co-Founder Tiket.com & CEO Lifepack) mengupas tuntas arsitektur logika LLM, pembuatan Desktop AI Command Center berbasis hotkey, audit keuangan forensik otomatis ke format Word .docx, algoritma dynamic pricing, dan dekonstruksi job desk mikroskopis.",
+      "keyPillarsExploration": [
+        {
+          "title": "1. Matematika LLM & Mengapa Persona Injection Bekerja",
+          "content": "LLM adalah kalkulator probabilitas matematika pemilih kata berikutnya. Membuka instruksi dengan 'Anda adalah Senior Forensic Auditor' mengunci ruang distribusi kata agar model hanya memilih terminologi audit, logika akuntansi standar, dan struktur dokumen resmi."
+        },
+        {
+          "title": "2. Frictionless Desktop Command Center (Option+Space)",
+          "content": "Menghilangkan hambatan mental: Google Drive disinkronkan fisik di komputer lalu dihubungkan ke Claude Desktop via Projects. Shortcut global Option+Space memanggil AI seketika di atas aplikasi apa pun tanpa perlu login ke browser."
+        },
+        {
+          "title": "3. Audit Forensik Keuangan 12 Bulan Menghasilkan Memo .docx Resmi",
+          "content": "Memasukkan data transaksi mentah dan meminta AI mencari pola anomali pengeluaran, vendor ganda, serta modus fraud terlama. Claude secara langsung menghasilkan draf Memo Audit Internal Microsoft Word (.docx) lengkap dengan nomor surat dan tabel temuan."
+        },
+        {
+          "title": "4. Dynamic Pricing & Screening 14 CV dalam <10 Menit",
+          "content": "Menerapkan formula penetapan harga dinamis (surge, last-minute discount, occupancy trigger) untuk memaksimalkan yield margin, serta menyortir puluhan berkas pelamar kerja secara objektif dalam hitungan menit."
+        },
+        {
+          "title": "5. CEO Yes/No Decision Framework (Alokasi AI vs Manusia)",
+          "content": "Mendekonstruksi setiap job description menjadi 15-20 micro-tasks: serahkan 100% tugas kognitif repetitif ke AI, dan simpan tugas empati, relasi langsung, negosiasi fisik, serta keputusan etis/legal di tangan manusia."
+        }
+      ],
+      "strategicTakeaway": "Jadikan AI sebagai partner berpikir harian di desktop Anda. Mulailah setiap delegasi dengan persona ahli, instruksi bertahap B.R.I.E.F., dan batasan yang jelas."
+    },
+    "actionPlan": [
+      {
+        "id": "d2s2-act-1",
+        "task": "Setup Claude Desktop + Google Drive Fisik + Option+Space",
+        "pic": "CEO / Seluruh Direksi",
+        "timeframe": "Hari ke-1",
+        "output": "Claude Desktop terpasang dengan sinkronisasi folder kerja lokal dan shortcut keyboard aktif."
+      },
+      {
+        "id": "d2s2-act-2",
+        "task": "Jalankan Audit Keuangan 12 Bulan Terakhir Menggunakan Prompt B.R.I.E.F.",
+        "pic": "Finance Manager / CFO",
+        "timeframe": "Minggu ke-1",
+        "output": "Dokumen Memo Internal Audit Word (.docx) berisi daftar temuan anomali transaksi semesteran."
+      },
+      {
+        "id": "d2s2-act-3",
+        "task": "Terapkan Formula Dynamic Pricing pada Produk / Jasa Utama",
+        "pic": "Revenue Strategist / Sales Lead",
+        "timeframe": "Minggu ke-2",
+        "output": "Aturan penyesuaian harga dinamis berdasarkan okupansi dan waktu pemesanan."
+      },
+      {
+        "id": "d2s2-act-4",
+        "task": "Dekonstruksi 3 Posisi Staf Tergemuk Menggunakan CEO Yes/No Matrix",
+        "pic": "HRD / Organization Design Lead",
+        "timeframe": "Minggu ke-3",
+        "output": "Pemetaan micro-tasks 100% AI vs Hybrid vs 100% Manusia untuk divisi Finance, Marketing, & CS."
+      },
+      {
+        "id": "d2s2-act-5",
+        "task": "Automasi Screening Berkas Rekrutmen & CV Pelamar",
+        "pic": "HR Recruiter",
+        "timeframe": "Minggu ke-3",
+        "output": "Penyortiran otomatis CV kandidat dengan scoring matriks keahlian dalam <10 menit."
+      }
+    ]
+  }
+]
