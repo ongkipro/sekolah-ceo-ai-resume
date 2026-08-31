@@ -35,7 +35,7 @@ const subNavItems = sessionSlugs.map(s => ({
     <SectionSubNav
       currentPath={`/cheatsheet/${slug}`}
       hubHref="/cheatsheet"
-      hubLabel="⚡ Semua Contekkan"
+      hubLabel="Semua Contekkan"
       items={subNavItems}
     />
     <SingleCheatsheetView client:load sessionId={sheet.sessionId} />

@@ -35,7 +35,7 @@ const subNavItems = sessionSlugs.map(s => ({
     <SectionSubNav
       currentPath={`/curriculum/${slug}`}
       hubHref="/curriculum"
-      hubLabel="📂 Semua Sesi"
+      hubLabel="Semua Sesi"
       items={subNavItems}
     />
     <SingleSessionView client:load sessionId={session.id} />

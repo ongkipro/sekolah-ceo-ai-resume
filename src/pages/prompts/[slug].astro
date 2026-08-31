@@ -36,7 +36,7 @@ const subNavItems = promptSlugs.map(p => ({
     <SectionSubNav
       currentPath={`/prompts/${slug}`}
       hubHref="/prompts"
-      hubLabel="📄 Semua Prompt"
+      hubLabel="Semua Prompt"
       items={subNavItems}
     />
     <SinglePromptView client:load promptId={prompt.id} />

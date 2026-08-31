@@ -37,7 +37,7 @@ const subNavItems = simulatorSlugs.map(s => ({
     <SectionSubNav
       currentPath={`/simulator/${slug}`}
       hubHref="/simulator"
-      hubLabel="🧮 Semua Posisi"
+      hubLabel="Semua Posisi"
       items={subNavItems}
     />
     <SingleSimulatorView client:load simulatorId={sim.id} />
