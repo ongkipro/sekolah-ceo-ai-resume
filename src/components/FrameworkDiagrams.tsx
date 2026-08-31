@@ -76,7 +76,7 @@ export default function FrameworkDiagrams() {
   const currentDiagram = DIAGRAMS.find((d) => d.id === selectedDiagramId) || DIAGRAMS[0];
 
   return (
-    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sm:p-6 shadow-sm space-y-6">
+    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 p-5 sm:p-7 shadow-sm space-y-6">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
         <div>
@@ -84,31 +84,32 @@ export default function FrameworkDiagrams() {
             <span className="p-1.5 rounded-lg bg-indigo-100 dark:bg-indigo-900 text-indigo-600 dark:text-indigo-300">
               <Layers className="w-4 h-4" />
             </span>
-            <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+            <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-mono">
               Visual Architecture Blueprint
             </span>
           </div>
-          <h3 className="text-xl font-bold text-slate-900 dark:text-white mt-1">
+          <h3 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1">
             4 Alur Kerja Arsitektur Bisnis AI
           </h3>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-0.5 leading-relaxed">
             Peta visual bagaimana menghubungkan model AI, sensor hardware, dan alur kerja operasional perusahaan.
           </p>
         </div>
 
-        {/* Selector Tabs (Mobile Scroll) */}
-        <div className="flex overflow-x-auto no-scrollbar gap-1.5 pb-1">
+        {/* Selector Tabs (Clean Grid on Mobile) */}
+        <div className="grid grid-cols-2 md:flex md:items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/60 shrink-0">
           {DIAGRAMS.map((d) => (
             <button
               key={d.id}
+              type="button"
               onClick={() => setSelectedDiagramId(d.id)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shrink-0 ${
+              className={`px-3 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all text-center cursor-pointer ${
                 selectedDiagramId === d.id
-                  ? 'bg-indigo-600 text-white shadow-sm'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
+                  ? 'bg-indigo-600 text-white shadow-sm font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              {d.title.split('(')[0]}
+              {d.title.split('(')[0].trim().replace('The ', '')}
             </button>
           ))}
         </div>
@@ -117,10 +118,10 @@ export default function FrameworkDiagrams() {
       {/* Selected Diagram Info */}
       <div className="space-y-1">
         <div className="flex items-center gap-2 text-xs">
-          <span className="font-bold text-indigo-600 dark:text-indigo-400">{currentDiagram.title}</span>
+          <span className="font-bold text-indigo-600 dark:text-indigo-400 font-mono uppercase tracking-wider">{currentDiagram.title}</span>
           <span className="text-slate-400">• Arsitek: {currentDiagram.speaker}</span>
         </div>
-        <p className="text-xs text-slate-600 dark:text-slate-300">{currentDiagram.subtitle}</p>
+        <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-medium">{currentDiagram.subtitle}</p>
       </div>
 
       {/* Visual Nodes Flow (1 col on mobile, 5 cols on desktop) */}
@@ -128,16 +129,16 @@ export default function FrameworkDiagrams() {
         {currentDiagram.nodes.map((node, idx) => (
           <div
             key={idx}
-            className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-3 relative group hover:border-indigo-500/50 transition-colors"
+            className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-3 relative group hover:border-indigo-500/50 transition-all shadow-sm"
           >
             <div>
               <div className="flex items-center justify-between text-xs mb-2">
-                <span className="w-6 h-6 rounded-full bg-indigo-100 dark:bg-indigo-900/80 text-indigo-700 dark:text-indigo-300 font-bold text-xs flex items-center justify-center">
+                <span className="w-6 h-6 rounded-lg bg-indigo-100 dark:bg-indigo-900/80 text-indigo-700 dark:text-indigo-300 font-bold text-xs flex items-center justify-center font-mono">
                   {node.step}
                 </span>
                 <span className="text-xl">{node.icon}</span>
               </div>
-              <h5 className="font-bold text-sm text-slate-900 dark:text-white line-clamp-2">
+              <h5 className="font-bold text-sm text-slate-900 dark:text-white leading-snug">
                 {node.title}
               </h5>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">
@@ -145,8 +146,8 @@ export default function FrameworkDiagrams() {
               </p>
             </div>
 
-            <div className="pt-2 border-t border-slate-200/60 dark:border-slate-700/60">
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 font-semibold block truncate text-center">
+            <div className="pt-2.5 border-t border-slate-200/60 dark:border-slate-700/60">
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-indigo-600 dark:text-indigo-400 font-semibold block truncate text-center">
                 {node.tool}
               </span>
             </div>
