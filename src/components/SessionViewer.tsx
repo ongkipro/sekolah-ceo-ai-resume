@@ -197,30 +197,33 @@ export default function SessionViewer() {
 
   return (
     <div className="w-full space-y-8">
-      {/* 1. Session Switcher Tabs */}
-      <div className="flex overflow-x-auto no-scrollbar gap-2 p-1.5 bg-slate-100 dark:bg-slate-900/80 rounded-2xl border border-slate-200 dark:border-slate-800">
+      {/* 1. Session Switcher Tabs (2x2 Grid on Mobile, 4 Columns on Desktop) */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 p-1.5 bg-slate-100 dark:bg-slate-900/80 rounded-2xl border border-slate-200 dark:border-slate-800">
         {sessionsData.map((session) => {
           const isActive = session.id === activeSessionId;
           return (
             <button
               key={session.id}
+              type="button"
               onClick={() => {
                 setActiveSessionId(session.id);
                 setCurrentTimestampSeconds(0);
                 setActiveTopicId(null);
               }}
-              className={`min-w-[220px] flex-1 py-3 px-4 rounded-xl text-left transition-all shrink-0 cursor-pointer ${
+              className={`p-2.5 sm:p-3.5 rounded-xl text-left transition-all cursor-pointer flex flex-col justify-between ${
                 isActive
                   ? 'bg-white dark:bg-slate-800 shadow-md border border-slate-200/80 dark:border-slate-700 text-slate-900 dark:text-white ring-2 ring-blue-500/40'
-                  : 'hover:bg-slate-200/60 dark:hover:bg-slate-800/40 text-slate-600 dark:text-slate-400'
+                  : 'hover:bg-slate-200/60 dark:hover:bg-slate-800/40 text-slate-600 dark:text-slate-400 bg-white/40 dark:bg-slate-850/40 border border-transparent'
               }`}
             >
-              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-0.5">
-                <span>Day {session.day} • Sesi {session.sessionNum}</span>
-                <span className="text-[11px] font-normal text-slate-400 font-mono">{session.duration}</span>
+              <div className="flex items-center justify-between text-[10px] sm:text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-1">
+                <span className="truncate">Day {session.day} • Sesi {session.sessionNum}</span>
+                <span className="text-[9px] sm:text-[11px] font-normal text-slate-400 font-mono shrink-0 ml-1">{session.duration}</span>
               </div>
-              <div className="text-sm font-bold truncate text-slate-900 dark:text-white">{session.speaker.name}</div>
-              <div className="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5">
+              <div className="text-xs sm:text-sm font-bold truncate text-slate-900 dark:text-white">
+                {session.speaker.name}
+              </div>
+              <div className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5 hidden xs:block">
                 {session.title}
               </div>
             </button>
