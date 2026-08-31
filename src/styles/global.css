@@ -25,12 +25,24 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  touch-action: manipulation;
 }
 
-/* Custom Scrollbar */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom Scrollbar for Desktop */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -61,7 +73,7 @@ html {
     background: #ffffff !important;
     color: #000000 !important;
   }
-  header, footer, .no-print, button, iframe {
+  header, footer, .no-print, button, iframe, .lg\\:hidden {
     display: none !important;
   }
   .print-only {

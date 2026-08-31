@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { BookMarked, Search, Lightbulb, TrendingUp, Sparkles } from 'lucide-react';
+import { BookMarked, Search, Lightbulb, TrendingUp } from 'lucide-react';
 import glossaryData from '../data/glossary.json';
 
 export default function LaymanGlossary() {
@@ -52,18 +52,18 @@ export default function LaymanGlossary() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Cari istilah atau analogi..."
-            className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-emerald-500"
           />
         </div>
       </div>
 
-      {/* Category Pills */}
-      <div className="flex flex-wrap gap-1.5">
+      {/* Category Pills (Mobile Horizontal Scroll) */}
+      <div className="flex overflow-x-auto no-scrollbar gap-1.5 pb-1">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shrink-0 ${
               selectedCategory === cat
                 ? 'bg-emerald-600 text-white shadow-sm'
                 : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800'

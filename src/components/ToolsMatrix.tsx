@@ -31,7 +31,7 @@ export default function ToolsMatrix() {
             <Wrench className="w-5 h-5 text-blue-500" />
             AI Tools Comparison Matrix & Directory
           </h3>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
             Daftar software & platform AI rekomendasi dari para instruktur beserta use case bisnis dan rating dampaknya.
           </p>
         </div>
@@ -44,20 +44,20 @@ export default function ToolsMatrix() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Cari tool atau use case..."
-            className="w-full pl-9 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="w-full pl-9 pr-3 py-2 text-xs rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
           />
         </div>
       </div>
 
-      {/* Category Pills */}
-      <div className="flex flex-wrap gap-1.5">
+      {/* Category Pills (Mobile Horizontal Scroll) */}
+      <div className="flex overflow-x-auto no-scrollbar gap-1.5 pb-1">
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setSelectedCategory(cat)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-colors shrink-0 ${
               selectedCategory === cat
-                ? 'bg-blue-600 text-white font-semibold'
+                ? 'bg-blue-600 text-white font-semibold shadow-sm'
                 : 'bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800'
             }`}
           >

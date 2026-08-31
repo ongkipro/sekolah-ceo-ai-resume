@@ -76,7 +76,7 @@ export default function FrameworkDiagrams() {
   const currentDiagram = DIAGRAMS.find((d) => d.id === selectedDiagramId) || DIAGRAMS[0];
 
   return (
-    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-6">
+    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sm:p-6 shadow-sm space-y-6">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
         <div>
@@ -96,13 +96,13 @@ export default function FrameworkDiagrams() {
           </p>
         </div>
 
-        {/* Selector Tabs */}
-        <div className="flex flex-wrap gap-1.5">
+        {/* Selector Tabs (Mobile Scroll) */}
+        <div className="flex overflow-x-auto no-scrollbar gap-1.5 pb-1">
           {DIAGRAMS.map((d) => (
             <button
               key={d.id}
               onClick={() => setSelectedDiagramId(d.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shrink-0 ${
                 selectedDiagramId === d.id
                   ? 'bg-indigo-600 text-white shadow-sm'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
@@ -123,7 +123,7 @@ export default function FrameworkDiagrams() {
         <p className="text-xs text-slate-600 dark:text-slate-300">{currentDiagram.subtitle}</p>
       </div>
 
-      {/* Visual Nodes Flow */}
+      {/* Visual Nodes Flow (1 col on mobile, 5 cols on desktop) */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
         {currentDiagram.nodes.map((node, idx) => (
           <div

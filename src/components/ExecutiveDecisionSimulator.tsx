@@ -101,7 +101,7 @@ export default function ExecutiveDecisionSimulator() {
   }, [currentRole]);
 
   return (
-    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-6">
+    <div className="w-full bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sm:p-6 shadow-sm space-y-6">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
         <div>
@@ -121,13 +121,13 @@ export default function ExecutiveDecisionSimulator() {
           </p>
         </div>
 
-        {/* Role Selector Tabs */}
-        <div className="flex flex-wrap gap-1.5">
+        {/* Role Selector Tabs (Mobile Scroll) */}
+        <div className="flex overflow-x-auto no-scrollbar gap-1.5 pb-1">
           {PRESETS.map((preset) => (
             <button
               key={preset.id}
               onClick={() => setSelectedPresetId(preset.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all shrink-0 ${
                 selectedPresetId === preset.id
                   ? 'bg-blue-600 text-white shadow-sm'
                   : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'

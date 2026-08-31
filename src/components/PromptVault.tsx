@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, Sparkles, Sliders, FileText } from 'lucide-react';
+import { Copy, Check, FileText, Sliders } from 'lucide-react';
 import promptsData from '../data/prompts.json';
 
 export default function PromptVault() {
@@ -9,7 +9,6 @@ export default function PromptVault() {
 
   const selectedPrompt = promptsData.find((p) => p.id === selectedPromptId) || promptsData[0];
 
-  // Get current value of a variable for the selected prompt
   const getVarValue = (promptId: string, key: string, defaultVal: string) => {
     return variableValues[promptId]?.[key] ?? defaultVal;
   };
@@ -24,7 +23,6 @@ export default function PromptVault() {
     }));
   };
 
-  // Compile prompt with customized variables
   const getCompiledPrompt = (prompt: typeof selectedPrompt) => {
     let result = prompt.template;
     prompt.variables.forEach((v) => {
@@ -50,7 +48,7 @@ export default function PromptVault() {
             <FileText className="w-5 h-5 text-blue-500" />
             Executive Prompt Vault (Siap Copy & Kustomisasi)
           </h3>
-          <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
             Kumpulan prompt kelas eksekutif yang dibagikan para instruktur (B.R.I.E.F., Internal Audit .docx, Sales Cloning).
           </p>
         </div>
@@ -93,7 +91,7 @@ export default function PromptVault() {
         </div>
 
         {/* Right Side: Interactive Prompt Customizer & Copy Panel (8 cols) */}
-        <div className="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm space-y-6">
+        <div className="lg:col-span-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 sm:p-6 shadow-sm space-y-6">
           {/* Active Prompt Header */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-slate-800">
             <div>
@@ -103,7 +101,7 @@ export default function PromptVault() {
                 </span>
                 <span className="text-xs font-medium text-slate-400">• {selectedPrompt.speaker}</span>
               </div>
-              <h4 className="text-lg font-bold text-slate-900 dark:text-white mt-1">
+              <h4 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white mt-1">
                 {selectedPrompt.title}
               </h4>
               <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
@@ -113,11 +111,11 @@ export default function PromptVault() {
 
             <button
               onClick={() => handleCopy(selectedPrompt)}
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-xs bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all shrink-0"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all shrink-0 active:scale-95"
             >
               {copiedId === selectedPrompt.id ? (
                 <>
-                  <Check className="w-4 h-4" />
+                  <Check className="w-4 h-4 text-emerald-300" />
                   Tersalin ke Clipboard!
                 </>
               ) : (
@@ -146,7 +144,7 @@ export default function PromptVault() {
                       type="text"
                       value={getVarValue(selectedPrompt.id, v.key, v.defaultValue)}
                       onChange={(e) => handleVarChange(selectedPrompt.id, v.key, e.target.value)}
-                      className="w-full text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                      className="w-full text-xs px-3 py-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
                 ))}
@@ -160,7 +158,7 @@ export default function PromptVault() {
               <span>Preview Prompt Siap Paste ke Claude Desktop / ChatGPT:</span>
               <span className="font-mono text-[11px]">{getCompiledPrompt(selectedPrompt).length} karakter</span>
             </div>
-            <pre className="p-4 rounded-xl bg-slate-950 text-slate-200 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800 max-h-80 select-all">
+            <pre className="p-4 rounded-xl bg-slate-950 text-slate-200 font-mono text-xs overflow-x-auto leading-relaxed border border-slate-800 max-h-80 select-all no-scrollbar">
               {getCompiledPrompt(selectedPrompt)}
             </pre>
           </div>
