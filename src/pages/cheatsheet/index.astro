@@ -1,15 +1,28 @@
 ---
 import AppLayout from '../../layouts/AppLayout.astro';
+import SectionSubNav from '../../components/SectionSubNav.astro';
 import cheatsheetsData from '../../data/cheatsheets.json';
 import { sessionSlugs } from '../../lib/slugs';
 import { Zap, Clock, ArrowRight, CheckCircle2, AlertTriangle, TrendingUp } from 'lucide-react';
 
 const title = "Contekkan 3 Menit Eksekutif - Sekolah CEO AI (Agustus 2026)";
 const description = "Ringkasan super padat 3 menit per sesi masterclass: prioritas aksi besok pagi, kesalahan fatal, metrik dampak, dan master prompt.";
+
+const subNavItems = sessionSlugs.map(s => ({
+  name: s.slug.replace('day-', 'Day ').replace('-sesi-', ' Sesi '),
+  href: `/cheatsheet/${s.slug}`
+}));
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'Contekkan 3 Menit' }]}>
-  <div class="space-y-8">
+  <div class="space-y-6">
+    <SectionSubNav
+      currentPath="/cheatsheet"
+      hubHref="/cheatsheet"
+      hubLabel="⚡ Semua Contekkan"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
@@ -60,11 +73,11 @@ const description = "Ringkasan super padat 3 menit per sesi masterclass: priorit
 
               <!-- Must Do Tomorrow Preview -->
               <div class="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-900/40 text-xs text-slate-800 dark:text-slate-200 space-y-1">
-                <div className="flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300 font-bold uppercase tracking-wider text-[10px]">
+                <div class="flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300 font-bold uppercase tracking-wider text-[10px]">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
                   <span>Lakukan Besok Pagi:</span>
                 </div>
-                <p className="line-clamp-2 font-medium leading-relaxed">
+                <p class="line-clamp-2 font-medium leading-relaxed">
                   {sheet.mustDoTomorrow}
                 </p>
               </div>
@@ -87,7 +100,7 @@ const description = "Ringkasan super padat 3 menit per sesi masterclass: priorit
               </span>
               <a
                 href={slugUrl}
-                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-sm transition-all group-hover:translate-x-0.5"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-amber-500 hover:bg-amber-600 text-slate-900 shadow-sm transition-all group-hover:translate-x-0.5 cursor-pointer"
               >
                 <span>Buka Contekkan Penuh</span>
                 <ArrowRight className="w-3.5 h-3.5" />

@@ -21,6 +21,13 @@ import {
   Menu,
   ChevronRight
 } from 'lucide-react';
+import { 
+  sessionSlugs, 
+  pathwaySlugs, 
+  architectureSlugs, 
+  simulatorSlugs, 
+  promptSlugs 
+} from '../lib/slugs';
 
 interface Props {
   title?: string;
@@ -36,13 +43,13 @@ const {
 
 const pathname = Astro.url.pathname;
 
-const menuGroups = [
+const mobileMenuSections = [
   {
     group: 'Akselerator Belajar',
     items: [
       { name: 'Dashboard', href: '/', icon: LayoutDashboard, badge: 'Home' },
       { name: 'Contekkan 3 Menit', href: '/cheatsheet', icon: Zap, badge: 'Ringkas' },
-      { name: 'Jalur Belajar Peran', href: '/pathways', icon: Compass, badge: 'Peran' },
+      { name: 'Jalur Belajar Peran', href: '/pathways', icon: Compass, badge: '4 Peran' },
       { name: 'Tes Kematangan AI', href: '/quiz', icon: Award, badge: 'Kuis' },
     ]
   },
@@ -82,7 +89,6 @@ const bottomNavItems = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     
-    <!-- Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
@@ -117,23 +123,29 @@ const bottomNavItems = [
       <!-- Desktop Sidebar -->
       <SidebarNav />
 
-      <!-- Page Content Area with Minimalist Spacing -->
+      <!-- Page Content Area -->
       <main class="flex-1 min-w-0 p-4 sm:p-6 lg:p-8 space-y-6 pb-28 lg:pb-12 max-w-full">
+        <!-- Interactive Clickable Breadcrumbs -->
         {breadcrumbs && breadcrumbs.length > 0 && (
-          <nav class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 overflow-x-auto no-scrollbar pb-1">
-            <a href="/" class="hover:text-slate-900 dark:hover:text-white transition-colors">Home</a>
-            {breadcrumbs.map((b, i) => (
-              <span class="flex items-center gap-1.5 shrink-0">
-                <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
-                {b.href ? (
-                  <a href={b.href} class="hover:text-slate-900 dark:hover:text-white transition-colors">
-                    {b.label}
-                  </a>
-                ) : (
-                  <span class="font-semibold text-slate-900 dark:text-white">{b.label}</span>
-                )}
-              </span>
-            ))}
+          <nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 overflow-x-auto no-scrollbar pb-1">
+            <a href="/" class="hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer shrink-0 font-medium">
+              Home
+            </a>
+            {breadcrumbs.map((b, i) => {
+              const isLast = i === breadcrumbs.length - 1;
+              return (
+                <span class="flex items-center gap-1.5 shrink-0">
+                  <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
+                  {b.href && !isLast ? (
+                    <a href={b.href} class="hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer font-medium underline-offset-2 hover:underline">
+                      {b.label}
+                    </a>
+                  ) : (
+                    <span class="font-bold text-slate-900 dark:text-white">{b.label}</span>
+                  )}
+                </span>
+              );
+            })}
           </nav>
         )}
         <slot />
@@ -143,39 +155,39 @@ const bottomNavItems = [
     <!-- Minimalist Clean Footer -->
     <Footer />
 
-    <!-- Native Hardware-Accelerated Mobile Slide-Over Drawer -->
+    <!-- Mobile Slide-Over Navigation Drawer -->
     <div
       id="mobile-drawer-root"
-      class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-200 opacity-0"
+      class="fixed inset-0 z-50 hidden transition-opacity duration-200"
       aria-hidden="true"
     >
       <!-- Backdrop -->
       <div
         id="drawer-backdrop"
-        class="absolute inset-0 bg-slate-950/40 backdrop-blur-sm pointer-events-auto"
+        class="absolute inset-0 bg-slate-950/50 backdrop-blur-sm cursor-pointer"
       ></div>
 
       <!-- Slide-Over Panel -->
       <div
         id="drawer-panel"
-        class="absolute inset-y-0 left-0 w-4/5 max-w-xs bg-white dark:bg-[#090d16] border-r border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col pointer-events-auto transform -translate-x-full transition-transform duration-200 ease-out"
+        class="absolute inset-y-0 left-0 w-4/5 max-w-xs bg-white dark:bg-[#090d16] border-r border-slate-200 dark:border-slate-800 shadow-2xl flex flex-col pointer-events-auto transform -translate-x-full transition-transform duration-200 ease-out z-10"
       >
         <!-- Drawer Header -->
         <div class="p-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
-              AI
+          <a href="/" class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xs">
+              CEO
             </div>
             <div>
-              <div class="font-bold text-sm text-slate-900 dark:text-white">Sekolah CEO AI</div>
+              <div class="font-bold text-xs text-slate-900 dark:text-white">Sekolah CEO AI</div>
               <div class="text-[10px] text-slate-500 dark:text-slate-400 font-mono">Executive Hub 2026</div>
             </div>
-          </div>
+          </a>
 
           <button
             id="drawer-close-btn"
             type="button"
-            class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             aria-label="Tutup Menu"
           >
             <X className="w-5 h-5" />
@@ -183,8 +195,8 @@ const bottomNavItems = [
         </div>
 
         <!-- Drawer Nav Items -->
-        <div class="flex-1 overflow-y-auto p-4 space-y-5">
-          {menuGroups.map((group) => (
+        <div class="flex-1 overflow-y-auto p-3 space-y-4">
+          {mobileMenuSections.map((group) => (
             <div class="space-y-1">
               <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-3 py-1">
                 {group.group}
@@ -198,19 +210,19 @@ const bottomNavItems = [
                   return (
                     <a
                       href={item.href}
-                      class={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-medium transition-all ${
+                      class={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
                         isActive
-                          ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-semibold border border-blue-200 dark:border-blue-800'
+                          ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold shadow-2xs'
                           : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/60'
                       }`}
                     >
                       <div class="flex items-center gap-2.5">
-                        <Icon className={`w-4 h-4 ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}`} />
+                        <Icon className={`w-4 h-4 ${isActive ? 'text-blue-400 dark:text-blue-600' : 'text-slate-400'}`} />
                         <span>{item.name}</span>
                       </div>
                       <span class={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
                         isActive 
-                          ? 'bg-blue-200/60 dark:bg-blue-900 text-blue-800 dark:text-blue-200' 
+                          ? 'bg-white/20 dark:bg-slate-900/20 text-white dark:text-slate-900 font-bold' 
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
                       }`}>
                         {item.badge}
@@ -224,14 +236,14 @@ const bottomNavItems = [
         </div>
 
         <!-- Drawer Footer -->
-        <div class="p-4 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 text-center">
-          Sekolah CEO AI (Agustus 2026)
+        <div class="p-3 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
+          Sekolah CEO AI • Agustus 2026
         </div>
       </div>
     </div>
 
     <!-- Mobile Bottom Navigation Bar (Minimalist) -->
-    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-[#090d16]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-2">
+    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-[#090d16]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-1.5">
       <div class="flex items-center justify-around max-w-md mx-auto">
         {bottomNavItems.map((item) => {
           const Icon = item.icon;
@@ -241,7 +253,7 @@ const bottomNavItems = [
           return (
             <a
               href={item.href}
-              class={`flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg text-[10px] font-medium transition-colors ${
+              class={`flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg text-[10px] font-medium transition-colors cursor-pointer ${
                 isActive
                   ? 'text-blue-600 dark:text-blue-400 font-bold'
                   : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
@@ -257,6 +269,7 @@ const bottomNavItems = [
         <button
           type="button"
           class="drawer-open-btn flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg text-[10px] font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+          aria-label="Buka Menu Lengkap"
         >
           <Menu className="w-4 h-4" />
           <span>Menu</span>
@@ -274,20 +287,23 @@ const bottomNavItems = [
 
       function openDrawer() {
         if (!drawerRoot || !drawerPanel) return;
-        drawerRoot.classList.remove('opacity-0', 'pointer-events-none');
-        drawerRoot.classList.add('opacity-100');
-        drawerPanel.classList.remove('-translate-x-full');
-        drawerPanel.classList.add('translate-x-0');
+        drawerRoot.classList.remove('hidden');
+        // trigger animation on next tick
+        requestAnimationFrame(() => {
+          drawerPanel.classList.remove('-translate-x-full');
+          drawerPanel.classList.add('translate-x-0');
+        });
         document.body.style.overflow = 'hidden';
       }
 
       function closeDrawer() {
         if (!drawerRoot || !drawerPanel) return;
-        drawerRoot.classList.add('opacity-0', 'pointer-events-none');
-        drawerRoot.classList.remove('opacity-100');
-        drawerPanel.classList.add('-translate-x-full');
         drawerPanel.classList.remove('translate-x-0');
-        document.body.style.overflow = '';
+        drawerPanel.classList.add('-translate-x-full');
+        setTimeout(() => {
+          drawerRoot.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 200);
       }
 
       openBtns.forEach((btn) => btn.addEventListener('click', openDrawer));

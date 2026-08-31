@@ -12,79 +12,212 @@ import {
   Sparkles,
   Zap,
   Compass,
-  Award
+  Award,
+  ChevronDown
 } from 'lucide-react';
+import { 
+  sessionSlugs, 
+  pathwaySlugs, 
+  architectureSlugs, 
+  simulatorSlugs, 
+  promptSlugs 
+} from '../lib/slugs';
 
 const pathname = Astro.url.pathname;
 
-const navItems = [
-  { name: 'Dashboard', href: '/', icon: LayoutDashboard, badge: 'Overview' },
-  { name: 'Kurikulum & Video', href: '/curriculum', icon: Video, badge: '12+ Jam' },
-  { name: 'Contekkan 3 Menit', href: '/cheatsheet', icon: Zap, badge: 'Quick' },
-  { name: 'Jalur Belajar Peran', href: '/pathways', icon: Compass, badge: 'Role' },
-  { name: 'Kamus Awam', href: '/glossary', icon: BookMarked, badge: 'A-Z' },
-  { name: 'Arsitektur Sistem', href: '/architecture', icon: Layers, badge: '4 Alur' },
-  { name: 'Prompt Vault', href: '/prompts', icon: FileText, badge: '8 Prompt' },
-  { name: 'CEO Simulator', href: '/simulator', icon: Calculator, badge: 'ROI Calc' },
-  { name: 'Tes Kematangan AI', href: '/quiz', icon: Award, badge: 'Kuis' },
-  { name: 'AI Tools Directory', href: '/tools', icon: Wrench, badge: '8 Tools' },
-  { name: '30-60-90 Roadmap', href: '/roadmap', icon: Target, badge: 'Action' },
-  { name: 'Executive FAQ', href: '/faq', icon: HelpCircle, badge: 'Q&A' },
+const navSections = [
+  {
+    name: 'Dashboard',
+    href: '/',
+    icon: LayoutDashboard,
+    badge: 'Home'
+  },
+  {
+    name: 'Kurikulum Masterclass',
+    href: '/curriculum',
+    icon: Video,
+    badge: '4 Sesi',
+    children: sessionSlugs.map(s => ({
+      name: s.slug.replace('day-', 'Day ').replace('-sesi-', ' Sesi '),
+      href: `/curriculum/${s.slug}`,
+      desc: s.title.split('-')[1]?.trim() || ''
+    }))
+  },
+  {
+    name: 'Contekkan 3 Menit',
+    href: '/cheatsheet',
+    icon: Zap,
+    badge: 'Ringkas',
+    children: sessionSlugs.map(s => ({
+      name: s.slug.replace('day-', 'Day ').replace('-sesi-', ' Sesi '),
+      href: `/cheatsheet/${s.slug}`,
+      desc: s.title.split('-')[1]?.trim() || ''
+    }))
+  },
+  {
+    name: 'Jalur Belajar Peran',
+    href: '/pathways',
+    icon: Compass,
+    badge: '4 Peran',
+    children: pathwaySlugs.map(p => ({
+      name: p.role.split('&')[0].trim(),
+      href: `/pathways/${p.slug}`,
+      desc: p.name
+    }))
+  },
+  {
+    name: 'Kamus Istilah Awam',
+    href: '/glossary',
+    icon: BookMarked,
+    badge: 'A-Z'
+  },
+  {
+    name: 'Arsitektur Sistem',
+    href: '/architecture',
+    icon: Layers,
+    badge: '4 Alur',
+    children: architectureSlugs.map(a => ({
+      name: a.name,
+      href: `/architecture/${a.slug}`,
+      desc: ''
+    }))
+  },
+  {
+    name: 'Prompt Vault',
+    href: '/prompts',
+    icon: FileText,
+    badge: '8 Prompt',
+    children: promptSlugs.map(p => ({
+      name: p.name,
+      href: `/prompts/${p.slug}`,
+      desc: ''
+    }))
+  },
+  {
+    name: 'CEO Simulator',
+    href: '/simulator',
+    icon: Calculator,
+    badge: 'ROI Calc',
+    children: simulatorSlugs.map(s => ({
+      name: s.name.split('&')[0].trim(),
+      href: `/simulator/${s.slug}`,
+      desc: ''
+    }))
+  },
+  {
+    name: 'Tes Kematangan AI',
+    href: '/quiz',
+    icon: Award,
+    badge: 'Kuis'
+  },
+  {
+    name: 'AI Tools Directory',
+    href: '/tools',
+    icon: Wrench,
+    badge: '8 Tools'
+  },
+  {
+    name: '30-60-90 Roadmap',
+    href: '/roadmap',
+    icon: Target,
+    badge: 'Aksi'
+  },
+  {
+    name: 'Executive FAQ',
+    href: '/faq',
+    icon: HelpCircle,
+    badge: 'Q&A'
+  },
 ];
 
-const isActive = (href: string) => {
+const isSectionActive = (href: string) => {
   if (href === '/') return pathname === '/' || pathname === '';
   return pathname.startsWith(href);
 };
+
+const isChildActive = (childHref: string) => {
+  return pathname === childHref || pathname === `${childHref}/`;
+};
 ---
 
-<aside class="w-64 shrink-0 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col justify-between hidden lg:flex min-h-[calc(100vh-4rem)] sticky top-16 transition-colors">
-  <!-- Brand / Hub Profile -->
-  <div class="p-4 space-y-4">
-    <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-2">
-      Menu Modul Masterclass
+<aside class="w-64 shrink-0 bg-white dark:bg-[#090d16] border-r border-slate-200 dark:border-slate-800 flex flex-col justify-between hidden lg:flex min-h-[calc(100vh-3.75rem)] sticky top-15 transition-colors z-20">
+  <!-- Nav Items Container with custom sleek scrollbar -->
+  <div class="p-3.5 space-y-4 overflow-y-auto max-h-[calc(100vh-8rem)] no-scrollbar">
+    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 px-2.5">
+      Modul Masterclass
     </div>
 
-    <!-- Navigation List -->
+    <!-- Navigation Tree -->
     <nav class="space-y-1">
-      {navItems.map((item) => {
-        const Icon = item.icon;
-        const active = isActive(item.href);
+      {navSections.map((sec) => {
+        const Icon = sec.icon;
+        const active = isSectionActive(sec.href);
+        const hasChildren = sec.children && sec.children.length > 0;
+
         return (
-          <a
-            href={item.href}
-            class={`flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
-              active
-                ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200/80 dark:border-blue-800 shadow-sm'
-                : 'text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/60 hover:text-slate-900 dark:hover:text-white'
-            }`}
-          >
-            <div class="flex items-center gap-2.5 min-w-0">
-              <Icon className={`w-4 h-4 shrink-0 ${active ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400'}`} />
-              <span class="truncate">{item.name}</span>
-            </div>
-            <span class={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
-              active 
-                ? 'bg-blue-200/60 dark:bg-blue-900 text-blue-800 dark:text-blue-200 font-bold' 
-                : 'bg-slate-100 dark:bg-slate-800 text-slate-400'
-            }`}>
-              {item.badge}
-            </span>
-          </a>
+          <div class="space-y-1">
+            <!-- Parent Section Link -->
+            <a
+              href={sec.href}
+              class={`flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold transition-all group cursor-pointer ${
+                active && (!hasChildren || pathname === sec.href || pathname === `${sec.href}/`)
+                  ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-2xs font-bold'
+                  : active
+                  ? 'bg-slate-100 dark:bg-slate-800/80 text-slate-900 dark:text-white font-bold'
+                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <div class="flex items-center gap-2.5 min-w-0">
+                <Icon className={`w-4 h-4 shrink-0 ${active ? 'text-blue-600 dark:text-blue-400' : 'text-slate-400 group-hover:text-slate-600'}`} />
+                <span class="truncate">{sec.name}</span>
+              </div>
+              <span class={`text-[10px] font-mono px-1.5 py-0.5 rounded ${
+                active && (!hasChildren || pathname === sec.href || pathname === `${sec.href}/`)
+                  ? 'bg-white/20 dark:bg-slate-900/20 text-white dark:text-slate-900 font-bold'
+                  : 'bg-slate-100 dark:bg-slate-800 text-slate-500'
+              }`}>
+                {sec.badge}
+              </span>
+            </a>
+
+            <!-- Sub-items List (Always shown when parent section is active) -->
+            {hasChildren && active && (
+              <div class="ml-4 pl-2.5 border-l-2 border-slate-200 dark:border-slate-800 space-y-0.5 pt-0.5 pb-1">
+                {sec.children.map((child) => {
+                  const childActive = isChildActive(child.href);
+                  return (
+                    <a
+                      href={child.href}
+                      class={`flex items-center justify-between px-2.5 py-1.5 rounded-lg text-[11px] transition-colors cursor-pointer ${
+                        childActive
+                          ? 'bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-bold border border-blue-200 dark:border-blue-800'
+                          : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/40'
+                      }`}
+                    >
+                      <span class="truncate">{child.name}</span>
+                      {childActive && (
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 shrink-0"></span>
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
+            )}
+          </div>
         );
       })}
     </nav>
   </div>
 
-  <!-- Bottom Executive Badge -->
-  <div class="p-4 border-t border-slate-100 dark:border-slate-800 text-xs space-y-2">
-    <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 space-y-1">
-      <div class="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 font-bold text-[11px]">
-        <Sparkles className="w-3.5 h-3.5" />
-        <span>C-Level Edition</span>
+  <!-- Bottom C-Level Badge -->
+  <div class="p-3.5 border-t border-slate-100 dark:border-slate-800 text-xs">
+    <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 space-y-1">
+      <div class="flex items-center gap-1.5 text-slate-900 dark:text-white font-bold text-[11px]">
+        <Sparkles className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+        <span>Executive Edition</span>
       </div>
-      <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-snug">
-        Disusun khusus untuk akselerasi eksekutif & efisiensi operasional 90%.
+      <p class="text-[10px] text-slate-500 dark:text-slate-400 leading-snug">
+        Sekolah CEO AI (Agustus 2026).
       </p>
     </div>
   </div>

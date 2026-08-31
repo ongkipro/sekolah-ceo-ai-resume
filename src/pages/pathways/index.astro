@@ -1,15 +1,29 @@
 ---
 import AppLayout from '../../layouts/AppLayout.astro';
+import SectionSubNav from '../../components/SectionSubNav.astro';
 import pathwaysData from '../../data/pathways.json';
 import { pathwaySlugs } from '../../lib/slugs';
 import { Compass, ArrowRight, Layers, Sparkles } from 'lucide-react';
 
 const title = "Jalur Belajar Berdasarkan Peran Kepemimpinan - Sekolah CEO AI";
 const description = "Kurikulum terarah khusus CEO, CFO, CMO, dan COO untuk menerapkan AI sesuai tanggung jawab bisnis dan metrik finansial masing-masing.";
+
+const subNavItems = pathwaySlugs.map(p => ({
+  name: p.role.split('&')[0].trim(),
+  href: `/pathways/${p.slug}`
+}));
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'Jalur Belajar Peran' }]}>
-  <div class="space-y-8">
+  <div class="space-y-6">
+    <!-- Section Sub-Navigation -->
+    <SectionSubNav
+      currentPath="/pathways"
+      hubHref="/pathways"
+      hubLabel="🧭 Semua Peran"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
@@ -82,7 +96,7 @@ const description = "Kurikulum terarah khusus CEO, CFO, CMO, dan COO untuk mener
               </span>
               <a
                 href={slugUrl}
-                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all group-hover:translate-x-0.5"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm transition-all group-hover:translate-x-0.5 cursor-pointer"
               >
                 <span>Buka Jalur {pathway.role.split('&')[0].trim()}</span>
                 <ArrowRight className="w-3.5 h-3.5" />

@@ -1,15 +1,29 @@
 ---
 import AppLayout from '../../layouts/AppLayout.astro';
+import SectionSubNav from '../../components/SectionSubNav.astro';
 import sessionsData from '../../data/sessions.json';
 import { sessionSlugs } from '../../lib/slugs';
 import { Video, Clock, ArrowRight, Play, CheckCircle2, User, Sparkles } from 'lucide-react';
 
 const title = "Kurikulum & Masterclass Video - Sekolah CEO AI (Agustus 2026)";
 const description = "Daftar 4 sesi masterclass Sekolah CEO AI (~12+ jam) dilengkapi sinkronisasi detik video YouTube, analogi awam, dan to-do list eksekusi.";
+
+const subNavItems = sessionSlugs.map(s => ({
+  name: s.slug.replace('day-', 'Day ').replace('-sesi-', ' Sesi '),
+  href: `/curriculum/${s.slug}`
+}));
 ---
 
 <AppLayout title={title} description={description} breadcrumbs={[{ label: 'Kurikulum' }]}>
-  <div class="space-y-8">
+  <div class="space-y-6">
+    <!-- Section Sub-Navigation -->
+    <SectionSubNav
+      currentPath="/curriculum"
+      hubHref="/curriculum"
+      hubLabel="📂 Semua Sesi"
+      items={subNavItems}
+    />
+
     <!-- Header Strip -->
     <div class="space-y-2 pb-4 border-b border-slate-200 dark:border-slate-800">
       <div class="flex items-center gap-2">
@@ -94,7 +108,7 @@ const description = "Daftar 4 sesi masterclass Sekolah CEO AI (~12+ jam) dilengk
               </span>
               <a
                 href={slugUrl}
-                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all group-hover:translate-x-0.5"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all group-hover:translate-x-0.5 cursor-pointer"
               >
                 <Play className="w-3.5 h-3.5 fill-current" />
                 <span>Buka Video & Materi</span>
