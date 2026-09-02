@@ -446,6 +446,7 @@ export default function SingleSessionView({ sessionId }: Props) {
         sessionNum={activeSession.sessionNum}
         executiveResume={(activeSession as any).executiveResume}
         actionPlan={(activeSession as any).actionPlan || []}
+        fullTranscript={(activeSession as any).fullTranscript}
       />
 
       {/* 6. Previous / Next Session Navigation */}

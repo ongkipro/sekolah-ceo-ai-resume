@@ -38,6 +38,7 @@ interface Props {
   sessionNum: number;
   executiveResume?: ExecutiveResume;
   actionPlan: ActionItem[];
+  fullTranscript?: string;
 }
 
 export default function SessionResumeActionPlan({
@@ -48,6 +49,7 @@ export default function SessionResumeActionPlan({
   sessionNum,
   executiveResume,
   actionPlan = [],
+  fullTranscript,
 }: Props) {
   const [activeTab, setActiveTab] = useState<'resume' | 'actionPlan' | 'transcript'>('resume');
   const [checkedMap, setCheckedMap] = useState<{ [id: string]: boolean }>({});
@@ -274,10 +276,10 @@ export default function SessionResumeActionPlan({
       )}
 
       {/* Tab 3: Full Transcript */}
-      {activeTab === 'transcript' && (activeSession as any).fullTranscript && (
+      {activeTab === 'transcript' && fullTranscript && (
         <div className="space-y-6 animate-in fade-in duration-200">
           <div className="p-5 sm:p-7 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 prose prose-sm sm:prose-base dark:prose-invert max-w-none prose-h2:text-blue-600 dark:prose-h2:text-blue-400 prose-h3:text-slate-700 dark:prose-h3:text-slate-300">
-            <div dangerouslySetInnerHTML={{ __html: marked.parse((activeSession as any).fullTranscript) }} />
+            <div dangerouslySetInnerHTML={{ __html: marked.parse(fullTranscript) }} />
           </div>
         </div>
       )}
