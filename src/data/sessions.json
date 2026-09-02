@@ -2,322 +2,857 @@
   {
     "id": "d1s1",
     "slug": "day-1-sesi-1",
-    "title": "AI Foundation, Enterprise Shift & Rapid Product / Marketing Engine",
+    "title": "SEKOLAH CEO AI DAY 1 SESI 1",
     "day": 1,
     "sessionNum": 1,
     "speaker": {
-      "name": "Mas Anjas Maradita",
-      "role": "CEO Daunnet Media & AI Content Creator",
-      "company": "Neuron Media / Daunnet",
-      "avatar": "\ud83d\udc68\u200d\ud83d\udcbc",
-      "tagline": "Pioneer of Indonesian AI Creative & Enterprise Automation"
+      "name": "Anjas Maradita",
+      "role": "Founder & AI Expert",
+      "company": "Neuron, Pekerja AI",
+      "avatar": "",
+      "tagline": "Bapak AI Indonesia"
     },
-    "duration": "2h 45m",
+    "duration": "02:48:25",
     "youtubeId": "hhYAv9s1cMg",
-    "summary": "Mengubah peran eksekutif dari AI User menjadi AI-Powered CEO. Membongkar investasi Rp100 Miliar KPMG di Claude, fenomena Vibe Coding, Algorithm-First Marketing (CTV), dan ancaman disrupsi SaaS tradisional oleh Custom AI internal.",
+    "summary": "Sesi pembuka Sekolah CEO AI yang merombak mindset bisnis tradisional dalam mengadopsi Artificial Intelligence. Pembahasan berfokus pada peralihan peran dari pengguna AI yang pasif menjadi 'AI-Powered CEO' yang aktif merancang algoritma marketing, mengembangkan aplikasi manajemen (WMS/ERP) secara instan tanpa coding, hingga mendominasi rekomendasi AI melalui Generative Engine Optimization (GEO).",
     "corePillars": [
-      "Framework 4 Level Adopsi AI",
-      "Idea Amplification & Vibe Coding (Lovable.dev)",
+      "Efisiensi Skala & Pengurangan Cost dengan AI",
+      "4 Level Adopsi AI (Dari Chat Bot ke Decision Intelligence)",
+      "Idea Amplification & Zero-Code System Creation",
       "Generative Engine Optimization (GEO)",
-      "Call to Value (CTV) & Social Arbitrage (ManyChat)"
+      "Automasi Marketing Berbasis Algoritma & Konversi Cepat"
     ],
-    "quote": "Bukan AI yang menipu Anda, melainkan operator AI. Kelemahan dan ketajaman AI sepenuhnya bergantung pada kapabilitas operator.",
+    "quote": "Kita pakai AI tapi kitanya bangun. AI itu tidak hanya menghasilkan sesuatu yang kelihatan, tapi bisa menjadi tulang punggung automasi dan social engineering bisnis kita dengan cost almost zero.",
     "topics": [
       {
-        "id": "d1s1-1",
-        "title": "Framework 4 Level Adopsi AI & Analogi KPMG",
-        "timestamp": "000:17",
-        "timestampSeconds": 17,
+        "id": "d1s1-t1",
+        "title": "Kontras Pengeluaran AI dan ROI Luar Biasa",
+        "timestamp": "00:11:00",
+        "timestampSeconds": 660,
         "category": "Strategy",
         "keyTakeaways": [
-          "Dari ChatGPT pasif (Level 1) ke Web Automation (Level 2) hingga Predictive System (Level 4).",
-          "Korporasi besar seperti KPMG merogoh Rp100 Miliar untuk adopsi Claude Enterprise."
+          "Sebagian besar pengusaha UMKM belum spend di atas Rp 1 juta per bulan untuk AI, padahal perusahaan besar menghabiskan miliaran.",
+          "Mengadopsi AI secara serius dapat mengurangi kebutuhan SDM dari 8 orang menjadi 2 orang.",
+          "Efisiensi cost mencapai 3x lipat sementara output produktivitas meningkat hingga 5x lipat."
         ],
-        "verbatimHighlight": "KPMG rela membayar Anthropic ratusan miliar. Bukti bahwa efisiensi kognitif bukan lagi pilihan, tapi keharusan kompetitif di level enterprise.",
-        "laymanExplanation": "Semakin tinggi level adopsi AI, sistem semakin bisa mengambil keputusan sendiri dan memprediksi krisis, bukan sekadar jadi tempat tanya-jawab (chatbot)."
+        "verbatimHighlight": "24 juta dengan output yang jauh lebih banyak. Wah, jadi hematnya tiga kali lipat, output-nya naik kurang lebih 5 kali lipat. Tadinya tim marketing kami bikin konten sehari dua orang tuh satu dua orang cuma bisa bikin dua konten. Sekarang satu orang bisa bikin 10 konten.",
+        "laymanExplanation": "Ibarat mengganti cangkul dengan traktor. Biaya beli dan perawatan traktor (langganan AI) jauh lebih murah dibandingkan membayar banyak buruh cangkul, namun hasil kebun yang digarap berlipat ganda."
       },
       {
-        "id": "d1s1-2",
-        "title": "Idea Amplification & Vibe Coding dengan Lovable.dev",
-        "timestamp": "025:00",
-        "timestampSeconds": 1500,
+        "id": "d1s1-t2",
+        "title": "4 Level Adopsi AI dalam Bisnis",
+        "timestamp": "01:22:39",
+        "timestampSeconds": 4959,
         "category": "Tech",
         "keyTakeaways": [
-          "Mengartikulasikan kebutuhan bisnis melalui Voice Mode.",
-          "Menerjemahkan ide ke Lovable.dev untuk membangun aplikasi (WMS) fungsional dalam < 15 menit."
+          "Level 1: AI sebagai asisten produktivitas dasar dan rekan brainstorming (Common Generative AI).",
+          "Level 2: Memanfaatkan Web & Automation Tools untuk operasional bisnis harian.",
+          "Level 3: Decision Intelligence, menggunakan AI berbasis sensor dan data besar untuk keputusan strategis (biasanya dipakai korporat besar).",
+          "Level 4: Predictive & Response Systems untuk skala yang jauh lebih kompleks."
         ],
-        "verbatimHighlight": "Satu dekade lalu kita harus mengajari manusia cara membuat software baris demi baris. Hari ini, Anda bahkan tidak perlu belajar coding; AI yang membangunnya untuk Anda.",
-        "laymanExplanation": "Anda hanya perlu 'ngobrol' menjelaskan aplikasi apa yang Anda mau, AI akan langsung membuatkan kode dan tampilan aplikasinya saat itu juga."
+        "verbatimHighlight": "Level 1 ini adalah orang yang pakai AI aktif untuk melakukan hal-hal yang sehari-hari... Level 2 teman-teman sudah menggunakan web dan automation tools development untuk bisnisnya... Level 3 ini decision intelligence, cost-nya memang lumayan mahal.",
+        "laymanExplanation": "Adopsi AI ada tingkatannya: mulai dari sekadar nanya resep atau ide (Level 1), menyuruh mesin otomatis membalas pesan dan membuat web (Level 2), hingga menggunakan AI bagai dewan direksi yang membaca data pasar dan memberi saran keputusan bisnis masa depan (Level 3 dan 4)."
       },
       {
-        "id": "d1s1-3",
-        "title": "Generative Engine Optimization (GEO) & Call to Value",
-        "timestamp": "050:00",
-        "timestampSeconds": 3000,
+        "id": "d1s1-t3",
+        "title": "Idea Amplification: Dari Ide Kasar Menjadi Software",
+        "timestamp": "01:28:57",
+        "timestampSeconds": 5337,
+        "category": "Tech",
+        "keyTakeaways": [
+          "LLM dapat digunakan untuk berdiskusi layaknya konsultan untuk mematangkan ide (Idea Amplification).",
+          "Setelah ide matang, AI seperti Lovable dapat men-generate kode dan antarmuka web/sistem (seperti WMS) hanya dari prompt percakapan.",
+          "Bisnis kecil tidak lagi bergantung pada developer mahal untuk membangun sistem fungsional."
+        ],
+        "verbatimHighlight": "Se susah-susahnya vi coding ini adalah web yang kalian enggak perlu berpikir sebenarnya. dia akan bikinin sistem buat kalian... Ini cuman dari ngobrol, sekarang sudah jadi satu sistem yang nantinya kalau kita lanjutin ini bisa menjadi WMS kita.",
+        "laymanExplanation": "Dulu kalau mau bikin aplikasi restoran butuh modal puluhan juta buat bayar programmer. Sekarang, Anda tinggal cerita ke AI seperti Anda cerita ke teman, dan AI tersebut otomatis merakit aplikasinya untuk Anda."
+      },
+      {
+        "id": "d1s1-t4",
+        "title": "Generative Engine Optimization (GEO)",
+        "timestamp": "01:41:28",
+        "timestampSeconds": 6088,
         "category": "Marketing",
         "keyTakeaways": [
-          "Menggeser SEO konvensional menuju visibilitas di dalam jawaban ChatGPT/Gemini.",
-          "Menghindari 'Klik Link di Bio' (CTA) menjadi 'Komen MAU untuk diskon DM' (CTV) via ManyChat."
+          "Search engine kini bergeser ke mesin penjawab AI. Bisnis harus mengoptimasi konten agar direkomendasikan oleh AI (GEO).",
+          "Tiga kunci GEO: Publikasi di Trusted Media, menyediakan FAQ yang banyak untuk dibaca crawler AI, dan profiling audiens.",
+          "Setiap LLM punya demografi pengguna berbeda (Gemini untuk lower SES/umum, ChatGPT/Claude untuk educated class)."
         ],
-        "verbatimHighlight": "Berhentilah membuat konten yang egois. Berpikirlah secara Algorithm-First dan gantilah Call to Action konvensional menjadi Call to Value agar mesin media sosial bekerja untuk Anda.",
-        "laymanExplanation": "Daripada menyuruh orang ribet nge-klik link di profil, suruh saja mereka komen. AI akan otomatis mengirim promo langsung ke kotak pesan (DM) mereka."
+        "verbatimHighlight": "Kalau teman-teman sebelumnya sudah belajar tentang namanya SEO... sekarang harus mulai belajar namanya GEO. Nah, apa ini? Ini adalah generative engine optimization... Gimana caranya biar data kita dibaca sama AI? Dari trusted media, lalu FAQ.",
+        "laymanExplanation": "Dulu kita berusaha muncul di halaman 1 Google. Sekarang, saat orang bertanya 'Apa jam tangan terbaik?' langsung ke ChatGPT, kita harus memastikan AI-nya menyebut merek kita. Caranya dengan memberi 'makanan' informasi positif tentang kita ke otak AI tersebut."
+      },
+      {
+        "id": "d1s1-t5",
+        "title": "Social Engineering & Pembuatan Jingle dengan AI",
+        "timestamp": "01:14:20",
+        "timestampSeconds": 4460,
+        "category": "Marketing",
+        "keyTakeaways": [
+          "AI seperti Suno dapat mengubah suara rekaman biasa (ide mentah) menjadi jingle profesional dalam hitungan detik.",
+          "Jingle dan lagu buatan AI terbukti dapat mensocial-engineer persepsi masyarakat dan meningkatkan sentimen positif (contoh: Lagu MBG naik dari 25% ke 65% sentimen positif).",
+          "Pembuatan jingle yang sebelumnya memakan cost puluhan juta kini bisa dilakukan dengan modal hampir nol."
+        ],
+        "verbatimHighlight": "Perhatikan lagu MBG, itu 100% AI dan sekarang lagu itu sudah tidak bisa hilang dari kepala kita... Sentimennya itu naik dari 25% jadi 65%. Crazy kan dari sebuah campaign seperti ini dan ini cost-nya almost zero.",
+        "laymanExplanation": "Anda merekam diri Anda bernyanyi fals tentang produk Anda. AI akan menyulap rekaman itu menjadi lagu K-Pop atau pop profesional lengkap dengan instrumennya. Lagu ini bisa membuat orang terus teringat produk Anda."
+      },
+      {
+        "id": "d1s1-t6",
+        "title": "Algoritma Konten yang Menggerakkan Konversi (ManyChat)",
+        "timestamp": "02:08:58",
+        "timestampSeconds": 7738,
+        "category": "Marketing",
+        "keyTakeaways": [
+          "Konten harus berfokus pada algoritma (Algorithmic First), bukan egosentris (sekadar promosi produk).",
+          "Ganti Call-to-Action (CTA) kuno seperti 'Klik link di bio' dengan Call-to-Value, misal 'Komen API untuk diskon'.",
+          "ManyChat dapat diotomatisasi untuk membalas komentar via DM, sehingga komentar meledak (ratusan hingga ribuan), menaikkan posisi konten di algoritma, sekaligus menangkap leads."
+        ],
+        "verbatimHighlight": "Kalau kalian mau diskonnya komen mau komen pakai emoji api. Akhirnya orang jadi berbondong-bondong ngapain? Komen... Kalau kontennya menarik, akhirnya videonya jadi FYP. Jadi kayak gitu. Ada algoritm yang berputar... tools-nya kita pikirin belakangan namanya adalah many chat.",
+        "laymanExplanation": "Orang malas buka profil dan klik link. Tapi kalau Anda bilang 'Ketik MAU nanti saya DM', orang gampang komen. Karena banyak yang komen, Instagram menganggap video Anda bagus lalu menyebarkannya ke lebih banyak orang. AI lalu otomatis membalas DM mereka satu per satu tanpa Anda capek."
+      },
+      {
+        "id": "d1s1-t7",
+        "title": "Data Analytics Instan dengan Vision AI",
+        "timestamp": "01:35:08",
+        "timestampSeconds": 5708,
+        "category": "Audit",
+        "keyTakeaways": [
+          "LLM seperti Claude dapat melakukan Pareto Analysis dan visualisasi data hanya bermodalkan screenshot/foto laporan.",
+          "Sistem langsung men-generate grafik HTML interaktif tanpa perlu input manual data ke dalam Excel.",
+          "Peringatan: Berhati-hati dengan data rahasia/keuangan, terutama hindari kebocoran data (data leak) dan matikan setting 'Memory' agar LLM tidak bias."
+        ],
+        "verbatimHighlight": "Sesimpel kita masukkan aja foto dari penjualannya gitu kayak gini. Foto loh ya bukan Excel... Lihat ya dari screenshot-an doang teman-teman bisa melakukan data analisis kayak gini. Udah enggak perlu nginput-nginput lagi di Excel.",
+        "laymanExplanation": "Anda memotret grafik penjualan yang tertempel di dinding kantor, lalu mengirim fotonya ke AI. Dalam hitungan detik, AI itu merangkum siapa pembeli terbesar dan membuat grafik interaktif yang bisa diklik."
+      },
+      {
+        "id": "d1s1-t8",
+        "title": "Minutes of Meeting & Podcast Pembelajaran Internal",
+        "timestamp": "01:37:22",
+        "timestampSeconds": 5842,
+        "category": "HR",
+        "keyTakeaways": [
+          "Tools MOM (Minutes of Meeting) seperti Notebook LM / Gemini dapat mencerna transkrip rapat yang panjang.",
+          "Selain menjadi ringkasan, knowledge base ini dapat diubah menjadi podcast audio menggunakan fitur Audio Overview.",
+          "Karyawan dapat belajar atau mendengarkan ringkasan keputusan tanpa harus membaca dokumen berhalaman-halaman."
+        ],
+        "verbatimHighlight": "Teman-teman masukin modulnya teman-teman atau bahan materi belajar... ini bisa di audio overview teman-teman jadiin podcast... Jadi apa impact-nya teman-teman bisa melakukan meeting transkrip bisa jadi podcast.",
+        "laymanExplanation": "Rapat 3 jam yang direkam bisa disulap oleh AI menjadi acara radio (podcast) pendek selama 5 menit yang merangkum semua poin penting rapat tersebut, cocok didengarkan sambil menyetir pulang."
+      },
+      {
+        "id": "d1s1-t9",
+        "title": "AI Avatars untuk Endless Content Creation",
+        "timestamp": "02:15:58",
+        "timestampSeconds": 8158,
+        "category": "Marketing",
+        "keyTakeaways": [
+          "Menggunakan platform seperti HeyGen memungkinkan kreator/brand membuat konten terus-menerus tanpa perlu studio fisik.",
+          "Cukup rekam 1 menit video asli, avatar AI tersebut dapat dipakai berbulan-bulan untuk membawakan naskah apa saja.",
+          "Membangun otoritas dan konsistensi branding menjadi sangat murah dan cepat."
+        ],
+        "verbatimHighlight": "Saya datang ke OSIS satu kali saya pakai kontennya berbulan-bulan. Seolah-olah saya tinggal di Ais selama itu... Kita sambil jalan-jalan kita tik video 1 menit kita pakai buat bahan konten 5 bulan ke depan.",
+        "laymanExplanation": "Anda merekam video diri Anda selama 1 menit sebagai 'cetakan'. Bulan depan, Anda tinggal mengetik teks promosi baru, dan AI akan membuat video Anda (dengan wajah, mimik, dan suara Anda) membacakan teks itu persis seperti direkam ulang."
+      },
+      {
+        "id": "d1s1-t10",
+        "title": "Debat: AI Menggantikan ERP Konvensional",
+        "timestamp": "02:24:11",
+        "timestampSeconds": 8651,
+        "category": "Strategy",
+        "keyTakeaways": [
+          "Untuk bisnis skala UMKM atau menengah, AI sudah bisa membangun sistem semacam ERP/WMS secara internal dengan biaya nyaris nol.",
+          "Bagi korporasi enterprise (skala raksasa), ERP konvensional tetap dibutuhkan karena mereka membeli 'best practice' industri, compliance keamanan (security), dan skalabilitas yang sudah teruji.",
+          "AI dan ERP bisa berkolaborasi: AI bertindak sebagai layer interaksi yang mudah (contoh: NLP untuk membuat invoice otomatis) yang terhubung ke database ERP konvensional via tools seperti N8N."
+        ],
+        "verbatimHighlight": "Kalau company untungnya cuman anggaplah jangan 2 miliar deh 500 juta sebulan gitu. Berat Pak untuk mereka itu harus membayar IRP... Tapi kalau company-nya sudah... mereka bisa bayar setahun R miliar easy. Dan peran AI inilah yang membantu bisnis itu merapikan bisnis.",
+        "laymanExplanation": "Membangun sistem pabrik rumahan dengan AI itu seperti merakit lemari IKEA sendiri: murah dan cepat. Tapi kalau Anda mau membangun gedung pencakar langit, Anda tetap butuh arsitek dan kontraktor resmi (seperti sistem SAP/Oracle) demi keamanan mutlak, walau AI tetap bisa dipasang sebagai resepsionis cerdas di depannya."
       }
     ],
     "executiveResume": {
-      "title": "Resume Eksekutif: Dari Pasif Chatbot Menuju Vibe Coding & Automasi Organik",
-      "overview": "Sesi ini mendobrak persepsi AI sekadar sebagai 'mesin penjawab'. Anjas mendemokan cara memangkas tim marketing dari 8 orang menjadi 2 orang (penghematan 3x lipat, output 5x lipat), serta merombak Call to Action lama menjadi otomasi ManyChat miliaran rupiah.",
+      "title": "Resume Eksekutif: Transisi Menuju AI-Powered CEO",
+      "overview": "Sesi pembuka Sekolah CEO AI hari pertama menekankan satu realitas mendesak: adopsi AI bukan lagi tentang chat bot untuk iseng, melainkan mesin efisiensi dan generator pendapatan. Dari penghematan drastis dalam operasional tim marketing, pembuatan sistem ERP mandiri secara gratis, hingga manipulasi algoritma sosial media menggunakan ManyChat, seorang CEO kini dituntut untuk membangun infrastruktur bisnis berbasis AI (AI-Powered) ketimbang menjadi pengguna pasif.",
       "keyPillarsExploration": [
         {
-          "title": "1. Mitos SaaS Mahal (SaaS is Dead)",
-          "content": "Batas penciptaan software telah runtuh. Eksekutif bisa merancang sistem internal kustom menggunakan Vibe Coding, meniadakan langganan ERP mahal untuk fungsi sederhana."
+          "title": "1. Revolusi Cost & Produktivitas",
+          "content": "AI bukan pengeluaran, melainkan instrumen pemotongan biaya. Tim yang berisikan 8 orang dengan mudah di-scale down menjadi 2 orang super-user AI yang outputnya meningkat 5x lipat, menghasilkan ROI luar biasa untuk perusahaan skala apapun."
         },
         {
-          "title": "2. AI Memory Drift",
-          "content": "Percakapan AI yang terlalu panjang akan menyebabkan 'context drift' (AI berhalusinasi). Manajemen ruang kerja (workspace) dan isolasi project sangat vital."
+          "title": "2. Generative Engine Optimization (GEO)",
+          "content": "Menghadapi pergeseran kebiasaan mencari informasi (dari Google Search ke jawaban AI), CEO harus berinvestasi pada strategi memastikan produknya direkomendasikan secara organik oleh LLM (seperti ChatGPT, Claude, dan Gemini)."
+        },
+        {
+          "title": "3. Demokrasi Teknologi (Zero-Code System)",
+          "content": "Pengembangan aplikasi internal (WMS, CRM, Dashboard Analitik) yang dulu membutuhkan modal besar kini bisa dilakukan via promting dengan tools seperti Lovable, mendisrupsi industri SaaS pada segmentasi UMKM."
+        },
+        {
+          "title": "4. Konten Berbasis Algoritma (Call-to-Value)",
+          "content": "Pertumbuhan bisnis tidak sekadar bertumpu pada pembuatan konten yang bagus, melainkan konten yang didesain secara khusus untuk mengeksploitasi algoritma melalui interaksi terotomatisasi (ManyChat) guna menjaring mass-lead secara organik."
+        },
+        {
+          "title": "5. Agentic AI & Integrasi ERP",
+          "content": "AI bukan sekadar alat, namun 'agen' yang bertindak mandiri. Terlepas dari penggunaan ERP besar seperti SAP atau Oracle, layer AI (Agentic Workflow) dapat disematkan (via N8N) untuk mempercepat input-output harian seperti otomatisasi invoice langsung dari meeting."
         }
       ],
-      "strategicTakeaway": "Hentikan adopsi tool AI secara acak tanpa restrukturisasi KPI. AI hanya efektif bila alur bisnis didekonstruksi."
+      "strategicTakeaway": "Jangan terjebak sebagai 'AI User' yang pasif. CEO harus menjadi 'AI-Powered CEO' yang aktif mendesain alur kerja (workflow) menggunakan agen AI, mensocial-engineer sentimen pasar, dan memangkas habis proses manual demi pertumbuhan eksponensial."
     },
     "actionPlan": [
       {
         "id": "d1s1-act-1",
-        "task": "Ubah semua CTA sosmed menjadi CTV + ManyChat Automation",
-        "pic": "CMO / Marketing Lead",
-        "timeframe": "Minggu 1",
-        "output": "Komentar Instagram terotomasi menjadi leads di DM."
+        "task": "Ubah strategi CTA konten sosial media dari 'Klik Link Bio' menjadi 'Komen Kata Kunci' dan pasangkan integrasi ManyChat untuk automasi DM penangkap leads.",
+        "pic": "Head of Marketing",
+        "timeframe": "Minggu ke-1",
+        "output": "Peningkatan engagement rate dan rasio konversi leads dari sosial media secara instan."
+      },
+      {
+        "id": "d1s1-act-2",
+        "task": "Gunakan Notebook LM untuk merangkum dan memproses setiap transkrip meeting manajemen menjadi knowledge base terpusat (MOM) yang bisa diakses & ditanya kembali oleh tim.",
+        "pic": "HR & Operational Manager",
+        "timeframe": "Minggu ke-1",
+        "output": "Efisiensi distribusi informasi dan dokumentasi keputusan rapat harian."
+      },
+      {
+        "id": "d1s1-act-3",
+        "task": "Lakukan brainstorming (Idea Amplification) dengan ChatGPT/Claude untuk memetakan alur bisnis internal, lalu generate prototipe sistem sederhana menggunakan Lovable/Bolt.new.",
+        "pic": "CEO / Product Manager",
+        "timeframe": "Minggu ke-2",
+        "output": "Mockup atau web app fungsional WMS/CRM/Dashboard operasional tanpa biaya development eksternal."
+      },
+      {
+        "id": "d1s1-act-4",
+        "task": "Riset dan bentuk strategi GEO (Generative Engine Optimization) dengan menyebarkan artikel FAQ & rilis pers di media terpercaya agar rekomendasi AI mengarah pada produk perusahaan.",
+        "pic": "SEO & Digital PR Specialist",
+        "timeframe": "Minggu ke-3",
+        "output": "Penyebutan nama brand secara positif oleh LLM utama (ChatGPT, Claude, Gemini) atas kueri pencarian niche perusahaan."
+      },
+      {
+        "id": "d1s1-act-5",
+        "task": "Matikan fitur 'Memory' pada akun Claude/ChatGPT operasional atau bersihkan secara berkala agar tidak terjadi bias dan konteks tercampur antar proyek analisis data (Data Analytics).",
+        "pic": "Data / AI Operations Team",
+        "timeframe": "Mulai Hari Ini",
+        "output": "Keluaran analitik data (seperti Pareto Analysis) selalu bersih dan tidak berhalusinasi mengacu pada data klien atau project sebelumnya."
       }
     ]
   },
   {
     "id": "d1s2",
     "slug": "day-1-sesi-2",
-    "title": "Enterprise Architecture, Token Optimasi & HR Talent AI",
+    "title": "SEKOLAH CEO AI DAY 1 SESI 2",
     "day": 1,
     "sessionNum": 2,
     "speaker": {
-      "name": "Mas Anjas, Sammy, Ugo, Ibnu",
-      "role": "Connext Lab & Bisnis Hack",
-      "company": "Connext Lab & Business Hack",
-      "avatar": "\ud83d\udcbb",
-      "tagline": "AI Enterprise Solutions & Smart HR Systems"
+      "name": "Mas Anjas, Mas Hugo, Mas Ibnu, Mas Sem (Sammy)",
+      "role": "Speakers & Facilitators",
+      "company": "Business Hack / Connext Lab",
+      "avatar": "",
+      "tagline": "Mengintegrasikan AI ke dalam Bisnis Proses"
     },
-    "duration": "2h 30m",
-    "youtubeId": "Pw38RtyGUZ0",
-    "summary": "Strategi membagi beban kerja AI (Model Tiering) agar tidak boncos biaya token, pemanfaatan Edge AI (Chip on Server vs Chip on Camera), serta implementasi riil 'Talent Blueprint' untuk assessment pelamar dengan fitur deteksi kebohongan (Lie Scale).",
+    "duration": "N/A",
+    "youtubeId": "",
+    "summary": "Sesi kedua pada hari pertama membahas tantangan adaptasi AI dalam perusahaan, pentingnya kesiapan SDM sebelum sistem, efisiensi biaya token AI melalui model routing (Opus vs Sonnet), ancaman AI terhadap pekerjaan junior, serta praktik langsung (low-hanging fruit) mengotomatisasi proses rekrutmen menggunakan aplikasi AI (Business Hack Talent Blueprint).",
     "corePillars": [
-      "Arsitektur Komputasi (Edge vs Cloud)",
-      "Model Tiering & Task Routing (Opus vs Sonnet)",
-      "Business Hack Talent Blueprint (HR AI)",
-      "Dampak Ketenagakerjaan (Junior vs AI)"
+      "AI Readiness & Human Resources",
+      "AI Cost Management & Routing",
+      "Future of Jobs & Personal Branding",
+      "AI in Recruitment (Talent Blueprint)",
+      "AI Integration in Business Processes"
     ],
-    "quote": "Kita punya sistem yang pintar tapi orang-orangnya belum siap, kita cuma mindahin orang bodoh itu ke sistem yang pintar.",
+    "quote": "Kita punya sistem yang pintar tapi orang-orangnya bodoh, kita cuma mindahin orang bodoh itu ke sistem yang pintar itu. Jadi yang paling pertama adalah resource-nya dulu harus siap.",
     "topics": [
       {
         "id": "d1s2-1",
-        "title": "Routing & Optimasi Biaya Token LLM",
-        "timestamp": "020:00",
-        "timestampSeconds": 1200,
-        "category": "Tech",
+        "title": "Kesiapan SDM dalam Mengadopsi AI (HR Readiness)",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "HR / Strategy",
         "keyTakeaways": [
-          "Gunakan model Frontier (Opus/Fable) untuk arsitektur strategis.",
-          "Gunakan model medium (Sonnet/Haiku) yang dibatasi N8N (Harnessing Agent) untuk operasional harian."
+          "Perusahaan dengan karyawan senior sering kesulitan beradaptasi dengan AI.",
+          "Adaptasi manusia harus dilakukan sebelum adaptasi sistem.",
+          "Perombakan alur kerja harus dimulai dari kesiapan manajer, bukan langsung memecat karyawan bawah."
         ],
-        "verbatimHighlight": "Jangan suruh Claude Opus ngoding task harian. Itu ibarat menyewa Senior Engineer 100 juta cuma buat bikin form CRM simpel.",
-        "laymanExplanation": "Ibarat di kantor, pekerjaan strategis berikan ke Manajer (AI Mahal), pekerjaan ketik rutin berikan ke Staf (AI Murah) biar tidak boros anggaran."
+        "verbatimHighlight": "Company itu susah kalau yang udah tua-tua banget company-nya... kita punya sistem yang pintar tapi orang-orangnya bodoh, kita cuma mindahin orang bodoh itu ke sistem yang pintar itu.",
+        "laymanExplanation": "Ibarat ngasih mobil balap ke orang yang baru bisa naik sepeda. Mobilnya canggih, tapi kalau orangnya belum siap, malah bisa kecelakaan. Perusahaan harus melatih timnya dulu, terutama manajernya."
       },
       {
         "id": "d1s2-2",
-        "title": "Smart HR: Talent Blueprint & Lie Scale",
-        "timestamp": "045:00",
-        "timestampSeconds": 2700,
-        "category": "HR",
+        "title": "Penggunaan AI dan Computer Vision untuk Keamanan Perumahan",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "Tech / Implementation",
         "keyTakeaways": [
-          "Skrining pelamar otomatis menghasilkan dokumen profil fit 10 halaman (Role Fit Index).",
-          "Deteksi anomali kecepatan jawab dan straight-lining via algoritma Lie Scale."
+          "AI dapat diintegrasikan dengan CCTV murah menggunakan server GPU (Computer Vision/OCR).",
+          "Pemrosesan di server lebih hemat biaya daripada membeli smart camera berchip mahal.",
+          "Data yang terkumpul dapat dimanfaatkan sebagai leads marketing jika dihubungkan dengan database penghuni."
         ],
-        "verbatimHighlight": "Fitur Lie Scale mendeteksi kewajaran waktu pengisian. Terlalu cepat berarti menebak asal, terlalu lambat berarti overthinking atau manipulasi.",
-        "laymanExplanation": "AI bisa tahu kalau pelamar kerja berbohong atau asal mengisi tes dengan mengukur detik waktu dia membaca dan menjawab soal."
+        "verbatimHighlight": "...lebih baik approach on server. Karena kameranya kamera semurah mungkin gitu. Cost-nya cost server GPU gitu untuk ngejalanin computer vision namanya.",
+        "laymanExplanation": "Daripada beli kamera CCTV yang mahal, lebih baik pakai kamera murah biasa, tapi 'otak' (AI)-nya ditaruh di komputer pusat untuk mengenali wajah atau plat nomor secara otomatis."
+      },
+      {
+        "id": "d1s2-3",
+        "title": "Strategi Menghemat Biaya Token AI (Routing & Harnessing)",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "Tech / Strategy",
+        "keyTakeaways": [
+          "Penggunaan model AI premium (seperti Claude Opus) untuk eksekusi koding harian sangat memboroskan token/biaya.",
+          "Model premium sebaiknya digunakan khusus untuk planning/perencanaan.",
+          "Gunakan model standar (seperti Claude Sonnet, GPT-5.5) untuk pengerjaan tugas sehari-hari."
+        ],
+        "verbatimHighlight": "Opus itu jangan disuruh ngoding. Itu ibarat kita nyuruh senior engineer ex-Tokopedia bikin CRM yang simpel, gajinya dia 100 juta, terlalu mahal... planning pakailah model paling mahal, tapi untuk pengerjaan sehari-hari itu pakai yang medium.",
+        "laymanExplanation": "Jangan pakai arsitek mahal untuk menyusun batu bata. Pakai AI mahal (arsitek) untuk bikin rencananya, lalu suruh AI murah (tukang bangunan) untuk mengeksekusi kerjaan kasarnya."
+      },
+      {
+        "id": "d1s2-4",
+        "title": "Masa Depan Pekerjaan dan Pentingnya Personal Branding",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "HR / Career",
+        "keyTakeaways": [
+          "Pekerjaan repetitif sangat rentan digantikan oleh physical AI.",
+          "Karyawan junior semakin sulit membuktikan diri karena senior kini dibantu AI menjadi jauh lebih produktif.",
+          "Personal branding menjadi krusial agar individu memiliki nilai jual unik di pasar yang dipenuhi AI."
+        ],
+        "verbatimHighlight": "Jadi junior dalam bidang apa pun itu lebih susah prove themselves. Karena si seniornya kayak Bapak gitu, pakai Claude gitu. Junior-nya ngapain? ... So, anak harus diajarin personal branding.",
+        "laymanExplanation": "Di masa depan, kemampuan teknis level pemula bisa dilakukan oleh AI dalam hitungan detik. Biar tidak kalah saing, kita harus punya nilai jual yang unik agar orang kenal siapa kita."
+      },
+      {
+        "id": "d1s2-5",
+        "title": "Ancaman Penurunan Berpikir Kritis (Critical Thinking)",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "Society / Education",
+        "keyTakeaways": [
+          "Ancaman terbesar AI bukanlah hilangnya pekerjaan, melainkan menurunnya kemampuan berpikir kritis masyarakat.",
+          "Ketergantungan pada AI membuat orang kehilangan kemampuan higher-order thinking.",
+          "Manusia harus tetap mengasah otak dan tidak menerima jawaban instan AI begitu saja."
+        ],
+        "verbatimHighlight": "...yang bahaya sebenarnya bukan AI yang gantiin, Pak, tapi critical thinking yang berkurang. Jadi semenjak ada AI, anak kecil itu banyak banget yang dimanjakan sama AI.",
+        "laymanExplanation": "Bahaya terbesar AI bukan mengambil alih pekerjaan, tapi membuat otak manusia jadi 'malas'. Kalau semua jawaban serba instan, manusia jadi tidak terbiasa memecahkan masalah yang rumit."
+      },
+      {
+        "id": "d1s2-6",
+        "title": "Low-Hanging Fruit: Mempercepat Rekrutmen dengan AI",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "HR / Tech",
+        "keyTakeaways": [
+          "Proses rekrutmen manual memakan waktu panjang dan rawan salah rekrut.",
+          "AI bisa mempercepat penyaringan (screening) melalui asesmen otomatis sebelum tahap wawancara.",
+          "Aplikasi Business Hack Talent Blueprint mendemonstrasikan bagaimana AI dapat mengotomatisasi proses ini."
+        ],
+        "verbatimHighlight": "Jadi saya merasa bahwa rekrutmen ini terlalu takes time... dengan adanya AI, saya menemukan celah di mana ini bisa mempercepat proses rekrutmen kami.",
+        "laymanExplanation": "Cari karyawan baru itu sering membuang waktu dan berisiko salah pilih. Dengan AI, kita bisa mengetes mereka secara otomatis dulu, sehingga kita cuma meng-interview orang yang benar-benar potensial."
+      },
+      {
+        "id": "d1s2-7",
+        "title": "Lie Scale: Mendeteksi Kebohongan Pelamar via AI",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "HR / Tech",
+        "keyTakeaways": [
+          "Sistem AI dalam rekrutmen dilengkapi algoritma untuk mendeteksi potensi pelamar berbohong atau mengisi asal-asalan.",
+          "Deteksi didasarkan pada waktu pengisian (terlalu cepat) dan pola jawaban berulang.",
+          "Jika Lie Scale tinggi (>4), pelamar diwajibkan mengulang tes agar datanya valid."
+        ],
+        "verbatimHighlight": "...kami sudah memasang algoritma... di mana AI kita bisa mengetahui potensi bohong... kalau dia melihat pola yang diisi sama, dia juga ada alert-nya.",
+        "laymanExplanation": "Sistem ini bisa menangkap basah kalau pelamar menjawab asal-asalan atau pura-pura bagus. AI menghitung seberapa cepat dia jawab dan pola jawabannya, jadi hasilnya dijamin jujur."
+      },
+      {
+        "id": "d1s2-8",
+        "title": "Mengotomatisasi Proses Bisnis Repetitif",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "Tech / Strategy",
+        "keyTakeaways": [
+          "AI tidak hanya melahirkan ide baru, tapi mempercepat proses pembuatan aplikasi bisnis.",
+          "Semua pekerjaan yang sifatnya repetitif dan dapat diprediksi sangat cocok untuk diotomatisasi (di-AI-kan).",
+          "Implementasi AI bisa memotong waktu pembuatan aplikasi dari berbulan-bulan menjadi hitungan hari."
+        ],
+        "verbatimHighlight": "AI itu sebenarnya bukan menghadirkan barang baru, dia tuh mempercepat prosesnya... kalau itu repetitif, bisa diprediksi... nah itu bisa di-AI-kan.",
+        "laymanExplanation": "AI itu alat bantu super cepat. Kalau di perusahaan Anda ada pekerjaan manual yang polanya berulang-ulang setiap hari, pekerjaan itu bisa dibikinkan aplikasi AI agar selesai otomatis."
+      },
+      {
+        "id": "d1s2-9",
+        "title": "Company Brain: Mini ERP Berbasis AI",
+        "timestamp": "00:00",
+        "timestampSeconds": 0,
+        "category": "Tech / Operations",
+        "keyTakeaways": [
+          "Integrasi sistem HR, Sales, dan CRM ke dalam satu platform terpusat sangat efisien.",
+          "Company Brain bertindak sebagai 'otak perusahaan' yang dimodularisasi sesuai kebutuhan API tiap bisnis.",
+          "Penggunaan sistem ini menyatukan pengambilan keputusan berbasis data di perusahaan."
+        ],
+        "verbatimHighlight": "Company Brain ini sebenarnya mirip-mirip ya ada mini apa, mini ERP... Jadi kayak ada dari sales, dari CRM, dari HR, itu ada di situ semua.",
+        "laymanExplanation": "Daripada pakai banyak aplikasi beda untuk mengurus jualan, karyawan, dan lain-lain, semuanya digabung di satu aplikasi 'otak' yang dibantu AI, sehingga lebih rapi dan saling terhubung."
       }
     ],
     "executiveResume": {
-      "title": "Resume Eksekutif: Restrukturisasi Token dan Bias Psikologis Pelamar",
-      "overview": "Sesi teknis yang mengajarkan CEO untuk tidak sekadar memakai AI secara buta, melainkan mengelola biaya komputasi (token management) dan menerapkan solusi AI tingkat produksi (Talent Blueprint HR) untuk menghilangkan drama perekrutan.",
+      "title": "Resume Eksekutif: Strategi Implementasi AI, Cost Management & Rekrutmen",
+      "overview": "Sesi kedua Day 1 menekankan bahwa AI bukan sekadar alat teknologi, melainkan transformasi fundamental yang membutuhkan kesiapan SDM, manajemen biaya operasional (routing AI models), hingga aplikasi praktis untuk menyelesaikan hambatan bisnis (low-hanging fruit) seperti rekrutmen menggunakan sistem AI terpadu.",
       "keyPillarsExploration": [
         {
-          "title": "1. Chip on Server vs Camera",
-          "content": "Strategi infrastruktur hemat biaya: gunakan CCTV biasa dan alirkan datanya ke server AI terpusat untuk Computer Vision, daripada membeli CCTV pintar mahal di tiap titik."
+          "title": "Human-First AI Adoption",
+          "content": "Adaptasi AI harus dimulai dari level manajerial dan pembenahan SDM, menghindari sekadar memindahkan 'orang tidak siap' ke sistem yang canggih."
+        },
+        {
+          "title": "AI Cost & Routing Efficiency",
+          "content": "Menghemat biaya token dengan cara cerdas: gunakan model AI premium (Opus) hanya untuk perencanaan, dan model reguler (Sonnet/Haiku) untuk eksekusi koding harian."
+        },
+        {
+          "title": "Future-Proofing Skills & Branding",
+          "content": "Menghadapi ancaman AI terhadap posisi staf junior dengan memperkuat personal branding dan menjaga kemampuan berpikir kritis agar tidak terlena oleh kemudahan AI."
+        },
+        {
+          "title": "AI in Recruitment (Talent Blueprint)",
+          "content": "Menggunakan AI untuk screening rekrutmen secara otomatis yang mampu mengukur kecocokan peran (role-fit) serta mendeteksi kebohongan pelamar via 'Lie Scale'."
+        },
+        {
+          "title": "Process Automation via API",
+          "content": "Mengotomatisasi pekerjaan repetitif ke dalam sistem terintegrasi (Mini ERP) yang menghubungkan divisi HR, Sales, dan operasional dengan API yang disesuaikan."
         }
       ],
-      "strategicTakeaway": "Efisiensi orang adalah bonus setelah merapikan workflow, bukan langkah awal. Jangan langsung mem-PHK tim tanpa memetakan tugas ke AI Tier 1 vs Tier 2."
+      "strategicTakeaway": "Kunci keberhasilan AI dalam bisnis bukan terletak pada kecanggihan semata, melainkan pada ketepatan memilih model yang efisien secara biaya, kesiapan adaptasi manusia, serta penerapan langsung pada proses repetitif untuk menghasilkan ROI waktu dan biaya yang instan."
     },
     "actionPlan": [
       {
         "id": "d1s2-act-1",
-        "task": "Evaluasi Skrining HR via Talent Blueprint",
-        "pic": "HRD",
-        "timeframe": "Minggu 2",
-        "output": "Proses seleksi tahap awal 100% menggunakan AI Assessment."
+        "task": "Lakukan asesmen kesiapan SDM di tingkat manajerial sebelum mengimplementasikan automasi AI di perusahaan.",
+        "pic": "CEO / HR Director",
+        "timeframe": "Q1",
+        "output": "Laporan Kesiapan Adaptasi AI & Training Level Manajer"
+      },
+      {
+        "id": "d1s2-act-2",
+        "task": "Terapkan model routing AI untuk menekan biaya operasional API (gunakan model premium untuk planning, standar untuk harian).",
+        "pic": "CTO / IT Team",
+        "timeframe": "1-2 Minggu",
+        "output": "SOP Penggunaan Tiering AI Model Internal"
+      },
+      {
+        "id": "d1s2-act-3",
+        "task": "Gunakan tools AI assessment (seperti Talent Blueprint) sebagai screening tahap awal rekrutmen untuk memangkas waktu wawancara.",
+        "pic": "HR Department",
+        "timeframe": "Immediate",
+        "output": "Integrasi link asesmen ke alur rekrutmen"
+      },
+      {
+        "id": "d1s2-act-4",
+        "task": "Identifikasi minimal satu pekerjaan paling repetitif di perusahaan (low-hanging fruit) untuk segera dibuatkan automasinya.",
+        "pic": "Operations Manager",
+        "timeframe": "1 Bulan",
+        "output": "MVP Automasi Proses Repetitif"
+      },
+      {
+        "id": "d1s2-act-5",
+        "task": "Rancang program pengembangan karyawan junior dengan fokus pada personal branding dan higher-order thinking.",
+        "pic": "HR / L&D",
+        "timeframe": "Q2",
+        "output": "Modul Pelatihan Personal Branding di Era AI"
       }
     ]
   },
   {
     "id": "d2s1",
     "slug": "day-2-sesi-1",
-    "title": "Transformasi Bisnis, 15% Rule & Company Brain",
+    "title": "Restrukturisasi Bisnis & Eksploitasi Algoritma dengan AI",
     "day": 2,
-    "sessionNum": 3,
+    "sessionNum": 1,
     "speaker": {
-      "name": "Satya Pradana & Ibnu",
-      "role": "Owner Bisnishack Group & AI Architect",
+      "name": "Satya Pradana",
+      "role": "Owner Bisnishack Group / Founder Cover Super",
       "company": "Bisnishack Group",
-      "avatar": "\ud83d\udc64",
-      "tagline": "Architect of the Company Brain & Exponential ROI"
+      "avatar": "",
+      "tagline": "Pakar Strategi Bisnis & Human Resource Optimization"
     },
-    "duration": "2h 55m",
-    "youtubeId": "dummy1",
-    "summary": "Satya Pradana mendemonstrasikan kegagalan adopsi AI akibat CEO yang tidak merekayasa ulang proses bisnis. Sesi ini membedah arsitektur 'Company Brain' internal, pabrik konten masif, robotika Tiongkok, dan rekayasa budaya Kotter.",
+    "duration": "02:55:21",
+    "youtubeId": "uB4NCCuDtx8",
+    "summary": "Membahas bagaimana implementasi AI tidak hanya sekedar tools, melainkan membutuhkan restrukturisasi organisasi dan bisnis proses. Dengan AI, sebuah tim marketing yang sebelumnya 11-14 orang dapat digantikan oleh 1 orang yang mampu memproduksi ribuan konten per hari, mengelola ribuan akun sosial media, hingga mengoperasikan penjualan otomatis.",
     "corePillars": [
-      "Reverse Engineering Bisnis Proses",
-      "Hukum 15% Transformasi John Kotter",
-      "Zero Moment of Truth (ZMOT) 7-11-4",
-      "Desain Insentif Cerdas (Behavioral Engineering)"
+      "Restrukturisasi Organisasi & Bisnis Proses AI",
+      "Massive Content Generation",
+      "Sosmed Automation & Affiliate Scale",
+      "Algorithmic Repetition Strategy",
+      "Masa Depan AI: Robotik Fisik (IoT)"
     ],
-    "quote": "Manusia tidak akan pernah tergantikan oleh AI sampai akhir zaman. Manusia hanya akan tergantikan oleh manusia lain yang menggunakan AI.",
+    "quote": "Manusia tidak akan tergantikan oleh AI. Manusia hanya akan tergantikan oleh manusia lain yang menggunakan AI.",
     "topics": [
       {
         "id": "d2s1-1",
-        "title": "Reverse Engineering Bisnis & Restrukturisasi",
-        "timestamp": "015:36",
-        "timestampSeconds": 936,
-        "category": "Strategy",
+        "title": "Restrukturisasi Bisnis Proses & Organisasi untuk AI",
+        "timestamp": "00:08:36",
+        "timestampSeconds": 516,
+        "category": "Strategy / HR",
         "keyTakeaways": [
-          "Membongkar alur tim marketing 11 orang menjadi 1 orang AI Orchestrator.",
-          "Peningkatan target desain dari 10/hari menjadi 2.400/hari menggunakan Lumio/ChatGPT Image."
+          "Penggunaan AI baru berdampak drastis jika diikuti dengan perombakan struktur organisasi dan bisnis proses.",
+          "AI bukan sekadar alat bantu (tools), melainkan mesin utama yang mengubah cara kerja tim.",
+          "Tanpa perombakan struktur, karyawan hanya akan memangkas waktu kerja dan menggunakan sisa waktunya untuk hal tidak produktif."
         ],
-        "verbatimHighlight": "Jika Anda kasih karyawan AI tapi SOP-nya sama, efisiensinya disembunyikan. Waktu luangnya dipakai untuk santai. Anda harus rombak KPI-nya.",
-        "laymanExplanation": "Kalau AI bikin kerjaan 8 jam selesai 15 menit, sisa 7 jam jangan buat santai. CEO harus kasih target 100x lipat lebih tinggi."
+        "verbatimHighlight": "AI itu cuma kayak kita punya mesin pesawat jet dipakai buat motong rumput kalau kita gak rubah struktur organisasi.",
+        "laymanExplanation": "Menggunakan AI tanpa mengubah sistem kerja ibarat membeli mesin cuci otomatis tapi tetap menunggui mesinnya berputar tanpa mengerjakan hal lain."
       },
       {
         "id": "d2s1-2",
-        "title": "The 15% Tipping Point (Kotter)",
-        "timestamp": "060:40",
-        "timestampSeconds": 3640,
-        "category": "Leadership",
+        "title": "Massive Content Generation dengan ChatGPT Image",
+        "timestamp": "00:22:20",
+        "timestampSeconds": 1340,
+        "category": "Marketing / Tech",
         "keyTakeaways": [
-          "Tidak perlu meyakinkan seluruh karyawan.",
-          "Cetak hasil ekstrem dengan 15% tim militan untuk memicu kecemburuan sosial (Envy) dan memaksa 85% sisanya berubah."
+          "Satu orang dapat menghasilkan 2.000 hingga 3.000 desain konten per hari berkat AI.",
+          "Workflow melibatkan pembuatan prompt secara paralel (3-4 tab sekaligus) untuk efisiensi waktu.",
+          "Konten yang diproduksi AI dapat mendatangkan konversi penjualan dengan interaksi organik (leads)."
         ],
-        "verbatimHighlight": "Untuk mengubah budaya organisasi, ambil 15% orang yang militan. Begitu mereka melompat 100x lipat hasilnya, 85% sisanya tidak punya pilihan selain ikut atau punah.",
-        "laymanExplanation": "Jangan paksa 100 orang di kantor pakai AI. Ambil 15 orang terhebat, latih mereka, kasih insentif besar. Sisanya akan otomatis ikut-ikutan karena iri."
+        "verbatimHighlight": "Satu hari 8 jam bisa jadi 240 karosel. Masing-masing 10 desain. Berarti 2.400 desain sehari.",
+        "laymanExplanation": "AI layaknya pabrik desain super cepat di mana satu orang bertindak sebagai mandor yang memproduksi ribuan gambar dalam hitungan jam."
       },
       {
         "id": "d2s1-3",
-        "title": "Company Brain & Multi-Agent Orchestration",
-        "timestamp": "076:25",
-        "timestampSeconds": 4585,
-        "category": "Tech",
+        "title": "Skala Bisnis via Social Media Affiliate (Threads/Shopee)",
+        "timestamp": "00:32:18",
+        "timestampSeconds": 1938,
+        "category": "Marketing / Strategy",
         "keyTakeaways": [
-          "Sistem internal (Company Brain) yang mengolah data dari absensi, bank, CRM Wavo.",
-          "Sparing partner CEO di setiap pagi untuk memberikan Executive Briefing (surat kabar internal)."
+          "Skalabilitas dicapai dengan memiliki ratusan akun (contoh: Threads) untuk mempromosikan produk.",
+          "Satu akun mungkin hanya menghasilkan profit kecil, tapi ratusan akun menciptakan omset harian yang besar.",
+          "Otomasi dilakukan oleh AI, memungkinkan operasi dengan sumber daya manusia minim."
         ],
-        "verbatimHighlight": "Company Brain mengintegrasikan seluruh titik data enterprise: kas, absensi, stok. CEO tinggal diskusi di WhatsApp setiap pagi tentang apa yang harus diputuskan.",
-        "laymanExplanation": "Punya 1 otak AI di kantor yang hafal semua keuangan, stok, dan daftar hadir pegawai, lalu melaporkannya ke CEO via WhatsApp setiap jam 7 pagi."
+        "verbatimHighlight": "Rata-rata tiap akun Rp200.000 sehari. Kalau kita anggap 100 akun aja berarti dia 20 juta sehari profitnya ngover trade ke link Shopee.",
+        "laymanExplanation": "Alih-alih memancing dengan satu pancingan besar, kita menggunakan ratusan pancingan kecil yang bekerja otomatis sepanjang hari."
+      },
+      {
+        "id": "d2s1-4",
+        "title": "Produksi Audio/Video Tanpa Wajah (Faceless Content)",
+        "timestamp": "00:33:41",
+        "timestampSeconds": 2021,
+        "category": "Marketing / Tech",
+        "keyTakeaways": [
+          "Penggunaan Suno AI dan tools video editor otomatis untuk membuat konten relaksasi, ngaji, dll.",
+          "Model bisnis adSense yang berjalan 24 jam sehari secara live.",
+          "Bisa mengelola lebih dari 50 akun hanya dengan 2 orang."
+        ],
+        "verbatimHighlight": "Dikerjain sama dua orang yang pakai AI buat bikin video tiap hari posting tiap hari live 24 jam tiap hari di semua 50 akun.",
+        "laymanExplanation": "AI berfungsi layaknya stasiun televisi otomatis yang bisa menyiarkan beragam konten menarik 24/7 tanpa henti."
+      },
+      {
+        "id": "d2s1-5",
+        "title": "Live Automation & Skalabilitas Perangkat",
+        "timestamp": "00:34:49",
+        "timestampSeconds": 2089,
+        "category": "Marketing / Strategy",
+        "keyTakeaways": [
+          "Otomasi live TikTok menghasilkan profit konstan, meskipun nilainya kecil per device.",
+          "Mencapai ratusan juta rupiah per bulan dengan mengoperasikan ribuan perangkat mobile.",
+          "Keberhasilan terletak pada eksploitasi pola repetisi (repetition) di skala raksasa."
+        ],
+        "verbatimHighlight": "Satu handphone menghasilkan Rp70.000. Kalau aku punya 100 handphone berapa? 1000 handphone berapa? Dia punya 3.000 handphone.",
+        "laymanExplanation": "Sama seperti pabrik dengan ribuan mesin, memiliki ribuan ponsel yang menjalankan tugas spesifik mampu menghasilkan output massal."
+      },
+      {
+        "id": "d2s1-6",
+        "title": "Memanfaatkan Algoritma Repetitif (Studi Kasus Pandawara)",
+        "timestamp": "00:38:08",
+        "timestampSeconds": 2288,
+        "category": "Marketing / Strategy",
+        "keyTakeaways": [
+          "Audiens tidak mudah bosan dengan konten repetitif selama niche-nya relevan dan disukai.",
+          "Sistem algoritma akan terus menyajikan konten ke pengguna yang memberikan engagement (like, comment).",
+          "Kreator harus konsisten memposting meski dirasa membosankan dari sisi produksi."
+        ],
+        "verbatimHighlight": "Video ke-20 bersihin sungai... Sampai dia ke Eropa. Karena semua video dia isinya cuma satu. Bersihin sungai. Bosan enggak audiensnya? Enggak.",
+        "laymanExplanation": "Algoritma sosial media seperti restoran yang selalu menyajikan makanan favorit pelanggannya tanpa henti. Jika konten relevan, audiens akan terus memakannya."
+      },
+      {
+        "id": "d2s1-7",
+        "title": "Transformasi Talent Menjadi AI Video Editor",
+        "timestamp": "00:46:48",
+        "timestampSeconds": 2808,
+        "category": "Strategy / HR",
+        "keyTakeaways": [
+          "Pergeseran fungsi SDM: Model fisik (talent) kini lebih banyak bekerja sebagai editor konten AI.",
+          "AI menggantikan peran presenter manusia, memotong biaya produksi secara signifikan.",
+          "Konsumen seringkali tidak menyadari perbedaan antara video talent manusia vs AI."
+        ],
+        "verbatimHighlight": "Talent-talent kita cewek-cewek itu sekarang tugasnya bikin video pakai AI. Plot twist banget enggak tuh?",
+        "laymanExplanation": "Aktor yang biasanya tampil di depan kamera kini beralih menjadi sutradara di balik layar yang mengontrol aktor digital (AI)."
+      },
+      {
+        "id": "d2s1-8",
+        "title": "Masa Depan AI dan Robotik (Dark Factory China)",
+        "timestamp": "00:48:54",
+        "timestampSeconds": 2934,
+        "category": "Tech / Vision",
+        "keyTakeaways": [
+          "Pabrik-pabrik di China mulai beralih ke dark factory (pabrik tanpa manusia).",
+          "IoT dan Robotik terintegrasi dengan AI, memungkinkan otomasi penuh dari logistik hingga restoran.",
+          "Mengantisipasi efisiensi di mana cost robot lebih murah dari gaji operator."
+        ],
+        "verbatimHighlight": "Itu udah ada istilah namanya dark factory... pabriknya gelap karena yang kerja robot. Tangan-tangan robot yang ngerakit, 23 jam sehari.",
+        "laymanExplanation": "Di masa depan, pabrik tidak perlu lampu terang, karena robot tidak butuh pencahayaan untuk bekerja, layaknya mesin yang bekerja dalam kotak tertutup."
       }
     ],
     "executiveResume": {
-      "title": "Resume Eksekutif: Melipatgandakan Omzet dengan Reduksi 90% Biaya",
-      "overview": "Satya Pradana memberikan peta jalan brutal tentang efisiensi operasional. Mengganti paradigma 'membelikan tools' menjadi 'membangun sistem ERP AI' (Company Brain). Sesi ditutup dengan filosofi Desain Insentif Cerdas.",
+      "title": "Resume Eksekutif: Eksploitasi AI dalam Bisnis",
+      "overview": "Sesi ini menyoroti bagaimana AI secara radikal dapat merombak efisiensi bisnis. Bukan sekadar penggunaan tools baru, melainkan revolusi struktur kerja, dari proses kreatif (konten massal), penjualan otomatis, hingga antisipasi era dark factory dan robotik.",
       "keyPillarsExploration": [
         {
-          "title": "1. ZMOT (Zero Moment of Truth)",
-          "content": "Konsumen butuh rata-rata 7 jam, 11 touchpoints, di 4 kanal sebelum membeli. Ini mengharuskan produksi ribuan aset marketing secara konsisten menggunakan Pabrik Konten AI."
+          "title": "Restrukturisasi Tim (HR)",
+          "content": "Pengurangan rasio manpower dari 11 orang menjadi 1 orang dengan output ribuan kali lipat."
+        },
+        {
+          "title": "Skalabilitas Super Masif",
+          "content": "Strategi eksploitasi channel affiliate dengan mengotomasi ratusan hingga ribuan akun di sosial media."
+        },
+        {
+          "title": "Automasi Konten & Algoritma",
+          "content": "Pemanfaatan AI Image/Video untuk menciptakan repetisi konten tiada akhir yang dioptimalkan untuk algoritma platform."
+        },
+        {
+          "title": "Evolusi Profesi",
+          "content": "Mengarahkan SDM (misalnya talent video) untuk menjadi AI operator daripada tetap pada pekerjaan teknis konvensional."
+        },
+        {
+          "title": "Ekosistem AI Hardware",
+          "content": "Kesiapan bisnis terhadap era AI fisik (Robotik, autonomous vehicles) yang segera merevolusi supply chain."
         }
       ],
-      "strategicTakeaway": "Ukuran keberhasilan AI hanya satu: apakah omzet naik atau biaya turun (dalam nominal rupiah)."
+      "strategicTakeaway": "Jangan hanya menggunakan AI sebagai alat bantu karyawan; gunakan AI untuk mendesain ulang seluruh fungsi bisnis sehingga perusahaan mencapai leverage operasional 1000x lipat."
     },
     "actionPlan": [
       {
         "id": "d2s1-act-1",
-        "task": "Bentuk Guiding Coalition (15% Tim Elit AI)",
-        "pic": "CEO",
+        "task": "Audit alur kerja tim kreatif dan identifikasi proses bottleneck (design, copy, video) yang bisa diotomasi 100% menggunakan AI tools.",
+        "pic": "CEO / Head of Marketing",
+        "timeframe": "Minggu 1",
+        "output": "Dokumen Restrukturisasi Bisnis Proses Marketing"
+      },
+      {
+        "id": "d2s1-act-2",
+        "task": "Implementasi sistem pembuatan prompt paralel (3-4 tab) untuk meningkatkan volume output desain/carousel.",
+        "pic": "Content / AI Operator",
+        "timeframe": "Minggu 2",
+        "output": "Kenaikan produksi konten minimum 500 desain/hari"
+      },
+      {
+        "id": "d2s1-act-3",
+        "task": "Membangun ternak akun (multiple accounts) di platform sosial media relevan untuk mendiversifikasi traffic dan menguji algoritma secara masif.",
+        "pic": "Growth Hacker / Ops Manager",
         "timeframe": "Bulan 1",
-        "output": "Pilot project workflow AI dengan 3 karyawan terbaik di divisi yang paling lambat."
+        "output": "50+ Akun Sosial Media Terotomasi"
+      },
+      {
+        "id": "d2s1-act-4",
+        "task": "Review performa konten top, lalu minta AI membuat ratusan variasi repetitif berdasarkan formula konten yang terbukti bekerja.",
+        "pic": "Social Media Manager",
+        "timeframe": "Minggu 3",
+        "output": "Content Bank dengan 1.000+ aset siap post"
+      },
+      {
+        "id": "d2s1-act-5",
+        "task": "Studi transisi infrastruktur menuju IoT AI (Automated CCTV, Smart Audit) untuk lini operasional fisik.",
+        "pic": "Head of Operations / Tech Lead",
+        "timeframe": "Bulan 3",
+        "output": "Blueprint Implementasi IoT AI"
       }
     ]
   },
   {
     "id": "d2s2",
     "slug": "day-2-sesi-2",
-    "title": "Desktop Command Center, MCP & CEO Executive Briefing",
+    "title": "Optimasi Workflow & Audit Otomatisasi dengan Claude",
     "day": 2,
-    "sessionNum": 4,
+    "sessionNum": 2,
     "speaker": {
-      "name": "Pak Natali Ardianto",
-      "role": "Serial Entrepreneur & Co-founder",
-      "company": "Lifepack, Tiket.com",
-      "avatar": "\ud83d\udc68\u200d\ud83d\udcbb",
-      "tagline": "Master of LLM Orchestration & Lean Teams"
+      "name": "Natali Ardianto",
+      "role": "Co-Founder",
+      "company": "Serial Entrepreneur (Tiket.com, dll)",
+      "avatar": "",
+      "tagline": "Pakar Eksekusi Startup & Workflow Engineering AI"
     },
-    "duration": "3h 47m",
-    "youtubeId": "nr_gxbSrCPs",
-    "summary": "Membangun ekosistem eksekutif dengan Claude Desktop, sinkronisasi file lokal, dan penggunaan framework B.R.I.E.F. Pak Natali mendemonstrasikan audit forensik pengeluaran instan, manajemen jadwal CEO, dan scraping API (MCP).",
+    "duration": "02:00:00+",
+    "youtubeId": "N/A",
+    "summary": "Membahas pendekatan sistematis penggunaan Claude Desktop sebagai 'Karyawan Tak Ber-KTP'. Melalui penerapan metodologi BRIEF (Background, Role, Input, Expectation, Finish), integrasi konektor ke Gmail, Calendar, dan Google Drive, sesi ini menunjukkan cara menyortir CV, mendeteksi fraud keuangan, hingga membuat dashboard secara otomatis.",
     "corePillars": [
-      "Claude Desktop & Local Integration",
-      "B.R.I.E.F Prompting Standard",
-      "Model Context Protocol (MCP)",
-      "CEO Behavioral Clone (Multi-Agent)"
+      "Metodologi Prompt BRIEF",
+      "Automasi Workflow & Scheduling via Claude",
+      "Screening CV & Audit Keuangan Otomatis",
+      "Integrasi MCP (Model Context Protocol)",
+      "Project-based Context Management"
     ],
-    "quote": "Zaman mesin uap tercipta, orang menolak takut kuda tidak terpakai. Saat ini, there is no way but forward. Anda tidak bisa menolak AI tanpa tertinggal.",
+    "quote": "Karyawan terbaik tahun 2026 ini nggak ada KTP, kerjanya 24 jam, dia bisa baca semua folder.",
     "topics": [
       {
         "id": "d2s2-1",
-        "title": "B.R.I.E.F Prompting & Persona Injection",
-        "timestamp": "018:15",
-        "timestampSeconds": 1095,
-        "category": "Strategy",
+        "title": "Kekuatan Model Claude untuk Bisnismen",
+        "timestamp": "00:02:54",
+        "timestampSeconds": 174,
+        "category": "Tech / Strategy",
         "keyTakeaways": [
-          "Standar SOP pendelegasian: Background, Role, Inputs, Expectation, Finish Line.",
-          "Menetapkan 'Role' dengan tahun pengalaman mengarahkan bobot statistik LLM ke hasil yang profesional."
+          "Claude sangat kuat untuk analisa file, membaca folder lokal, dan mengelola dokumen.",
+          "Memiliki kemampuan mengakses kalender, Gmail, dan Drive.",
+          "Model Opus untuk tugas kompleks, Sonnet untuk keseharian, Haiku untuk kecepatan."
         ],
-        "verbatimHighlight": "Mengubah mentalitas dari googling menjadi briefing eksekutif. Jangan berasumsi, berikan input dan batasan finish line yang ketat.",
-        "laymanExplanation": "Jangan cuma ketik 'Tolong buat laporan'. Perintahkan AI seakan dia adalah ahli: 'Kamu adalah manajer keuangan 10 tahun pengalaman, buat laporan dari tabel ini dengan gaya resmi'."
+        "verbatimHighlight": "Karyawan terbaik tahun ini itu tidak punya KTP... dia bisa baca semua folder.",
+        "laymanExplanation": "Claude layaknya asisten pribadi super pintar yang punya kunci akses ke semua laci dokumen, email, dan agenda jadwal Anda."
       },
       {
         "id": "d2s2-2",
-        "title": "Audit Forensik Keuangan Instan (Fraud Detection)",
-        "timestamp": "054:57",
-        "timestampSeconds": 3297,
-        "category": "Audit",
+        "title": "Framework Prompting BRIEF",
+        "timestamp": "00:24:20",
+        "timestampSeconds": 1460,
+        "category": "Strategy / Execution",
         "keyTakeaways": [
-          "Menganalisis 114 transaksi senilai Rp3.9 Miliar dengan Claude.",
-          "Menemukan pola split invoice, conflict of interest, dan double payment dalam hitungan menit (Memo .docx)."
+          "B = Background (Konteks bisnis).",
+          "R = Role (Tentukan peran/profesi, ex: Head of Finance).",
+          "I = Inputs (Data / dokumen).",
+          "E = Expectation (Hasil yang diharapkan).",
+          "F = Finish (Siap kirim tanpa edit)."
         ],
-        "verbatimHighlight": "Tagihan dipecah menjadi 3 invoice @Rp49,9 juta untuk menghindari batas limit approval Direktur. Claude mendeteksinya langsung.",
-        "laymanExplanation": "Berikan buku kas Excel ke AI, lalu AI akan otomatis menemukan siapa saja karyawan yang melakukan kecurangan/markup nota."
+        "verbatimHighlight": "Kenapa kok kita harus nge-promp-nya diawali dengan Anda adalah senior finance... statistik dengan memasukkan kata kunci itu sangat powerful.",
+        "laymanExplanation": "Seperti memberikan instruksi ke manusia, AI akan bekerja jauh lebih baik jika diberitahu jabatannya, situasinya, bahan kerjanya, dan target akhirnya."
+      },
+      {
+        "id": "d2s2-3",
+        "title": "Manajemen Memori Berbasis Project",
+        "timestamp": "00:35:02",
+        "timestampSeconds": 2102,
+        "category": "Tech / Execution",
+        "keyTakeaways": [
+          "Gunakan fitur Project di Claude untuk memisahkan inisiatif (Marketing, Finance, Personal).",
+          "Satu project menyimpan histori percakapan sehingga konteks tidak bercampur aduk.",
+          "Claude bisa mengingat preferensi personal (ex: jumlah anak, alamat kantor) jika diinstruksikan."
+        ],
+        "verbatimHighlight": "Satu project ini dia menyimpan memori dia sendiri sesuai konteksnya. Tolong dimanfaatkan jangan semuanya di chat utama.",
+        "laymanExplanation": "Bayangkan project seperti map kerja yang berbeda di meja kerja. Map keuangan tidak boleh dicampur dengan map jadwal liburan keluarga."
+      },
+      {
+        "id": "d2s2-4",
+        "title": "Otomasi Penyortiran CV & Kandidat",
+        "timestamp": "01:03:25",
+        "timestampSeconds": 3805,
+        "category": "HR / Execution",
+        "keyTakeaways": [
+          "Claude bisa membaca puluhan CV, membuang data yang tidak lolos filter (Hard filter).",
+          "Membuat skoring terstruktur berdasarkan relevansi, pengalaman, dan skill.",
+          "Mampu memberikan alasan rasional (red flags) dan daftar pertanyaan interview yang dalam."
+        ],
+        "verbatimHighlight": "Dia membuat 7 sheets... hasil screening-nya sudah ada... ini alasan kenapa CV ini ditolak.",
+        "laymanExplanation": "Alih-alih HRD membaca ratusan lamaran secara manual berhari-hari, AI membacanya dalam hitungan menit dan langsung memberikan urutan top 3 kandidat."
+      },
+      {
+        "id": "d2s2-5",
+        "title": "Deteksi Fraud Laporan Keuangan",
+        "timestamp": "01:16:14",
+        "timestampSeconds": 4574,
+        "category": "Audit / Finance",
+        "keyTakeaways": [
+          "Claude mampu mengkoneksikan SOP perusahaan dengan data pengeluaran.",
+          "Mampu mendeteksi pemecahan invoice (split PO) untuk mengakali batas otorisasi manajer.",
+          "Mendeteksi pola alamat vendor yang identik dengan karyawan (Self-dealing / conflict of interest)."
+        ],
+        "verbatimHighlight": "Ada 5 pola mencurigakan... vendornya cahaya baru, tapi alamat rumah Santoso identik... ini pola klasik self dealing.",
+        "laymanExplanation": "AI layaknya detektif akuntan yang sangat teliti mencocokkan setiap kuitansi dengan buku aturan perusahaan untuk mencari anomali sekecil apapun."
+      },
+      {
+        "id": "d2s2-6",
+        "title": "Integrasi MCP & Scheduling",
+        "timestamp": "01:28:31",
+        "timestampSeconds": 5311,
+        "category": "Tech / Strategy",
+        "keyTakeaways": [
+          "Model Context Protocol (MCP) memungkinkan Claude berinteraksi dengan software eksternal (Metabase, Vercel, dll).",
+          "Dapat dijadwalkan (schedule) untuk menjalankan rutinitas pagi, audit harian, dan merangkum meeting.",
+          "Mampu menginstall software kecil secara lokal jika diperlukan (ex: FFMPEG untuk kompresi video)."
+        ],
+        "verbatimHighlight": "Aktivitas yang berkaitan dengan koneksi pihak ketiga itu bisa dilakukannya secara cloud... tahu-tahu jam 6 pagi sudah dapat schedule.",
+        "laymanExplanation": "AI bisa disuruh 'bangun pagi, periksa email, periksa kas kantor, lalu laporkan ke bos jam 7 pagi' secara otomatis setiap hari."
+      },
+      {
+        "id": "d2s2-7",
+        "title": "Pembuatan Dashboard interaktif via Vercel",
+        "timestamp": "01:59:21",
+        "timestampSeconds": 7161,
+        "category": "Data / Tech",
+        "keyTakeaways": [
+          "Data mentah laporan keuangan diekspor ke Claude.",
+          "Claude mampu menulis code untuk visualisasi (dashboard interaktif dengan filter wilayah/revenue).",
+          "Langsung dideploy ke cloud (Vercel) sehingga bisa diakses live di handphone."
+        ],
+        "verbatimHighlight": "Saya minta deploy ke Vercel... dia langsung bikinin dan di-upload... jadi website-nya salesreport.natali.id.",
+        "laymanExplanation": "AI tidak hanya membuat grafik statis, tetapi juga memprogram website laporan interaktif lengkap dari nol, tanpa kita perlu menulis satu baris kode."
+      },
+      {
+        "id": "d2s2-8",
+        "title": "Manajemen & Optimasi Kalender",
+        "timestamp": "01:34:32",
+        "timestampSeconds": 5672,
+        "category": "Execution / Ops",
+        "keyTakeaways": [
+          "Minta AI mengatur itinerary traveling lengkap dengan perhitungan waktu kereta dan budget.",
+          "AI bisa mengatur buffer time (misal 10 menit untuk ke parkiran) dan memblok jadwal kerja/tidur.",
+          "Mengurangi konflik jadwal antar karyawan dengan kalender yang di-manage oleh AI."
+        ],
+        "verbatimHighlight": "Karena saya parkirnya tuh selalu di lantai 7... saya minta tolong tambahkan 10 menit buffer time. Nah, dia bisa tambahin.",
+        "laymanExplanation": "Menggunakan AI untuk mengurus jadwal sangat detail, bahkan hingga menghitung berapa lama waktu berjalan dari meja kerja menuju mobil di tempat parkir."
       }
     ],
     "executiveResume": {
-      "title": "Resume Eksekutif: Karyawan Terbaik Tanpa KTP",
-      "overview": "Pak Natali menunjukkan cara menghilangkan hambatan mental (frictionless) dalam adopsi AI dengan menggunakan shortcut OS. CEO tidak perlu lagi membuang waktu membuka browser.",
+      "title": "Resume Eksekutif: Karyawan Digital via Claude Desktop",
+      "overview": "Sesi ini mendemonstrasikan power dari LLM Claude sebagai asisten pribadi yang terintegrasi secara mendalam dengan desktop, Google Workspace, dan software pihak ketiga. Melalui teknik Prompt BRIEF dan manajemen berbasis Project, perusahaan dapat mengotomasi pengolahan data administratif, audit finansial (deteksi fraud), dan screening rekrutmen dalam level efisiensi ekstrim.",
       "keyPillarsExploration": [
         {
-          "title": "1. Multi-Agent WhatsApp (Agentku)",
-          "content": "CEO hanya berdiskusi via WA dengan Agentku. Agent ini kemudian mendistribusikan tugas ke Sub-Agent HR, Finance, dan Sales, lalu merangkum laporannya kembali."
+          "title": "Kontekstualisasi Project (Memory Management)",
+          "content": "Pemisahan workspace chat agar LLM memiliki pemahaman mendalam pada topik spesifik, meminimalisir halusinasi."
         },
         {
-          "title": "2. Rule of 3 Automation",
-          "content": "Setiap task berulang 3x harus diubah menjadi Skill dan diotomasi via Scheduler."
+          "title": "Framework BRIEF",
+          "content": "Standarisasi delegasi ke AI yang mengunci batasan peran, kualitas input, ekspektasi, dan format output siap guna."
+        },
+        {
+          "title": "Autopilot Audit & Analisa",
+          "content": "Penggunaan Claude untuk cross-reference ratusan dokumen PDF/XLS dengan SOP perusahaan (fraud detection, CV screening)."
+        },
+        {
+          "title": "Scheduling & Automation",
+          "content": "Membangun workflow otomatis harian (triase email, rekapan kas harian, briefing pagi) tanpa campur tangan manual."
+        },
+        {
+          "title": "Third-Party Integration (MCP)",
+          "content": "Skalabilitas kapabilitas AI dengan menghubungkan ke tools perusahaan seperti Metabase, Zoom, Vercel, hingga alat lokal (FFMPEG)."
         }
       ],
-      "strategicTakeaway": "Peran hakiki CEO: Mengorkestrasi AI dan manusia. Tugas akhir CEO hanyalah memutuskan YES atau NO atas data bersih dari AI."
+      "strategicTakeaway": "Bangun infrastruktur delegasi di mana AI diberikan akses langsung ke sumber data perusahaan (secara aman) untuk mengeksekusi tugas administratif dan analitis berulang."
     },
     "actionPlan": [
       {
         "id": "d2s2-act-1",
-        "task": "Setup Claude Desktop + Folder Kerja (Option+Space)",
-        "pic": "CEO / Direksi",
+        "task": "Install Claude Desktop, koneksikan MCP (Google Workspace: Gmail, Drive, Calendar), dan buat struktur Project sesuai inisiatif divisi.",
+        "pic": "CEO / All Heads",
         "timeframe": "Minggu 1",
-        "output": "AI siap digunakan seketika tanpa membuka tab browser."
+        "output": "Claude terintegrasi dengan akses data perusahaan"
+      },
+      {
+        "id": "d2s2-act-2",
+        "task": "Standarisasi delegasi tugas seluruh tim dengan framework BRIEF untuk semua request ke LLM.",
+        "pic": "Head of Operations",
+        "timeframe": "Minggu 1",
+        "output": "Peningkatan akurasi output AI tim internal"
+      },
+      {
+        "id": "d2s2-act-3",
+        "task": "Ekspor data transaksi finansial mentah 6 bulan terakhir, berikan SOP batas otoritas kepada Claude, jalankan prompt Deteksi Fraud.",
+        "pic": "Head of Finance / Internal Auditor",
+        "timeframe": "Minggu 2",
+        "output": "Laporan Audit Investigasi Pola Manipulasi Transaksi"
+      },
+      {
+        "id": "d2s2-act-4",
+        "task": "Ubah SOP Rekrutmen: integrasikan filter CV via Claude untuk mengeliminasi kandidat di bawah standard sebelum interview.",
+        "pic": "Head of HR",
+        "timeframe": "Minggu 2",
+        "output": "Dashboard Skor Kandidat Otomatis"
+      },
+      {
+        "id": "d2s2-act-5",
+        "task": "Setup rutinitas scheduling harian/mingguan di Claude untuk CEO Briefing (Rangkuman inbox, agenda, dan cashflow harian).",
+        "pic": "CEO / Personal Assistant",
+        "timeframe": "Bulan 1",
+        "output": "Daily Executive Dashboard Briefing Otomatis"
       }
     ]
   }
