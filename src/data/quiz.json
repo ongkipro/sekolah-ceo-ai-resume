@@ -1,106 +1,106 @@
 [
   {
     "id": "q1",
-    "scenario": "Perusahaan Anda menerima proposal tender setebal 250 halaman yang harus diputuskan dalam waktu 2 jam saat Anda sedang dalam perjalanan ke bandara. Apa tindakan paling efisien?",
+    "scenario": "Tagihan langganan AI perusahaan membengkak tiba-tiba karena staf IT membiarkan semua script otomatisasi menggunakan model termahal (Claude Opus). Apa langkah mitigasi terbaik?",
     "options": [
       {
-        "text": "Menyuruh sekretaris membaca kilat dan membuat ringkasan manual (butuh 4 jam).",
+        "text": "Membatalkan seluruh langganan AI dan kembali ke sistem manual.",
         "isCorrect": false,
-        "explanation": "Metode konvensional lambat dan rentan bias personal staf."
+        "explanation": "Langkah reaktif yang justru memundurkan efisiensi perusahaan."
       },
       {
-        "text": "Mengunggah PDF ke Google NotebookLM dan mendengarkan Audio Overview dialog 2 orang saat di mobil.",
+        "text": "Menerapkan Model Tiering & Harnessing Agent (Routing tugas harian ke model murah seperti Haiku/Sonnet via N8N).",
         "isCorrect": true,
-        "explanation": "Tepat! Google NotebookLM merangkum dokumen ratusan halaman menjadi dialog audio yang mudah diserap saat mobile."
+        "explanation": "Tepat! Tugas berulang/sederhana harus dirouting ke model murah (Haiku), sementara model mahal (Opus) hanya untuk arsitektur/perencanaan."
       },
       {
-        "text": "Menolak tender karena waktu evaluasi terlalu sempit.",
+        "text": "Membuat grup WhatsApp untuk menegur staf agar berhemat.",
         "isCorrect": false,
-        "explanation": "Melewatkan peluang bisnis besar karena keterbatasan proses manual."
+        "explanation": "Hanya peringatan verbal tanpa kontrol sistem (Harnessing Agent) tidak akan menyelesaikan masalah."
       }
     ]
   },
   {
     "id": "q2",
-    "scenario": "Bagian gudang Anda sering mengalami kehabisan stok bahan baku karena staf admin lupa menyusun surat Purchase Order (PO) tepat waktu. Bagaimana arsitektur solusi AI-nya?",
+    "scenario": "Tim marketing Anda yang berisi 8 orang hanya mampu memproduksi 2 desain promosi per hari. Anda memutuskan memberikan ChatGPT Plus kepada mereka. Apa yang harus dilakukan agar produktivitas melonjak 100x lipat?",
     "options": [
       {
-        "text": "Menambah 2 staf admin baru untuk mencatat stok setiap jam.",
+        "text": "Meninggalkan mereka agar bereksperimen sendiri tanpa mengubah target mingguan.",
         "isCorrect": false,
-        "explanation": "Menambah biaya tetap tanpa menyelesaikan akar masalah (Parkinson's Law)."
+        "explanation": "Jika SOP tidak dirubah (Reverse Engineering), karyawan akan menyembunyikan efisiensinya dan tetap terlihat sibuk (Presenteeism)."
       },
       {
-        "text": "Menetapkan aturan Auto-PO: saat stok menyentuh titik minimum, sistem AI otomatis membuat draf PO ke vendor rekanan untuk di-approve 1-klik oleh manajer.",
+        "text": "Mengirim mereka ke pelatihan AI dasar (Level 1) untuk sekadar mencari ide caption.",
+        "isCorrect": false,
+        "explanation": "Hanya berada di Level 1 Adopsi AI tidak akan menyelesaikan masalah struktural produksi massal."
+      },
+      {
+        "text": "Melakukan Reverse Engineering alur kerja, memangkas tim menjadi 2 orang, dan menaikkan target desain menjadi 200/hari menggunakan AI Orchestration (Lumio).",
         "isCorrect": true,
-        "explanation": "Tepat! Ini alur Auto-PO yang diajarkan Mas Satya Pradana untuk mencegah stock-out dan menghemat ratusan jam admin."
-      },
-      {
-        "text": "Memaksa vendor mengirim barang setiap hari tanpa jadwal.",
-        "isCorrect": false,
-        "explanation": "Merusak cash flow dan menambah biaya simpan gudang."
+        "explanation": "Tepat! Mengadopsi AI tanpa merombak KPI/SOP hanyalah memindahkan orang lambat ke alat yang cepat. Target harus dinaikkan eksponensial."
       }
     ]
   },
   {
     "id": "q3",
-    "scenario": "Mengapa dalam framework prompt B.R.I.E.F., kita harus mengawali perintah dengan Persona Ahli (misal: 'Anda adalah Senior Forensic Auditor')?",
+    "scenario": "Anda ingin mengubah strategi sosmed perusahaan. Daripada menyuruh audiens 'Klik Link di Bio', Anda ingin komentar mereka otomatis memicu pesan DM berisi link diskon. Tools apa yang paling tepat?",
     "options": [
       {
-        "text": "Agar AI merasa dihargai dan bekerja lebih sopan.",
+        "text": "Menugaskan 3 Customer Service untuk membalas komentar manual 24 jam.",
         "isCorrect": false,
-        "explanation": "AI tidak memiliki perasaan; AI adalah model probabilitas matematika."
+        "explanation": "Solusi manual yang tidak skalabel, lambat, dan membuang biaya SDM."
       },
       {
-        "text": "Secara matematis mengunci distribusi probabilitas kata berikutnya agar AI hanya memilih terminologi dan logika audit standar industri.",
+        "text": "Menggunakan ManyChat untuk otomasi Call to Value (CTV) di DM Instagram.",
         "isCorrect": true,
-        "explanation": "Tepat! Sesuai penjelasan Pak Natali Ardianto tentang sifat mekanika matematika LLM (Next Token Prediction)."
+        "explanation": "Tepat! ManyChat secara instan membalas ribuan interaksi 'MAU' dan mengirimkan link di DM, memangkas Customer Acquisition Cost (CAC) hingga Rp0."
       },
       {
-        "text": "Hanya sebagai formalitas agar prompt terlihat panjang.",
+        "text": "Membuat aplikasi mobile kustom dari awal.",
         "isCorrect": false,
-        "explanation": "Prompt panjang tanpa persona justru bisa memicu halusinasi acak."
+        "explanation": "Over-engineering. Tidak perlu membuat aplikasi kustom untuk masalah marketing sosmed."
       }
     ]
   },
   {
     "id": "q4",
-    "scenario": "Tim marketing Anda ingin meluncurkan 20 video promosi produk baru, tapi biaya sewa studio dan model presenter mencapai puluhan juta rupiah. Solusi zero-cost yang diajarkan di masterclass adalah:",
+    "scenario": "Budaya perusahaan sangat kaku dan menolak AI. Anda ingin mengubah budaya tersebut tanpa memicu penolakan massal. Berdasarkan prinsip John Kotter, apa strategi terbaik?",
     "options": [
       {
-        "text": "Menggunakan Kling AI / Seedance untuk video sinematik dan HeyGen untuk avatar founder, lalu ManyChat untuk auto-closing di DM.",
+        "text": "Berpidato di depan 100% karyawan setiap hari sampai mereka paham.",
+        "isCorrect": false,
+        "explanation": "Meyakinkan 100% karyawan yang resisten hanya akan menguras energi dan waktu."
+      },
+      {
+        "text": "Memaksa penggunaan AI secara top-down dengan ancaman PHK massal esok hari.",
+        "isCorrect": false,
+        "explanation": "Manajemen tangan besi tanpa bukti sukses hanya memicu sabotase psikologis (Peter Principle)."
+      },
+      {
+        "text": "Membentuk 15% Guiding Coalition (tim elit AI) untuk membuktikan hasil ekstrem, memicu kecemburuan sosial (envy) yang memaksa sisanya berubah.",
         "isCorrect": true,
-        "explanation": "Tepat! Kombinasi video gen AI + avatar presenter + ManyChat memangkas biaya CAC mendekati Rp0."
-      },
-      {
-        "text": "Membatalkan peluncuran sampai ada anggaran promosi besar.",
-        "isCorrect": false,
-        "explanation": "Menghambat pertumbuhan bisnis di tengah persaingan cepat."
-      },
-      {
-        "text": "Membuat video seadanya dengan kamera HP tanpa editan dan tanpa alur konversi.",
-        "isCorrect": false,
-        "explanation": "Menurunkan citra brand dan tidak menghasilkan lead yang terorganisir."
+        "explanation": "Tepat! Hukum 15% Tipping Point. Cukup buat 15% karyawan melesat 100x lipat, 85% sisanya tidak punya pilihan selain mengikuti atau punah."
       }
     ]
   },
   {
     "id": "q5",
-    "scenario": "CEO ingin menghilangkan rapat koordinasi pagi yang membuang waktu 1-2 jam setiap hari. Sistem apa yang direkomendasikan Mas Satya Pradana?",
+    "scenario": "Anda butuh aplikasi sistem gudang (WMS) fungsional besok pagi. Estimasi vendor IT memakan waktu 3 bulan senilai Rp100 juta. Apa langkah 'Vibe Coding' terbaik?",
     "options": [
       {
-        "text": "Mewajibkan semua manajer mengirim voice note panjang di grup WhatsApp.",
+        "text": "Menawar harga vendor menjadi Rp50 juta dan minta selesai 1 bulan.",
         "isCorrect": false,
-        "explanation": "Malah menimbulkan noise dan membuang waktu CEO mendengarkan rekaman acak."
+        "explanation": "Masih lambat dan tetap membuang biaya untuk fitur yang bisa di-generate AI."
       },
       {
-        "text": "Pipeline 'Koran Perusahaan' jam 07.00 pagi yang menyintesis sales, absensi, stok kritis, dan posisi kas menjadi 1 halaman briefing keputusan.",
+        "text": "Mendiktekan kebutuhan bisnis Anda via Voice Mode ChatGPT, lalu mem-paste prompt arsitektur tersebut ke Lovable.dev untuk di-build dalam 15 menit.",
         "isCorrect": true,
-        "explanation": "Tepat! CEO cukup membaca 3 menit di pagi hari dan langsung mengambil keputusan kunci."
+        "explanation": "Tepat! Era 'SaaS is Dead' memungkinkan Anda membangun aplikasi internal via instruksi bahasa alami (Vibe Coding) tanpa keahlian IT formal."
       },
       {
-        "text": "Menghapus semua komunikasi antar divisi.",
+        "text": "Membeli lisensi SAP ERP skala enterprise.",
         "isCorrect": false,
-        "explanation": "Menyebabkan silo data dan ketiadaan transparansi operasional."
+        "explanation": "Overkill. ERP besar terlalu mahal dan kaku untuk sekadar prototipe WMS cepat."
       }
     ]
   }

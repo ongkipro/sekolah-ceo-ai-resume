@@ -3,9 +3,9 @@
     "sessionId": "d1s1",
     "sessionTitle": "Day 1 Sesi 1 - Mas Anjas Maradita",
     "readTime": "3 Menit Baca",
-    "theme": "Enterprise AI, Rapid Prototyping & Zero-CAC Growth",
-    "mustDoTomorrow": "Buka Lovable.dev, ketik kebutuhan portal web/dasbor internal Anda dalam bahasa Indonesia biasa, dan lihat prototipenya selesai dalam 15 menit.",
-    "fatalMistakeToAvoid": "Mengotomasi proses bisnis yang dari awal memang kacau atau percaya mentah-mentah pada output AI tanpa verifikasi data (Trust, but Verify).",
+    "theme": "From AI User to AI-Powered CEO (Vibe Coding, GEO & Automation)",
+    "mustDoTomorrow": "Terapkan Algorithm-First marketing: Ganti CTA konvensional dengan Call to Value (CTV) di media sosial dan gunakan ManyChat untuk automasi DM.",
+    "fatalMistakeToAvoid": "Mengadopsi AI tanpa kesiapan tim, atau sekadar membagikan akun langganan $20 tanpa merombak KPI dan alur kerja (membiarkan presenteeism).",
     "threeKeyNumbers": [
       {
         "metric": "Rp 100 Miliar",
@@ -13,82 +13,82 @@
       },
       {
         "metric": "< 15 Menit",
-        "meaning": "Waktu bangun portal web fungsional di Lovable.dev"
+        "meaning": "Waktu membangun portal web/WMS fungsional via Lovable.dev"
       },
       {
-        "metric": "Rp 0 CAC",
-        "meaning": "Biaya iklan dengan ManyChat Comment-to-DM loop"
+        "metric": "Rp 13 Miliar",
+        "meaning": "Omzet afiliasi Plaud Note via ManyChat automation"
       }
     ],
-    "keyPrompt": "Anda adalah Senior Product Architect. Buatkan PRD dan prototipe dasbor B2B dengan fitur tracking order dan filter kategori dalam bahasa Indonesia."
+    "keyPrompt": "Anda adalah Senior Product Architect. Buatkan arsitektur WMS (Warehouse Management) dengan modul QC dan dashboard supir, lalu tuliskan prompt instruksinya untuk Lovable.dev."
   },
   {
     "sessionId": "d1s2",
-    "sessionTitle": "Day 1 Sesi 2 - Mas Anjas & Tim Teknis",
+    "sessionTitle": "Day 1 Sesi 2 - Mas Anjas, Sammy, Ugo, Ibnu",
     "readTime": "3 Menit Baca",
-    "theme": "Video AI Komersial & Scraping Data Terstruktur",
-    "mustDoTomorrow": "Coba buat 1 video iklan produk fisik menggunakan Kling AI / Seedance dengan prompt pergerakan kamera sinematik (slow pan, studio lighting).",
-    "fatalMistakeToAvoid": "Menilai dan mempromosikan karyawan hanya berdasarkan jam lembur, bukan dari kemampuan mereka melipatgandakan output lewat AI.",
+    "theme": "Arsitektur Enterprise, Routing Token & AI HR Assessment",
+    "mustDoTomorrow": "Petakan ulang alur kerja, tentukan task mana yang perlu diproses model AI mahal (Perencanaan/Opus) vs model murah (Eksekusi/Haiku).",
+    "fatalMistakeToAvoid": "Menggunakan Claude Opus untuk tugas harian (pemborosan token), dan mempekerjakan AI tanpa limiter / Harnessing Agent.",
     "threeKeyNumbers": [
       {
-        "metric": "5-10x",
-        "meaning": "Multiplier output developer senior yang mengorkestrasi AI"
+        "metric": "0-100",
+        "meaning": "Skala Role Fit Index untuk kelulusan kandidat"
       },
       {
-        "metric": "100%",
-        "meaning": "Hak komersial atas video/audio dengan akun berbayar resmi"
+        "metric": "Skala 1-10",
+        "meaning": "Skor Lie Scale (Deteksi kebohongan pelamar)"
       },
       {
-        "metric": "< 1 Menit",
-        "meaning": "Waktu scraping ratusan data harga web ke spreadsheet"
+        "metric": "3 Orang",
+        "meaning": "Ukuran tim inti compact yang menggerakkan ekosistem AI Daun.net"
       }
     ],
-    "keyPrompt": "Ekstrak seluruh daftar produk, spesifikasi, dan harga dari teks web berikut ke dalam format tabel rapi dengan kolom: Nama, SKU, Harga, dan Stok."
+    "keyPrompt": "Bertindaklah sebagai Senior HR Assessor. Buat 70 pertanyaan skenario untuk posisi CMO dengan sistem Lie Scale untuk mendeteksi anomali straight-lining jawaban."
   },
   {
     "sessionId": "d2s1",
     "sessionTitle": "Day 2 Sesi 1 - Mas Satya Pradana",
     "readTime": "3 Menit Baca",
-    "theme": "90% Cost Cut, Koran Perusahaan & Auto-PO Purchasing",
-    "mustDoTomorrow": "Rancang format 'Koran Perusahaan' 1 halaman yang dikirim AI ke Telegram Anda setiap jam 07.00 pagi merangkum sales kemarin, absensi, dan kas.",
-    "fatalMistakeToAvoid": "Membiarkan meeting koordinasi pagi berlangsung 1-2 jam padahal informasinya bisa disintesis AI dalam 3 menit.",
+    "theme": "Restrukturisasi Ekstrim, Hukum 15% & Company Brain",
+    "mustDoTomorrow": "Bongkar proses bisnis (Reverse Engineering) dari output akhir. Desain struktur di mana 1 AI Orchestrator menggantikan 10 fungsi spesialis.",
+    "fatalMistakeToAvoid": "Mencoba meyakinkan 100% karyawan. Cukup rekrut 15% tim militan untuk membuktikan hasil eksponensial, sisanya akan mengikuti atau punah.",
     "threeKeyNumbers": [
       {
-        "metric": "90%",
-        "meaning": "Potensi pemangkasan biaya operasional repetitif"
+        "metric": "2.400",
+        "meaning": "Target produksi slide desain per hari per operator AI"
       },
       {
-        "metric": "Jam 07.00",
-        "meaning": "Waktu terima intelligence digest harian di HP CEO"
+        "metric": "15%",
+        "meaning": "The Tipping Point Kotter untuk transformasi budaya"
       },
       {
-        "metric": "1-Click",
-        "meaning": "Persetujuan draf Purchase Order ke vendor rekanan"
+        "metric": "Rp 450 M",
+        "meaning": "Omzet brand DVN menggunakan talent video virtual AI"
       }
     ],
-    "keyPrompt": "Anda adalah Chief of Staff AI. Sintesis data sales harian, presensi staf, dan posisi kas kemarin menjadi 4 kuadran ringkasan keputusan untuk CEO."
+    "keyPrompt": "Bertindaklah sebagai Konsultan Restrukturisasi. Buatkan SOP operasional di mana 1 staf menggunakan ChatGPT, Lumio, dan Suno untuk memproduksi 2.000 aset per hari."
   },
   {
     "sessionId": "d2s2",
     "sessionTitle": "Day 2 Sesi 2 - Pak Natali Ardianto",
     "readTime": "3 Menit Baca",
-    "theme": "Desktop Command Center, Audit .docx & CEO Yes/No Matrix",
-    "mustDoTomorrow": "Pasang Claude Desktop di komputer, hubungkan ke folder Google Drive fisik, dan aktifkan shortcut Option+Space di Mac (atau Ctrl+Alt+Space di Win).",
-    "fatalMistakeToAvoid": "Membuat prompt tanpa persona ahli dan instruksi terstruktur (selalu gunakan rumus B.R.I.E.F.).",
+    "theme": "Claude Desktop, MCP, B.R.I.E.F & Audit Forensik",
+    "mustDoTomorrow": "Terapkan framework delegasi B.R.I.E.F (Background, Role, Inputs, Expectation, Finish Line) pada setiap perintah ke agen AI.",
+    "fatalMistakeToAvoid": "Menarasikan bahwa AI hadir untuk me-nol-kan jumlah karyawan, yang akan memicu sabotase psikologis internal.",
     "threeKeyNumbers": [
       {
-        "metric": "Option+Space",
-        "meaning": "Shortcut panggil AI instan tanpa buka browser"
+        "metric": "600",
+        "meaning": "Pertanyaan neuroscience untuk membentuk CEO Clone"
       },
       {
         "metric": "< 10 Menit",
-        "meaning": "Waktu screening objektif 14 CV pelamar kerja"
+        "meaning": "Waktu audit forensik pengeluaran Rp 3,9 Miliar"
       },
       {
-        "metric": ".docx Resmi",
-        "meaning": "Format output instan memo audit lengkap tanda tangan"
+        "metric": "Rule of 3",
+        "meaning": "Jika aktivitas manual terjadi 3x berturut-turut, jadikan AI Skill"
       }
     ],
-    "keyPrompt": "Anda adalah Senior Forensic Auditor Big 4. Lakukan audit pengeluaran 12 bulan ini, temukan anomali split-bill, dan susun Memo Audit Word resmi (.docx)."
+    "keyPrompt": "Anda adalah Senior Forensic Auditor. Berdasarkan file Excel transaksi ini, temukan pola invoice splitting, conflict of interest, dan double payment."
   }
 ]

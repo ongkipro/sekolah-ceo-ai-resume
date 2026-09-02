@@ -68,3 +68,7 @@ Transform the raw, multi-speaker, 12+ hour recording transcripts from the **Seko
 - **Icons**: Lucide React
 - **Fuzzy Search Engine**: Fuse.js
 - **Persistence**: Browser `localStorage`
+
+## Phase 8: Data Precision & Content Injection (Sep 2026)
+- **REQ-19**: The system shall dynamically consume the highly precise Master Analysis transcript data across all routes (Sessions, Prompts, Tools, FAQ, Cheatsheets), replacing any old placeholder or unverified data.
+- **REQ-20**: The raw data injection shall preserve the JSON structure in `src/data/*.json` to ensure the React and Astro components continue rendering without breaking.

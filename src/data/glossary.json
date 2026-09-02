@@ -1,122 +1,72 @@
 [
   {
-    "term": "LLM (Large Language Model)",
-    "englishName": "Large Language Model",
-    "laymanAnalogy": "Seperti kalkulator kata pintar yang membaca miliaran buku di dunia. Dia tidak punya 'perasaan', tapi sangat jago menebak kata berikutnya yang paling masuk akal secara matematika.",
-    "businessImpact": "Bisa disuruh bikin draf email, analisa laporan keuangan, atau jawab chat pelanggan dalam hitungan detik.",
-    "category": "Dasar AI",
+    "term": "Vibe Coding",
+    "englishName": "Vibe Coding",
+    "laymanAnalogy": "Membangun software atau aplikasi hanya dengan 'ngobrol' santai ke AI. Anda menjelaskan maunya apa (vibes-nya), AI yang otomatis menulis kodenya.",
+    "businessImpact": "Tidak perlu lagi menyewa vendor IT mahal berbulan-bulan untuk membuat sistem internal sederhana seperti portal HR atau WMS.",
+    "category": "Tech",
+    "targetUrl": "/prompts",
+    "actionLabel": "Buka Prompt Vibe Coding",
+    "practicalPrompt": "Buatkan kode aplikasi kloning Trello berbasis web untuk mengatur proyek tim saya."
+  },
+  {
+    "term": "ZMOT (Zero Moment of Truth)",
+    "englishName": "Zero Moment of Truth",
+    "laymanAnalogy": "Momen krusial di mana calon pelanggan mencari info di internet sebelum membeli produk Anda. Syaratnya: 7 jam interaksi, 11 touchpoints, 4 kanal berbeda.",
+    "businessImpact": "Memaksa brand memproduksi ribuan konten per bulan menggunakan AI agar algoritma menganggap brand Anda kredibel dan omnipresent.",
+    "category": "Marketing",
+    "targetUrl": "/cheatsheet",
+    "actionLabel": "Lihat Cheatsheet",
+    "practicalPrompt": "Tuliskan 10 skrip video edukasi pendek untuk mendominasi ZMOT pencarian TikTok tentang produk [NAMA_PRODUK]."
+  },
+  {
+    "term": "Company Brain",
+    "englishName": "Company Brain / Central AI",
+    "laymanAnalogy": "Otak AI sentral di kantor yang tahu semua data rahasia perusahaan (keuangan, stok, absensi) dan melaporkannya ke CEO setiap pagi.",
+    "businessImpact": "Rekonsiliasi bank otomatis, laporan keuangan real-time, dan keputusan berbasis data tanpa campur tangan staf admin.",
+    "category": "Enterprise AI",
     "targetUrl": "/tools",
-    "actionLabel": "Buka Direktori Tools AI",
-    "practicalPrompt": "Bertindaklah sebagai Senior AI Strategist. Saya adalah CEO perusahaan [BIDANG_BISNIS]. Analisa 3 proses bisnis utama kami: (1) Pelayanan Pelanggan, (2) Rekap Keuangan, dan (3) Pembuatan Konten Pemasaran. Berikan rekomendasi bagaimana LLM (seperti Claude 3.5 Sonnet atau GPT-4o) dapat memangkas 80% waktu pengerjaan di ketiga proses tersebut tanpa menurunkan kualitas output."
+    "actionLabel": "Lihat Tool Company Brain",
+    "practicalPrompt": "Tarik data kas, stok gudang, dan penjualan hari ini, lalu buatkan 1 halaman Executive Brief untuk saya."
   },
   {
-    "term": "AI Hallucination (Halusinasi AI)",
-    "englishName": "AI Hallucination",
-    "laymanAnalogy": "Kondisi saat AI 'mengarang bebas' dengan nada yang sangat meyakinkan, padahal faktanya salah. Seperti staf yang sok tahu saat ditanya bos.",
-    "businessImpact": "CEO tidak boleh percaya 100% tanpa cek data asli (prinsip: Trust, but Verify).",
-    "category": "Risiko & Keamanan",
-    "targetUrl": "/cheatsheet/day-1-sesi-1",
-    "actionLabel": "Lihat Contekkan Sesi 1",
-    "practicalPrompt": "Tolong verifikasi dan lakukan 'Fact-Check & Stress-Test' pada draf laporan/klaim berikut: [MASUKKAN_DRAF_DATA]. Identifikasi setiap pernyataan yang berpotensi merupakan halusinasi, asumsi tanpa data pendukung, atau inkonsistensi logika matematis. Tandai bagian yang meragukan dengan [PERLU_VERIFIKASI_MANUAL]."
+    "term": "GEO (Generative Engine Optimization)",
+    "englishName": "Generative Engine Optimization",
+    "laymanAnalogy": "Evolusi dari SEO. Bukan sekadar ranking di Google, tapi bagaimana agar ChatGPT/Claude merekomendasikan brand Anda saat orang bertanya ke AI.",
+    "businessImpact": "Pusat traffic baru masa depan, membutuhkan injeksi FAQ mendalam di website brand agar di-crawl oleh mesin LLM.",
+    "category": "Marketing",
+    "targetUrl": "/cheatsheet",
+    "actionLabel": "Lihat Insight GEO",
+    "practicalPrompt": "Buat 50 daftar FAQ teknis paling mendalam tentang produk kami agar mudah dibaca oleh algoritma ChatGPT saat di-crawl."
   },
   {
-    "term": "Persona Injection",
-    "englishName": "Persona Injection",
-    "laymanAnalogy": "Menyuruh AI memakai 'topeng profesi tertentu'. Misalnya: 'Kamu adalah Akuntan Senior Big 4'. AI langsung otomatis memakai kosakata profesional dan teliti.",
-    "businessImpact": "Membuat jawaban AI jauh lebih akurat, formal, dan sesuai standar industri.",
+    "term": "Call to Value (CTV)",
+    "englishName": "Call to Value",
+    "laymanAnalogy": "Mengganti ajakan lawas 'Klik Link di Bio' dengan 'Komen MAU untuk diskon DM' agar algoritma sosmed meledakkan jangkauan video Anda.",
+    "businessImpact": "Menghapus CAC (Customer Acquisition Cost) dan mengotomasi ribuan closing langsung di DM via ManyChat.",
+    "category": "Marketing",
+    "targetUrl": "/tools",
+    "actionLabel": "Lihat Tool ManyChat",
+    "practicalPrompt": "Buatkan script video dengan hook emosional dan akhiri dengan Call to Value yang memancing orang berkomentar 'MAU'."
+  },
+  {
+    "term": "Model Tiering",
+    "englishName": "Model Tiering / Task Routing",
+    "laymanAnalogy": "Membagi tugas sesuai gaji: Tugas strategis ke Manajer (AI Mahal seperti Claude Opus), tugas harian ke Staf (AI Murah seperti Sonnet/Haiku).",
+    "businessImpact": "Mencegah tagihan token AI membengkak, menjaga ROI tetap positif tanpa mengurangi kecepatan operasi.",
+    "category": "Strategy",
+    "targetUrl": "/curriculum",
+    "actionLabel": "Lihat Sesi 2",
+    "practicalPrompt": "N/A"
+  },
+  {
+    "term": "B.R.I.E.F Prompting",
+    "englishName": "B.R.I.E.F Framework",
+    "laymanAnalogy": "Rumus wajib saat menyuruh AI: Background, Role, Inputs, Expectation, Finish Line. Agar AI kerja persis seperti Manajer Senior.",
+    "businessImpact": "Menghapus halusinasi AI dan menjamin format dokumen output langsung bisa dicetak atau dikirim (misal: Memo .docx resmi).",
     "category": "Prompting",
-    "targetUrl": "/prompts/brief-audit",
-    "actionLabel": "Buka di Prompt Vault",
-    "practicalPrompt": "Mulai sekarang, bertindaklah sebagai Chief Financial Officer (CFO) berpengalaman 15 tahun di industri retail & e-commerce. Karakter Anda: sangat berhati-hati terhadap arus kas (cash flow), kritis terhadap biaya operasional yang tidak perlu, dan selalu menuntut ROI yang jelas. Tolong evaluasi proposal anggaran berikut: [MASUKKAN_PROPOSAL_ANGGARAN]."
-  },
-  {
-    "term": "Framework B.R.I.E.F.",
-    "englishName": "B.R.I.E.F. Framework",
-    "laymanAnalogy": "Rumus 5 langkah memberi perintah ke AI (Background, Role, Instructions, Examples, Format) agar hasilnya persis seperti yang dimau bos.",
-    "businessImpact": "Menghilangkan kebiasaan prompt asal-asalan yang hasilnya mengecewakan.",
-    "category": "Prompting",
-    "targetUrl": "/prompts/brief-audit",
-    "actionLabel": "Buka Prompt B.R.I.E.F.",
-    "practicalPrompt": "Gunakan Framework B.R.I.E.F. untuk menyusun strategi peluncuran produk baru: \n- Background: Perusahaan kami [NAMA_USAHA] menjual [PRODUK] untuk pasar [TARGET_AUDIENS]. \n- Role: Anda adalah Chief Marketing Officer kelas dunia. \n- Instructions: Susun 5 pilar campaign organik selama 14 hari pertama. \n- Examples: Format harus mencakup hook headline, target channel, dan metrik konversi. \n- Format: Sajikan dalam tabel terstruktur Markdown."
-  },
-  {
-    "term": "Koran Perusahaan",
-    "englishName": "Daily Executive Digest",
-    "laymanAnalogy": "Laporan ringkas 1 halaman yang dikirim AI ke Telegram CEO tiap jam 07.00 pagi. Berisi rekap omset kemarin, absensi staf, barang gudang yang mau habis, dan masalah supplier.",
-    "businessImpact": "CEO tidak perlu meeting koordinasi pagi yang buang waktu 1-2 jam.",
-    "category": "Operasional",
-    "targetUrl": "/prompts/koran-perusahaan",
-    "actionLabel": "Buka Prompt Koran AI",
-    "practicalPrompt": "Saya ingin membuat template 'Koran Perusahaan 07.00 Pagi' untuk CEO. Formatkan rekap data harian dari divisi Sales, Operasional, dan Keuangan menjadi ringkasan 1 halaman Telegram/WhatsApp yang mencakup: (1) Omset & Kas kemarin vs Target bulanan, (2) 3 Isu kritis yang butuh persetujuan CEO hari ini, dan (3) Tingkat stok barang kritis yang mendekati batas minimum."
-  },
-  {
-    "term": "Auto-PO (Purchase Order Otomatis)",
-    "englishName": "Automated Purchase Order",
-    "laymanAnalogy": "Sistem otomatis yang memesan barang ke supplier saat stok di gudang sudah mau habis, tanpa perlu staf ngetik surat pesanan dari nol.",
-    "businessImpact": "Mencegah toko/pabrik kehabisan stok dan memangkas tugas admin purchasing.",
-    "category": "Operasional",
-    "targetUrl": "/prompts/auto-po",
-    "actionLabel": "Buka Prompt Auto-PO",
-    "practicalPrompt": "Buatlah logika alur kerja (logic flow prompt) untuk webhook n8n / Make otomatisasi Purchase Order: \nKetika stok SKU [KODE_BARANG] di database inventaris < [MIN_STOK], otomatis ekstrak data harga dari 3 supplier terdaftar, pilih supplier dengan harga termurah & lead time tercepat, lalu buat draf dokumen PO berformat PDF dan kirimkan tautan persetujuan 1-klik ke Telegram Manajer Pengadaan."
-  },
-  {
-    "term": "Zero-CAC Funnel (ManyChat + Suno/HeyGen)",
-    "englishName": "Organic Comment-to-DM Loop",
-    "laymanAnalogy": "Bikin video/lagu viral gratis di medsos, lalu saat penonton komen 'MAU', robot AI langsung kirim penawaran ke DM mereka tanpa bayar iklan Meta/TikTok Ads.",
-    "businessImpact": "Mendapatkan ribuan calon pembeli baru dengan biaya iklan mendekati Rp0.",
-    "category": "Marketing & Sales",
-    "targetUrl": "/architecture/growth-funnel",
-    "actionLabel": "Buka Blueprint 0-CAC",
-    "practicalPrompt": "Susun naskah video pendek 30 detik (HeyGen avatar) + lirik lagu viral 15 detik (Suno AI) untuk produk [NAMA_PRODUK]. Sertakan Call to Action organik yang memicu penonton mengetik kata kunci 'PROMO' di kolom komentar agar memicu auto-DM ManyChat dengan penawaran eksklusif terbatas 24 jam."
-  },
-  {
-    "term": "Kloning Top Sales",
-    "englishName": "Sales Objection Handling Extractor",
-    "laymanAnalogy": "Merekam cara ngomong sales nomor 1 di perusahaan saat meyakinkan pembeli yang ragu, lalu dimasukkan ke otak chatbot AI.",
-    "businessImpact": "Ribuan calon pembeli yang tanya di chat dilayani dengan standar closing sales terbaik.",
-    "category": "Marketing & Sales",
-    "targetUrl": "/prompts/sales-extractor",
-    "actionLabel": "Buka Prompt Top Sales",
-    "practicalPrompt": "Analisa 10 riwayat transkrip percakapan chat closing dari Top Sales kami: [PASTE_CHAT_LOG]. Ekstrak: (1) 5 pola keberatan pembeli yang paling sering muncul (harga mahal, ragu kualitas, mau bandingkan toko lain), dan (2) Script jawaban persuasif terbaik yang terbukti menghasilkan closing di atas 40%."
-  },
-  {
-    "term": "Parkinson's Law (Pura-Pura Kerja)",
-    "englishName": "Parkinson's Law & Fake Work",
-    "laymanAnalogy": "Kecenderungan manusia menghabiskan waktu 8 jam di kantor, padahal tugas aslinya bisa selesai dalam 1 jam kalau pakai AI. 7 jam sisanya habis untuk pura-pura sibuk.",
-    "businessImpact": "Peluang bagi CEO untuk memangkas biaya operasional hingga 90% atau menaikkan output 10x.",
-    "category": "Manajemen & SDM",
-    "targetUrl": "/simulator",
-    "actionLabel": "Buka CEO Simulator",
-    "practicalPrompt": "Lakukan audit beban kerja berbasis Parkinson's Law pada divisi [NAMA_DIVISI]. Diberikan daftar 10 tugas harian staf: [DAFTAR_TUGAS]. Bedah berapa estimasi jam riil jika menggunakan otomasi AI vs jam manual. Hitung potensi penghematan jam kerja per minggu dan rekomendasikan bagaimana tim dialihkan ke tugas yang menghasilkan revenue langsung."
-  },
-  {
-    "term": "Dekonstruksi Job Desk (Yes/No Framework)",
-    "englishName": "Micro-Task Allocation Matrix",
-    "laymanAnalogy": "Membedah tugas karyawan jadi bagian-bagian kecil: tugas ketik/rekap data diserahkan 100% ke AI, sedangkan tugas ketemu orang dan negosiasi tetap dipegang manusia.",
-    "businessImpact": "Karyawan tidak lembur untuk urusan sepele dan bisa fokus cari omset baru.",
-    "category": "Manajemen & SDM",
-    "targetUrl": "/prompts/jobdesk-allocator",
-    "actionLabel": "Buka Prompt Jobdesk Allocator",
-    "practicalPrompt": "Bedah Job Description posisi [NAMA_POSISI] menggunakan Yes/No Framework: \n1. Kategori YES AI (100% dialihkan ke AI): Tugas pengolahan teks, rekap data, riset awal, pembuatan draf. \n2. Kategori NO AI (Wajib Manusia): Negosiasi tatap muka, keputusan etis, penandatanganan kontrak, penilaian akhir. \nBerikan persentase efisiensi jam kerja per minggu."
-  },
-  {
-    "term": "Dynamic Pricing (Harga Dinamis)",
-    "englishName": "Dynamic Pricing & Yield Management",
-    "laymanAnalogy": "Sistem yang otomatis menaikkan harga saat barang/kamar laris (seperti tarif Gojek saat hujan) dan memberi diskon saat sepi agar tidak ada slot terbuang.",
-    "businessImpact": "Mendongkrak margin keuntungan bersih bisnis hotel, villa, sewa, atau jasa.",
-    "category": "Strategi Bisnis",
-    "targetUrl": "/prompts/dynamic-pricing",
-    "actionLabel": "Buka Prompt Dynamic Pricing",
-    "practicalPrompt": "Rancang model penyesuaian harga dinamis (Dynamic Pricing Matrix) untuk bisnis [JENIS_BISNIS]. Tetapkan variabel pemicu: (1) Tingkat okupansi/stok > 80% -> Naikkan harga +15%, (2) Waktu sisa < 3 hari & okupansi < 40% -> Terapkan diskon kilat 20%, (3) Momen hari libur/high season -> Terapkan margin premium."
-  },
-  {
-    "term": "Desktop Command Center (Option+Space)",
-    "englishName": "Global Hotkey AI Invocation",
-    "laymanAnalogy": "Menekan tombol cepat di keyboard laptop untuk memanggil AI seketika di atas aplikasi apa pun tanpa harus buka browser dan login.",
-    "businessImpact": "CEO bisa langsung tanya, cek dokumen, atau periksa angka tanpa kehilangan fokus kerja.",
-    "category": "Produktivitas",
-    "targetUrl": "/architecture/desktop-command",
-    "actionLabel": "Buka Blueprint Desktop Command",
-    "practicalPrompt": "Susun panduan konfigurasi system prompt untuk Claude Desktop / Raycast / Keyboard Maestro dengan shortcut Option+Space. Prompt ini harus berfungsi sebagai 'Asisten Eksekutif Instan' yang mampu merangkum teks yang sedang di-highlight, memeriksa ejaan/kontrak, atau mengekstrak angka keuangan dalam waktu kurang dari 3 detik."
+    "targetUrl": "/prompts",
+    "actionLabel": "Buka Prompt Vault",
+    "practicalPrompt": "N/A"
   }
 ]

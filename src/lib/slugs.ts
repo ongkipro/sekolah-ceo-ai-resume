@@ -1,6 +1,6 @@
 export const sessionSlugs = [
   { slug: 'day-1-sesi-1', id: 'd1s1', title: 'Day 1 Sesi 1 - Mas Anjas Maradita' },
-  { slug: 'day-1-sesi-2', id: 'd1s2', title: 'Day 1 Sesi 2 - Mas Anjas & Tim Teknis' },
+  { slug: 'day-1-sesi-2', id: 'd1s2', title: 'Day 1 Sesi 2 - Mas Anjas, Sammy, Ugo, Ibnu' },
   { slug: 'day-2-sesi-1', id: 'd2s1', title: 'Day 2 Sesi 1 - Mas Satya Pradana' },
   { slug: 'day-2-sesi-2', id: 'd2s2', title: 'Day 2 Sesi 2 - Pak Natali Ardianto' },
 ];
@@ -27,12 +27,10 @@ export const simulatorSlugs = [
 ];
 
 export const promptSlugs = [
-  { slug: 'brief-audit', id: 'p-brief-audit', name: 'Internal Audit & Fraud Memo (.docx)' },
-  { slug: 'koran-perusahaan', id: 'p-koran-perusahaan', name: 'AI Morning Digest (Koran Perusahaan)' },
-  { slug: 'sales-extractor', id: 'p-sales-extractor', name: 'Top Sales Objection Extractor' },
-  { slug: 'jobdesk-allocator', id: 'p-jobdesk-allocator', name: 'Job Description AI Allocation' },
-  { slug: 'dynamic-pricing', id: 'p-dynamic-pricing', name: 'Dynamic Pricing & Yield Model' },
-  { slug: 'contract-scanner', id: 'p-contract-scanner', name: 'Contract & NDA Red-Flag Scanner' },
-  { slug: 'lovable-spec', id: 'p-lovable-spec', name: 'Rapid Web/App Spec (Lovable.dev)' },
-  { slug: 'auto-po', id: 'p-auto-po', name: 'Auto-PO Reorder & Purchasing Logic' },
+  { slug: 'brief-audit', id: 'p-brief-audit', name: 'Internal Audit & Fraud Memo' },
+  { slug: 'run-my-day', id: 'p-run-my-day', name: 'Run My Day Briefing' },
+  { slug: 'vibe-coding', id: 'p-vibe-coding', name: 'Vibe Coding Software Spec' },
+  { slug: 'hr-screening', id: 'p-hr-screening', name: 'Smart HR Lie Scale Assessment' },
+  { slug: 'pareto-analysis', id: 'p-pareto-analysis', name: 'Instant Pareto Analysis' },
+  { slug: 'humanize-ai', id: 'p-humanize-ai', name: 'Skill: Humanize AI Writing' },
 ];

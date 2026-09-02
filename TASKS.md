@@ -49,3 +49,15 @@
       Constraints: None
       Dependencies: T1
       Done when: Complete 5 questions, verify instant score calculation, and receive AI maturity level badge.
+
+## Phase 8: Data Replacement & Finalization
+- [x] **T19** — Inject precise content into `sessions.json` using the Master Analysis (Breakdown of all 4 sessions, frameworks, and quotes).
+      Primary requirement: REQ-19
+      Dependencies: None
+- [x] **T20** — Inject precise content into `tools.json` and `prompts.json` based on the real tools (N8N, Company Brain, Claude, Lovable, etc.) and prompts (Run My Day, HR Assessment) from the Master Analysis.
+      Primary requirement: REQ-19
+      Dependencies: None
+- [x] **T21** — Inject precise content into `cheatsheets.json`, `glossary.json`, and `quiz.json` reflecting the actual strategic insights (e.g. John Kotter 8-steps, B.R.I.E.F framework, ZMOT).
+      Primary requirement: REQ-19
+      Dependencies: None
+- [x] **T22** — Final audit and build verification to ensure no UI breakage occurs after data injection.

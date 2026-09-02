@@ -1,131 +1,131 @@
 [
   {
-    "name": "Claude Desktop (Projects + Local Files)",
-    "category": "Executive Intelligence",
+    "name": "Claude Desktop / Claude Code",
+    "category": "Executive Intelligence & Vibe Coding",
     "pricing": "$20/user/mo",
     "difficulty": "Easy",
     "impactScore": 5,
-    "url": "https://claude.ai/download",
-    "speaker": "Pak Natali Ardianto",
+    "url": "https://claude.ai",
+    "speaker": "Natali Ardianto / Satya Pradana",
     "useCases": [
-      "Audit internal keuangan",
-      "Pembuatan memo resmi .docx",
-      "Review kontrak & NDA",
-      "Command Center via Option+Space"
+      "Audit internal keuangan & deteksi fraud",
+      "Pembangunan instant web apps / Vibe Coding",
+      "Review kontrak hukum & penyusunan memo .docx",
+      "Desktop Command Center via Option+Space"
     ],
-    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang, reasoning tingkat tinggi, dan integrasi folder file system fisik.",
-    "starterPrompt": "Analisa dokumen laporan keuangan terlampir. Identifikasi 3 pos pengeluaran terbesar yang mengalami kenaikan tidak wajar dibandingkan bulan lalu, serta susun draf rekomendasi efisiensi berformat tabel untuk C-Level."
+    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang (Tier 5 Opus/Fable) dan integrasi folder file system fisik.",
+    "starterPrompt": "Anda adalah Senior Forensic Auditor. Analisa dokumen laporan keuangan terlampir. Identifikasi 3 pos pengeluaran terbesar yang mengalami kenaikan tidak wajar."
   },
   {
-    "name": "Lovable.dev / Cursor / V0",
+    "name": "Lovable.dev",
     "category": "Rapid Prototyping",
-    "pricing": "Freemium / $20/mo",
-    "difficulty": "Easy to Medium",
+    "pricing": "Freemium",
+    "difficulty": "Medium",
     "impactScore": 5,
     "url": "https://lovable.dev",
     "speaker": "Mas Anjas Maradita",
     "useCases": [
-      "Bikin portal web internal",
-      "Dashboard monitoring bisnis",
-      "Prototipe aplikasi B2B tanpa vendor software"
+      "Pembuatan portal web fungsional",
+      "Prototipe Dashboard B2B / Warehouse Management",
+      "Sistem Internal tanpa vendor software"
     ],
-    "summary": "Platform no-code/low-code AI untuk membangun prototipe sistem web lengkap dalam hitungan menit.",
-    "starterPrompt": "Build an executive analytics dashboard for a retail company in Next.js + Tailwind CSS. Include KPI summary cards for Revenue, Gross Margin, and Headcount Efficiency, a time-series chart, and a responsive data table."
+    "summary": "Platform no-code to full-code bertenaga AI untuk membangun aplikasi berbasis web dalam waktu 15 menit menggunakan instruksi bahasa alami.",
+    "starterPrompt": "Build a modern Warehouse Management System web application with Inventory tracking, QC dashboard, and driver upload proof."
   },
   {
     "name": "Google NotebookLM",
-    "category": "Audio & Research",
+    "category": "Knowledge Management",
     "pricing": "Free",
     "difficulty": "Easy",
-    "impactScore": 5,
+    "impactScore": 4,
     "url": "https://notebooklm.google.com",
     "speaker": "Mas Anjas Maradita",
     "useCases": [
-      "Ingest dokumen tender tebal",
-      "Ubah SOP jadi podcast audio",
-      "Cerna transkrip rapat C-Level"
+      "Sintesis ratusan transkrip PDF/rapat",
+      "Pembuatan Audio Overview (Podcast AI)",
+      "Basis data tanya-jawab internal anti-halusinasi"
     ],
-    "summary": "AI research assistant berbasis Google Gemini yang mampu mengubah ratusan halaman dokumen menjadi audio diskusi 2 orang.",
-    "starterPrompt": "Jadikan seluruh dokumen SOP operasional ini sebagai dasar pengetahuan. Ekstrak 5 poin paling krusial yang harus dipatuhi karyawan baru pada hari pertama kerja dan buatkan 3 pertanyaan kuis evaluasinya."
-  },
-  {
-    "name": "Kling AI / Seedance / Runway",
-    "category": "Video Generation",
-    "pricing": "Freemium / Credit based",
-    "difficulty": "Medium",
-    "impactScore": 4,
-    "url": "https://klingai.com",
-    "speaker": "Mas Anjas Maradita",
-    "useCases": [
-      "Iklan video produk sinematik",
-      "Motion visual komersial",
-      "Aset visual tanpa shooting fisik"
-    ],
-    "summary": "Generasi video AI mutakhir dengan kontrol pergerakan kamera dinamis untuk produksi iklan berkualitas tinggi.",
-    "starterPrompt": "Cinematic product commercial video, slow motion 4k, professional studio lighting, showing luxury packaging opening with elegant mist and premium reflection."
-  },
-  {
-    "name": "Suno AI",
-    "category": "Sound & Jingle Branding",
-    "pricing": "Freemium / $10/mo",
-    "difficulty": "Easy",
-    "impactScore": 4,
-    "url": "https://suno.com",
-    "speaker": "Mas Anjas Maradita",
-    "useCases": [
-      "Pembuatan jingle brand viral",
-      "Background music komersial",
-      "Campaign awareness audio"
-    ],
-    "summary": "Mesin pembuat lagu dan jingle komersial berkualitas studio lengkap dengan lirik dan aransemen dalam 30 detik.",
-    "starterPrompt": "[Upbeat Acoustic Pop, Catchy Jingle] Jingle komersial 15 detik tentang layanan cuci sepatu express terpercaya, lirik ceria dan mudah diingat: 'Sepatu kotor langsung bersih, jalan percaya diri'."
-  },
-  {
-    "name": "HeyGen",
-    "category": "Avatar & Video Scaling",
-    "pricing": "$29/mo",
-    "difficulty": "Easy",
-    "impactScore": 5,
-    "url": "https://heygen.com",
-    "speaker": "Mas Anjas Maradita",
-    "useCases": [
-      "Kloning avatar founder/presenter",
-      "Produksi video edukasi massal",
-      "Video onboarding & training"
-    ],
-    "summary": "Platform kloning video dan suara digital untuk memproduksi puluhan video personal tanpa perlu shooting fisik.",
-    "starterPrompt": "Halo rekan-rekan tim! Selamat datang di program orientasi eksekutif AI. Dalam 3 menit ke depan, saya akan menjelaskan 3 pilar transformasi digital perusahaan kita tahun ini."
+    "summary": "Tools RAG (Retrieval-Augmented Generation) dari Google yang hanya menjawab berdasarkan referensi dokumen spesifik yang diunggah.",
+    "starterPrompt": "Buatkan ringkasan 3 poin paling krusial dari notula rapat direksi ini dan kembangkan menjadi naskah podcast diskusi 5 menit."
   },
   {
     "name": "ManyChat",
-    "category": "Traffic & Conversion",
-    "pricing": "Freemium / $15/mo",
-    "difficulty": "Easy",
+    "category": "Marketing Automation",
+    "pricing": "$15/mo",
+    "difficulty": "Medium",
     "impactScore": 5,
     "url": "https://manychat.com",
-    "speaker": "Mas Anjas Maradita",
+    "speaker": "Mas Anjas / Satya Pradana",
     "useCases": [
-      "Comment-to-DM di IG & TikTok",
-      "Lead generation gratis dari konten viral",
-      "Auto-distribusi PDF & link"
+      "Automasi balas komentar Instagram ke DM",
+      "Zero-CAC Affiliate Marketing (Plaud Note)",
+      "Call to Value (CTV) engine"
     ],
-    "summary": "Otomasi funnel media sosial yang mengubah komentar konten viral menjadi pesan penawaran langsung di DM.",
-    "starterPrompt": "Terima kasih sudah meninggalkan komentar di postingan kami! Ini dia link download gratis PDF 'Executive Playbook Sekolah CEO AI 2026' khusus untuk Anda: [LINK_PLAYBOOK]. Jangan ragu hubungi kami jika butuh konsultasi."
+    "summary": "Mesin di balik konversi organik masif yang membalas ribuan interaksi 'MAU' di Instagram Reels dan mengirimkan link diskon secara instan.",
+    "starterPrompt": "N/A (Visual Builder)"
   },
   {
-    "name": "N8N / Zapier",
-    "category": "System Automation",
-    "pricing": "Open Source / Cloud",
-    "difficulty": "Medium to Advanced",
+    "name": "Suno AI",
+    "category": "Generative Audio",
+    "pricing": "Freemium / Pro",
+    "difficulty": "Easy",
+    "impactScore": 4,
+    "url": "https://suno.com",
+    "speaker": "Mas Anjas / Satya Pradana",
+    "useCases": [
+      "Pembuatan jingle komersial brand",
+      "Audio relaksasi / murottal otomatis",
+      "Social engineering lewat lagu populer"
+    ],
+    "summary": "Mampu mengubah input vokal acapella mentah atau teks lirik menjadi lagu berkualitas studio lengkap dengan aransemen alat musik.",
+    "starterPrompt": "[Style]: Castle Fairy Tale Indonesian Pop, Female Vocals, Sweet, Whimsical\\n[Lyrics]: Cahaya kenyamanan adalah hal utama..."
+  },
+  {
+    "name": "N8N",
+    "category": "Workflow Automation",
+    "pricing": "Freemium / Self-Hosted",
+    "difficulty": "Hard",
     "impactScore": 5,
     "url": "https://n8n.io",
-    "speaker": "Mas Satya & Mas Anjas",
+    "speaker": "Mas Sammy (Connext Lab)",
     "useCases": [
-      "Otomasi Auto-PO",
-      "Koran Perusahaan 07.00 pagi",
-      "Sinkronisasi POS kasir & Telegram"
+      "Integrasi API lintas platform",
+      "Pembatasan token (Harnessing Agent)",
+      "Scraping data dan auto-posting otomatis"
     ],
-    "summary": "Workflow engine untuk menghubungkan sensor hardware, database, Telegram, dan agen LLM secara 24/7.",
-    "starterPrompt": "Trigger: Cron tiap jam 07.00 WIB -> Node HTTP Request: Tarik data omset kemarin dari database PostgreSQL -> Node OpenAI: Formatkan ke template 'Koran Perusahaan' -> Node Telegram: Kirim pesan ke Channel CEO."
+    "summary": "Engine otomatisasi tingkat lanjut yang memungkinkan pengaturan logika khusus (JavaScript limiter) untuk menghemat biaya token AI dalam skala enterprise.",
+    "starterPrompt": "N/A (Node-based)"
+  },
+  {
+    "name": "Apify",
+    "category": "Data Scraping Engine",
+    "pricing": "Pay per execution",
+    "difficulty": "Medium",
+    "impactScore": 4,
+    "url": "https://apify.com",
+    "speaker": "Pak Natali Ardianto",
+    "useCases": [
+      "Scraping kompetitor di Instagram Reels",
+      "Ekstraksi ulasan Google Maps",
+      "Integrasi via Claude MCP"
+    ],
+    "summary": "Platform otomatisasi ekstraksi data (web scraping) yang krusial untuk reverse-engineering algoritma kompetitor di media sosial.",
+    "starterPrompt": "N/A"
+  },
+  {
+    "name": "Company Brain / Agentku",
+    "category": "Proprietary Internal ERP",
+    "pricing": "Custom",
+    "difficulty": "Hard",
+    "impactScore": 5,
+    "url": "#",
+    "speaker": "Satya Pradana / Ibnu / Ugo",
+    "useCases": [
+      "Rekonsiliasi Bank Otomatis",
+      "Dashboard HR, Finance, Stok terpadu",
+      "CEO Clone Behavior Orchestration"
+    ],
+    "summary": "Ekosistem AI kustom yang menggabungkan seluruh titik data perusahaan menjadi satu 'otak sentral' yang bisa diajak diskusi strategis oleh eksekutif.",
+    "starterPrompt": "Kompilasikan posisi kas hari ini, data absensi fingerprint, dan status order stok dari Gudang. Buatkan Executive Brief."
   }
 ]
