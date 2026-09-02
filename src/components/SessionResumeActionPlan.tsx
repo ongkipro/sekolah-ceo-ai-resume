@@ -1,3 +1,4 @@
+import { marked } from 'marked';
 import React, { useState, useEffect } from 'react';
 import { 
   FileText, 
@@ -48,7 +49,7 @@ export default function SessionResumeActionPlan({
   executiveResume,
   actionPlan = [],
 }: Props) {
-  const [activeTab, setActiveTab] = useState<'resume' | 'actionPlan'>('resume');
+  const [activeTab, setActiveTab] = useState<'resume' | 'actionPlan' | 'transcript'>('resume');
   const [checkedMap, setCheckedMap] = useState<{ [id: string]: boolean }>({});
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
@@ -108,7 +109,7 @@ export default function SessionResumeActionPlan({
         </div>
 
         {/* Tab Buttons (Responsive Grid on Mobile) */}
-        <div className="grid grid-cols-2 sm:flex sm:items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/60 shrink-0 max-w-full">
+        <div className="flex flex-wrap sm:flex-nowrap items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/60 shrink-0 max-w-full">
           <button
             type="button"
             onClick={() => setActiveTab('resume')}
@@ -131,9 +132,22 @@ export default function SessionResumeActionPlan({
             }`}
           >
             <Target className="w-3.5 h-3.5" />
-            <span className="truncate">To-Do ({completedCount}/{totalCount})</span>
+            <span className="truncate">To-Do ({completedCount}/{totalCount})</span></button>
+
+          <button
+            type="button"
+            onClick={() => setActiveTab('transcript')}
+            className={`flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+              activeTab === 'transcript'
+                ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm font-bold'
+                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+            }`}
+          >
+            <FileText className="w-3.5 h-3.5" />
+            <span className="truncate">Transkrip Lengkap</span>
           </button>
         </div>
+
       </div>
 
       {/* Tab 1: Executive Resume */}
@@ -258,6 +272,16 @@ export default function SessionResumeActionPlan({
           </div>
         </div>
       )}
+
+      {/* Tab 3: Full Transcript */}
+      {activeTab === 'transcript' && (activeSession as any).fullTranscript && (
+        <div className="space-y-6 animate-in fade-in duration-200">
+          <div className="p-5 sm:p-7 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 prose prose-sm sm:prose-base dark:prose-invert max-w-none prose-h2:text-blue-600 dark:prose-h2:text-blue-400 prose-h3:text-slate-700 dark:prose-h3:text-slate-300">
+            <div dangerouslySetInnerHTML={{ __html: marked.parse((activeSession as any).fullTranscript) }} />
+          </div>
+        </div>
+      )}
     </div>
+
   );
 }
