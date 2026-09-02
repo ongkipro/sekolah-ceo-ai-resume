@@ -361,12 +361,12 @@ export default function SingleSessionView({ sessionId }: Props) {
 
         <div className="space-y-3">
           {activeSession.topics.map((topic, idx) => {
-            const isOpen = activeTopicId === topic.id || (activeTopicId === null && idx === 0);
+            const isActive = activeTopicId === topic.id;
             return (
               <div
                 key={topic.id}
                 className={`rounded-2xl border transition-all overflow-hidden ${
-                  isOpen
+                  isActive
                     ? 'bg-white dark:bg-slate-900 border-blue-300 dark:border-blue-700 shadow-sm'
                     : 'bg-white/80 dark:bg-slate-900/80 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
                 }`}
@@ -388,12 +388,12 @@ export default function SingleSessionView({ sessionId }: Props) {
                     </h4>
                   </div>
 
-                  <div className={`p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 transition-transform duration-200 shrink-0 ${isOpen ? 'rotate-90 text-blue-600' : ''}`}>
-                    <ChevronRight className="w-4 h-4" />
+                  <div className={`p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 transition-transform duration-200 shrink-0 ${isActive ? 'text-blue-600' : ''}`}>
+                    {/* chevron removed */}
                   </div>
                 </button>
 
-                {isOpen && (
+                {true && (
                   <div className="px-4 pb-5 sm:px-5 sm:pb-6 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/60 space-y-4 animate-in fade-in duration-200">
                     {/* Layman Explanation */}
                     {topic.laymanExplanation && (
