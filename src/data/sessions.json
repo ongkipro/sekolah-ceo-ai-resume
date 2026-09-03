@@ -26,453 +26,453 @@
     "topics": [
       {
         "id": "d1s1-t1",
-        "title": "KPMG's Massive Investment in Enterprise AI",
+        "title": "Investasi Besar KPMG dalam AI Perusahaan",
         "timestamp": "00:00:17",
         "timestampSeconds": 17,
-        "category": "Enterprise AI Adoption",
+        "category": "Adopsi AI Perusahaan",
         "keyTakeaways": [
-          "KPMG spends nearly 100 billion Rupiah on premium AI subscriptions for 276,000 employees.",
-          "Large, conservative companies with heavy bureaucracy are aggressively adopting AI.",
-          "If conservative giants can adopt AI, smaller agile businesses should not be lagging behind."
+          "KPMG menghabiskan hampir 100 miliar Rupiah untuk langganan AI premium bagi 276.000 karyawannya.",
+          "Perusahaan besar yang konservatif dengan birokrasi yang berat secara agresif mengadopsi AI.",
+          "Jika raksasa konservatif bisa mengadopsi AI, bisnis kecil yang lincah seharusnya tidak ketinggalan."
         ],
         "verbatimHighlight": "300.000 per orang per bulan... 276.000 karyawan... hampir 100 miliar mereka keluarkan. DPMG perusahaan yang sangat konservatif... semakin besar perusahaan, semakin susah dia mengadopsi hal baru.",
-        "laymanExplanation": "Big, old-fashioned companies are spending billions to give their employees advanced AI tools. This shows that AI isn't just a gimmick, but a serious business advantage."
+        "laymanExplanation": "Perusahaan besar dan kuno menghabiskan miliaran untuk memberikan alat AI canggih kepada karyawannya. Ini menunjukkan bahwa AI bukan sekadar tipu muslihat, tetapi keuntungan bisnis yang serius."
       },
       {
         "id": "d1s1-t2",
-        "title": "Common Pitfalls of Current AI Usage Among Business Owners",
+        "title": "Kesalahan Umum Penggunaan AI Saat Ini di Kalangan Pemilik Bisnis",
         "timestamp": "00:02:22",
         "timestampSeconds": 142,
-        "category": "Current Adoption Reality",
+        "category": "Realitas Adopsi Saat Ini",
         "keyTakeaways": [
-          "Many users only use AI for trivial tasks like casual chatting or simple questions.",
-          "Participants were surveyed on their monthly AI spending, revealing surprisingly low investment.",
-          "The goal of the class is to move beyond basic chatting and use AI for business process efficiency."
+          "Banyak pengguna hanya menggunakan AI untuk tugas sepele seperti mengobrol santai atau pertanyaan sederhana.",
+          "Para peserta disurvei mengenai pengeluaran AI bulanan mereka, mengungkapkan investasi yang secara mengejutkan rendah.",
+          "Tujuan kelas ini adalah untuk melampaui obrolan dasar dan menggunakan AI untuk efisiensi proses bisnis."
         ],
         "verbatimHighlight": "Bapak Ibu kalau sudah pakai cuma dipakai buat chattingal? Halo Chat GVT. Hari ini makan apa ya?",
-        "laymanExplanation": "Most people just use AI like a smart search engine or a chatbot to ask silly things, instead of using it to automate and improve their actual work processes."
+        "laymanExplanation": "Kebanyakan orang hanya menggunakan AI seperti mesin pencari pintar atau chatbot untuk menanyakan hal-hal konyol, alih-alih menggunakannya untuk mengotomatisasi dan meningkatkan proses kerja mereka yang sebenarnya."
       },
       {
         "id": "d1s1-t3",
-        "title": "The Importance of Combining CEO Frameworks with Team Execution",
+        "title": "Pentingnya Menggabungkan Kerangka Kerja CEO dengan Eksekusi Tim",
         "timestamp": "00:04:18",
         "timestampSeconds": 258,
-        "category": "Leadership & Delegation",
+        "category": "Kepemimpinan & Pendelegasian",
         "keyTakeaways": [
-          "CEOs don't need to do the technical prompting themselves, but they must understand the framework.",
-          "Online attendees are encouraged to share the Zoom link with their teams so the team handles the technical execution.",
-          "AI behaves like an employee that never gets offended or emotional (no baper)."
+          "CEO tidak perlu melakukan prompting teknis sendiri, tetapi mereka harus memahami kerangka kerjanya.",
+          "Peserta online didorong untuk membagikan tautan Zoom dengan tim mereka sehingga tim yang menangani eksekusi teknis.",
+          "AI berperilaku seperti karyawan yang tidak pernah tersinggung atau emosional (tidak baper)."
         ],
         "verbatimHighlight": "EAI itu benar-benar kayak nyuruh karyawan gitu. Bedanya mereka enggak gampang baper... jangan karena teman-teman tetap butuh framework cara berpikir dan alur kerjanya. Detail kasih tim enggak apa-apa.",
-        "laymanExplanation": "Bosses should understand how AI works strategically but let their staff handle the hands-on technical work. AI is basically an ideal assistant that never complains."
+        "laymanExplanation": "Bos harus memahami bagaimana AI bekerja secara strategis tetapi membiarkan staf mereka menangani pekerjaan teknis langsung. AI pada dasarnya adalah asisten ideal yang tidak pernah mengeluh."
       },
       {
         "id": "d1s1-t4",
-        "title": "The Evolution of Sekolah CEO to AI Focus",
+        "title": "Evolusi Sekolah CEO ke Fokus AI",
         "timestamp": "00:06:50",
         "timestampSeconds": 410,
-        "category": "Program Context",
+        "category": "Konteks Program",
         "keyTakeaways": [
-          "Sekolah CEO has run 50 batches on various topics like finance, leadership, and team building.",
-          "The program paused for a year and shifted entirely to AI for Batch 51 because AI is seen as a game changer.",
-          "The speaker's own company spends tens of millions on AI and actively builds AI tools for clients."
+          "Sekolah CEO telah menjalankan 50 batch dengan berbagai topik seperti keuangan, kepemimpinan, dan pembangunan tim.",
+          "Program ini berhenti selama setahun dan beralih sepenuhnya ke AI untuk Batch 51 karena AI dipandang sebagai pengubah permainan (game changer).",
+          "Perusahaan pembicara sendiri menghabiskan puluhan juta untuk AI dan secara aktif membangun alat AI untuk klien."
         ],
         "verbatimHighlight": "Kita merasa kita harus menghadirkan sesuatu yang benar-benar teman-teman butuhkan dan game changing. Akhirnya kita memutuskan bahwa sekolah CEO AI ini kita adakan di batch 51 ini.",
-        "laymanExplanation": "The business school program realized that AI is so revolutionary that they changed their entire curriculum to focus exclusively on teaching AI to business leaders."
+        "laymanExplanation": "Program sekolah bisnis menyadari bahwa AI sangat revolusioner sehingga mereka mengubah seluruh kurikulum mereka untuk fokus secara eksklusif dalam mengajarkan AI kepada para pemimpin bisnis."
       },
       {
         "id": "d1s1-t5",
-        "title": "Surprising Survey Results on Audience AI Investment",
+        "title": "Hasil Survei yang Mengejutkan tentang Investasi AI Audiens",
         "timestamp": "00:09:00",
         "timestampSeconds": 540,
-        "category": "Data & Insights",
+        "category": "Data & Wawasan",
         "keyTakeaways": [
-          "Out of 30 surveyed attendees, only 3 spend more than 1 million Rupiah per month on AI.",
-          "Most participants, despite running large businesses, are spending less on AI than on weekly coffee.",
-          "Early adoption now presents a massive opportunity to outpace competitors."
+          "Dari 30 peserta yang disurvei, hanya 3 yang menghabiskan lebih dari 1 juta Rupiah per bulan untuk AI.",
+          "Sebagian besar peserta, meskipun menjalankan bisnis besar, menghabiskan lebih sedikit untuk AI daripada kopi mingguan mereka.",
+          "Adopsi awal sekarang menghadirkan peluang besar untuk mengungguli pesaing."
         ],
         "verbatimHighlight": "Dari 30 orang hanya tiga orang yang berlangganan AI di atas 1 juta per bulan... Belanja AI kita lebih kecil dari tagihan kopi kita seminggu.",
-        "laymanExplanation": "Even successful business owners are barely spending money on AI tools right now. Those who start investing in it early will have a huge head start over their competition."
+        "laymanExplanation": "Bahkan pemilik bisnis yang sukses saat ini nyaris tidak menghabiskan uang untuk alat AI. Mereka yang mulai berinvestasi di dalamnya lebih awal akan memiliki keunggulan besar dibandingkan pesaing mereka."
       },
       {
         "id": "d1s1-t6",
-        "title": "Real Case Study: Cutting Costs and Multiplying Output in Marketing",
+        "title": "Studi Kasus Nyata: Memangkas Biaya dan Melipatgandakan Output dalam Pemasaran",
         "timestamp": "00:11:47",
         "timestampSeconds": 707,
-        "category": "Business Case Study",
+        "category": "Studi Kasus Bisnis",
         "keyTakeaways": [
-          "The speaker's marketing team was reduced from 8 people to 2 people with AI.",
-          "Payroll costs dropped from 24 million to 6 million plus roughly 1.5 million in AI subscriptions.",
-          "Output increased drastically: one person can now make 10 content pieces instead of two people making two."
+          "Tim pemasaran pembicara dikurangi dari 8 orang menjadi 2 orang dengan AI.",
+          "Biaya penggajian turun dari 24 juta menjadi 6 juta ditambah sekitar 1,5 juta untuk langganan AI.",
+          "Output meningkat drastis: satu orang sekarang dapat membuat 10 konten alih-alih dua orang membuat dua konten."
         ],
         "verbatimHighlight": "24 juta dengan output yang jauh lebih banyak. Wah, jadi hematnya tiga kali lipat, output-nya naik kurang lebih 5 kali lipat... Sekarang satu orang bisa bikin 10 konten.",
-        "laymanExplanation": "By using AI, a company was able to shrink its marketing team, save a lot of money on salaries, and actually produce five times more content than before."
+        "laymanExplanation": "Dengan menggunakan AI, sebuah perusahaan mampu mengecilkan tim pemasarannya, menghemat banyak uang untuk gaji, dan benar-benar menghasilkan konten lima kali lebih banyak dari sebelumnya."
       },
       {
         "id": "d1s1-t7",
-        "title": "Audience Profiling and Networking Activity",
+        "title": "Pembuatan Profil Audiens dan Aktivitas Jaringan",
         "timestamp": "00:13:27",
         "timestampSeconds": 807,
-        "category": "Networking",
+        "category": "Jaringan (Networking)",
         "keyTakeaways": [
-          "Participants were grouped by industry (construction, F&B, hospitality) to facilitate networking.",
-          "Attendees identified family businesses, long-standing companies, and those who failed at AI previously.",
-          "Solutions and insights often come from peer discussions during breaks."
+          "Peserta dikelompokkan berdasarkan industri (konstruksi, F&B, perhotelan) untuk memfasilitasi jaringan.",
+          "Peserta mengidentifikasi bisnis keluarga, perusahaan yang sudah lama berdiri, dan mereka yang sebelumnya gagal di AI.",
+          "Solusi dan wawasan sering kali datang dari diskusi rekan kerja selama waktu istirahat."
         ],
         "verbatimHighlight": "Solusi itu banyak keluar justru dari meja makan atau depan meja kafibrik. Oh iya ya. Enggak kepikiran ya ketika ngobrol sama orang lain.",
-        "laymanExplanation": "Participants were encouraged to meet people in similar or different industries because talking to other business owners often sparks the best ideas."
+        "laymanExplanation": "Peserta didorong untuk bertemu orang-orang di industri yang sama atau berbeda karena berbicara dengan pemilik bisnis lain sering kali memicu ide-ide terbaik."
       },
       {
         "id": "d1s1-t8",
-        "title": "The 'Benar atau Salah' (True or False) AI Icebreaker Game",
+        "title": "Permainan Pemecah Suasana (Icebreaker) AI 'Benar atau Salah'",
         "timestamp": "00:24:27",
         "timestampSeconds": 1467,
-        "category": "Interactive Learning",
+        "category": "Pembelajaran Interaktif",
         "keyTakeaways": [
-          "A custom-built game where participants pair up as 'Team True' and 'Team False' based on statements.",
-          "Rounds 1 and 2 featured general knowledge questions where the AI provided honest, factual answers.",
-          "The game acted as an energetic icebreaker while subtly demonstrating AI's capabilities as a judge."
+          "Permainan yang dibuat khusus di mana peserta berpasangan sebagai 'Tim Benar' dan 'Tim Salah' berdasarkan pernyataan.",
+          "Ronde 1 dan 2 menampilkan pertanyaan pengetahuan umum di mana AI memberikan jawaban faktual yang jujur.",
+          "Permainan ini bertindak sebagai pemecah suasana yang energik sambil secara halus menunjukkan kemampuan AI sebagai juri."
         ],
         "verbatimHighlight": "Kita akan bermain game namanya game benar atau salah. Powered by AI... tim benar harus berusaha namplek tim salah.",
-        "laymanExplanation": "The speaker led a fun interactive game where people had to quickly guess if statements were true or false, using an AI tool to give the final answer."
+        "laymanExplanation": "Pembicara memimpin permainan interaktif yang menyenangkan di mana orang-orang harus menebak dengan cepat apakah sebuah pernyataan itu benar atau salah, menggunakan alat AI untuk memberikan jawaban akhir."
       },
       {
         "id": "d1s1-t9",
-        "title": "Round 3: Business & AI Trivia Hallucinations",
+        "title": "Ronde 3: Halusinasi Trivia Bisnis & AI",
         "timestamp": "00:34:33",
         "timestampSeconds": 2073,
-        "category": "Interactive Learning / AI Risks",
+        "category": "Pembelajaran Interaktif / Risiko AI",
         "keyTakeaways": [
-          "Round 3 featured complex statements about AI adoption, startups, and historical facts.",
-          "The AI provided highly convincing, data-backed scientific explanations for its verdicts.",
-          "The audience universally trusted the AI's detailed explanations without questioning their accuracy."
+          "Ronde 3 menampilkan pernyataan kompleks tentang adopsi AI, startup, dan fakta sejarah.",
+          "AI memberikan penjelasan ilmiah yang sangat meyakinkan dan didukung data untuk vonisnya.",
+          "Audiens secara universal mempercayai penjelasan rinci AI tanpa mempertanyakan keakuratannya."
         ],
         "verbatimHighlight": "Terverifikasi pada 41.000 sesi pengguna... tingkat kegagalan sektor ini justru 34% lebih rendah... Teman-teman tadi saya lihat rout wajahnya semua percaya dengan verifikasi di rounde ketiga.",
-        "laymanExplanation": "During the final round of the game, the AI gave very complex and smart-sounding answers about business and history, and everyone believed it without second-guessing."
+        "laymanExplanation": "Selama putaran final permainan, AI memberikan jawaban yang sangat kompleks dan terdengar cerdas tentang bisnis dan sejarah, dan semua orang mempercayainya tanpa menebak-nebak."
       },
       {
         "id": "d1s1-t10",
-        "title": "The Plot Twist: AI as a Double-Edged Sword",
+        "title": "Kejutan Tak Terduga: AI sebagai Pedang Bermata Dua",
         "timestamp": "00:38:40",
         "timestampSeconds": 2320,
-        "category": "Core Lesson / AI Hallucination",
+        "category": "Pelajaran Inti / Halusinasi AI",
         "keyTakeaways": [
-          "The AI was intentionally programmed by the speaker to lie and invert all answers in Round 3.",
-          "The realistic-sounding data and verifications were completely hallucinated (invented) by the AI.",
-          "AI is like a knife: it is highly useful but can harm users if the operator doesn't know how to use it safely."
+          "AI sengaja diprogram oleh pembicara untuk berbohong dan membalikkan semua jawaban di Ronde 3.",
+          "Data dan verifikasi yang terdengar realistis sepenuhnya dihalusinasikan (dibuat-buat) oleh AI.",
+          "AI itu seperti pisau: sangat berguna tetapi dapat membahayakan pengguna jika operator tidak tahu cara menggunakannya dengan aman."
         ],
         "verbatimHighlight": "Di ronde ketiga kita sedang ditipu AI... AI itu seperti dua belah mata pisau... bisa tumpul, bisa tajam dan tajam pun bisa melukai, bisa useful sebagai tools kita.",
-        "laymanExplanation": "The big reveal was that the AI was instructed to lie and make up fake facts. This proved that you can't blindly trust AI; you need to be smart enough to guide it properly."
+        "laymanExplanation": "Pengungkapan besarnya adalah bahwa AI diinstruksikan untuk berbohong dan mengarang fakta palsu. Ini membuktikan bahwa Anda tidak dapat mempercayai AI secara membabi buta; Anda harus cukup pintar untuk memandunya dengan benar."
       },
       {
         "id": "d1s1-t11",
-        "title": "Building Custom AI Apps with Claude",
+        "title": "Membangun Aplikasi AI Kustom dengan Claude",
         "timestamp": "00:42:41",
         "timestampSeconds": 2561,
-        "category": "Practical Application",
+        "category": "Aplikasi Praktis",
         "keyTakeaways": [
-          "The speaker built the custom icebreaker game app in just a few hours using Claude.",
-          "Users do not need a dedicated IT team; they can generate complex tools by simply instructing the AI.",
-          "Attendees are strongly encouraged to subscribe to premium AI services (like Claude) to maximize the class's value."
+          "Pembicara membangun aplikasi permainan icebreaker khusus hanya dalam beberapa jam menggunakan Claude.",
+          "Pengguna tidak membutuhkan tim TI khusus; mereka dapat membuat alat kompleks hanya dengan menginstruksikan AI.",
+          "Peserta sangat dianjurkan untuk berlangganan layanan AI premium (seperti Claude) untuk memaksimalkan nilai kelas ini."
         ],
         "verbatimHighlight": "Apliksinya saya buat tadi jam 5.00 pagi... gampangannya Teman-teman pakai aplikasi di kantor... itu kalau teman-temnya sendiri, tim IT-nya sendiri itu bisa kalian buat dan enggak butuh coding.",
-        "laymanExplanation": "The speaker showed off that he built the whole game they just played in just a couple of hours using an AI tool called Claude, proving that anyone can build custom apps without knowing how to code."
+        "laymanExplanation": "Pembicara memamerkan bahwa ia membangun seluruh permainan yang baru saja mereka mainkan hanya dalam beberapa jam menggunakan alat AI bernama Claude, membuktikan bahwa siapa pun dapat membangun aplikasi kustom tanpa harus tahu cara mengkode."
       },
       {
         "id": "d1s1-t12",
-        "title": "CEO Networking Game: Pain Points and Expectations",
+        "title": "Permainan Jaringan CEO: Masalah Utama dan Harapan",
         "timestamp": "00:47:36",
         "timestampSeconds": 2856,
-        "category": "Networking",
+        "category": "Jaringan (Networking)",
         "keyTakeaways": [
-          "Participants engage in a group exercise to share their biggest business struggles.",
-          "Sharing pain points helps business owners realize they face similar challenges, like managing Gen Z employees.",
-          "Setting clear expectations ensures the 2-day class delivers worthwhile value."
+          "Peserta terlibat dalam latihan kelompok untuk berbagi kesulitan bisnis terbesar mereka.",
+          "Berbagi masalah utama membantu pemilik bisnis menyadari bahwa mereka menghadapi tantangan yang sama, seperti mengelola karyawan Gen Z.",
+          "Menetapkan ekspektasi yang jelas memastikan kelas 2 hari ini memberikan nilai yang sepadan."
         ],
         "verbatimHighlight": "Satu hal apa yang membuat Anda tidak bisa tidur nyenyak sebagai CEO... apa yang harus terjadi dalam 2 hari ini supaya Anda bilang kelas ini worthed",
-        "laymanExplanation": "The facilitator groups attendees to share the main business problems keeping them awake at night and what they expect to learn from the event."
+        "laymanExplanation": "Fasilitator mengelompokkan peserta untuk berbagi masalah bisnis utama yang membuat mereka terjaga di malam hari dan apa yang mereka harapkan untuk dipelajari dari acara tersebut."
       },
       {
         "id": "d1s1-t13",
-        "title": "Addressing Execution and Cash Flow with AI",
+        "title": "Mengatasi Eksekusi dan Arus Kas dengan AI",
         "timestamp": "00:50:49",
         "timestampSeconds": 3049,
-        "category": "Business Strategy",
+        "category": "Strategi Bisnis",
         "keyTakeaways": [
-          "CEOs identified team execution delays and unpredictable cash flow as major issues.",
-          "Analyzing 1-2 years of historical data can uncover customer patterns to better manage operations.",
-          "AI forecasting tools help businesses optimize inventory and cash flow efficiently."
+          "CEO mengidentifikasi penundaan eksekusi tim dan arus kas yang tidak dapat diprediksi sebagai masalah besar.",
+          "Menganalisis 1-2 tahun data historis dapat mengungkap pola pelanggan untuk mengelola operasi dengan lebih baik.",
+          "Alat peramalan AI membantu bisnis mengoptimalkan inventaris dan arus kas secara efisien."
         ],
         "verbatimHighlight": "setelah saya menggunakan AI kita ketemu polanya customer... jadi kita bisa memperkirakan cash flow-nya",
-        "laymanExplanation": "Participants share that their biggest struggles are team delays and cash flow. The host explains that feeding past business data into AI can predict future customer behavior, smoothing out cash flow issues."
+        "laymanExplanation": "Peserta berbagi bahwa perjuangan terbesar mereka adalah penundaan tim dan arus kas. Pembawa acara menjelaskan bahwa memasukkan data bisnis masa lalu ke dalam AI dapat memprediksi perilaku pelanggan di masa depan, memperlancar masalah arus kas."
       },
       {
         "id": "d1s1-t14",
-        "title": "Class Framework and Free AI Tools Distribution",
+        "title": "Kerangka Kelas dan Distribusi Alat AI Gratis",
         "timestamp": "00:54:53",
         "timestampSeconds": 3293,
-        "category": "Event Overview",
+        "category": "Gambaran Umum Acara",
         "keyTakeaways": [
-          "The training focuses on frameworks and workflows, not overly technical coding.",
-          "Business owners are encouraged to grasp the big picture so their teams can execute the details.",
-          "Attendees will receive free access to AI tools for HR, finance, marketing, and lead generation."
+          "Pelatihan ini berfokus pada kerangka kerja dan alur kerja, bukan pengkodean yang terlalu teknis.",
+          "Pemilik bisnis didorong untuk memahami gambaran besar agar tim mereka dapat mengeksekusi detailnya.",
+          "Peserta akan menerima akses gratis ke alat AI untuk SDM, keuangan, pemasaran, dan perolehan prospek (lead generation)."
         ],
         "verbatimHighlight": "mayoritas bisnis owner itu tidak perlu tahu terlalu teknis banget. At least tahu framework-nya, alurnya... Nanti kita akan bagi-bagi tools gratis buat teman-teman.",
-        "laymanExplanation": "The host reassures the CEOs that they don't need to be tech experts to learn AI frameworks, and announces they will get free AI software tools for various business departments."
+        "laymanExplanation": "Pembawa acara meyakinkan para CEO bahwa mereka tidak perlu menjadi ahli teknologi untuk mempelajari kerangka kerja AI, dan mengumumkan bahwa mereka akan mendapatkan alat perangkat lunak AI gratis untuk berbagai departemen bisnis."
       },
       {
         "id": "d1s1-t15",
-        "title": "Active vs. Passive AI Implementation",
+        "title": "Implementasi AI Aktif vs Pasif",
         "timestamp": "01:04:32",
         "timestampSeconds": 3872,
-        "category": "Concept",
+        "category": "Konsep",
         "keyTakeaways": [
-          "Passive AI usage involves setting up automation (like auto-replies) that runs without human intervention.",
-          "Active AI usage involves the user collaborating directly with the tool to refine creative or strategic outputs.",
-          "Both approaches are valid and should be deployed depending on the specific business goal."
+          "Penggunaan AI pasif melibatkan pengaturan otomatisasi (seperti balasan otomatis) yang berjalan tanpa campur tangan manusia.",
+          "Penggunaan AI aktif melibatkan kolaborasi pengguna secara langsung dengan alat untuk menyempurnakan output kreatif atau strategis.",
+          "Kedua pendekatan tersebut valid dan harus diterapkan tergantung pada tujuan bisnis spesifik."
         ],
         "verbatimHighlight": "Yang kiri itu kita pakai AI tapi kitanya tidur. Jadi ini kita pasif AI-nya yang aktif. Lalu yang kanan kita pakai AI tapi kitanya bangun... Jawabannya adalah tergantung saya mau pakai untuk apa.",
-        "laymanExplanation": "Guest speaker Anjas Maradita explains two ways to use AI: passively letting bots handle tasks like automated marketing while you sleep, or actively working alongside AI to create specific designs or strategies."
+        "laymanExplanation": "Pembicara tamu Anjas Maradita menjelaskan dua cara menggunakan AI: secara pasif membiarkan bot menangani tugas-tugas seperti pemasaran otomatis saat Anda tidur, atau secara aktif bekerja bersama AI untuk membuat desain atau strategi tertentu."
       },
       {
         "id": "d1s1-t16",
-        "title": "Evolving Operations with Agentic AI",
+        "title": "Mengevolusi Operasi dengan AI Agen (Agentic AI)",
         "timestamp": "01:10:19",
         "timestampSeconds": 4219,
-        "category": "AI Systems",
+        "category": "Sistem AI",
         "keyTakeaways": [
-          "AI can move beyond generating text to executing multi-step business operations.",
-          "Agentic AI systems can ingest company-wide data (sales, HR) and answer direct management queries.",
-          "These systems can integrate with POS and internal systems to act as an automated business manager."
+          "AI dapat bergerak melampaui menghasilkan teks hingga mengeksekusi operasi bisnis multi-langkah.",
+          "Sistem AI Agen dapat menyerap data seluruh perusahaan (penjualan, SDM) dan menjawab pertanyaan manajemen secara langsung.",
+          "Sistem ini dapat berintegrasi dengan POS dan sistem internal untuk bertindak sebagai manajer bisnis otomatis."
         ],
         "verbatimHighlight": "Ini 100% semua yang ngerekap AI. Tinggal kita pasang sensor termasuk KPI-nya, sales-nya... Agentic AI itu sudah bisa sampai sana.",
-        "laymanExplanation": "AI is advancing from simple chatbots to 'Agentic AI'\u2014systems integrated into a company's database that can monitor KPIs, track sales, and answer management questions automatically."
+        "laymanExplanation": "AI maju dari sekadar chatbot sederhana menjadi 'AI Agen'\u2014sistem yang terintegrasi ke dalam basis data perusahaan yang dapat memantau KPI, melacak penjualan, dan menjawab pertanyaan manajemen secara otomatis."
       },
       {
         "id": "d1s1-t17",
-        "title": "Campaign Creation and Social Engineering with Suno AI",
+        "title": "Pembuatan Kampanye dan Rekayasa Sosial dengan Suno AI",
         "timestamp": "01:15:30",
         "timestampSeconds": 4530,
-        "category": "Marketing",
+        "category": "Pemasaran",
         "keyTakeaways": [
-          "Generative AI tools like Suno can turn a rough, a cappella voice recording into a studio-quality jingle.",
-          "These tools drastically lower the cost and time required to launch engaging marketing campaigns.",
-          "Strategic use of AI-generated content can positively manipulate brand sentiment and social engineering."
+          "Alat AI generatif seperti Suno dapat mengubah rekaman suara a cappella yang kasar menjadi jingle berkualitas studio.",
+          "Alat-alat ini secara drastis menurunkan biaya dan waktu yang dibutuhkan untuk meluncurkan kampanye pemasaran yang menarik.",
+          "Penggunaan konten yang dihasilkan AI secara strategis dapat memanipulasi sentimen merek dan rekayasa sosial secara positif."
         ],
         "verbatimHighlight": "Bayangkan seberapa efektifnya ketika Teman-teman pakai generative AI untuk social engineering... Jauh banget teman-teman. Cost-nya almost zero.",
-        "laymanExplanation": "Anjas gives a live demonstration of singing a terrible, rough idea for a brand jingle and uses Suno AI to instantly turn it into a catchy, professional pop song for a marketing campaign."
+        "laymanExplanation": "Anjas memberikan demonstrasi langsung tentang menyanyikan ide kasar yang mengerikan untuk jingle merek dan menggunakan Suno AI untuk secara instan mengubahnya menjadi lagu pop profesional yang menarik untuk kampanye pemasaran."
       },
       {
         "id": "d1s1-t18",
-        "title": "The Four Levels of AI Adaptation",
+        "title": "Empat Tingkat Adaptasi AI",
         "timestamp": "01:22:39",
         "timestampSeconds": 4959,
-        "category": "Framework",
+        "category": "Kerangka Kerja",
         "keyTakeaways": [
-          "Level 1: Basic use of LLMs like ChatGPT as a brainstorming buddy.",
-          "Level 2: Integrating web and automation tools into everyday business workflows.",
-          "Level 3: Decision intelligence for scalable operations involving multiple data sensors.",
-          "Level 4: Predictive intelligence for high-level risk and response systems."
+          "Tingkat 1: Penggunaan dasar LLM seperti ChatGPT sebagai teman curah pendapat (brainstorming).",
+          "Tingkat 2: Mengintegrasikan web dan alat otomatisasi ke dalam alur kerja bisnis sehari-hari.",
+          "Tingkat 3: Kecerdasan keputusan untuk operasi yang dapat diskalakan yang melibatkan banyak sensor data.",
+          "Tingkat 4: Kecerdasan prediktif untuk sistem risiko dan respons tingkat tinggi."
         ],
         "verbatimHighlight": "Level 1 ini adalah common generative AI... Level 2 teman-teman sudah menggunakan web dan automation tools... Lalu yang ketiga ini decision intelligence... Nomor empat ini predictive dan intelligence.",
-        "laymanExplanation": "A four-tier framework is presented on how businesses adopt AI, starting from simple chatbot chats (Level 1), to workflow automation (Level 2), and scaling up to advanced predictive corporate systems (Level 4)."
+        "laymanExplanation": "Sebuah kerangka kerja empat tingkat disajikan tentang bagaimana bisnis mengadopsi AI, mulai dari obrolan chatbot sederhana (Tingkat 1), otomatisasi alur kerja (Tingkat 2), dan ditingkatkan ke sistem perusahaan prediktif tingkat lanjut (Tingkat 4)."
       },
       {
         "id": "d1s1-t19",
-        "title": "Idea Amplification and No-Code Development",
+        "title": "Amplifikasi Ide dan Pengembangan Tanpa Kode (No-Code)",
         "timestamp": "01:28:34",
         "timestampSeconds": 5314,
-        "category": "Productivity",
+        "category": "Produktivitas",
         "keyTakeaways": [
-          "Conversational AI can flesh out basic ideas into comprehensive system requirements.",
-          "Tools like Loveable can take those AI-generated prompts and build full web software interfaces without coding.",
-          "Non-technical founders can now prototype and launch applications independently."
+          "AI percakapan dapat menyempurnakan ide dasar menjadi kebutuhan sistem yang komprehensif.",
+          "Alat seperti Loveable dapat mengambil petunjuk yang dihasilkan AI dan membangun antarmuka perangkat lunak web penuh tanpa pengkodean.",
+          "Pendiri non-teknis sekarang dapat membuat prototipe dan meluncurkan aplikasi secara mandiri."
         ],
         "verbatimHighlight": "Jadi Lable ini adalah web untuk bikin web. So, whatever you want, kalian bisa bikin web dengan menggunakan loveable... ini adalah web yang kalian enggak perlu berpikir.",
-        "laymanExplanation": "By chatting out a rough software idea with ChatGPT and pasting the refined prompt into a no-code tool called Loveable, anyone can build a working app interface without writing a single line of code."
+        "laymanExplanation": "Dengan mengobrol tentang ide perangkat lunak kasar dengan ChatGPT dan menempelkan prompt yang telah disempurnakan ke alat tanpa kode bernama Loveable, siapa pun dapat membangun antarmuka aplikasi yang berfungsi tanpa menulis satu baris kode pun."
       },
       {
         "id": "d1s1-t20",
-        "title": "Instant Data Analytics from Screenshots",
+        "title": "Analitik Data Instan dari Tangkapan Layar (Screenshot)",
         "timestamp": "01:35:32",
         "timestampSeconds": 5732,
-        "category": "Data Analytics",
+        "category": "Analitik Data",
         "keyTakeaways": [
-          "AI vision models can extract complex data directly from screenshots or photos.",
-          "Users can request advanced analysis, such as Pareto charts, generated instantly in HTML format.",
-          "This eliminates the need for manual data entry into Excel for quick business insights."
+          "Model visi AI dapat mengekstrak data kompleks langsung dari tangkapan layar atau foto.",
+          "Pengguna dapat meminta analisis lanjutan, seperti diagram Pareto, yang dihasilkan secara instan dalam format HTML.",
+          "Ini menghilangkan kebutuhan untuk entri data manual ke Excel demi wawasan bisnis yang cepat."
         ],
         "verbatimHighlight": "Di sini sesimpel kita masukkan aja foto dari penjualannya... Lalu kita minta Pareto analisis... Dari screenshot-an doang teman-teman bisa melakukan data analisis kayak gini.",
-        "laymanExplanation": "Instead of typing numbers into a spreadsheet, you can take a picture of your sales data, give it to an AI like Claude, and it will instantly build an interactive analytics dashboard for you."
+        "laymanExplanation": "Alih-alih mengetik angka ke dalam spreadsheet, Anda dapat mengambil gambar data penjualan Anda, memberikannya ke AI seperti Claude, dan AI itu akan langsung membuat dasbor analitik interaktif untuk Anda."
       },
       {
         "id": "d1s1-t21",
-        "title": "Turning Transcripts into Podcasts with NotebookLM",
+        "title": "Mengubah Transkrip Menjadi Podcast dengan NotebookLM",
         "timestamp": "01:37:43",
         "timestampSeconds": 5863,
-        "category": "Productivity",
+        "category": "Produktivitas",
         "keyTakeaways": [
-          "Google's NotebookLM can ingest meeting transcripts or documents and summarize them.",
-          "The tool features an 'Audio Overview' that turns dry text into an engaging, conversational podcast.",
-          "Users can query the AI against the uploaded transcripts to extract specific knowledge instantly."
+          "NotebookLM milik Google dapat menyerap transkrip rapat atau dokumen dan merangkumnya.",
+          "Alat ini memiliki fitur 'Audio Overview' yang mengubah teks kaku menjadi podcast percakapan yang menarik.",
+          "Pengguna dapat menanyakan AI tentang transkrip yang diunggah untuk mengekstrak pengetahuan tertentu secara instan."
         ],
         "verbatimHighlight": "Tinggal masukin transkrip meetingnya ke sini... teman-teman bisa melakukan meeting transkrip bisa jadi podcast... bisa aja teman-teman tanya-tanyain seputar bahan meetingnya.",
-        "laymanExplanation": "Using a free tool called NotebookLM, you can upload long meeting notes or business documents and the AI will generate an audio podcast discussing the material, making it easier to review."
+        "laymanExplanation": "Dengan menggunakan alat gratis bernama NotebookLM, Anda dapat mengunggah catatan rapat atau dokumen bisnis yang panjang dan AI akan menghasilkan podcast audio yang membahas materi tersebut, sehingga lebih mudah untuk ditinjau."
       },
       {
         "id": "d1s1-t22",
-        "title": "Generative Engine Optimization (GEO)",
+        "title": "Optimisasi Mesin Generatif (GEO - Generative Engine Optimization)",
         "timestamp": "01:41:28",
         "timestampSeconds": 6088,
-        "category": "Marketing",
+        "category": "Pemasaran",
         "keyTakeaways": [
-          "Consumers are increasingly using AI chatbots for product recommendations instead of traditional search engines.",
-          "GEO (Generative Engine Optimization) replaces traditional SEO to ensure AI models recommend a specific brand.",
-          "Strategies for GEO include dominating trusted media mentions and creating extensive FAQ pages for AI to crawl."
+          "Konsumen semakin sering menggunakan chatbot AI untuk rekomendasi produk alih-alih mesin pencari tradisional.",
+          "GEO menggantikan SEO tradisional untuk memastikan model AI merekomendasikan merek tertentu.",
+          "Strategi untuk GEO termasuk mendominasi penyebutan media tepercaya dan membuat halaman FAQ yang ekstensif untuk dirayapi (crawl) oleh AI."
         ],
         "verbatimHighlight": "Kalau teman-teman sebelumnya sudah belajar tentang namanya SEO... sekarang harus mulai belajar namanya GEO (Generative Engine Optimization)... Gimana caranya biar data kita dibaca sama AI.",
-        "laymanExplanation": "Since people now ask AI bots (like ChatGPT) for recommendations instead of searching Google, businesses must adapt by using GEO\u2014feeding the internet with FAQs and trusted articles so AI bots learn to recommend their products."
+        "laymanExplanation": "Karena orang-orang sekarang meminta rekomendasi kepada bot AI (seperti ChatGPT) daripada mencari di Google, bisnis harus beradaptasi dengan menggunakan GEO\u2014memasok internet dengan FAQ dan artikel tepercaya sehingga bot AI belajar untuk merekomendasikan produk mereka."
       },
       {
         "id": "d1s1-t23",
-        "title": "Confidentiality and Data Security in LLMs",
+        "title": "Kerahasiaan dan Keamanan Data dalam LLM",
         "timestamp": "01:48:40",
         "timestampSeconds": 6520,
-        "category": "AI Fundamentals / Security",
+        "category": "Dasar-Dasar AI / Keamanan",
         "keyTakeaways": [
-          "AI models can use localization to tailor context without mixing global confidential data.",
-          "High-value corporate data should be protected via NDA with platform providers (like Google).",
-          "For absolute security, companies can build their own local AI servers, though it requires significant infrastructure investment.",
-          "General AI platforms typically use user inputs for model training, not to expose private strategies to competitors."
+          "Model AI dapat menggunakan pelokalan (localization) untuk menyesuaikan konteks tanpa mencampur data rahasia global.",
+          "Data perusahaan bernilai tinggi harus dilindungi melalui NDA dengan penyedia platform (seperti Google).",
+          "Untuk keamanan mutlak, perusahaan dapat membangun server AI lokal mereka sendiri, meskipun hal itu membutuhkan investasi infrastruktur yang signifikan.",
+          "Platform AI umum biasanya menggunakan input pengguna untuk pelatihan model, bukan untuk mengekspos strategi pribadi ke pesaing."
         ],
         "verbatimHighlight": "Kalau memang perusahaannya udah dianggap bernilai banget, ada baiknya melakukan NDA dengan platform.",
-        "laymanExplanation": "Is your company data safe with AI? Usually yes, but for big businesses, you either sign a legal contract with the AI provider so they don't leak it, or build your own expensive server."
+        "laymanExplanation": "Apakah data perusahaan Anda aman dengan AI? Biasanya ya, tetapi untuk bisnis besar, Anda harus menandatangani kontrak hukum dengan penyedia AI agar mereka tidak membocorkannya, atau membangun server Anda sendiri yang mahal."
       },
       {
         "id": "d1s1-t24",
-        "title": "Managing AI Memory to Prevent Bias and Shifting",
+        "title": "Mengelola Memori AI untuk Mencegah Bias dan Pergeseran (Shifting)",
         "timestamp": "01:55:55",
         "timestampSeconds": 6955,
-        "category": "AI Tools / Prompting",
+        "category": "Alat AI / Prompting",
         "keyTakeaways": [
-          "AI memory can become cluttered over time, causing it to hallucinate or act confused based on unrelated past chats.",
-          "It's important to regularly clear or retune the AI's memory settings to keep its context accurate.",
-          "Turning off the 'generate memory from chat history' feature can sometimes prevent the AI from shifting topics unnecessarily."
+          "Memori AI dapat menjadi berantakan seiring waktu, menyebabkannya berhalusinasi atau bertindak kebingungan berdasarkan obrolan masa lalu yang tidak terkait.",
+          "Penting untuk membersihkan atau menyesuaikan ulang pengaturan memori AI secara rutin agar konteksnya tetap akurat.",
+          "Mematikan fitur 'buat memori dari riwayat obrolan' terkadang dapat mencegah AI mengubah topik tanpa perlu."
         ],
         "verbatimHighlight": "Memori itu yang harus kita benerin setiap saat karena kalau enggak dia akan recall terus dari pasien yang sebelumnya dan itu biasanya yang bikin bias dan shifting.",
-        "laymanExplanation": "When you talk to an AI for too long about different projects, it gets confused and mixes things up. You need to clear its memory so it stays sharp and focused on your current task."
+        "laymanExplanation": "Saat Anda berbicara dengan AI terlalu lama tentang berbagai proyek, AI tersebut menjadi bingung dan mencampuradukkan berbagai hal. Anda harus membersihkan memorinya agar tetap tajam dan fokus pada tugas Anda saat ini."
       },
       {
         "id": "d1s1-t25",
-        "title": "Creating Internal Business Systems with Lovable",
+        "title": "Membangun Sistem Bisnis Internal dengan Lovable",
         "timestamp": "02:01:37",
         "timestampSeconds": 7297,
-        "category": "AI Automation / Development",
+        "category": "Otomatisasi AI / Pengembangan",
         "keyTakeaways": [
-          "Lovable can quickly build web systems and dashboards just through conversational prompts.",
-          "Users can replace Lovable's branding with their own custom domains.",
-          "SMEs can save significant costs by using AI to build their own systems (like Warehouse Management Systems) without needing to code."
+          "Lovable dapat membangun sistem web dan dasbor dengan cepat hanya melalui prompt percakapan.",
+          "Pengguna dapat mengganti merek Lovable dengan domain kustom mereka sendiri.",
+          "UKM dapat menghemat biaya yang signifikan dengan menggunakan AI untuk membangun sistem mereka sendiri (seperti Sistem Manajemen Gudang) tanpa perlu melakukan pengkodean."
         ],
         "verbatimHighlight": "Ini cuman dari kapan bikinnya? Dari barusan ngobrol sama AI-nya kita kasih tahu gitu.",
-        "laymanExplanation": "You don't need to be a programmer to build a software system for your company anymore. You can just talk to an AI like Lovable, and it will build the web application for you."
+        "laymanExplanation": "Anda tidak perlu lagi menjadi programmer untuk membangun sistem perangkat lunak bagi perusahaan Anda. Anda cukup berbicara dengan AI seperti Lovable, dan AI tersebut akan membangun aplikasi web untuk Anda."
       },
       {
         "id": "d1s1-t26",
-        "title": "Algorithm First Strategy and Call to Value",
+        "title": "Strategi Berbasis Algoritma dan Ajakan Bertindak (Call to Value)",
         "timestamp": "02:07:03",
         "timestampSeconds": 7623,
-        "category": "Digital Marketing / Content Strategy",
+        "category": "Pemasaran Digital / Strategi Konten",
         "keyTakeaways": [
-          "Content should not be egocentric but tailored to what the algorithm and audience want to see.",
-          "Replace traditional 'Call to Action' (e.g., click link in bio) with 'Call to Value' (e.g., commenting for a discount code).",
-          "Comments signal high engagement to platform algorithms, which boosts the video into more users' feeds."
+          "Konten tidak boleh egosentris tetapi disesuaikan dengan apa yang ingin dilihat oleh algoritma dan audiens.",
+          "Ganti 'Call to Action' tradisional (misalnya, klik tautan di bio) dengan 'Call to Value' (misalnya, berkomentar untuk mendapatkan kode diskon).",
+          "Komentar menandakan tingkat interaksi (engagement) yang tinggi terhadap algoritma platform, yang mendorong video tersebut ke feed lebih banyak pengguna."
         ],
         "verbatimHighlight": "Jadi algoritm first berpikirnya. Nah, coba nonton di TikTok kira-kira videonya itu banyakan kayak apa.",
-        "laymanExplanation": "Instead of making boring videos about yourself, make videos that the algorithm loves. Instead of asking people to click a link, ask them to comment to get something cool, which forces the algorithm to push your video to more people."
+        "laymanExplanation": "Alih-alih membuat video membosankan tentang diri Anda sendiri, buatlah video yang disukai algoritma. Alih-alih meminta orang mengklik tautan, mintalah mereka berkomentar untuk mendapatkan sesuatu yang keren, yang memaksa algoritma untuk mendorong video Anda ke lebih banyak orang."
       },
       {
         "id": "d1s1-t27",
-        "title": "Automating Engagement and Leads with ManyChat",
+        "title": "Mengotomatiskan Interaksi dan Prospek (Leads) dengan ManyChat",
         "timestamp": "02:10:22",
         "timestampSeconds": 7822,
-        "category": "AI Automation / Digital Marketing",
+        "category": "Otomatisasi AI / Pemasaran Digital",
         "keyTakeaways": [
-          "ManyChat automates replies and direct messages when users comment on a social media post.",
-          "It significantly scales lead generation, turning hundreds of comments into thousands by automating the interaction.",
-          "Can be configured to only send content to followers, which drives social media account growth."
+          "ManyChat mengotomatiskan balasan dan pesan langsung saat pengguna berkomentar pada sebuah postingan media sosial.",
+          "Ini secara signifikan meningkatkan perolehan prospek, mengubah ratusan komentar menjadi ribuan dengan mengotomatiskan interaksinya.",
+          "Dapat dikonfigurasi untuk hanya mengirim konten ke pengikut, yang mendorong pertumbuhan akun media sosial."
         ],
         "verbatimHighlight": "Tanpa manyi chat bisa aja komennya 1.000 tapi tanpa ee dengan many chat komennya bisa jadi 10.000 bisa jadi Rp2.000.",
-        "laymanExplanation": "ManyChat is a bot that replies to comments and sends private messages automatically. It helps you handle thousands of comments effortlessly and turns viewers into followers and buyers."
+        "laymanExplanation": "ManyChat adalah bot yang membalas komentar dan mengirim pesan pribadi secara otomatis. Ini membantu Anda menangani ribuan komentar dengan mudah dan mengubah pemirsa menjadi pengikut dan pembeli."
       },
       {
         "id": "d1s1-t28",
-        "title": "AI-Generated Video Content using HeyGen",
+        "title": "Konten Video Buatan AI menggunakan HeyGen",
         "timestamp": "02:15:58",
         "timestampSeconds": 8158,
-        "category": "AI Tools / Content Creation",
+        "category": "Alat AI / Pembuatan Konten",
         "keyTakeaways": [
-          "HeyGen allows creators to generate videos of themselves anywhere without a physical studio.",
-          "A single real video can be used to generate months of content.",
-          "Builds creator authority by placing them in high-status virtual locations (like overseas)."
+          "HeyGen memungkinkan kreator untuk menghasilkan video diri mereka sendiri di mana saja tanpa perlu studio fisik.",
+          "Satu video asli dapat digunakan untuk menghasilkan konten berbulan-bulan.",
+          "Membangun otoritas kreator dengan menempatkan mereka di lokasi virtual berstatus tinggi (seperti luar negeri)."
         ],
         "verbatimHighlight": "Dengan menggunakan Higen ini kita itu bisa take video kita anytime di manaun kapanpun kita mau tanpa harus punya studio.",
-        "laymanExplanation": "You can use an AI tool called HeyGen to make videos of yourself talking, without actually filming yourself. You just type the script, and the AI makes your digital clone say it."
+        "laymanExplanation": "Anda dapat menggunakan alat AI bernama HeyGen untuk membuat video diri Anda sedang berbicara, tanpa harus benar-benar merekam diri Anda. Anda cukup mengetik naskahnya, dan AI akan membuat tiruan digital Anda mengucapkannya."
       },
       {
         "id": "d1s1-t29",
-        "title": "Legal and Copyright Aspects of AI Images",
+        "title": "Aspek Hukum dan Hak Cipta Gambar AI",
         "timestamp": "02:19:51",
         "timestampSeconds": 8391,
-        "category": "AI Fundamentals / Ethics & Law",
+        "category": "Dasar-Dasar AI / Etika & Hukum",
         "keyTakeaways": [
-          "Legal protection for assets mainly covers real faces; randomly generated AI faces generally belong to the internet.",
-          "Subscribing to AI platforms (like Suno, HeyGen) usually grants commercial rights to use the outputs.",
-          "The real challenge in marketing is whether the audience trusts the AI-generated images, not just the legality."
+          "Perlindungan hukum untuk aset terutama mencakup wajah asli; wajah AI yang dibuat secara acak pada umumnya milik internet.",
+          "Berlangganan platform AI (seperti Suno, HeyGen) biasanya memberikan hak komersial untuk menggunakan output-nya.",
+          "Tantangan sebenarnya dalam pemasaran adalah apakah audiens memercayai gambar yang dihasilkan AI, bukan hanya sekadar legalitasnya."
         ],
         "verbatimHighlight": "Ketika kita sudah berlangganan, kita itu sudah dikasih hak komersial. Jadi sebenarnya boleh atau enggak, legal atau enggak legal karena sudah membeli hak komersial.",
-        "laymanExplanation": "Using AI pictures is usually fine for your business if you pay for the AI tool, because they give you the right to use it commercially. Just make sure the pictures don't look obviously fake."
+        "laymanExplanation": "Menggunakan gambar AI biasanya tidak masalah untuk bisnis Anda jika Anda membayar alat AI tersebut, karena mereka memberi Anda hak untuk menggunakannya secara komersial. Pastikan saja gambar tersebut tidak terlihat jelas palsu."
       },
       {
         "id": "d1s1-t30",
-        "title": "Can AI Replace ERP and SaaS Systems?",
+        "title": "Bisakah AI Menggantikan Sistem ERP dan SaaS?",
         "timestamp": "02:24:11",
         "timestampSeconds": 8651,
-        "category": "AI Automation / Business Strategy",
+        "category": "Otomatisasi AI / Strategi Bisnis",
         "keyTakeaways": [
-          "Industry leaders suggest SaaS might shift to 'AI as a Service' where businesses generate their own custom software.",
-          "For small-to-medium enterprises, AI tools can act as a cost-effective ERP replacement.",
-          "Large corporations will still rely on traditional ERPs due to strict compliance, security standards, and established best practices."
+          "Para pemimpin industri menyarankan SaaS mungkin beralih ke 'AI as a Service' (AI sebagai Layanan) di mana bisnis membuat perangkat lunak kustom mereka sendiri.",
+          "Untuk usaha kecil hingga menengah, alat AI dapat bertindak sebagai pengganti ERP yang hemat biaya.",
+          "Perusahaan besar akan tetap bergantung pada ERP tradisional karena kepatuhan yang ketat, standar keamanan, dan praktik terbaik yang sudah mapan."
         ],
         "verbatimHighlight": "Jadi instead of company menjadi SAS sekarang AI as a service kan sehingga AI bisa membuat apapun.",
-        "laymanExplanation": "Small businesses might not need expensive corporate software anymore because AI can build custom tools for them cheaply. But big companies will still need the traditional software for strict security and rules."
+        "laymanExplanation": "Bisnis kecil mungkin tidak lagi membutuhkan perangkat lunak perusahaan yang mahal karena AI dapat membangun alat kustom untuk mereka dengan murah. Tetapi perusahaan besar akan tetap membutuhkan perangkat lunak tradisional demi keamanan dan aturan yang ketat."
       },
       {
         "id": "d1s1-t31",
-        "title": "AI as a Business Process Optimization Layer",
+        "title": "AI sebagai Lapisan Optimalisasi Proses Bisnis",
         "timestamp": "02:34:41",
         "timestampSeconds": 9281,
-        "category": "AI Automation / Business Strategy",
+        "category": "Otomatisasi AI / Strategi Bisnis",
         "keyTakeaways": [
-          "AI works best as an optimization layer above existing SaaS to speed up specific workflows (e.g., auto-generating invoices on voice command).",
-          "AI doesn't completely replace the traditional best practices built into established ERPs.",
-          "Using complex software without skilled human resources just transfers inefficiency into a new system."
+          "AI bekerja paling baik sebagai lapisan optimalisasi di atas SaaS yang ada untuk mempercepat alur kerja tertentu (misalnya, membuat faktur secara otomatis berdasarkan perintah suara).",
+          "AI tidak sepenuhnya menggantikan praktik terbaik tradisional yang dibangun ke dalam ERP yang mapan.",
+          "Menggunakan perangkat lunak yang kompleks tanpa sumber daya manusia yang terampil hanya memindahkan inefisiensi ke dalam sistem baru."
         ],
         "verbatimHighlight": "Peran AI bisa banyak e bisa saya gambarkan jadi dua dulu deh. Yang pertama menjadi converter atau optimization tools-nya. Yang kedua sebagai pengganti dari SAS.",
-        "laymanExplanation": "AI doesn't always have to replace your software; it can act as a smart assistant that does the boring data entry work for you, connecting your old software to make it run faster."
+        "laymanExplanation": "AI tidak selalu harus menggantikan perangkat lunak Anda; AI dapat bertindak sebagai asisten pintar yang melakukan pekerjaan entri data yang membosankan untuk Anda, menghubungkan perangkat lunak lama Anda agar berjalan lebih cepat."
       },
       {
         "id": "d1s1-t32",
-        "title": "Integrating AI into Existing Teams",
+        "title": "Mengintegrasikan AI ke dalam Tim yang Ada",
         "timestamp": "02:37:46",
         "timestampSeconds": 9466,
-        "category": "Business Strategy / Team Management",
+        "category": "Strategi Bisnis / Manajemen Tim",
         "keyTakeaways": [
-          "AI doesn't replace employees but makes human resources vastly more efficient.",
-          "Marketing and property teams are successfully replacing traditional 3D modeling with AI avatars in virtual property tours.",
-          "The 'best' AI depends entirely on the specific business need, requiring a customized combination of tools."
+          "AI tidak menggantikan karyawan, melainkan membuat sumber daya manusia jauh lebih efisien.",
+          "Tim pemasaran dan properti berhasil mengganti pemodelan 3D tradisional dengan avatar AI dalam tur properti virtual.",
+          "AI 'terbaik' sepenuhnya bergantung pada kebutuhan bisnis tertentu, yang membutuhkan kombinasi alat yang disesuaikan."
         ],
         "verbatimHighlight": "AI ini tidak akan menggusur semua pekerja atau sumber daya manusia, tapi dia membantu kita untuk mengefisiensikan sumber daya manusia.",
-        "laymanExplanation": "AI won't fire your team; it will give them super speed. For example, instead of spending weeks making 3D models, your marketing team can use AI to make virtual property tours in a fraction of the time."
+        "laymanExplanation": "AI tidak akan memecat tim Anda; AI akan memberi mereka kecepatan super. Misalnya, alih-alih menghabiskan berminggu-minggu membuat model 3D, tim pemasaran Anda dapat menggunakan AI untuk membuat tur properti virtual dalam waktu singkat."
       }
     ],
     "executiveResume": {
@@ -568,368 +568,368 @@
     "topics": [
       {
         "id": "d2s2-t1",
-        "title": "Introduction & Tech Background",
+        "title": "Pengantar & Latar Belakang Teknologi",
         "timestamp": "00:00:15",
         "timestampSeconds": 15,
-        "category": "Introduction",
+        "category": "Pengantar",
         "keyTakeaways": [
-          "Natali Ardianto has 20 years of experience and is on his 5th startup.",
-          "Prefers Gemini for visually appealing presentations.",
-          "Relies 100% on Claude for coding and deep business analysis."
+          "Natali Ardianto memiliki pengalaman 20 tahun dan sedang menjalankan startup kelimanya.",
+          "Lebih memilih Gemini untuk presentasi yang menarik secara visual.",
+          "Mengandalkan Claude 100% untuk pengodean (coding) dan analisis bisnis mendalam."
         ],
         "verbatimHighlight": "Jadi startup pertama saya di akuisisi Kompas Gram Media. Startup ketiga saya yang tadi tiket.com itu diakuisisi Jarum dan yang sekarang ini yang kelima ini diakuisisi perusahaan Singapura.",
-        "laymanExplanation": "The speaker introduces his extensive background in tech startups and explains why he uses different AI tools for different tasks, emphasizing Claude's strength in deep analysis and coding."
+        "laymanExplanation": "Pembicara memperkenalkan latar belakangnya yang luas di startup teknologi dan menjelaskan mengapa ia menggunakan berbagai alat AI untuk tugas yang berbeda, dengan menekankan kekuatan Claude dalam analisis mendalam dan pengodean."
       },
       {
         "id": "d2s2-t2",
-        "title": "Using AI for Fraud Detection",
+        "title": "Menggunakan AI untuk Deteksi Kecurangan (Fraud)",
         "timestamp": "00:03:22",
         "timestampSeconds": 202,
-        "category": "Case Study",
+        "category": "Studi Kasus",
         "keyTakeaways": [
-          "Fraud is a common issue in business, often going undetected for long periods.",
-          "Traditional manual checking is inefficient for high transaction volumes.",
-          "AI can be prompted to automatically detect anomalies and potential fraud in financial records."
+          "Kecurangan adalah masalah umum dalam bisnis, sering kali tidak terdeteksi untuk waktu yang lama.",
+          "Pengecekan manual tradisional tidak efisien untuk volume transaksi yang tinggi.",
+          "AI dapat diinstruksikan untuk secara otomatis mendeteksi anomali dan potensi kecurangan dalam catatan keuangan."
         ],
         "verbatimHighlight": "Jadi ee fraud itu selalu ada ya kan. Cuman pertanyaannya berapa lama dia sudah melakukan proud gitu. Nah, kesalahannya kita kan mungkin ya kita sudah sibuk ya dengan segala hal.",
-        "laymanExplanation": "Natali shares his past experiences with employee fraud and explains how AI can act as an automated auditor to catch suspicious transactions that busy CEOs might miss."
+        "laymanExplanation": "Natali membagikan pengalaman masa lalunya dengan kecurangan karyawan dan menjelaskan bagaimana AI dapat bertindak sebagai auditor otomatis untuk menangkap transaksi mencurigakan yang mungkin terlewatkan oleh CEO yang sibuk."
       },
       {
         "id": "d2s2-t3",
-        "title": "Connecting Claude to Your Digital Life",
+        "title": "Menghubungkan Claude ke Kehidupan Digital Anda",
         "timestamp": "00:07:33",
         "timestampSeconds": 453,
-        "category": "Tool Setup",
+        "category": "Pengaturan Alat",
         "keyTakeaways": [
-          "Claude can connect directly to Google Calendar, Gmail, and Google Drive.",
-          "It can summarize daily agendas, extract meeting contexts from emails, and identify action items.",
-          "This turns Claude into a highly efficient, 24/7 personal assistant."
+          "Claude dapat terhubung langsung ke Google Calendar, Gmail, dan Google Drive.",
+          "Claude dapat merangkum agenda harian, mengekstrak konteks rapat dari email, dan mengidentifikasi item tindakan.",
+          "Hal ini mengubah Claude menjadi asisten pribadi 24/7 yang sangat efisien."
         ],
         "verbatimHighlight": "Tapi cloue ini dia bisa mengakses kalender ya, Google Kalender, Gmail, sama eh Google Drive gitu... Karena hidup kita akan selalu evolve around this activity.",
-        "laymanExplanation": "By connecting Claude to your email, calendar, and cloud storage, you allow the AI to read your schedule and emails, summarizing your day and preparing you for meetings automatically."
+        "laymanExplanation": "Dengan menghubungkan Claude ke email, kalender, dan penyimpanan cloud Anda, Anda memungkinkan AI untuk membaca jadwal dan email Anda, merangkum hari Anda, dan mempersiapkan Anda untuk rapat secara otomatis."
       },
       {
         "id": "d2s2-t4",
-        "title": "The Best Employee Has No ID Card",
+        "title": "Karyawan Terbaik Tidak Punya Kartu Identitas",
         "timestamp": "00:12:15",
         "timestampSeconds": 735,
-        "category": "Mindset",
+        "category": "Pola Pikir",
         "keyTakeaways": [
-          "Natali runs a tech company with only 1 engineer, relying heavily on AI.",
-          "AI can monitor employee outputs (like code commits) and generate daily summary reports.",
-          "AI acts as a tireless worker that dramatically multiplies human productivity."
+          "Natali menjalankan perusahaan teknologi dengan hanya 1 insinyur, sangat mengandalkan AI.",
+          "AI dapat memantau hasil kerja karyawan (seperti komit kode) dan menghasilkan laporan ringkasan harian.",
+          "AI bertindak sebagai pekerja tak kenal lelah yang secara dramatis melipatgandakan produktivitas manusia."
         ],
         "verbatimHighlight": "karyawan terbaik tahun 2026 ini enggak ada KTP ya kan, kerjanya 24 jam. Dia bisa baca semua folder nanti saya bisa tunjukin ya.",
-        "laymanExplanation": "AI is compared to a tireless employee who doesn't need an ID card or sleep. It can manage massive workloads, allowing a single human engineer to do the work of an entire team."
+        "laymanExplanation": "AI dibandingkan dengan karyawan tak kenal lelah yang tidak membutuhkan kartu identitas atau tidur. AI dapat mengelola beban kerja yang sangat besar, memungkinkan satu insinyur manusia melakukan pekerjaan seluruh tim."
       },
       {
         "id": "d2s2-t5",
-        "title": "Organizing Files and Folders with AI",
+        "title": "Mengatur File dan Folder dengan AI",
         "timestamp": "00:13:38",
         "timestampSeconds": 818,
-        "category": "Practical Application",
+        "category": "Penerapan Praktis",
         "keyTakeaways": [
-          "AI can organize chaotic folders into structured directories.",
-          "It can process specific tasks like gathering family documents for a visa application.",
-          "AI creates checklists and renames files for better archiving."
+          "AI dapat mengatur folder yang berantakan menjadi direktori terstruktur.",
+          "AI dapat memproses tugas spesifik seperti mengumpulkan dokumen keluarga untuk aplikasi visa.",
+          "AI membuat daftar periksa (checklist) dan mengganti nama file untuk pengarsipan yang lebih baik."
         ],
         "verbatimHighlight": "Saya suruh dari folder yang ada tolong di-copy ke folder ini untuk requirement dokumen visa. Dia meng-copy file-nya satu persatu otomatis gitu.",
-        "laymanExplanation": "Instead of manually sorting through messy folders, you can tell the AI to find specific documents (like passports for a visa), copy them to a new folder, and rename them neatly."
+        "laymanExplanation": "Alih-alih menyortir folder yang berantakan secara manual, Anda dapat menyuruh AI untuk menemukan dokumen tertentu (seperti paspor untuk visa), menyalinnya ke folder baru, dan mengganti namanya dengan rapi."
       },
       {
         "id": "d2s2-t6",
-        "title": "Claude's Context Memory",
+        "title": "Memori Konteks Claude",
         "timestamp": "00:17:40",
         "timestampSeconds": 1060,
-        "category": "Features",
+        "category": "Fitur",
         "keyTakeaways": [
-          "Claude remembers personal preferences, family names, and context over time.",
-          "This memory eliminates the need to constantly re-explain background information.",
-          "The more you interact, the smarter and more personalized the AI becomes."
+          "Claude mengingat preferensi pribadi, nama keluarga, dan konteks dari waktu ke waktu.",
+          "Memori ini menghilangkan kebutuhan untuk terus-menerus menjelaskan ulang informasi latar belakang.",
+          "Semakin Anda berinteraksi, AI menjadi semakin pintar dan personal."
         ],
         "verbatimHighlight": "Sistemnya semakin Anda sering berbicara di sistem ini ya, dia ada memorinya kayak gitu ya. Jadi memori itu ee akan sangat-sangat membantu ya untuk dia nanti menjawabnya udah seperti ini, sudah mengerti konteks gitu.",
-        "laymanExplanation": "Claude has a memory feature. If you tell it your wife's name or what kind of car you drive once, it remembers it for future conversations, acting more like a real human assistant."
+        "laymanExplanation": "Claude memiliki fitur memori. Jika Anda memberitahunya nama istri Anda atau jenis mobil apa yang Anda kendarai sekali saja, ia akan mengingatnya untuk percakapan di masa mendatang, bertindak lebih seperti asisten manusia sungguhan."
       },
       {
         "id": "d2s2-t7",
-        "title": "The B.R.I.E.F Prompting Formula",
+        "title": "Formula Prompt B.R.I.E.F",
         "timestamp": "00:19:42",
         "timestampSeconds": 1182,
-        "category": "Prompt Engineering",
+        "category": "Rekayasa Prompt",
         "keyTakeaways": [
-          "Prompting is like delegating to a human employee, not just typing keywords into Google.",
-          "B.R.I.E.F stands for Background, Role, Inputs, Expectation, Finish Line.",
-          "Assigning a specific 'Role' (e.g., Head of Finance) forces the LLM to access relevant expert knowledge."
+          "Memberikan prompt itu seperti mendelegasikan tugas kepada karyawan manusia, bukan sekadar mengetik kata kunci ke Google.",
+          "B.R.I.E.F adalah singkatan dari Background (Latar Belakang), Role (Peran), Inputs (Input), Expectation (Ekspektasi), Finish Line (Garis Akhir).",
+          "Menugaskan 'Peran' spesifik (misalnya, Kepala Keuangan) memaksa LLM untuk mengakses pengetahuan ahli yang relevan."
         ],
         "verbatimHighlight": "Karena pola kerja LLM itu apa sih? Itu matematika sebetulnya kan... dengan memasukkan kata kunci yang sangat powerful misalnya Anda adalah manajer apa, Anda adalah apa ya itu akan membuat ee AI mengumpulkan semua yang relevan dengan itu.",
-        "laymanExplanation": "To get good results, don't just ask simple questions. Give the AI a background, assign it an expert role, provide the data, set expectations, and define exactly how you want the final output to look."
+        "laymanExplanation": "Untuk mendapatkan hasil yang baik, jangan hanya mengajukan pertanyaan sederhana. Beri AI latar belakang, berikan peran ahli, berikan data, tetapkan ekspektasi, dan tentukan dengan tepat bagaimana Anda ingin hasil akhirnya terlihat."
       },
       {
         "id": "d2s2-t8",
-        "title": "Drafting Emails with B.R.I.E.F",
+        "title": "Menyusun Draf Email dengan B.R.I.E.F",
         "timestamp": "00:27:32",
         "timestampSeconds": 1652,
-        "category": "Case Study",
+        "category": "Studi Kasus",
         "keyTakeaways": [
-          "AI can read historical email threads and generate contextual replies.",
-          "You can ask for different tones (friendly, neutral, strict) in a single prompt.",
-          "Claude can automatically save the generated output as a draft in your Gmail."
+          "AI dapat membaca riwayat utas email dan menghasilkan balasan yang kontekstual.",
+          "Anda dapat meminta nada yang berbeda (ramah, netral, tegas) dalam satu prompt.",
+          "Claude dapat secara otomatis menyimpan draf yang dihasilkan ke Gmail Anda."
         ],
         "verbatimHighlight": "Jadi dia ngebaca thread email-nya ya. Terus karena tadi saya mintanya tiga jenis ya kan, ramah, netral. Nah, ini jadi ini email versi ramah, ini email versi netral, ini email versi tegas ya kan.",
-        "laymanExplanation": "You can tell the AI to read a long email chain and draft a reply to collect an unpaid invoice. You can even ask it to write three versions\u2014nice, neutral, and strict\u2014so you can pick the best one."
+        "laymanExplanation": "Anda dapat menyuruh AI untuk membaca rantai email yang panjang dan menyusun draf balasan untuk menagih faktur yang belum dibayar. Anda bahkan dapat memintanya menulis tiga versi\u2014ramah, netral, dan tegas\u2014sehingga Anda dapat memilih yang terbaik."
       },
       {
         "id": "d2s2-t9",
-        "title": "Selecting the Right Claude Model",
+        "title": "Memilih Model Claude yang Tepat",
         "timestamp": "00:30:04",
         "timestampSeconds": 1804,
-        "category": "Tool Optimization",
+        "category": "Optimalisasi Alat",
         "keyTakeaways": [
-          "Fable/Opus: Used for highly complex, strategic planning or deep coding.",
-          "Sonnet: The default model for 90% of daily office tasks.",
-          "Haiku: Used for simple, fast, and high-frequency tasks.",
-          "Rule of thumb: High complexity = higher model; High frequency = lower model."
+          "Fable/Opus: Digunakan untuk perencanaan strategis yang sangat kompleks atau pengodean mendalam.",
+          "Sonnet: Model default untuk 90% tugas kantor sehari-hari.",
+          "Haiku: Digunakan untuk tugas sederhana, cepat, dan berfrekuensi tinggi.",
+          "Aturan praktis: Kompleksitas tinggi = model lebih tinggi; Frekuensi tinggi = model lebih rendah."
         ],
         "verbatimHighlight": "Jadi tipsnya kalau kompleksitasnya tinggi naikkan model. Kalau frekuensinya tinggi itu turunkan model. Tapi kalau ragu-ragu pakainya sonet ya.",
-        "laymanExplanation": "Claude has different 'brain' sizes. Use the biggest brain (Opus) for really hard problems like coding or strategy, the medium brain (Sonnet) for everyday work, and the small brain (Haiku) for quick, simple questions."
+        "laymanExplanation": "Claude memiliki berbagai ukuran 'otak'. Gunakan otak terbesar (Opus) untuk masalah yang sangat sulit seperti pengodean atau strategi, otak menengah (Sonnet) untuk pekerjaan sehari-hari, dan otak kecil (Haiku) untuk pertanyaan cepat dan sederhana."
       },
       {
         "id": "d2s2-t10",
-        "title": "Setting up Claude Desktop and Workspaces",
+        "title": "Menyiapkan Claude Desktop dan Ruang Kerja (Workspaces)",
         "timestamp": "00:32:32",
         "timestampSeconds": 1952,
-        "category": "Tool Setup",
+        "category": "Pengaturan Alat",
         "keyTakeaways": [
-          "The Claude Desktop app is recommended because it can access local files.",
-          "Use 'Projects' (or Cowork) to separate different business initiatives (e.g., Marketing vs. Finance).",
-          "Keeping topics in separate projects prevents the AI from mixing up contexts."
+          "Aplikasi Claude Desktop disarankan karena dapat mengakses file lokal.",
+          "Gunakan 'Projects' (atau Cowork) untuk memisahkan inisiatif bisnis yang berbeda (mis. Pemasaran vs Keuangan).",
+          "Menjaga topik di proyek terpisah mencegah AI mencampurkan konteks."
         ],
         "verbatimHighlight": "Jadi kalau saya mau ngomongin komunitas, saya bikinin project, kenapa? Karena satu project ini dia menyimpan memori dia sendiri sesuai konteksnya gitu ya.",
-        "laymanExplanation": "Always use the desktop version of Claude to give it access to your files. Create separate 'rooms' (projects) for different topics so the AI doesn't get confused between your marketing strategies and your financial data."
+        "laymanExplanation": "Selalu gunakan versi desktop Claude untuk memberinya akses ke file Anda. Buat 'ruangan' (proyek) terpisah untuk topik yang berbeda agar AI tidak bingung antara strategi pemasaran dan data keuangan Anda."
       },
       {
         "id": "d2s2-t11",
-        "title": "MCP Connectors and Plugins",
+        "title": "Konektor dan Plugin MCP",
         "timestamp": "00:37:12",
         "timestampSeconds": 2232,
-        "category": "Features",
+        "category": "Fitur",
         "keyTakeaways": [
-          "Claude uses MCP (Model Context Protocol) to connect to tools like Zoom, Todoist, and Canva.",
-          "It can query live company databases using tools like Metabase.",
-          "Plugins act as specific 'job descriptions' that equip the AI with targeted skills like SEO optimization."
+          "Claude menggunakan MCP (Model Context Protocol) untuk terhubung ke alat seperti Zoom, Todoist, dan Canva.",
+          "Claude dapat melakukan kueri langsung ke basis data perusahaan menggunakan alat seperti Metabase.",
+          "Plugin bertindak sebagai 'deskripsi pekerjaan' spesifik yang membekali AI dengan keterampilan tertarget seperti optimasi SEO."
         ],
         "verbatimHighlight": "Jadi saya punya data di metabase itu si cloue bisa mengquery... woi metabase ya kan ee sales saya minggu lalu gimana? Nah nanti dia akan mengambilnya gitu.",
-        "laymanExplanation": "Claude can talk to other apps you use. It can look at your Zoom meetings, check your database for sales numbers, or even use Canva to help with design, acting as a central hub for your business tools."
+        "laymanExplanation": "Claude dapat berbicara dengan aplikasi lain yang Anda gunakan. Ia bisa melihat rapat Zoom Anda, memeriksa basis data Anda untuk angka penjualan, atau bahkan menggunakan Canva untuk membantu desain, bertindak sebagai pusat kendali untuk alat bisnis Anda."
       },
       {
         "id": "d2s2-t12",
-        "title": "Running Local Software via AI",
+        "title": "Menjalankan Perangkat Lunak Lokal via AI",
         "timestamp": "00:46:37",
         "timestampSeconds": 2797,
-        "category": "Advanced Features",
+        "category": "Fitur Lanjutan",
         "keyTakeaways": [
-          "Claude can install and run command-line tools locally on Mac/Windows.",
-          "Example: Automatically installing FFmpeg to compress heavy video files.",
-          "Claude implements safety measures, like backing up files before modifying them."
+          "Claude dapat menginstal dan menjalankan alat baris perintah secara lokal di Mac/Windows.",
+          "Contoh: Secara otomatis menginstal FFmpeg untuk mengompresi file video berat.",
+          "Claude menerapkan langkah keamanan, seperti mencadangkan (backup) file sebelum mengubahnya."
         ],
         "verbatimHighlight": "kalau pakai Mac itu sangat menguntungkan karena nanti dia yang nginstalin buat kita gitu ya... dia me-backup dulu. Nah nanti kalau loh kok file-nya yang ini dihapus... Terus dia mengambil dari backup-annya dia.",
-        "laymanExplanation": "Claude can actually operate your computer. If you ask it to compress a video, it can download the right software, compress the video on your laptop, and even back up the original file just in case it makes a mistake."
+        "laymanExplanation": "Claude sebenarnya bisa mengoperasikan komputer Anda. Jika Anda memintanya untuk mengompresi video, ia bisa mengunduh perangkat lunak yang tepat, mengompres video di laptop Anda, dan bahkan mencadangkan file aslinya untuk berjaga-jaga jika ia membuat kesalahan."
       },
       {
         "id": "d2s2-t13",
-        "title": "Automating File Organization",
+        "title": "Otomatisasi Pengaturan File",
         "timestamp": "00:57:13",
         "timestampSeconds": 3433,
-        "category": "Practical Application",
+        "category": "Penerapan Praktis",
         "keyTakeaways": [
-          "AI can process a folder full of random, messy files.",
-          "It can read the contents, rename the files into a standard format, and flag important documents.",
-          "It can generate an Excel inventory summarizing the contents of the files."
+          "AI dapat memproses satu folder penuh berisi file acak yang berantakan.",
+          "AI dapat membaca isinya, mengganti nama file ke format standar, dan menandai dokumen penting.",
+          "AI dapat menghasilkan inventaris Excel yang merangkum isi file-file tersebut."
         ],
         "verbatimHighlight": "Rapikan folder ini, ganti nama semua file dengan format berikut... Lalu buat file Excel ya, inventory pihaknya, nilai kontrak, tanggal berakhir.",
-        "laymanExplanation": "You can point the AI at a folder full of messy, randomly named files. It will read inside each file, rename them neatly (like Date-Name-Type), and make a spreadsheet summarizing what's inside the folder."
+        "laymanExplanation": "Anda dapat mengarahkan AI ke sebuah folder yang penuh dengan file berantakan dan bernama acak. Ia akan membaca isi setiap file, mengganti namanya dengan rapi (seperti Tanggal-Nama-Tipe), dan membuat spreadsheet yang merangkum apa saja yang ada di dalam folder tersebut."
       },
       {
         "id": "d2s2-t14",
-        "title": "Automating CV Screening and Scoring",
+        "title": "Otomatisasi Penyaringan dan Penilaian CV",
         "timestamp": "01:03:25",
         "timestampSeconds": 3805,
-        "category": "Case Study",
+        "category": "Studi Kasus",
         "keyTakeaways": [
-          "AI can screen dozens of CVs based on strict criteria (e.g., age limit, gender).",
-          "It can write Python scripts to calculate scores based on relevance and experience.",
-          "Claude flags inconsistencies (e.g., demotions) and provides targeted interview questions."
+          "AI dapat menyaring puluhan CV berdasarkan kriteria ketat (mis. batas usia, jenis kelamin).",
+          "AI dapat menulis skrip Python untuk menghitung skor berdasarkan relevansi dan pengalaman.",
+          "Claude menandai ketidakkonsistenan (mis. penurunan jabatan) dan memberikan pertanyaan wawancara tertarget."
         ],
         "verbatimHighlight": "Hanya dua nama yang layak Anda telepon hari ini... Ini bahan interview ini dia ya. Dibukaka Anda mulai sebagai manajer sekretaris lalu menjadi admin staff. Apa yang terjadi",
-        "laymanExplanation": "Instead of reading 50 resumes, you tell the AI exactly what you want. It reads them all, scores them, throws out the ones that don't fit, and even writes a list of hard questions you should ask the top candidates during the interview."
+        "laymanExplanation": "Alih-alih membaca 50 resume, Anda memberi tahu AI apa yang Anda inginkan. Ia membaca semuanya, memberi skor, membuang yang tidak sesuai, dan bahkan menulis daftar pertanyaan sulit yang harus Anda tanyakan kepada kandidat terbaik saat wawancara."
       },
       {
         "id": "d2s2-t15",
-        "title": "Detecting Financial Fraud with AI",
+        "title": "Mendeteksi Kecurangan Keuangan dengan AI",
         "timestamp": "01:15:23",
         "timestampSeconds": 4523,
-        "category": "Case Study",
+        "category": "Studi Kasus",
         "keyTakeaways": [
-          "By uploading raw transaction data and company SOPs, AI can act as an internal auditor.",
-          "It spots complex fraud patterns like split invoices, double payments, and self-dealing.",
-          "The AI generates a formal audit memo detailing suspicious activities and providing recommendations."
+          "Dengan mengunggah data transaksi mentah dan SOP perusahaan, AI dapat bertindak sebagai auditor internal.",
+          "AI mendeteksi pola kecurangan yang kompleks seperti memecah faktur, pembayaran ganda, dan transaksi mandiri.",
+          "AI menghasilkan memo audit formal yang merinci aktivitas mencurigakan dan memberikan rekomendasi."
         ],
         "verbatimHighlight": "Ini ada pembelian senilai R150 juta ya, R9 juta tapi dibikin R9.900 dipecah tiga kali... Jadi dia bisa mengambil kesimpulan ini ada orang yang nyoba memecah invoice nih.",
-        "laymanExplanation": "You can give the AI your company's expense reports and rules. It will scan thousands of lines to find employees cheating the system\u2014like breaking one big expense into three small ones to avoid needing manager approval\u2014and write a full report on it."
+        "laymanExplanation": "Anda dapat memberikan laporan pengeluaran dan aturan perusahaan Anda kepada AI. Ia akan memindai ribuan baris untuk menemukan karyawan yang menipu sistem\u2014seperti memecah satu pengeluaran besar menjadi tiga pengeluaran kecil untuk menghindari persetujuan manajer\u2014dan menulis laporan lengkap tentangnya."
       },
       {
         "id": "d2s2-t16",
-        "title": "AI Managing Calendars and Travel",
+        "title": "AI Mengelola Kalender dan Perjalanan",
         "timestamp": "01:31:37",
         "timestampSeconds": 5497,
-        "category": "Practical Application",
+        "category": "Penerapan Praktis",
         "keyTakeaways": [
-          "AI can update calendar events with summaries and action items from recent meetings.",
-          "It can generate complex travel itineraries (e.g., a trip to Japan) complete with train routes, hotel bookings, and tourist spots based on budget.",
-          "By heavily blocking the calendar (including sleep and gym time), the AI prevents scheduling conflicts."
+          "AI dapat memperbarui acara kalender dengan ringkasan dan item tindakan dari rapat terbaru.",
+          "AI dapat menghasilkan rencana perjalanan kompleks (mis. perjalanan ke Jepang) lengkap dengan rute kereta, pemesanan hotel, dan tempat wisata berdasarkan anggaran.",
+          "Dengan memblokir kalender secara ketat (termasuk waktu tidur dan olahraga), AI mencegah bentrok jadwal."
         ],
         "verbatimHighlight": "Ini itinerary-nya dia buatin sampai ya biayanya juga gitu ya... Jadi ini flight-nya dari mana? Karena saya sudah connect ke Booking.com gitu.",
-        "laymanExplanation": "The AI manages your calendar so well that it can plan a business trip to Japan, figure out which trains to take, book hotels within your budget, and schedule time for you to go sightseeing."
+        "laymanExplanation": "AI mengelola kalender Anda dengan sangat baik sehingga ia dapat merencanakan perjalanan bisnis ke Jepang, mencari tahu kereta mana yang harus dinaiki, memesan hotel sesuai anggaran Anda, dan menjadwalkan waktu bagi Anda untuk jalan-jalan."
       },
       {
         "id": "d2s2-t17",
-        "title": "Creating and Scheduling AI Skills",
+        "title": "Membuat dan Menjadwalkan Skill AI",
         "timestamp": "01:52:19",
         "timestampSeconds": 6739,
-        "category": "Automation",
+        "category": "Otomatisasi",
         "keyTakeaways": [
-          "Prompts that work well can be saved as reusable 'Skills'.",
-          "Skills can be scheduled to run automatically in the background (e.g., weekly competitor analysis).",
-          "Example: A 'Humanize Writing' skill that removes AI-sounding formatting from generated articles."
+          "Prompt yang bekerja dengan baik dapat disimpan sebagai 'Skill' yang dapat digunakan kembali.",
+          "Skill dapat dijadwalkan untuk berjalan otomatis di latar belakang (mis. analisis kompetitor mingguan).",
+          "Contoh: Skill 'Memanusiakan Tulisan' yang menghapus pemformatan yang terdengar seperti AI dari artikel yang dihasilkan."
         ],
         "verbatimHighlight": "Jadi bikin skill dulu baru dischedule menggunakan skill tersebut. Jadi nanti skill itu kalau waktu dihasilkan enggak suka kita bilang tolong dong improve skill.",
-        "laymanExplanation": "When you figure out a really good instruction for the AI, you can save it as a 'Skill'. You can then tell the AI to use that skill automatically every week, like scanning your inbox every Monday morning and giving you a summary."
+        "laymanExplanation": "Ketika Anda menemukan instruksi yang sangat bagus untuk AI, Anda dapat menyimpannya sebagai 'Skill'. Anda kemudian dapat menyuruh AI menggunakan skill itu secara otomatis setiap minggu, seperti memindai kotak masuk Anda setiap Senin pagi dan memberikan Anda ringkasan."
       },
       {
         "id": "d2s2-t18",
-        "title": "Generating Dashboards and Websites instantly",
+        "title": "Menghasilkan Dasbor dan Situs Web Secara Instan",
         "timestamp": "01:58:53",
         "timestampSeconds": 7133,
-        "category": "Advanced Features",
+        "category": "Fitur Lanjutan",
         "keyTakeaways": [
-          "Claude can turn raw financial data into interactive visual dashboards.",
-          "It can deploy these dashboards directly to the web (e.g., via Vercel).",
-          "Natali generated a complete, responsive workout website just by feeding the AI photos of his home gym equipment."
+          "Claude dapat mengubah data keuangan mentah menjadi dasbor visual interaktif.",
+          "AI dapat mende-deploy dasbor ini langsung ke web (mis. melalui Vercel).",
+          "Natali membuat situs web olahraga lengkap dan responsif hanya dengan memberikan foto peralatan gym rumahan kepada AI."
         ],
         "verbatimHighlight": "Jadi ini folder apa? Sales 12 bulan ya... dia bikin dashboard gitu... Terus saya minta tolong di-upload ke server namanya FEL gitu... Sekarang jadi situs.",
-        "laymanExplanation": "AI can take a boring Excel sheet and turn it into a beautiful, clickable graph. It can even put that graph on the internet as a real website in just a few minutes."
+        "laymanExplanation": "AI dapat mengambil lembar Excel yang membosankan dan mengubahnya menjadi grafik yang indah dan bisa diklik. Ia bahkan bisa menaruh grafik itu di internet sebagai situs web sungguhan hanya dalam beberapa menit."
       },
       {
         "id": "d2s2-t19",
-        "title": "Setting Guardrails for AI Outputs",
+        "title": "Menetapkan Batasan (Guardrails) untuk Output AI",
         "timestamp": "02:08:19",
         "timestampSeconds": 7699,
-        "category": "Best Practices",
+        "category": "Praktik Terbaik",
         "keyTakeaways": [
-          "Instruct the AI to never assume facts and always cite its sources.",
-          "Feed company SOPs into a master 'playbook' folder so the AI understands internal context.",
-          "Artifacts (generated outputs) can be published, but keep confidential chats private."
+          "Instruksikan AI untuk tidak pernah berasumsi tentang fakta dan selalu mengutip sumbernya.",
+          "Masukkan SOP perusahaan ke dalam folder 'playbook' utama agar AI memahami konteks internal.",
+          "Artifacts (output yang dihasilkan) dapat dipublikasikan, namun simpan obrolan rahasia secara privat."
         ],
         "verbatimHighlight": "di memori teman-teman kasih tahu jangan pernah berasumsi gitu. Nanti otomatis dia akan selalu menanyakan dan tidak akan pernah ber asumsi gitu ya.",
-        "laymanExplanation": "To stop the AI from making things up (hallucinating), you have to give it strict rules in its memory, like 'Never guess. If you don't know, ask me, and always tell me where you got the information.'"
+        "laymanExplanation": "Untuk mencegah AI mengarang cerita (halusinasi), Anda harus memberinya aturan ketat di ingatannya, seperti 'Jangan pernah menebak. Jika Anda tidak tahu, tanyakan pada saya, dan selalu beri tahu saya dari mana Anda mendapat informasi itu.'"
       },
       {
         "id": "d2s2-t20",
-        "title": "Q&A: Finding the Sweet Spot for Prompts",
+        "title": "Tanya Jawab: Menemukan Titik Tepat untuk Prompt",
         "timestamp": "02:22:31",
         "timestampSeconds": 8551,
-        "category": "Q&A",
+        "category": "Tanya Jawab",
         "keyTakeaways": [
-          "Avoid writing massive, overly detailed prompts from scratch.",
-          "Instead, ask the AI to generate a 'plan' or a prompt for the task first.",
-          "Review the AI's proposed plan, refine it, and then execute it."
+          "Hindari menulis prompt yang sangat panjang dan terlalu detail dari awal.",
+          "Sebagai gantinya, minta AI untuk membuat 'rencana' atau prompt untuk tugas tersebut terlebih dahulu.",
+          "Tinjau rencana yang diusulkan AI, perbaiki, lalu eksekusi."
         ],
         "verbatimHighlight": "Saya selalu bikin promp untuk membuat promp ya kan... Jadi apa sih rencana kamu untuk mengaudit ini? Nah, itu yang kita baca. Kalau terlalu detail itu saya tinggal select teksnya ya, terus bilang... ini terlalu detail tolong diperbaiki.",
-        "laymanExplanation": "Don't try to write the perfect instruction right away. Tell the AI what you want to do, ask IT to write the instruction, fix any mistakes it makes, and then let it do the job."
+        "laymanExplanation": "Jangan mencoba menulis instruksi yang sempurna seketika. Beri tahu AI apa yang ingin Anda lakukan, minta IA menuliskan instruksinya, perbaiki setiap kesalahan yang dibuatnya, lalu biarkan ia melakukan pekerjaannya."
       },
       {
         "id": "d2s2-t21",
-        "title": "Q&A: Competitor and Social Media Analytics",
+        "title": "Tanya Jawab: Analisis Kompetitor dan Media Sosial",
         "timestamp": "02:27:06",
         "timestampSeconds": 8826,
-        "category": "Q&A",
+        "category": "Tanya Jawab",
         "keyTakeaways": [
-          "AI can analyze raw social media data (likes, views, text length) to find hidden correlations.",
-          "Uses tools like Apify to scrape data from TikTok, Instagram, and Google Maps cheaply.",
-          "AI can reveal what content variables (e.g., video duration, topic) actually drive engagement."
+          "AI dapat menganalisis data mentah media sosial (suka, tayangan, panjang teks) untuk menemukan korelasi tersembunyi.",
+          "Menggunakan alat seperti Apify untuk melakukan scraping data dari TikTok, Instagram, dan Google Maps dengan murah.",
+          "AI dapat mengungkapkan variabel konten apa (mis. durasi video, topik) yang sebenarnya mendorong interaksi."
         ],
         "verbatimHighlight": "Jadi ini data korelasi ya... Kalau topik-topik yang lain penyakit malah merah. Berarti orang kalau nge-follow dokter IA itu sebenarnya enggak tertarik penyakit tapi lebih tertarik obatnya.",
-        "laymanExplanation": "By scraping data from a competitor's Instagram, the AI can analyze thousands of posts and tell you exactly what makes them go viral, like 'videos under 30 seconds about medicine get the most shares.'"
+        "laymanExplanation": "Dengan melakukan scraping data dari Instagram pesaing, AI dapat menganalisis ribuan postingan dan memberi tahu Anda dengan tepat apa yang membuat mereka viral, seperti 'video di bawah 30 detik tentang obat mendapatkan pembagian terbanyak.'"
       },
       {
         "id": "d2s2-t22",
-        "title": "Q&A: Validating Outputs and Legal Review",
+        "title": "Tanya Jawab: Validasi Output dan Tinjauan Hukum",
         "timestamp": "02:37:16",
         "timestampSeconds": 9436,
-        "category": "Q&A",
+        "category": "Tanya Jawab",
         "keyTakeaways": [
-          "CEOs focus on output; if the AI's result looks wrong, trust your instinct and investigate.",
-          "For legal documents, use AI to enforce 'Local Context' (e.g., Indonesian PDP Law).",
-          "Create custom 'Playbooks' so the AI knows your specific legal preferences (e.g., 1-year contracts only)."
+          "CEO berfokus pada output; jika hasil AI terlihat salah, percayai insting Anda dan selidiki.",
+          "Untuk dokumen hukum, gunakan AI untuk menerapkan 'Konteks Lokal' (mis. UU PDP Indonesia).",
+          "Buat 'Playbook' kustom agar AI mengetahui preferensi hukum spesifik Anda (mis. hanya kontrak 1 tahun)."
         ],
         "verbatimHighlight": "Karena ini legal respon itu kayak opini legal ya... dia mengambil konteks Indonesia gitu kan. Dia minta PT-nya, NIP, NPWP ya kan. Terus Undang-Undang PDP gitu.",
-        "laymanExplanation": "If you don't trust the AI's legal advice, it's usually because it lacks local knowledge. You can fix this by uploading Indonesian laws and your company's rulebook so it reviews contracts exactly how you want."
+        "laymanExplanation": "Jika Anda tidak mempercayai nasihat hukum AI, biasanya itu karena ia kurang memiliki pengetahuan lokal. Anda bisa memperbaikinya dengan mengunggah hukum Indonesia dan buku aturan perusahaan Anda sehingga ia meninjau kontrak persis seperti yang Anda inginkan."
       },
       {
         "id": "d2s2-t23",
-        "title": "Q&A: Using AI for Strategic Research",
+        "title": "Tanya Jawab: Menggunakan AI untuk Riset Strategis",
         "timestamp": "02:45:21",
         "timestampSeconds": 9921,
-        "category": "Q&A",
+        "category": "Tanya Jawab",
         "keyTakeaways": [
-          "Web search can yield inaccurate data; instead, build a 'Learning & Knowledge' folder.",
-          "Upload trusted reports (BPS, McKinsey, Scopus) and force the AI to only cite those.",
-          "Ultimately, AI is a decision-support tool; the CEO's instinct remains crucial."
+          "Pencarian web dapat menghasilkan data yang tidak akurat; sebagai gantinya, bangun folder 'Pembelajaran & Pengetahuan'.",
+          "Unggah laporan tepercaya (BPS, McKinsey, Scopus) dan paksa AI untuk hanya mengutip dari situ.",
+          "Pada akhirnya, AI adalah alat pendukung keputusan; insting CEO tetap krusial."
         ],
         "verbatimHighlight": "Karena kalau dia nyari di internet siapa yang menjamin isi di internet itu benar atau salah?... Jadi makanya kalau saya... saya suruh cari apa ee data atau ee research-nya itu dari folder ini gitu.",
-        "laymanExplanation": "Don't let the AI just search Google for important business decisions, because the internet is full of garbage. Instead, download verified reports yourself, put them in a folder, and tell the AI to only read those files."
+        "laymanExplanation": "Jangan biarkan AI sekadar mencari di Google untuk keputusan bisnis penting, karena internet penuh dengan sampah. Sebaliknya, unduh laporan terverifikasi sendiri, taruh di sebuah folder, dan suruh AI untuk hanya membaca file-file itu."
       },
       {
         "id": "d2s2-t24",
-        "title": "Q&A: AI for Dynamic Pricing Strategy",
+        "title": "Tanya Jawab: AI untuk Strategi Penetapan Harga Dinamis",
         "timestamp": "02:57:02",
         "timestampSeconds": 10622,
-        "category": "Q&A",
+        "category": "Tanya Jawab",
         "keyTakeaways": [
-          "AI can monitor competitor pricing algorithms and suggest rapid price adjustments.",
-          "Natali uses scripts to scrape competitor data hourly to adjust his own prices.",
-          "AI can analyze variables like booking recency and inventory risk to recommend discounts or hikes."
+          "AI dapat memantau algoritma harga pesaing dan menyarankan penyesuaian harga yang cepat.",
+          "Natali menggunakan skrip untuk melakukan scraping data kompetitor setiap jam guna menyesuaikan harganya sendiri.",
+          "AI dapat menganalisis variabel seperti kebaruan pemesanan dan risiko inventaris untuk merekomendasikan diskon atau kenaikan harga."
         ],
         "verbatimHighlight": "saya bikin program untuk ya ng-script kompetitor... Jadi how I price ya mengikuti cara kompetitor pricing... Ini saya bikin scraping ini 1 jam dapat semua data kompetitor.",
-        "laymanExplanation": "You can use AI to constantly check your competitors' websites. If they drop their prices, the AI can immediately notify you or automatically adjust your prices so you stay competitive without losing money."
+        "laymanExplanation": "Anda dapat menggunakan AI untuk terus memeriksa situs web pesaing Anda. Jika mereka menurunkan harga, AI bisa segera memberi tahu Anda atau secara otomatis menyesuaikan harga Anda agar Anda tetap kompetitif tanpa merugi."
       },
       {
         "id": "d2s2-t25",
-        "title": "Integrating AI with WhatsApp for Business",
+        "title": "Mengintegrasikan AI dengan WhatsApp for Business",
         "timestamp": "03:07:22",
         "timestampSeconds": 11242,
-        "category": "Automation",
+        "category": "Otomatisasi",
         "keyTakeaways": [
-          "Mas Ibnu demonstrates connecting AI agents directly to WhatsApp.",
-          "CEOs can interact with their AI 'employees' naturally via chat to request reports, generate content, or summarize groups.",
-          "The AI reads live company data (Company Brain) to provide accurate, real-time answers via WhatsApp."
+          "Mas Ibnu mendemonstrasikan penghubungan agen AI langsung ke WhatsApp.",
+          "CEO dapat berinteraksi dengan 'karyawan' AI mereka secara alami melalui obrolan untuk meminta laporan, membuat konten, atau merangkum grup.",
+          "AI membaca data perusahaan langsung (Company Brain) untuk memberikan jawaban akurat dan real-time via WhatsApp."
         ],
         "verbatimHighlight": "WhatsApp-nya diinstal AI yang terhubung ke company brand. Jadi kita punya personal assistant yang tahu luar dalam perusahaan kita dan bisa ngobrol via WA dengan sangat sederhana.",
-        "laymanExplanation": "Instead of opening complex software, you can just text your AI on WhatsApp like a normal employee. You can text it 'What were yesterday's sales?' and it will reply instantly with the exact numbers."
+        "laymanExplanation": "Alih-alih membuka perangkat lunak yang rumit, Anda bisa mengirim pesan ke AI Anda di WhatsApp layaknya karyawan biasa. Anda dapat mengirimkan pesan 'Berapa penjualan kemarin?' dan ia akan membalas seketika dengan angka pastinya."
       },
       {
         "id": "d2s2-t26",
-        "title": "Closing & Next Steps",
+        "title": "Penutupan & Langkah Selanjutnya",
         "timestamp": "03:39:59",
         "timestampSeconds": 13199,
-        "category": "Conclusion",
+        "category": "Kesimpulan",
         "keyTakeaways": [
-          "Participants are assigned homework: complete the e-course and fill out business assessments.",
-          "The goal is not to fire employees, but to multiply their productivity (e.g., from 10 designs a day to 1,000).",
-          "Weekly Zoom sessions will be held to guide CEOs through implementing AI step-by-step."
+          "Peserta diberi tugas rumah: menyelesaikan e-course dan mengisi penilaian bisnis.",
+          "Tujuannya bukan untuk memecat karyawan, melainkan untuk melipatgandakan produktivitas mereka (mis. dari 10 desain sehari menjadi 1.000).",
+          "Sesi Zoom mingguan akan diadakan untuk memandu para CEO mengimplementasikan AI selangkah demi selangkah."
         ],
         "verbatimHighlight": "Jadi PR pertama selesaiin e-course-nya... Jangan pernah mikir ngurangin orang... tapi biar tadi sehari posting 10.000 konten gitu loh. Game-nya itu adalah outputnya.",
-        "laymanExplanation": "The session ends with homework. The organizers emphasize that AI shouldn't be used as an excuse to fire people, but rather as a tool to make current employees 100 times faster and more productive."
+        "laymanExplanation": "Sesi diakhiri dengan tugas rumah. Penyelenggara menekankan bahwa AI tidak boleh digunakan sebagai alasan untuk memecat orang, melainkan sebagai alat untuk membuat karyawan saat ini 100 kali lebih cepat dan lebih produktif."
       }
     ],
     "executiveResume": {
@@ -1025,395 +1025,395 @@
     "topics": [
       {
         "id": "d2s1-t1",
-        "title": "Introduction of Satya Pradana and His Business Portfolio",
+        "title": "Pengenalan Satya Pradana dan Portofolio Bisnisnya",
         "timestamp": "00:00:16",
         "timestampSeconds": 16,
-        "category": "Introduction",
+        "category": "Pengenalan",
         "keyTakeaways": [
-          "Satya Pradana manages multiple large businesses with thousands of employees.",
-          "He has a strong entrepreneurial background starting from a young age.",
-          "His expertise lies in strategic thinking, human resource management, and maximizing potential."
+          "Satya Pradana mengelola berbagai bisnis besar dengan ribuan karyawan.",
+          "Beliau memiliki latar belakang kewirausahaan yang kuat sejak usia muda.",
+          "Keahlian beliau terletak pada pemikiran strategis, manajemen sumber daya manusia, dan pemaksimalan potensi."
         ],
         "verbatimHighlight": "Beliau ekspertis-nya sebenarnya di manusia human. Jadi, beliau itu bisa membuat manusia itu kayak ter ini potensinya tuh ter apa namanya? Tergali banget.",
-        "laymanExplanation": "The host introduces the speaker, Satya Pradana, a successful entrepreneur who owns multiple businesses and has a unique way of leading and pushing his employees to their limits."
+        "laymanExplanation": "Pembawa acara memperkenalkan pembicara, Satya Pradana, seorang pengusaha sukses yang memiliki berbagai bisnis dan memiliki cara unik dalam memimpin serta mendorong karyawannya untuk mencapai batas maksimal mereka."
       },
       {
         "id": "d2s1-t2",
-        "title": "The Importance of the CEO's Role in AI Integration",
+        "title": "Pentingnya Peran CEO dalam Integrasi AI",
         "timestamp": "00:06:37",
         "timestampSeconds": 397,
-        "category": "Mindset & Strategy",
+        "category": "Pola Pikir & Strategi",
         "keyTakeaways": [
-          "AI tools are useless if the CEO does not understand how to integrate them into the company's structure.",
-          "The real transformation happens when business processes and organizational structures are fundamentally changed.",
-          "Treating AI merely as software without changing how the team operates yields no significant results."
+          "Berbagai alat AI tidak akan berguna jika CEO tidak memahami cara mengintegrasikannya ke dalam struktur perusahaan.",
+          "Transformasi nyata terjadi ketika proses bisnis dan struktur organisasi diubah secara fundamental.",
+          "Memperlakukan AI hanya sebagai perangkat lunak tanpa mengubah cara tim beroperasi tidak akan memberikan hasil yang signifikan."
         ],
         "verbatimHighlight": "Karena ketika CEO-nya paham AI itu yang dikasihkan ke tim bukan cuma tools, tapi akan merubah semua struktur organisasi. Semua cara kerja, semua bisnis proses dirubah dulu.",
-        "laymanExplanation": "Just buying AI software for your employees isn't enough. A boss needs to completely rethink and redesign how the company works to actually benefit from AI."
+        "laymanExplanation": "Sekadar membelikan perangkat lunak AI untuk karyawan tidaklah cukup. Seorang pemimpin harus memikirkan kembali dan merancang ulang sepenuhnya cara perusahaan bekerja agar benar-benar mendapatkan manfaat dari AI."
       },
       {
         "id": "d2s1-t3",
-        "title": "Satya's Early Entrepreneurial Journey & Bootstrap Funding",
+        "title": "Perjalanan Awal Bisnis Satya & Pendanaan Mandiri",
         "timestamp": "00:08:59",
         "timestampSeconds": 539,
-        "category": "Business Experience",
+        "category": "Pengalaman Bisnis",
         "keyTakeaways": [
-          "Satya started business in elementary school and honed his leadership skills in student organizations.",
-          "He built his early businesses using customer money (pre-orders/cash upfront) instead of bank loans.",
-          "Growth was driven by a combination of strong negotiation and marketing skills."
+          "Satya mulai berbisnis sejak sekolah dasar dan mengasah kemampuan kepemimpinannya di organisasi siswa.",
+          "Beliau membangun bisnis awalnya menggunakan uang pelanggan (prapemesanan/pembayaran di muka) alih-alih pinjaman bank.",
+          "Pertumbuhan bisnisnya didorong oleh kombinasi keterampilan negosiasi dan pemasaran yang kuat."
         ],
         "verbatimHighlight": "Saya bersyukur dari awal bisnis langsung dapat investor. Investor yang sangat baik hati... yaitu namanya customer. Jadi dari depan ternyata waktu bikin cover super itu bisnis modelnya adalah orang transfer dulu.",
-        "laymanExplanation": "Satya shares how he started doing business early in life and managed to grow his companies without borrowing money from banks, instead relying on getting paid upfront by customers."
+        "laymanExplanation": "Satya membagikan kisah bagaimana ia mulai berbisnis sejak dini dan berhasil mengembangkan perusahaannya tanpa meminjam uang dari bank, melainkan dengan mengandalkan pembayaran di muka dari pelanggan."
       },
       {
         "id": "d2s1-t4",
-        "title": "The Rapid Evolution and Affordability of AI Tools",
+        "title": "Evolusi Cepat dan Keterjangkauan Harga Alat AI",
         "timestamp": "00:13:41",
         "timestampSeconds": 821,
-        "category": "AI Development",
+        "category": "Perkembangan AI",
         "keyTakeaways": [
-          "AI technologies have evolved extremely fast, drastically reducing the cost of complex tasks.",
-          "Tools that can replace multiple highly paid roles are now available for a fraction of the cost, such as $20/month.",
-          "Fierce competition among AI giants keeps driving innovation and lowering prices."
+          "Teknologi AI telah berkembang sangat cepat, yang mana secara drastis menekan biaya untuk tugas-tugas kompleks.",
+          "Alat-alat yang dapat menggantikan berbagai peran berbayar mahal kini tersedia dengan harga yang jauh lebih murah, misalnya $20/bulan.",
+          "Persaingan sengit di antara raksasa-raksasa AI terus mendorong inovasi dan menurunkan harga."
         ],
         "verbatimHighlight": "Ternyata enggak sampai 1 minggu habis dia bikin announcement itu, ngeluarin itu semua yang dibilang sama dengan biaya 20 dolar sebulan.",
-        "laymanExplanation": "AI has gotten incredibly smart and cheap very quickly. What used to cost thousands of dollars to do can now be done by AI for just $20 a month."
+        "laymanExplanation": "AI telah menjadi sangat pintar dan murah dengan sangat cepat. Pekerjaan yang dulunya membutuhkan ribuan dolar, kini dapat diselesaikan oleh AI hanya dengan biaya $20 per bulan."
       },
       {
         "id": "d2s1-t5",
-        "title": "Replacing a Traditional Marketing Team with One Person and AI",
+        "title": "Mengganti Tim Pemasaran Tradisional dengan Satu Orang dan AI",
         "timestamp": "00:15:36",
         "timestampSeconds": 936,
-        "category": "Operational Efficiency",
+        "category": "Efisiensi Operasional",
         "keyTakeaways": [
-          "A traditional marketing workflow involving 11-14 people can now be handled by a single person using AI.",
-          "AI can act as the creative director, content writer, graphic designer, and video editor all at once.",
-          "If business processes are not restructured, employees will finish their work quickly with AI and pretend to work for the rest of the day."
+          "Alur kerja pemasaran tradisional yang melibatkan 11-14 orang kini dapat ditangani oleh satu orang menggunakan AI.",
+          "AI dapat bertindak sebagai direktur kreatif, penulis konten, desainer grafis, dan editor video sekaligus.",
+          "Jika proses bisnis tidak direstrukturisasi, karyawan akan menyelesaikan pekerjaan mereka dengan cepat menggunakan AI dan hanya berpura-pura bekerja di sisa waktu hari itu."
         ],
         "verbatimHighlight": "Ternyata 11 orang tadi bisa digantikan oleh berapa orang kira-kira? Satu orang. Itu main mind main blowing.",
-        "laymanExplanation": "You don't need a massive marketing team anymore. One person equipped with AI can do the jobs of writers, designers, and planners in a fraction of the time."
+        "laymanExplanation": "Anda tidak lagi membutuhkan tim pemasaran yang besar. Satu orang yang dibekali AI dapat melakukan pekerjaan penulis, desainer, dan perencana dalam waktu yang jauh lebih singkat."
       },
       {
         "id": "d2s1-t6",
-        "title": "Exponential Productivity: From 10 to 2,000 Designs a Day",
+        "title": "Produktivitas Eksponensial: Dari 10 Menjadi 2.000 Desain Sehari",
         "timestamp": "00:20:11",
         "timestampSeconds": 1211,
-        "category": "Operational Efficiency",
+        "category": "Efisiensi Operasional",
         "keyTakeaways": [
-          "Using AI, an employee can create up to 2,000 social media designs per day compared to the manual average of 10.",
-          "The speed of content creation shifts the bottleneck from production to distribution.",
-          "Employees must be given massive new targets (e.g., 1,000 designs/day) to prevent them from slacking off."
+          "Menggunakan AI, seorang karyawan dapat membuat hingga 2.000 desain media sosial per hari dibandingkan rata-rata 10 desain secara manual.",
+          "Kecepatan pembuatan konten memindahkan titik hambat (bottleneck) dari tahap produksi ke distribusi.",
+          "Karyawan harus diberikan target baru yang masif (misalnya, 1.000 desain/hari) agar mereka tidak bermalas-malasan."
         ],
         "verbatimHighlight": "Jadi yang awalnya satu hari biasanya orang cuma jadi apa du desain... 1 hari 8 jam bisa jadi 240 karosel. Masing-masing 10 desain. Berarti 2.400 desain.",
-        "laymanExplanation": "With AI, a designer can make thousands of pictures a day instead of just ten. This means bosses have to set much higher goals so workers don't just sit around."
+        "laymanExplanation": "Dengan AI, seorang desainer dapat membuat ribuan gambar per hari daripada hanya sepuluh gambar. Ini berarti para atasan harus menetapkan target yang jauh lebih tinggi agar para pekerja tidak hanya duduk diam."
       },
       {
         "id": "d2s1-t7",
-        "title": "Winning the Attention Economy with High-Volume Posting",
+        "title": "Memenangkan Ekonomi Perhatian dengan Frekuensi Unggahan yang Tinggi",
         "timestamp": "00:29:19",
         "timestampSeconds": 1759,
-        "category": "Marketing & Social Media",
+        "category": "Pemasaran & Media Sosial",
         "keyTakeaways": [
-          "In today's digital landscape, attention is currency.",
-          "Big brands are posting tens of thousands of times a month on platforms like TikTok to dominate algorithms.",
-          "Posting frequently with AI allows you to reach customers repeatedly until they are convinced to buy."
+          "Dalam lanskap digital saat ini, perhatian adalah mata uang.",
+          "Merek-merek besar mengunggah konten puluhan ribu kali per bulan di platform seperti TikTok untuk mendominasi algoritma.",
+          "Sering mengunggah menggunakan AI memungkinkan Anda menjangkau pelanggan berulang kali hingga mereka yakin untuk membeli."
         ],
         "verbatimHighlight": "Saya kemarin ke kantor TikTok dia bilang semua brand yang angkanya sudah rat miliar itu pasti postingannya itu minimal puluhan ribu per bulan.",
-        "laymanExplanation": "To get noticed online, you need to post a lot. Big brands post thousands of times a month. AI makes it free and easy to flood social media with your brand."
+        "laymanExplanation": "Untuk bisa diperhatikan secara daring, Anda perlu banyak mengunggah. Merek-merek besar mengunggah ribuan kali dalam sebulan. AI membuat hal tersebut menjadi gratis dan mudah untuk membanjiri media sosial dengan merek Anda."
       },
       {
         "id": "d2s1-t8",
-        "title": "Real-World Examples of AI Monetization at Scale",
+        "title": "Contoh Nyata Monetisasi AI dalam Skala Besar",
         "timestamp": "00:31:28",
         "timestampSeconds": 1888,
-        "category": "Business Experience",
+        "category": "Pengalaman Bisnis",
         "keyTakeaways": [
-          "People are making millions using AI to generate hundreds of automated social media accounts.",
-          "Examples include using Threads to drive affiliate traffic to Shopee, or using Suno to make audio/video for YouTube AdSense.",
-          "Scaling a small profit per account to thousands of accounts generates massive revenue."
+          "Banyak orang menghasilkan jutaan rupiah dengan menggunakan AI untuk membuat ratusan akun media sosial otomatis.",
+          "Contohnya termasuk penggunaan Threads untuk mengarahkan lalu lintas afiliasi ke Shopee, atau menggunakan Suno untuk membuat audio/video demi AdSense YouTube.",
+          "Melipatgandakan keuntungan kecil per akun menjadi ribuan akun akan menghasilkan pendapatan yang sangat besar."
         ],
         "verbatimHighlight": "Jadi itu rata-rata tiap akun rata-rata Rp200.000 sehari. Kalau kita anggap 100 100 akun aja berarti dia R juta se hari profitnya",
-        "laymanExplanation": "People are making big money by using AI to run hundreds of social media accounts automatically. Even if one account makes a little bit, having hundreds of them adds up to a lot."
+        "laymanExplanation": "Banyak orang menghasilkan banyak uang dengan menggunakan AI untuk menjalankan ratusan akun media sosial secara otomatis. Meskipun satu akun hanya menghasilkan sedikit uang, memiliki ratusan akun akan memberikan keuntungan yang sangat besar."
       },
       {
         "id": "d2s1-t9",
-        "title": "Understanding Algorithmic Feeds and Repetitive Content",
+        "title": "Memahami Umpan Algoritma dan Konten yang Berulang",
         "timestamp": "00:36:03",
         "timestampSeconds": 2163,
-        "category": "Marketing & Social Media",
+        "category": "Pemasaran & Media Sosial",
         "keyTakeaways": [
-          "Algorithms feed users exactly what they have shown interest in, creating tailored content bubbles.",
-          "Repetitive content doesn't bore the audience because the algorithm continuously finds new people who like it.",
-          "AI can analyze past successful posts to continuously refine and generate better future content."
+          "Algoritma menyuguhkan konten yang secara khusus diminati oleh pengguna, yang mana hal ini menciptakan gelembung konten yang disesuaikan.",
+          "Konten yang berulang tidak membuat penonton bosan karena algoritma terus-menerus menemukan orang baru yang menyukainya.",
+          "AI dapat menganalisis unggahan sukses di masa lalu untuk terus memperbaiki dan menghasilkan konten yang lebih baik di masa depan."
         ],
         "verbatimHighlight": "Ternyata yang bosan yang bikin bukan yang nonton... Makanya kita walaupun kontennya gitu terus bisa dapat 1 juta followers, 2 juta followers karena biarkan algoritma bekerja.",
-        "laymanExplanation": "You might think posting the same kind of video gets boring, but it only bores the creator. The social media algorithm always shows it to new people who want to see it."
+        "laymanExplanation": "Anda mungkin berpikir mengunggah jenis video yang sama akan membosankan, tetapi sebenarnya itu hanya membosankan bagi si pembuat. Algoritma media sosial selalu menunjukkannya kepada orang-orang baru yang memang ingin melihatnya."
       },
       {
         "id": "d2s1-t10",
-        "title": "AI Talent Replacing Real Humans in Video Ads",
+        "title": "Talenta AI Menggantikan Manusia Asli di Iklan Video",
         "timestamp": "00:41:02",
         "timestampSeconds": 2462,
-        "category": "Operational Efficiency",
+        "category": "Efisiensi Operasional",
         "keyTakeaways": [
-          "Expensive, good-looking human talents are being replaced by AI-generated avatars for video ads.",
-          "Previous human talents have been reassigned to sit behind a computer and generate videos using AI.",
-          "Consumers largely cannot tell the difference, and these AI videos successfully sell premium-priced products."
+          "Talenta manusia yang mahal dan berpenampilan menarik sedang digantikan oleh avatar berbasis AI untuk iklan video.",
+          "Talenta manusia sebelumnya telah ditugaskan kembali untuk duduk di belakang komputer dan membuat video menggunakan AI.",
+          "Sebagian besar konsumen tidak dapat membedakannya, dan video-video AI ini berhasil menjual produk dengan harga premium."
         ],
         "verbatimHighlight": "Cewek-cewek itu sekarang tugasnya bikin video pakai AI plot twist banget enggak tuh? ... Sekarang tugas dia adalah ngedit video pakai AI.",
-        "laymanExplanation": "Companies are stopping paying expensive models for video ads. Instead, they use AI to create digital people that look totally real, and the old models are now just operating the AI software."
+        "laymanExplanation": "Banyak perusahaan mulai berhenti membayar model mahal untuk iklan video. Alih-alih, mereka menggunakan AI untuk membuat manusia digital yang terlihat sangat nyata, dan para model sebelumnya kini hanya mengoperasikan perangkat lunak AI tersebut."
       },
       {
         "id": "d2s1-t11",
-        "title": "The Era of Robotics and AI in China",
+        "title": "Era Robotika dan AI di Tiongkok",
         "timestamp": "00:47:20",
         "timestampSeconds": 2840,
-        "category": "AI Development",
+        "category": "Perkembangan AI",
         "keyTakeaways": [
-          "In China, AI has moved beyond screens into physical robots (humanoids, autonomous vehicles, delivery drones).",
-          "Dark factories operate 23 hours a day with robots doing the physical labor in the dark.",
-          "Robot waiters, cooks, and autonomous taxis are already commonplace and cheaper than human alternatives."
+          "Di Tiongkok, AI telah beralih dari sekadar layar menjadi robot fisik (humanoid, kendaraan otonom, pesawat nirawak pengiriman).",
+          "\"Pabrik gelap\" beroperasi 23 jam sehari dengan robot-robot yang melakukan pekerjaan fisik dalam kegelapan.",
+          "Robot pelayan, koki, dan taksi otonom sudah menjadi hal biasa dan lebih murah daripada mempekerjakan manusia."
         ],
         "verbatimHighlight": "Di sana AI itu bukan yang ditaruh di dalam laptop handphone atau layar. AI di China itu sudah dikasih tangan, dikasih kaki, dikasih mulut, mata, telinga. Udah eranya robotik.",
-        "laymanExplanation": "In China, AI isn't just a chatbot anymore. It's physical robots that cook food, deliver packages, drive taxis, and build things in factories 24/7."
+        "laymanExplanation": "Di Tiongkok, AI bukan sekadar chatbot lagi. Ada robot fisik yang memasak makanan, mengantar paket, mengemudikan taksi, dan membuat barang-barang di pabrik selama 24 jam sehari, 7 hari seminggu."
       },
       {
         "id": "d2s1-t12",
-        "title": "The Decreasing Cost of AI vs Human Labor",
+        "title": "Penurunan Biaya AI vs Tenaga Kerja Manusia",
         "timestamp": "00:50:41",
         "timestampSeconds": 3041,
-        "category": "Business Strategy",
+        "category": "Strategi Bisnis",
         "keyTakeaways": [
-          "AI prices are constantly dropping; some powerful AI models are now completely free.",
-          "Even in countries with lower wages like Indonesia, AI will soon become much cheaper than paying the minimum wage.",
-          "AI autonomous systems don't completely remove humans from earning money; the profits just shift to the owners of the AI."
+          "Harga AI terus menurun; beberapa model AI yang kuat kini bahkan sepenuhnya gratis.",
+          "Bahkan di negara-negara dengan upah yang lebih rendah seperti Indonesia, AI akan segera menjadi jauh lebih murah daripada membayar upah minimum.",
+          "Sistem otonom AI tidak sepenuhnya menghilangkan peluang manusia untuk menghasilkan uang; keuntungannya hanya beralih kepada para pemilik AI."
         ],
         "verbatimHighlight": "Kimi ngeluarin dari China. Jadi apa AI itu sudah jadi gratis... Yang kita pikir mahal itu akan terus turun",
-        "laymanExplanation": "The price of using AI is dropping incredibly fast. Soon, it will be so cheap that even in places where human labor is inexpensive, using AI will still be the better financial choice."
+        "laymanExplanation": "Biaya penggunaan AI turun dengan sangat cepat. Tak lama lagi, harganya akan sangat murah, bahkan di tempat-tempat yang tenaga kerjanya tidak mahal pun, menggunakan AI akan tetap menjadi pilihan finansial yang lebih baik."
       },
       {
         "id": "d2s1-t13",
-        "title": "John Kotter's 8-Step Framework: Creating a Sense of Urgency",
+        "title": "Kerangka Kerja 8 Langkah John Kotter: Menciptakan Rasa Urgensi",
         "timestamp": "01:03:21",
         "timestampSeconds": 3801,
-        "category": "Organizational Change",
+        "category": "Perubahan Organisasi",
         "keyTakeaways": [
-          "To successfully transform a company with AI, leaders must first establish a 'Sense of Urgency'.",
-          "There must be a compelling reason (a crisis or massive opportunity) to force change.",
-          "Without urgency, changes will be slow, half-hearted, and ultimately fail."
+          "Untuk berhasil mengubah perusahaan dengan AI, para pemimpin harus terlebih dahulu menanamkan 'Rasa Urgensi' (Sense of Urgency).",
+          "Harus ada alasan yang kuat (sebuah krisis atau peluang besar) untuk memaksakan perubahan.",
+          "Tanpa urgensi, perubahan akan berjalan lambat, setengah hati, dan pada akhirnya gagal."
         ],
         "verbatimHighlight": "Ternyata rumus nomor satunya itu harus ada namanya sense of urgency, harus ada crisis... Kalau kita enggak berubah hari ini, besok mati.",
-        "laymanExplanation": "If you want your company to adopt AI, you have to make your employees feel that it is absolutely urgent. If they don't feel a sense of danger or massive opportunity, they won't bother changing."
+        "laymanExplanation": "Jika Anda ingin perusahaan Anda mengadopsi AI, Anda harus membuat karyawan Anda merasa bahwa ini adalah sesuatu yang sangat mendesak. Jika mereka tidak merasakan bahaya atau peluang yang masif, mereka tidak akan repot-repot untuk berubah."
       },
       {
         "id": "d2s1-t14",
-        "title": "John Kotter's Framework: Building a Guiding Coalition",
+        "title": "Kerangka Kerja John Kotter: Membangun Koalisi Pemandu",
         "timestamp": "01:06:02",
         "timestampSeconds": 3962,
-        "category": "Organizational Change",
+        "category": "Perubahan Organisasi",
         "keyTakeaways": [
-          "You cannot please everyone; around 20% will support change, 60% will be neutral, and 20% will resist.",
-          "You only need 15% of your workforce to actively adopt AI to create a tipping point.",
-          "Once a small group demonstrates massive productivity gains with AI, the rest of the organization is forced to follow."
+          "Anda tidak bisa menyenangkan semua orang; sekitar 20% akan mendukung perubahan, 60% akan bersikap netral, dan 20% akan menolak.",
+          "Anda hanya membutuhkan 15% dari tenaga kerja Anda untuk secara aktif mengadopsi AI demi menciptakan titik balik (tipping point).",
+          "Setelah sekelompok kecil menunjukkan peningkatan produktivitas yang masif berkat AI, seluruh bagian organisasi lainnya akan terpaksa mengikuti."
         ],
         "verbatimHighlight": "Ternyata untuk merubah organisasi cuma butuh 15%. Itu rumus saintifiknya. Enggak butuh 51%.",
-        "laymanExplanation": "You don't need all your employees to like the new AI tools. If just 15% of them start using it and become incredibly productive, everyone else will have to adapt or get left behind."
+        "laymanExplanation": "Anda tidak butuh semua karyawan Anda menyukai alat AI baru. Jika hanya 15% dari mereka mulai menggunakannya dan menjadi sangat produktif, maka semua orang harus beradaptasi atau akan tertinggal."
       },
       {
         "id": "d2s1-t15",
-        "title": "Downloading Experts' Minds into AI for Superior Marketing",
+        "title": "Mengunduh Pikiran Para Pakar ke dalam AI untuk Pemasaran Unggul",
         "timestamp": "01:10:33",
         "timestampSeconds": 4233,
-        "category": "Marketing & Strategy",
+        "category": "Pemasaran & Strategi",
         "keyTakeaways": [
-          "Instead of just asking AI to write content, you can train it using the books, videos, and transcripts of world-class experts.",
-          "By doing this, the AI mimics the thought process and strategies of the best minds in the industry.",
-          "This vastly improves content quality, making it far better than what an average human employee could produce."
+          "Alih-alih hanya meminta AI menulis konten, Anda bisa melatihnya menggunakan buku, video, dan transkrip dari pakar kelas dunia.",
+          "Dengan melakukan hal ini, AI meniru proses berpikir dan strategi dari pikiran-pikiran terbaik di industri tersebut.",
+          "Hal ini sangat meningkatkan kualitas konten, yang mana menjadikannya jauh lebih baik daripada yang bisa dihasilkan oleh karyawan biasa."
         ],
         "verbatimHighlight": "Itu ditranskrip semua si Alex Hormozi, si G dan seterusnya semua buku-bukunya... Jadi ketika itu semua sudah ditranskrip, yang bikin konten itu tadi adalah si Alex Hormozi.",
-        "laymanExplanation": "You can feed AI all the books and speeches of a famous marketing genius. Then, the AI will write your ads exactly as that genius would, which is much better than a normal employee's work."
+        "laymanExplanation": "Anda dapat memberikan semua buku dan pidato dari seorang jenius pemasaran terkenal kepada AI. Kemudian, AI akan menulis iklan Anda persis seperti yang akan dilakukan oleh jenius tersebut, dan hal ini jauh lebih baik daripada hasil kerja karyawan biasa."
       },
       {
         "id": "d2s1-t16",
-        "title": "The 'Company Brain': A Fully Integrated AI ERP",
+        "title": "'Otak Perusahaan': ERP AI yang Terintegrasi Penuh",
         "timestamp": "01:16:09",
         "timestampSeconds": 4569,
-        "category": "AI Tools & Implementation",
+        "category": "Alat & Implementasi AI",
         "keyTakeaways": [
-          "A 'Company Brain' integrates all company data (HR, finance, inventory, CRM) into one AI dashboard.",
-          "The AI can provide strategic advice because it has the full context of the company's real-time operations.",
-          "It automatically analyzes performance, reminds staff of tasks, and identifies business opportunities."
+          "'Otak Perusahaan' mengintegrasikan semua data perusahaan (SDM, keuangan, inventaris, CRM) ke dalam satu dasbor AI.",
+          "AI dapat memberikan saran strategis karena ia memiliki konteks lengkap dari operasional waktu nyata perusahaan.",
+          "Ia secara otomatis menganalisis performa, mengingatkan staf akan tugas-tugas, dan mengidentifikasi peluang bisnis."
         ],
         "verbatimHighlight": "Makanya kita men-develop namanya company brand. company brand adalah semua eh data poin yang bisa dijadikan data itu dimasukin Data keuangan masuk, data stok di gudang masuk",
-        "laymanExplanation": "Imagine a super-smart digital assistant that knows everything about your business\u2014finances, stock, and employee progress\u2014and gives you daily advice on what to do next based on all that data."
+        "laymanExplanation": "Bayangkan asisten digital super pintar yang mengetahui segala hal tentang bisnis Anda\u2014keuangan, stok, dan progres karyawan\u2014dan ia memberikan saran harian tentang apa yang harus dilakukan selanjutnya berdasarkan semua data tersebut."
       },
       {
         "id": "d2s1-t17",
-        "title": "Automating Social Media and Operations with Lumio & Wavo",
+        "title": "Mengotomatiskan Media Sosial dan Operasional dengan Lumio & Wavo",
         "timestamp": "01:21:41",
         "timestampSeconds": 4901,
-        "category": "AI Tools & Implementation",
+        "category": "Alat & Implementasi AI",
         "keyTakeaways": [
-          "Internal tools like Lumio can automatically design, schedule, and post content across platforms.",
-          "Wavo handles automated customer service by cloning the knowledge and tone of the company's best salesperson.",
-          "These tools remove communication bottlenecks between departments and reduce reliance on human coordination."
+          "Alat internal seperti Lumio dapat secara otomatis mendesain, menjadwalkan, dan mengunggah konten ke berbagai platform.",
+          "Wavo menangani layanan pelanggan otomatis dengan meniru pengetahuan dan gaya bicara dari tenaga penjualan terbaik perusahaan.",
+          "Alat-alat ini menghilangkan hambatan komunikasi antardepartemen dan mengurangi ketergantungan pada koordinasi antarmanusia."
         ],
         "verbatimHighlight": "Lumio ini tadi kita cuma ini produknya tolong bikinin desainnya, posternya, landing page-nya... Dia otomatis akan bikin desain tiap hari mosting sendiri",
-        "laymanExplanation": "Satya's team built their own AI software that automatically designs and posts social media updates, and another that chats with customers like a top-tier salesperson, completely on autopilot."
+        "laymanExplanation": "Tim Satya membangun perangkat lunak AI mereka sendiri yang secara otomatis mendesain dan mengunggah pembaruan di media sosial, serta satu lagi perangkat lunak yang berinteraksi dengan pelanggan layaknya seorang penjual papan atas, dan semuanya berjalan sepenuhnya secara otomatis (autopilot)."
       },
       {
         "id": "d2s1-t18",
-        "title": "The 'Tuyul 4.0': AI Agents Generating Revenue 24/7",
+        "title": "'Tuyul 4.0': Agen AI yang Menghasilkan Pendapatan 24/7",
         "timestamp": "01:29:08",
         "timestampSeconds": 5348,
-        "category": "Business Strategy",
+        "category": "Strategi Bisnis",
         "keyTakeaways": [
-          "AI agents act as tireless digital workers executing thousands of tasks a day, such as sending out mass legal or sales letters.",
-          "If directed properly by the CEO, these AI agents directly generate revenue and leads.",
-          "The responsibility is on the human to provide the right instructions; the AI simply executes flawlessly."
+          "Agen AI bertindak sebagai pekerja digital yang tak kenal lelah, yang mana mereka mengeksekusi ribuan tugas sehari, seperti mengirimkan surat legal massal atau email penjualan.",
+          "Jika diarahkan dengan benar oleh CEO, agen-agen AI ini dapat secara langsung menghasilkan pendapatan dan prospek.",
+          "Tanggung jawab ada pada manusia untuk memberikan instruksi yang benar; AI hanya mengeksekusinya dengan sempurna."
         ],
         "verbatimHighlight": "Ya, sebenarnya EA itu adalah tuyul atau ngepet 4.0 lah. Tapi memang game-nya adalah jago-jagoan yang Kalau enggak menghasilkan uang, yang salah yang nyuruh, bukan EA-nya.",
-        "laymanExplanation": "AI is like a mythical creature that brings you money, working 24/7. But you have to be smart enough to tell it exactly what to do to make that money, like sending out thousands of sales emails."
+        "laymanExplanation": "AI ibarat makhluk mitologi yang bisa membawakan Anda uang dengan bekerja tanpa henti (24/7). Namun, Anda harus cukup pintar untuk memberitahunya dengan tepat apa yang harus dilakukan untuk menghasilkan uang tersebut, seperti dengan mengirimkan ribuan email penjualan."
       },
       {
         "id": "d2s1-t19",
-        "title": "Building Complex Applications in Minutes",
+        "title": "Membangun Aplikasi Kompleks dalam Hitungan Menit",
         "timestamp": "01:34:57",
         "timestampSeconds": 5697,
-        "category": "AI Development",
+        "category": "Perkembangan AI",
         "keyTakeaways": [
-          "What used to take months of coding and millions in budget can now be generated by AI in 15 minutes.",
-          "Using tools like Claude Code or ChatGPT, users can generate exact clones of apps like Trello with simple text prompts.",
-          "The cost and value of basic software development have dropped to near zero."
+          "Apa yang dulunya memakan waktu berbulan-bulan untuk memprogram dan membutuhkan anggaran jutaan, kini dapat dihasilkan oleh AI dalam 15 menit.",
+          "Menggunakan alat seperti Claude Code atau ChatGPT, pengguna dapat membuat kloningan persis dari aplikasi semacam Trello hanya dengan perintah teks sederhana.",
+          "Biaya dan nilai pengembangan perangkat lunak dasar telah turun hingga mendekati nol."
         ],
         "verbatimHighlight": "Detik ini bikin website 10 menit... Coba ee bikinin aku aplikasi seperti Trelo... kira-kira 15 menit lah",
-        "laymanExplanation": "Creating a complex website or app used to require a team of programmers and a lot of money. Now, you can just ask AI to build it for you, and it will be ready in 15 minutes."
+        "laymanExplanation": "Membuat situs web atau aplikasi kompleks dulunya membutuhkan tim pemrogram dan banyak biaya. Kini, Anda tinggal meminta AI untuk membangunnya untuk Anda, dan semuanya akan siap dalam 15 menit."
       },
       {
         "id": "d2s1-t20",
-        "title": "Three Paths to Adopting AI for Your Business",
+        "title": "Tiga Jalur Mengadopsi AI untuk Bisnis Anda",
         "timestamp": "01:39:03",
         "timestampSeconds": 5943,
-        "category": "Business Strategy",
+        "category": "Strategi Bisnis",
         "keyTakeaways": [
-          "Path 1: Build a fully integrated 'Company Brain' ERP system from scratch.",
-          "Path 2: Assess current staff and replace a large percentage of payroll with automated AI agents.",
-          "Path 3: Partner on a revenue-share model where the AI agency handles all marketing and sales."
+          "Jalur 1: Membangun sistem ERP 'Otak Perusahaan' yang terintegrasi penuh dari awal.",
+          "Jalur 2: Menilai staf saat ini dan mengganti sebagian besar beban gaji dengan agen AI otomatis.",
+          "Jalur 3: Bermitra dengan model bagi hasil, di mana agensi AI menangani seluruh pemasaran dan penjualan."
         ],
         "verbatimHighlight": "Paket pertama adalah kita bikinin aplikasi benar-benar hulu sampai hilir... Poin kedua, mana karyawanmu pada ngapain tiap hari di kantor akan kita bikinin AI agen... Yang ketiga... Kita akan jualin produk kalian dari hulu ke hilir pakai AI. Tinggal bagi hasil aja.",
-        "laymanExplanation": "Satya offers three ways to help companies: build a smart AI dashboard, replace slow human workers with fast AI bots, or just let his AI team sell your products and split the profits."
+        "laymanExplanation": "Satya menawarkan tiga cara untuk membantu perusahaan: membuat dasbor AI pintar, mengganti pekerja manusia yang lambat dengan bot AI yang cepat, atau membiarkan tim AI-nya menjual produk Anda dan membagi keuntungannya."
       },
       {
         "id": "d2s1-t21",
-        "title": "Assessing Jobs for AI Replacement",
+        "title": "Menilai Pekerjaan untuk Digantikan oleh AI",
         "timestamp": "01:44:41",
         "timestampSeconds": 6281,
-        "category": "Organizational Change",
+        "category": "Perubahan Organisasi",
         "keyTakeaways": [
-          "Almost any job can be replaced, but roles that are repetitive and have low legal/health risks are the easiest targets.",
-          "The only human elements that can't be replaced are taking real responsibility, making final decisions, and showing genuine empathy.",
-          "CEOs must list and assess every department to identify exactly how many roles can be automated."
+          "Hampir semua pekerjaan dapat digantikan, namun peran yang berulang dan memiliki risiko hukum/kesehatan rendah adalah target yang paling mudah.",
+          "Satu-satunya elemen manusia yang tidak dapat digantikan adalah mengambil tanggung jawab nyata, membuat keputusan akhir, dan menunjukkan empati yang tulus.",
+          "CEO harus mendata dan menilai setiap departemen untuk mengidentifikasi dengan tepat berapa banyak peran yang dapat diotomatisasi."
         ],
         "verbatimHighlight": "Kira-kira mana yang kira-kira bisa digantikan? Yang bisa digantikan yang kayak apa? Yang berulang. Repetition... Yang ketiga adalah yang resiko hukumnya atau kalau mungkin ee ada kesehatan juga rendah",
-        "laymanExplanation": "Bosses need to look at all their employees and figure out whose jobs are just doing the same repetitive tasks every day. Those are the jobs AI can do perfectly, leaving humans to handle big decisions."
+        "laymanExplanation": "Para pemimpin harus melihat semua karyawan mereka dan mencari tahu pekerjaan siapa saja yang hanya melakukan tugas repetitif yang sama setiap hari. Itulah pekerjaan yang dapat dilakukan AI dengan sempurna, sehingga manusia dapat berfokus pada pengambilan keputusan besar."
       },
       {
         "id": "d2s1-t22",
-        "title": "How Satya Personally Learned AI",
+        "title": "Bagaimana Satya Mempelajari AI secara Pribadi",
         "timestamp": "01:54:50",
         "timestampSeconds": 6890,
-        "category": "Learning & Development",
+        "category": "Pembelajaran & Pengembangan",
         "keyTakeaways": [
-          "The best way to learn AI is to start with a real business problem you want to solve, like making money from social media.",
-          "Subscribing to premium AI tools and consuming endless YouTube videos on AI helps build intuition.",
-          "Iterative prompting\u2014having one AI critique and write prompts for another AI\u2014is a highly effective learning technique."
+          "Cara terbaik untuk mempelajari AI adalah dengan memulai dari masalah bisnis nyata yang ingin Anda selesaikan, seperti menghasilkan uang dari media sosial.",
+          "Berlangganan alat AI premium dan menonton video YouTube tentang AI tanpa henti dapat membantu membangun intuisi.",
+          "Pembuatan prompt iteratif\u2014menyuruh satu AI mengkritik dan menulis prompt untuk AI lainnya\u2014adalah teknik pembelajaran yang sangat efektif."
         ],
         "verbatimHighlight": "belum dikatakan belajar jika belum ada perubahan. Kita harus punya masalah yang kita pengin selesaiin... sampai saya dengerin YouTube.",
-        "laymanExplanation": "To learn AI, don't just read books. Try to solve a real problem you have, pay for the good AI tools, watch lots of YouTube tutorials, and make different AIs talk to each other to get better results."
+        "laymanExplanation": "Untuk mempelajari AI, jangan hanya membaca buku. Cobalah untuk menyelesaikan masalah nyata yang Anda miliki, bayarlah untuk alat AI yang bagus, tonton banyak tutorial di YouTube, dan buatlah berbagai AI saling berinteraksi untuk mendapatkan hasil yang lebih baik."
       },
       {
         "id": "d2s1-t23",
-        "title": "The Core Role of the CEO: Making the Hard Decisions",
+        "title": "Peran Inti CEO: Membuat Keputusan Sulit",
         "timestamp": "02:06:41",
         "timestampSeconds": 7601,
-        "category": "Leadership",
+        "category": "Kepemimpinan",
         "keyTakeaways": [
-          "AI transformation cannot happen from the middle down; it requires executive decisions to restructure teams.",
-          "Managers are often too empathetic or hesitant to lay off or completely change a team's KPIs.",
-          "Only a CEO can enforce drastic changes like turning an 11-person team into 11 separate AI-powered teams."
+          "Transformasi AI tidak dapat terjadi dari tingkat menengah ke bawah; dibutuhkan keputusan eksekutif untuk merestrukturisasi tim.",
+          "Manajer sering kali terlalu berempati atau ragu-ragu untuk memecat staf ataupun untuk benar-benar mengubah KPI tim.",
+          "Hanya seorang CEO yang dapat memaksakan perubahan drastis, seperti mengubah tim yang terdiri dari 11 orang menjadi 11 tim terpisah berbasis AI."
         ],
         "verbatimHighlight": "Yang paling penting keputusan CEO di sini itu teman-teman cuma dibutuhkan cuma satu hal keputusan dan itu yang enggak bisa dilakukan oleh manajer atau supervisor... Keputusan saya merubah satu tim 11 orang menjadi 11 tim",
-        "laymanExplanation": "Managers usually feel bad about firing people or changing their jobs drastically. That's why only the top boss (the CEO) can make the tough decisions needed to completely change how a company works with AI."
+        "laymanExplanation": "Manajer biasanya merasa tidak enak saat memecat orang atau mengubah pekerjaan mereka secara drastis. Itulah sebabnya hanya atasan tertinggi (CEO) yang dapat membuat keputusan sulit yang diperlukan untuk sepenuhnya mengubah cara perusahaan bekerja menggunakan AI."
       },
       {
         "id": "d2s1-t24",
-        "title": "Measuring the Financial Impact of AI",
+        "title": "Mengukur Dampak Finansial dari AI",
         "timestamp": "02:08:32",
         "timestampSeconds": 7712,
-        "category": "Business Metrics",
+        "category": "Metrik Bisnis",
         "keyTakeaways": [
-          "All AI implementations must be tied to either increasing revenue/profit or decreasing costs.",
-          "If an AI tool does not directly translate into saved money or higher income, it will fail to gain traction.",
-          "You cannot improve what you cannot measure; track exactly how much time or money AI is saving."
+          "Semua penerapan AI harus dikaitkan dengan peningkatan pendapatan/laba atau pengurangan biaya.",
+          "Jika sebuah alat AI tidak secara langsung menghasilkan penghematan uang atau peningkatan pendapatan, alat tersebut tidak akan banyak digunakan.",
+          "Anda tidak dapat memperbaiki apa yang tidak dapat Anda ukur; lacaklah dengan tepat seberapa banyak waktu atau uang yang berhasil dihemat oleh AI."
         ],
         "verbatimHighlight": "semua pengusaha itu golnya cuma dua... entah ningkatin omset atau ngurangin pengeluaran... ini menghemat berapa rupiah gitu atau ini menghasilkan berapa rupiah",
-        "laymanExplanation": "As a boss, you only care about two things: making more money or spending less. If an AI tool doesn't prove it can do one of those things with exact numbers, it's not worth using."
+        "laymanExplanation": "Sebagai seorang pemimpin, Anda hanya memedulikan dua hal: menghasilkan lebih banyak uang atau menekan pengeluaran. Jika alat AI tidak terbukti dapat melakukan salah satu dari hal tersebut dengan angka yang pasti, maka ia tidak layak digunakan."
       },
       {
         "id": "d2s1-t25",
-        "title": "Handling the Ethical Dilemma of Layoffs",
+        "title": "Menangani Dilema Etis tentang PHK",
         "timestamp": "02:15:36",
         "timestampSeconds": 8136,
-        "category": "Human Resources",
+        "category": "Sumber Daya Manusia",
         "keyTakeaways": [
-          "Avoid immediately firing people when implementing AI; it causes panic and resistance to the technology.",
-          "Instead, retrain and shift employees to roles requiring human touch, empathy, and relationship building.",
-          "Grow the business's revenue with AI so the existing workforce can be absorbed into new, higher-level tasks."
+          "Hindari langsung memecat karyawan saat menerapkan AI; karena hal ini menyebabkan kepanikan dan resistensi terhadap teknologi tersebut.",
+          "Sebaliknya, berikan pelatihan ulang dan alihkan karyawan ke berbagai peran yang membutuhkan sentuhan manusia, empati, dan pembangunan relasi.",
+          "Tingkatkan pendapatan bisnis menggunakan AI sehingga tenaga kerja yang ada dapat diserap ke dalam tugas-tugas baru dengan level yang lebih tinggi."
         ],
         "verbatimHighlight": "jangan kurangin orang dulu... bisa enggak restrukturisasi, bisa enggak? ... Gimana caranya manusia itu jadi manusia yang seutuhnya.",
-        "laymanExplanation": "Don't just fire everyone when you bring in AI. If people get scared of losing their jobs, they will sabotage the AI. Instead, use AI to grow the company and give people jobs that require a human touch."
+        "laymanExplanation": "Jangan langsung memecat semua orang saat Anda menghadirkan AI. Jika orang-orang takut kehilangan pekerjaan mereka, mereka akan mensabotase AI tersebut. Alih-alih demikian, gunakan AI untuk mengembangkan perusahaan dan berikanlah pekerjaan yang membutuhkan sentuhan manusia kepada mereka."
       },
       {
         "id": "d2s1-t26",
-        "title": "Creating an AI Operating System for a Small Test Team",
+        "title": "Membuat Sistem Operasi AI untuk Tim Penguji Kecil",
         "timestamp": "02:22:48",
         "timestampSeconds": 8568,
-        "category": "Organizational Change",
+        "category": "Perubahan Organisasi",
         "keyTakeaways": [
-          "Do not try to roll out AI to the entire company at once.",
-          "Create a small 'skunkworks' team (e.g., 5-10 people) to build and refine the new AI-native workflow.",
-          "Once this small team proves massively successful, copy-paste their workflow to the rest of the company."
+          "Jangan mencoba untuk meluncurkan AI ke seluruh perusahaan secara bersamaan.",
+          "Buatlah tim inovasi kecil (misalnya, 5-10 orang) untuk membangun dan menyempurnakan alur kerja baru yang benar-benar memanfaatkan AI secara maksimal.",
+          "Setelah tim kecil ini terbukti meraih kesuksesan yang masif, terapkanlah alur kerja mereka ke seluruh bagian perusahaan lainnya."
         ],
         "verbatimHighlight": "Bapak ber 200 orang, saran saya bikin operating system sederhana 10 orang atau 5 orang yang udah full native AI... Jadi operating system harus di tes ukur tes ukur harus diiterate, diperbaiki.",
-        "laymanExplanation": "Don't force your whole company to use AI on day one. Get a small group of 5 people to use it perfectly first. Once they show amazing results, everyone else will naturally want to copy them."
+        "laymanExplanation": "Jangan memaksa seluruh perusahaan Anda untuk menggunakan AI di hari pertama. Dapatkan sekelompok kecil beranggotakan 5 orang untuk menggunakannya dengan sempurna terlebih dahulu. Setelah mereka menunjukkan hasil yang luar biasa, semua orang secara alami akan ingin menirunya."
       },
       {
         "id": "d2s1-t27",
-        "title": "A/B Testing and 1% Continuous Improvements",
+        "title": "Pengujian A/B dan 1% Peningkatan Berkelanjutan",
         "timestamp": "02:26:19",
         "timestampSeconds": 8779,
-        "category": "Operational Efficiency",
+        "category": "Efisiensi Operasional",
         "keyTakeaways": [
-          "AI allows companies to run thousands of A/B tests daily to optimize processes.",
-          "Massive tech companies (like TikTok or BYD) rely heavily on continuous R&D and tiny iterative improvements.",
-          "Consistently improving processes by just 1% yields exponential growth over time."
+          "AI memungkinkan perusahaan untuk menjalankan ribuan pengujian A/B setiap hari guna mengoptimalkan berbagai proses.",
+          "Perusahaan-perusahaan teknologi masif (seperti TikTok atau BYD) sangat bergantung pada R&D yang berkelanjutan dan peningkatan kecil yang berulang.",
+          "Memperbaiki berbagai proses secara konsisten walau hanya sebesar 1% akan menghasilkan pertumbuhan eksponensial seiring waktu."
         ],
         "verbatimHighlight": "Saya ke kantor TikTok, kerjaan dia... EB testing EB testing... Tiap perbaikan 5% 1% itu kita rayakan. Tanpa terasa tahun demi tahun akan muncul yang namanya eksponensial",
-        "laymanExplanation": "AI lets you test hundreds of different ways of doing things every day to see what works best. If you keep making tiny 1% improvements every day, eventually your company grows exponentially."
+        "laymanExplanation": "AI memungkinkan Anda untuk menguji ratusan cara berbeda dalam melakukan sesuatu setiap harinya untuk mengetahui metode apa yang terbaik. Jika Anda terus membuat 1% perbaikan kecil setiap hari, pada akhirnya perusahaan Anda akan tumbuh secara eksponensial."
       },
       {
         "id": "d2s1-t28",
-        "title": "Building and Enforcing Corporate Culture",
+        "title": "Membangun dan Menegakkan Budaya Perusahaan",
         "timestamp": "02:36:51",
         "timestampSeconds": 9411,
-        "category": "Corporate Culture",
+        "category": "Budaya Perusahaan",
         "keyTakeaways": [
-          "Culture is not what's written on a wall; it is the daily behaviors practiced on the ground.",
-          "CEOs must enforce culture strictly, even using extreme rules (e.g., forcing English, strict punctuality) to set boundaries.",
-          "Be transparent about a tough culture so candidates know exactly what they are signing up for (like military training)."
+          "Budaya bukanlah apa yang tertulis di dinding; ia adalah perilaku sehari-hari yang dipraktikkan di lapangan.",
+          "Para CEO harus menegakkan budaya secara ketat, bahkan menggunakan aturan ekstrem (misalnya, mewajibkan bahasa Inggris, kedisiplinan waktu yang ketat) untuk menetapkan batasan.",
+          "Bersikaplah transparan tentang budaya kerja yang keras agar para pelamar tahu persis apa yang akan mereka hadapi (ibarat mengikuti pelatihan militer)."
         ],
         "verbatimHighlight": "bagi saya culture itu apa yang terjadi di lapangan. Bukan yang tertempel... memang culture paling gampang dipaksain sih...",
-        "laymanExplanation": "Company culture isn't a poster on the wall; it's how people actually behave every day. A boss has to set strict rules and enforce them, and tell new hires exactly how tough the workplace will be before they join."
+        "laymanExplanation": "Budaya perusahaan bukanlah sekadar poster di dinding; hal itu adalah bagaimana orang-orang benar-benar berperilaku setiap hari. Seorang pemimpin harus menetapkan aturan yang ketat serta menegakkannya, dan harus secara transparan memberi tahu karyawan baru tentang seberapa keras lingkungan kerja tersebut sebelum mereka bergabung."
       }
     ],
     "executiveResume": {
