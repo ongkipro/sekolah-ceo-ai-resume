@@ -388,8 +388,8 @@ export default function SingleSessionView({ sessionId }: Props) {
                     </h4>
                   </div>
 
-                  <div className={`p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 transition-transform duration-200 shrink-0 ${isActive ? 'text-blue-600' : ''}`}>
-                    {/* chevron removed */}
+                  <div className={`p-1.5 rounded-lg transition-transform duration-200 shrink-0 flex items-center justify-center ${isActive ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400' : 'bg-slate-100 dark:bg-slate-800 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Putar video di topik ini">
+                    <Play className="w-4 h-4" />
                   </div>
                 </button>
 
