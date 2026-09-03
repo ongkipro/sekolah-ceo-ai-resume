@@ -64,7 +64,7 @@ const subNavItems = pathwaySlugs.map(p => ({
 
         <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 text-xs font-mono text-slate-500 dark:text-slate-400 shrink-0">
           <div>Status:</div>
-          <div class="font-bold text-slate-900 dark:text-white">{pathway.recommendedModules.length} Modul Terpilih</div>
+          <div class="font-bold text-slate-900 dark:text-white">{pathway.keyFocus.length} Fokus Utama</div>
         </div>
       </div>
 
@@ -76,7 +76,7 @@ const subNavItems = pathwaySlugs.map(p => ({
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {pathway.recommendedModules.map((mod: any, idx: number) => (
+          {pathway.keyFocus.map((focus: any, idx: number) => (
             <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-4 hover:border-indigo-500/60 transition-all group shadow-sm">
               <div class="space-y-2">
                 <div class="flex items-center gap-2">
@@ -84,19 +84,17 @@ const subNavItems = pathwaySlugs.map(p => ({
                     0{idx + 1}
                   </span>
                   <h3 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
-                    {mod.name}
+                    {focus}
                   </h3>
                 </div>
-                <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-                  {mod.desc}
-                </p>
+                
               </div>
 
-              <div class="pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-xs font-bold text-indigo-600 dark:text-indigo-400">
-                <a href={mod.route} class="inline-flex items-center gap-1 hover:underline cursor-pointer">
-                  <span>Buka Modul Ini</span>
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <div class="pt-3 border-t border-slate-200/60 dark:border-slate-700/60 flex items-center justify-between text-[10px] font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">
+                <div class="flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-indigo-500" />
+                  <span>Fokus Utama</span>
+                </div>
               </div>
             </div>
           ))}
