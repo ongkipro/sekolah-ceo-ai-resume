@@ -82,7 +82,7 @@ const bottomNavItems = [
 ---
 
 <!doctype html>
-<html lang="id">
+<html lang="id" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -114,7 +114,7 @@ const bottomNavItems = [
       }
     </script>
   </head>
-  <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 transition-colors selection:bg-blue-600 selection:text-white font-sans antialiased">
+  <body class="min-h-screen overflow-x-hidden max-w-full flex flex-col bg-slate-50 dark:bg-[#090d16] text-slate-900 dark:text-slate-100 transition-colors selection:bg-blue-600 selection:text-white font-sans antialiased">
     <!-- Top Global Header -->
     <Header />
 
@@ -243,7 +243,7 @@ const bottomNavItems = [
     </div>
 
     <!-- Mobile Bottom Navigation Bar (Minimalist) -->
-    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-[#090d16]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-1.5">
+    <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-[#090d16]/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-3 py-1.5 pb-[calc(0.375rem+env(safe-area-inset-bottom))]">
       <div class="flex items-center justify-around max-w-md mx-auto">
         {bottomNavItems.map((item) => {
           const Icon = item.icon;
