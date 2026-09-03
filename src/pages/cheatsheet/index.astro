@@ -44,8 +44,8 @@ const subNavItems = sessionSlugs.map(s => ({
     <!-- Cheatsheet Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
       {cheatsheetsData.map((sheet) => {
-        const slugObj = sessionSlugs.find(s => s.id === sheet.sessionId);
-        const slugUrl = `/cheatsheet/${slugObj?.slug || sheet.sessionId}`;
+        const slugUrl = `/cheatsheet/${sheet.id}`;
+        
 
         return (
           <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-amber-500/60 dark:hover:border-amber-500/60 transition-all flex flex-col justify-between space-y-5 group">
@@ -53,21 +53,21 @@ const subNavItems = sessionSlugs.map(s => ({
               <!-- Top Metadata -->
               <div class="flex items-center justify-between gap-2">
                 <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
-                  {sheet.sessionTitle.split('-')[0].trim()}
+                  {sheet.category || sheet.format}
                 </span>
                 <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 font-mono">
                   <Clock className="w-3.5 h-3.5 text-amber-500" />
-                  <span>{sheet.readTime}</span>
+                  <span>3 Menit</span>
                 </div>
               </div>
 
               <!-- Title & Theme -->
               <div>
                 <h2 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
-                  {sheet.theme}
+                  {sheet.title}
                 </h2>
                 <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 font-medium">
-                  {sheet.sessionTitle.split('-')[1]?.trim() || sheet.sessionTitle}
+                  Oleh: {sheet.speaker}
                 </div>
               </div>
 
@@ -75,16 +75,16 @@ const subNavItems = sessionSlugs.map(s => ({
               <div class="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-900/40 text-xs text-slate-800 dark:text-slate-200 space-y-1">
                 <div class="flex items-center gap-1.5 text-emerald-800 dark:text-emerald-300 font-bold uppercase tracking-wider text-[10px]">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
-                  <span>Lakukan Besok Pagi:</span>
+                  <span>Intisari Konsep:</span>
                 </div>
                 <p class="line-clamp-2 font-medium leading-relaxed">
-                  {sheet.mustDoTomorrow}
+                  {sheet.content.substring(0, 120)}...
                 </p>
               </div>
 
               <!-- Metrics -->
               <div class="grid grid-cols-3 gap-2 pt-1 text-center">
-                {sheet.threeKeyNumbers.map((num) => (
+                {(sheet.threeKeyNumbers || []).map((num) => (
                   <div class="p-2 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/70 dark:border-slate-700/50">
                     <div class="text-xs font-mono font-black text-blue-600 dark:text-blue-400 truncate">{num.metric}</div>
                     <div class="text-[9px] text-slate-400 line-clamp-1 mt-0.5">{num.meaning}</div>
@@ -96,7 +96,7 @@ const subNavItems = sessionSlugs.map(s => ({
             <!-- Bottom Link -->
             <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
               <span class="text-xs text-slate-400 font-mono">
-                {sheet.sessionId.toUpperCase()}
+                {sheet.id.toUpperCase()}
               </span>
               <a
                 href={slugUrl}

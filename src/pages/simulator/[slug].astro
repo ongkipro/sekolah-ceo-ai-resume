@@ -16,17 +16,17 @@ export async function getStaticPaths() {
 }
 
 const { sim, slug } = Astro.props;
-const title = `Simulasi AI: ${sim.roleName} - CEO Decision Simulator`;
-const description = `Dekonstruksi tugas untuk ${sim.roleName} (${sim.department}).`;
-const shortRoleName = sim.roleName.split('&')[0].trim();
+const title = `Simulasi AI: ${sim.title} - CEO Decision Simulator`;
+const description = `Dekonstruksi tugas untuk ${sim.title} (${sim.role}).`;
+const shortRoleName = sim.title;
 
 const breadcrumbs = [
   { label: 'CEO Simulator', href: '/simulator' },
-  { label: shortRoleName }
+  { label: sim.title }
 ];
 
 const subNavItems = simulatorSlugs.map(s => ({
-  name: s.name.split('&')[0].trim(),
+  name: s.name,
   href: `/simulator/${s.slug}`
 }));
 ---

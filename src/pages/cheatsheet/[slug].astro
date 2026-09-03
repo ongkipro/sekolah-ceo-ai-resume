@@ -6,27 +6,26 @@ import cheatsheetsData from '../../data/cheatsheets.json';
 import { sessionSlugs } from '../../lib/slugs';
 
 export async function getStaticPaths() {
-  return sessionSlugs.map(({ slug, id }) => {
-    const sheet = cheatsheetsData.find((c) => c.sessionId === id);
+  return cheatsheetsData.map((sheet) => {
     return {
-      params: { slug },
-      props: { sheet, slug },
+      params: { slug: sheet.id },
+      props: { sheet, slug: sheet.id },
     };
   });
 }
 
 const { sheet, slug } = Astro.props;
-const title = `${sheet.theme} - Contekkan 3 Menit Sekolah CEO AI`;
-const description = `Contekkan 3 menit eksekutif untuk ${sheet.sessionTitle}: do tomorrow, fatal mistakes, 3 key metrics, dan master prompt.`;
+const title = `${sheet.title} - Contekkan Sekolah CEO AI`;
+const description = `Contekkan eksekutif: ${sheet.title}.`;
 
 const breadcrumbs = [
   { label: 'Contekkan 3 Menit', href: '/cheatsheet' },
-  { label: sheet.sessionTitle.split('-')[0].trim() }
+  { label: sheet.title }
 ];
 
-const subNavItems = sessionSlugs.map(s => ({
-  name: s.slug.replace('day-', 'Day ').replace('-sesi-', ' Sesi '),
-  href: `/cheatsheet/${s.slug}`
+const subNavItems = cheatsheetsData.map(c => ({
+  name: c.title,
+  href: `/cheatsheet/${c.id}`
 }));
 ---
 

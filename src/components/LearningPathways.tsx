@@ -32,7 +32,7 @@ export default function LearningPathways() {
               <div className="flex items-center justify-between">
                 <span className="text-2xl">{pathway.icon}</span>
                 <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500">
-                  {pathway.recommendedModules.length} Modul
+                  {pathway.keyFocus.length} Modul
                 </span>
               </div>
               <div>
@@ -60,7 +60,7 @@ export default function LearningPathways() {
               </h3>
             </div>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-2xl">
-              {currentPathway.summary}
+              {currentPathway.description}
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function LearningPathways() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {currentPathway.recommendedModules.map((mod, idx) => (
+            {currentPathway.keyFocus.map((focus, idx) => (
               <div
                 key={idx}
                 className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-3 hover:border-blue-500/50 transition-all group"

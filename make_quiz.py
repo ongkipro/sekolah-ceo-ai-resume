@@ -1,0 +1,189 @@
+import json
+
+quiz_data = [
+    {
+        "question": "Dalam rekayasa prompt, apa kepanjangan dari B.R.I.E.F yang diajarkan dalam masterclass?",
+        "category": "Rekayasa Prompt",
+        "options": [
+            "Background, Role, Inputs, Expectation, Finish Line",
+            "Base, Rules, Information, Execution, Format",
+            "Business, Resource, Instructions, Efficiency, Final",
+            "Briefing, Role, Insight, Evaluation, Finish Line"
+        ],
+        "correctIndex": 0,
+        "explanation": "B.R.I.E.F adalah singkatan dari Background, Role, Inputs, Expectation, dan Finish Line. Menugaskan 'Peran' spesifik memaksa AI mengakses pengetahuan ahli yang relevan."
+    },
+    {
+        "question": "Pelajaran apa yang bisa diambil dari investasi hampir Rp 100 miliar oleh KPMG untuk langganan AI bagi 276.000 karyawannya?",
+        "category": "Adopsi AI Perusahaan",
+        "options": [
+            "Hanya perusahaan besar yang mampu membeli alat AI.",
+            "Jika perusahaan besar dan konservatif agresif mengadopsi AI, bisnis kecil harusnya lebih lincah dan tidak ketinggalan.",
+            "Investasi AI tidak memberikan ROI yang jelas untuk karyawan.",
+            "AI hanya berguna untuk perusahaan di bidang akuntansi dan konsultasi."
+        ],
+        "correctIndex": 1,
+        "explanation": "Fakta bahwa raksasa yang konservatif dengan birokrasi berat secara agresif mengadopsi AI menunjukkan bahwa bisnis kecil yang lincah tidak boleh tertinggal."
+    },
+    {
+        "question": "Berdasarkan matriks potensi dan skor Role Fit dalam aplikasi asesmen AI, bagaimana interpretasi untuk nilai Role Fit di bawah 40?",
+        "category": "Analisis Data SDM",
+        "options": [
+            "Punya potensi tetapi perlu dipertimbangkan matang",
+            "Sangat cocok dan layak diprioritaskan",
+            "Sangat tidak disarankan",
+            "Perlu wawancara tambahan untuk konfirmasi"
+        ],
+        "correctIndex": 2,
+        "explanation": "Dalam matriks Role Fit yang dijelaskan, nilai < 40 dikategorikan sebagai sangat tidak disarankan, sedangkan > 70 sangat cocok."
+    },
+    {
+        "question": "Bagaimana dampak AI (seperti Claude Code) terhadap pengembangan aplikasi kompleks seperti kloning Trello?",
+        "category": "Perkembangan AI",
+        "options": [
+            "Masih membutuhkan waktu berbulan-bulan tanpa jaminan kualitas.",
+            "Biaya dan waktu pengembangan turun drastis, hingga aplikasi bisa dibuat dalam hitungan menit.",
+            "AI hanya dapat membuat desain antarmuka, tetapi tidak bisa menangani logika backend.",
+            "Membutuhkan spesifikasi perangkat keras tingkat tinggi di perusahaan."
+        ],
+        "correctIndex": 1,
+        "explanation": "Apa yang dulunya memakan waktu berbulan-bulan dan anggaran jutaan kini dapat diselesaikan oleh AI dalam hitungan menit dengan biaya mendekati nol."
+    },
+    {
+        "question": "Apa fungsi dari MCP (Model Context Protocol) pada AI seperti Claude?",
+        "category": "Fitur AI",
+        "options": [
+            "Meningkatkan resolusi gambar yang dihasilkan AI.",
+            "Menghubungkan AI langsung ke alat eksternal seperti Zoom, Todoist, atau basis data perusahaan.",
+            "Mempercepat waktu pelatihan model AI secara lokal.",
+            "Mendeteksi apakah sebuah teks merupakan hasil plagiarisme AI."
+        ],
+        "correctIndex": 1,
+        "explanation": "Claude menggunakan MCP untuk terhubung ke alat produktivitas maupun melakukan kueri langsung ke basis data perusahaan."
+    },
+    {
+        "question": "Bagaimana peran model visi AI dalam mempercepat analitik data bisnis?",
+        "category": "Analitik Data",
+        "options": [
+            "Hanya bisa mengenali wajah untuk keamanan.",
+            "Mengekstrak data kompleks dari tangkapan layar dan menghasilkan analisis lanjutan (seperti diagram) secara instan.",
+            "Memperbaiki kualitas gambar buram pada laporan keuangan.",
+            "Menerjemahkan teks dari bahasa asing di dalam gambar tanpa konteks bisnis."
+        ],
+        "correctIndex": 1,
+        "explanation": "Model visi AI menghilangkan kebutuhan entri data manual dengan mengekstrak data dari tangkapan layar secara instan, bahkan bisa menghasilkan format HTML seperti diagram Pareto."
+    },
+    {
+        "question": "Apa yang dimaksud dengan teknik 'Harnessing' pada model AI Agent?",
+        "category": "Teknologi Lanjutan",
+        "options": [
+            "Menggabungkan dua AI yang berbeda agar bekerja lebih cepat.",
+            "Teknik mengontrol model AI agar berjalan sesuai keinginan, karena akurasi dan kendali lebih penting dari sekadar kecepatan.",
+            "Mengurangi biaya langganan ChatGPT Enterprise.",
+            "Membuat AI bisa berbicara dengan suara manusia secara langsung."
+        ],
+        "correctIndex": 1,
+        "explanation": "Harnessing adalah tali kekang untuk model AI; teknik untuk mengontrol output agar sesuai ekspektasi tanpa mengharuskan komputasi yang terlalu cepat tapi tidak akurat."
+    },
+    {
+        "question": "Mengapa transformasi AI dalam perusahaan sangat bergantung pada keputusan seorang CEO?",
+        "category": "Kepemimpinan",
+        "options": [
+            "Hanya CEO yang memiliki akses ke akun premium AI.",
+            "Hanya CEO yang dapat memaksakan perubahan drastis dan merestrukturisasi tim, hal yang sering dihindari manajer level menengah karena empati.",
+            "CEO adalah satu-satunya orang yang memahami cara kerja algoritma AI.",
+            "Staf di level bawah tidak memiliki ide kreatif untuk memanfaatkan AI."
+        ],
+        "correctIndex": 1,
+        "explanation": "Transformasi AI menuntut perubahan besar, seperti merestrukturisasi KPI atau tim, yang hanya bisa dilakukan oleh eksekutif puncak; manajer tengah sering ragu mengambil keputusan sulit tersebut."
+    },
+    {
+        "question": "Dalam konteks operasional bisnis, apa keunggulan utama penggunaan AI untuk mendeteksi kecurangan (fraud)?",
+        "category": "Studi Kasus",
+        "options": [
+            "Mampu secara otomatis mendeteksi anomali dalam volume transaksi yang sangat tinggi, sesuatu yang tidak efisien dilakukan manual.",
+            "AI bisa memblokir rekening bank penipu tanpa konfirmasi.",
+            "AI akan menggantikan peran auditor secara keseluruhan tanpa perlu verifikasi manusia.",
+            "AI menghapus semua transaksi yang mencurigakan agar laporan terlihat bersih."
+        ],
+        "correctIndex": 0,
+        "explanation": "Pengecekan manual tradisional tidak efisien untuk volume transaksi tinggi, sedangkan AI dapat diinstruksikan untuk mendeteksi anomali secara instan."
+    },
+    {
+        "question": "Berdasarkan temuan di masterclass, apa kesalahan paling umum yang dilakukan pemilik bisnis saat mulai menggunakan AI?",
+        "category": "Realitas Adopsi Saat Ini",
+        "options": [
+            "Membeli perangkat keras yang terlalu mahal.",
+            "Terlalu cepat memecat karyawan sebelum sistem AI siap.",
+            "Hanya menggunakan AI untuk tugas sepele seperti mengobrol santai atau pertanyaan sederhana.",
+            "Memberikan akses AI sepenuhnya kepada pelanggan."
+        ],
+        "correctIndex": 2,
+        "explanation": "Survei menunjukkan banyak pengguna, bahkan pemilik bisnis, hanya menggunakan AI untuk tugas dasar atau obrolan ringan dengan investasi yang masih sangat rendah."
+    },
+    {
+        "question": "Bagaimana pendekatan umum terhadap hak cipta untuk aset gambar yang dihasilkan oleh AI (seperti dari Midjourney atau HeyGen)?",
+        "category": "Etika & Hukum",
+        "options": [
+            "Semua gambar AI tidak boleh digunakan secara komersial dalam keadaan apapun.",
+            "Berlangganan platform AI biasanya memberikan hak komersial penggunaannya, namun secara umum hukum melindungi wajah asli manusia.",
+            "Pengguna memegang hak cipta eksklusif dan bisa menuntut siapapun yang menggunakan gambar AI tersebut.",
+            "Semua wajah manusia hasil AI harus didaftarkan ke lembaga terkait sebelum dipakai."
+        ],
+        "correctIndex": 1,
+        "explanation": "Wajah AI acak umumnya milik internet (publik), namun berlangganan alat premium memberikan izin penggunaan komersial. Tantangan utamanya adalah kepercayaan audiens, bukan sekadar legalitas."
+    },
+    {
+        "question": "Aplikasi rekrutmen berbasis AI seperti 'Talent Blueprint' menawarkan manfaat utama apa bagi tim HR?",
+        "category": "Inovasi Produk",
+        "options": [
+            "Mewawancarai kandidat melalui panggilan telepon secara live tanpa campur tangan manusia.",
+            "Membayarkan gaji kandidat secara otomatis setelah lolos tes.",
+            "Mempersingkat waktu screening dengan memberikan laporan Role Fit, kelebihan, serta kelemahan kandidat secara otomatis.",
+            "Mendeteksi kebohongan kandidat dengan mengukur detak jantung dari video."
+        ],
+        "correctIndex": 2,
+        "explanation": "Aplikasi ini memproses asesmen untuk memberikan laporan komprehensif terkait Role Fit dan karakteristik kandidat secara otomatis tanpa pengecekan manual."
+    },
+    {
+        "question": "Bagaimana Satya mendanai bisnisnya di tahap awal sebelum berkembang pesat?",
+        "category": "Pengalaman Bisnis",
+        "options": [
+            "Meminjam uang dengan bunga tinggi dari bank.",
+            "Mencari pendanaan miliaran rupiah dari Venture Capital.",
+            "Menggunakan uang pelanggan lewat sistem prapemesanan (pre-order) atau pembayaran di muka.",
+            "Menjual aset pribadi secara besar-besaran."
+        ],
+        "correctIndex": 2,
+        "explanation": "Beliau membangun bisnis menggunakan uang pelanggan (pre-order) alih-alih mengambil pinjaman bank, didukung oleh strategi pemasaran yang cerdas."
+    },
+    {
+        "question": "Faktor utama apa yang mendorong pertumbuhan bisnis awal Satya secara eksponensial?",
+        "category": "Pengalaman Bisnis",
+        "options": [
+            "Bermitra dengan influencer ternama tanpa biaya.",
+            "Kombinasi keterampilan negosiasi dan pemasaran yang kuat.",
+            "Membuat sistem AI sendiri dari nol.",
+            "Fokus menjual produk jauh di bawah harga pasar."
+        ],
+        "correctIndex": 1,
+        "explanation": "Kombinasi keterampilan negosiasi yang hebat dengan sistem pemasaran yang kuat menjadi pendorong utama bisnisnya sejak usia dini."
+    },
+    {
+        "question": "Dalam presentasi teknologinya, bagaimana Natali Ardianto mengombinasikan penggunaan AI untuk produktivitas maksimal?",
+        "category": "Pengantar & Preferensi Alat",
+        "options": [
+            "ChatGPT untuk semua kebutuhan, mulai dari coding hingga presentasi.",
+            "Gemini untuk presentasi visual, dan Claude 100% untuk coding serta analisis bisnis mendalam.",
+            "Midjourney untuk coding dan ChatGPT untuk desain gambar.",
+            "Claude khusus untuk menulis email dan Gemini untuk memprogram aplikasi."
+        ],
+        "correctIndex": 1,
+        "explanation": "Natali lebih memilih Gemini untuk merancang presentasi yang menarik, namun mengandalkan Claude sepenuhnya (100%) untuk keperluan coding dan analisis sistem yang mendalam."
+    }
+]
+
+with open('src/data/quiz.json', 'w', encoding='utf-8') as f:
+    json.dump(quiz_data, f, ensure_ascii=False, indent=2)
+
+print("Saved quiz.json successfully!")

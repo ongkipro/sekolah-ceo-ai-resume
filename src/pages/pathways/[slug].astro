@@ -21,7 +21,7 @@ const prevPathway = currentIndex > 0 ? pathwaySlugs[currentIndex - 1] : null;
 const nextPathway = currentIndex < pathwaySlugs.length - 1 ? pathwaySlugs[currentIndex + 1] : null;
 
 const title = `${pathway.title} - Sekolah CEO AI`;
-const description = pathway.summary;
+const description = pathway.description;
 
 const breadcrumbs = [
   { label: 'Jalur Peran', href: '/pathways' },
@@ -58,7 +58,7 @@ const subNavItems = pathwaySlugs.map(p => ({
             {pathway.title}
           </h1>
           <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
-            {pathway.summary}
+            {pathway.description}
           </p>
         </div>
 

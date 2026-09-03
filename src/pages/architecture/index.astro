@@ -87,7 +87,7 @@ const subNavItems = architectureSlugs.map(a => ({
             <!-- Bottom Link -->
             <div class="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
               <span class="text-xs text-slate-400 font-mono">
-                {d.slug.toUpperCase()}
+                { (slugObj?.slug || d.id).toUpperCase() }
               </span>
               <a
                 href={slugUrl}
