@@ -6,31 +6,39 @@ export const sessionSlugs = [
 ];
 
 export const pathwaySlugs = [
-  { slug: 'ceo', role: 'CEO & Business Owner', name: 'Jalur CEO & Business Owner' },
-  { slug: 'cfo', role: 'CFO & Finance Director', name: 'Jalur CFO & Finance Director' },
-  { slug: 'cmo', role: 'CMO & Growth Lead', name: 'Jalur CMO & Growth Lead' },
-  { slug: 'coo', role: 'COO & Operations Lead', name: 'Jalur COO & Operations Lead' },
+  { slug: "jalur-ceo-kepemimpinan-ai-efisiensi-90", role: "CEO & Business Owner", name: "Jalur CEO: Kepemimpinan AI & Efisiensi 90%" },
+  { slug: "jalur-cfo-audit-forensik-dynamic-pricing", role: "CFO & Finance Director", name: "Jalur CFO: Audit Forensik & Dynamic Pricing" },
+  { slug: "jalur-cmo-mesin-akuisisi-0-cac-avatar-video", role: "CMO & Growth Lead", name: "Jalur CMO: Mesin Akuisisi 0-CAC & Avatar Video" },
+  { slug: "jalur-coo-otomasi-supply-chain-rapid-prototyping", role: "COO & Operations Lead", name: "Jalur COO: Otomasi Supply Chain & Rapid Prototyping" },
+  { slug: "jalur-chro-rekrutmen-presisi-manajemen-talenta-ai", role: "CHRO & HR Director", name: "Jalur CHRO: Rekrutmen Presisi & Manajemen Talenta AI" },
 ];
 
 export const architectureSlugs = [
-  { slug: 'growth-funnel', id: 'growth-funnel', name: 'Zero-CAC Growth Funnel' },
-  { slug: 'koran-perusahaan', id: 'koran-perusahaan', name: 'Koran Perusahaan Jam 07.00' },
-  { slug: 'desktop-command', id: 'desktop-command', name: 'Local Desktop Command Center' },
-  { slug: 'auto-po', id: 'auto-po', name: 'Auto-PO Purchasing Engine' },
+  { slug: "arsitektur-company-brain-erp-berbasis-ai", id: "diag-1", name: "Arsitektur Company Brain ERP Berbasis AI" },
+  { slug: "alur-kerja-auto-po-purchase-order-system", id: "diag-2", name: "Alur Kerja Auto PO (Purchase Order) System" },
+  { slug: "sistem-trafik-afiliasi-otomatis-automated-affiliate-traffic", id: "diag-3", name: "Sistem Trafik Afiliasi Otomatis (Automated Affiliate Traffic)" },
+  { slug: "infrastruktur-desktop-command-center", id: "diag-4", name: "Infrastruktur Desktop Command Center" },
+  { slug: "penanganan-pelanggan-berbasis-ai-customer-support", id: "diag-5", name: "Penanganan Pelanggan Berbasis AI (Customer Support)" },
+  { slug: "alur-generative-engine-optimization-geo", id: "diag-6", name: "Alur Generative Engine Optimization (GEO)" },
 ];
 
 export const simulatorSlugs = [
-  { slug: 'finance-audit', id: 'finance-audit', name: 'Finance & Internal Auditor' },
-  { slug: 'marketing-content', id: 'marketing-content', name: 'Content Creator & Growth Lead' },
-  { slug: 'sales-ops', id: 'sales-ops', name: 'Sales Representative & CS' },
-  { slug: 'procurement-ops', id: 'procurement-ops', name: 'Purchasing & Inventory Officer' },
+  { slug: "restrukturisasi-tim-marketing-berbasis-ai", id: "sim-hr-01", name: "Restrukturisasi Tim Marketing Berbasis AI" },
+  { slug: "skalabilitas-kampanye-call-to-value-dan-geo", id: "sim-mkt-02", name: "Skalabilitas Kampanye 'Call to Value' dan GEO" },
+  { slug: "pembangunan-erp-internal-zero-code", id: "sim-tech-03", name: "Pembangunan ERP Internal Zero-Code" },
+  { slug: "krisis-halusinasi-data-kebocoran-nda", id: "sim-risk-04", name: "Krisis Halusinasi Data & Kebocoran NDA" },
+  { slug: "prediksi-arus-kas-dan-manajemen-inventaris", id: "sim-fin-05", name: "Prediksi Arus Kas dan Manajemen Inventaris" },
+  { slug: "adopsi-ai-skala-enterprise-manajemen-perubahan", id: "sim-ceo-06", name: "Adopsi AI Skala Enterprise (Manajemen Perubahan)" },
 ];
 
 export const promptSlugs = [
-  { slug: 'brief-audit', id: 'p-brief-audit', name: 'Internal Audit & Fraud Memo' },
-  { slug: 'run-my-day', id: 'p-run-my-day', name: 'Run My Day Briefing' },
-  { slug: 'vibe-coding', id: 'p-vibe-coding', name: 'Vibe Coding Software Spec' },
-  { slug: 'hr-screening', id: 'p-hr-screening', name: 'Smart HR Lie Scale Assessment' },
-  { slug: 'pareto-analysis', id: 'p-pareto-analysis', name: 'Instant Pareto Analysis' },
-  { slug: 'humanize-ai', id: 'p-humanize-ai', name: 'Skill: Humanize AI Writing' },
+  { slug: "analitik-deteksi-fraud-anomali-keuangan", id: "p-001", name: "Analitik Deteksi Fraud & Anomali Keuangan" },
+  { slug: "evaluasi-dan-screening-kandidat-hr", id: "p-002", name: "Evaluasi dan Screening Kandidat HR" },
+  { slug: "spesifikasi-prototipe-zero-code-lovable-claude", id: "p-003", name: "Spesifikasi Prototipe Zero-Code (Lovable/Claude)" },
+  { slug: "generative-engine-optimization-geo-seo-ai", id: "p-004", name: "Generative Engine Optimization (GEO) & SEO AI" },
+  { slug: "peramalan-arus-kas-berdasarkan-historis", id: "p-005", name: "Peramalan Arus Kas Berdasarkan Historis" },
+  { slug: "audit-bias-halusinasi-ai", id: "p-006", name: "Audit Bias & Halusinasi AI" },
+  { slug: "desain-arsitektur-agentic-ai-untuk-otomatisasi-perusahaan", id: "p-007", name: "Desain Arsitektur Agentic AI untuk Otomatisasi Perusahaan" },
+  { slug: "strategi-viralitas-sosmed-call-to-value", id: "p-008", name: "Strategi Viralitas Sosmed & Call-to-Value" },
+  { slug: "ekstraksi-insight-rapat-eksekutif-meeting-to-action", id: "p-009", name: "Ekstraksi Insight Rapat Eksekutif (Meeting-to-Action)" },
 ];
