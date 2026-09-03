@@ -1,131 +1,242 @@
 [
   {
-    "name": "Claude Desktop / Claude Code",
-    "category": "Executive Intelligence & Vibe Coding",
-    "pricing": "$20/user/mo",
-    "difficulty": "Easy",
+    "name": "Claude",
+    "category": "Chatbot & LLM",
+    "pricing": "Freemium / Premium",
+    "difficulty": "Menengah",
     "impactScore": 5,
     "url": "https://claude.ai",
-    "speaker": "Natali Ardianto / Satya Pradana",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Audit internal keuangan & deteksi fraud",
-      "Pembangunan instant web apps / Vibe Coding",
-      "Review kontrak hukum & penyusunan memo .docx",
-      "Desktop Command Center via Option+Space"
+      "Pembuatan prototipe aplikasi",
+      "Analisis data lanjutan dari tangkapan layar",
+      "Penulisan strategi pemasaran dan bisnis"
     ],
-    "summary": "Pilihan utama C-Level untuk pemrosesan dokumen panjang (Tier 5 Opus/Fable) dan integrasi folder file system fisik.",
-    "starterPrompt": "Anda adalah Senior Forensic Auditor. Analisa dokumen laporan keuangan terlampir. Identifikasi 3 pos pengeluaran terbesar yang mengalami kenaikan tidak wajar."
+    "summary": "Claude adalah asisten AI tingkat lanjut dari Anthropic yang sangat mumpuni dalam memproses teks panjang, menganalisis tangkapan layar, dan membantu pembuatan aplikasi internal tanpa perlu pemrograman rumit.",
+    "starterPrompt": "Bantu saya menganalisis tren dari data tangkapan layar ini dan buatkan ringkasan eksekutif beserta rekomendasi langkah selanjutnya untuk bisnis saya."
   },
   {
-    "name": "Lovable.dev",
-    "category": "Rapid Prototyping",
+    "name": "ChatGPT",
+    "category": "Chatbot & LLM",
     "pricing": "Freemium",
-    "difficulty": "Medium",
+    "difficulty": "Pemula",
+    "impactScore": 5,
+    "url": "https://chatgpt.com",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Curah pendapat ide bisnis",
+      "Drafting konten media sosial",
+      "Penyempurnaan instruksi atau prompt"
+    ],
+    "summary": "LLM dari OpenAI yang mempopulerkan AI generatif untuk publik. Ideal untuk tugas sehari-hari, brainstorming awal, dan perumusan strategi dasar bisnis bagi pengguna pemula maupun ahli.",
+    "starterPrompt": "Bertindaklah sebagai ahli strategi pemasaran. Buatkan saya kerangka kampanye 30 hari untuk peluncuran produk baru dengan pendekatan Call to Value."
+  },
+  {
+    "name": "Suno",
+    "category": "Audio & Musik",
+    "pricing": "Freemium",
+    "difficulty": "Pemula",
+    "impactScore": 4,
+    "url": "https://suno.com",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Pembuatan jingle merek",
+      "Rekayasa sosial dengan musik yang menarik",
+      "Produksi konten audio pemasaran"
+    ],
+    "summary": "Platform AI generatif yang mampu mengubah ide teks dasar atau lirik sederhana menjadi lagu dan jingle berkualitas studio, sangat berguna untuk kampanye iklan kreatif.",
+    "starterPrompt": "Buatkan lagu pop bersemangat berdurasi 30 detik tentang pentingnya efisiensi AI di tempat kerja untuk digunakan sebagai jingle media sosial."
+  },
+  {
+    "name": "Lovable",
+    "category": "Pengembangan Tanpa Kode (No-Code)",
+    "pricing": "Premium",
+    "difficulty": "Menengah",
     "impactScore": 5,
     "url": "https://lovable.dev",
-    "speaker": "Mas Anjas Maradita",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Pembuatan portal web fungsional",
-      "Prototipe Dashboard B2B / Warehouse Management",
-      "Sistem Internal tanpa vendor software"
+      "Membangun prototipe aplikasi web",
+      "Pembuatan CRM internal",
+      "Otomatisasi antarmuka untuk manajemen data"
     ],
-    "summary": "Platform no-code to full-code bertenaga AI untuk membangun aplikasi berbasis web dalam waktu 15 menit menggunakan instruksi bahasa alami.",
-    "starterPrompt": "Build a modern Warehouse Management System web application with Inventory tracking, QC dashboard, and driver upload proof."
+    "summary": "Alat AI no-code (tanpa kode) yang memungkinkan pendiri atau manajer non-teknis membangun antarmuka web, dasbor internal, dan sistem fungsional hanya melalui instruksi percakapan.",
+    "starterPrompt": "Buatkan dasbor manajemen pelanggan sederhana dengan tabel yang berisi nama, email, dan status prospek, lengkap dengan tombol untuk memperbarui status."
   },
   {
-    "name": "Google NotebookLM",
-    "category": "Knowledge Management",
-    "pricing": "Free",
-    "difficulty": "Easy",
+    "name": "NotebookLM",
+    "category": "Produktivitas & Sintesis Data",
+    "pricing": "Gratis",
+    "difficulty": "Pemula",
     "impactScore": 4,
     "url": "https://notebooklm.google.com",
-    "speaker": "Mas Anjas Maradita",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Sintesis ratusan transkrip PDF/rapat",
-      "Pembuatan Audio Overview (Podcast AI)",
-      "Basis data tanya-jawab internal anti-halusinasi"
+      "Rangkuman notulen rapat panjang",
+      "Pembuatan podcast dari dokumen tertulis (Audio Overview)",
+      "Analisis dan ekstraksi wawasan dari PDF"
     ],
-    "summary": "Tools RAG (Retrieval-Augmented Generation) dari Google yang hanya menjawab berdasarkan referensi dokumen spesifik yang diunggah.",
-    "starterPrompt": "Buatkan ringkasan 3 poin paling krusial dari notula rapat direksi ini dan kembangkan menjadi naskah podcast diskusi 5 menit."
+    "summary": "Alat dari Google yang dapat mengubah tumpukan dokumen panjang, transkrip rapat, atau PDF menjadi rangkuman interaktif atau bahkan episode podcast audio yang menyenangkan (Audio Overview).",
+    "starterPrompt": "Rangkum dokumen pedoman operasional yang saya unggah ini menjadi 5 poin kunci tindakan yang harus dipahami oleh setiap karyawan baru."
   },
   {
     "name": "ManyChat",
-    "category": "Marketing Automation",
-    "pricing": "$15/mo",
-    "difficulty": "Medium",
-    "impactScore": 5,
+    "category": "Otomatisasi Pemasaran",
+    "pricing": "Freemium",
+    "difficulty": "Menengah",
+    "impactScore": 4,
     "url": "https://manychat.com",
-    "speaker": "Mas Anjas / Satya Pradana",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Automasi balas komentar Instagram ke DM",
-      "Zero-CAC Affiliate Marketing (Plaud Note)",
-      "Call to Value (CTV) engine"
+      "Otomatisasi balasan komentar di media sosial",
+      "Pengiriman Direct Message (DM) secara instan",
+      "Pengumpulan prospek dan konversi dari platform sosial"
     ],
-    "summary": "Mesin di balik konversi organik masif yang membalas ribuan interaksi 'MAU' di Instagram Reels dan mengirimkan link diskon secara instan.",
-    "starterPrompt": "N/A (Visual Builder)"
+    "summary": "Platform otomatisasi interaksi media sosial yang mampu mengubah ratusan komentar menjadi DM otomatis, membantu melipatgandakan interaksi (engagement) dan mengumpulkan prospek tanpa campur tangan manusia.",
+    "starterPrompt": "Instruksi pengaturan (internal): Jika ada pengguna yang berkomentar kata 'MAU', kirimkan DM yang berisi tautan unduhan katalog produk diskon secara otomatis."
   },
   {
-    "name": "Suno AI",
-    "category": "Generative Audio",
-    "pricing": "Freemium / Pro",
-    "difficulty": "Easy",
-    "impactScore": 4,
-    "url": "https://suno.com",
-    "speaker": "Mas Anjas / Satya Pradana",
-    "useCases": [
-      "Pembuatan jingle komersial brand",
-      "Audio relaksasi / murottal otomatis",
-      "Social engineering lewat lagu populer"
-    ],
-    "summary": "Mampu mengubah input vokal acapella mentah atau teks lirik menjadi lagu berkualitas studio lengkap dengan aransemen alat musik.",
-    "starterPrompt": "[Style]: Castle Fairy Tale Indonesian Pop, Female Vocals, Sweet, Whimsical\\n[Lyrics]: Cahaya kenyamanan adalah hal utama..."
-  },
-  {
-    "name": "N8N",
-    "category": "Workflow Automation",
-    "pricing": "Freemium / Self-Hosted",
-    "difficulty": "Hard",
+    "name": "HeyGen",
+    "category": "Video & Avatar AI",
+    "pricing": "Premium",
+    "difficulty": "Menengah",
     "impactScore": 5,
-    "url": "https://n8n.io",
-    "speaker": "Mas Sammy (Connext Lab)",
+    "url": "https://heygen.com",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Integrasi API lintas platform",
-      "Pembatasan token (Harnessing Agent)",
-      "Scraping data dan auto-posting otomatis"
+      "Pembuatan avatar video untuk presentasi",
+      "Video pelatihan karyawan atau promosi",
+      "Skala produksi video tanpa rekaman ulang"
     ],
-    "summary": "Engine otomatisasi tingkat lanjut yang memungkinkan pengaturan logika khusus (JavaScript limiter) untuk menghemat biaya token AI dalam skala enterprise.",
-    "starterPrompt": "N/A (Node-based)"
+    "summary": "Alat AI generatif yang mampu memproduksi video avatar manusia yang sangat realistis (lengkap dengan suara hasil kloning) hanya bermodalkan teks, menghemat biaya studio dan waktu pengambilan gambar.",
+    "starterPrompt": "Tolong terjemahkan naskah promosi 30 detik berikut dan buat agar avatar saya bisa mengucapkannya dengan intonasi yang antusias dan meyakinkan."
   },
   {
-    "name": "Apify",
-    "category": "Data Scraping Engine",
-    "pricing": "Pay per execution",
-    "difficulty": "Medium",
-    "impactScore": 4,
-    "url": "https://apify.com",
-    "speaker": "Pak Natali Ardianto",
-    "useCases": [
-      "Scraping kompetitor di Instagram Reels",
-      "Ekstraksi ulasan Google Maps",
-      "Integrasi via Claude MCP"
-    ],
-    "summary": "Platform otomatisasi ekstraksi data (web scraping) yang krusial untuk reverse-engineering algoritma kompetitor di media sosial.",
-    "starterPrompt": "N/A"
-  },
-  {
-    "name": "Company Brain / Agentku",
-    "category": "Proprietary Internal ERP",
-    "pricing": "Custom",
-    "difficulty": "Hard",
+    "name": "Cursor",
+    "category": "Pengembangan Kode (Coding)",
+    "pricing": "Freemium",
+    "difficulty": "Lanjut",
     "impactScore": 5,
-    "url": "#",
-    "speaker": "Satya Pradana / Ibnu / Ugo",
+    "url": "https://cursor.sh",
+    "speaker": "Anjas Maradita",
     "useCases": [
-      "Rekonsiliasi Bank Otomatis",
-      "Dashboard HR, Finance, Stok terpadu",
-      "CEO Clone Behavior Orchestration"
+      "Pembuatan kode otomatis (autocomplete)",
+      "Debugging error program dengan cepat",
+      "Refactoring dan pemahaman basis kode proyek"
     ],
-    "summary": "Ekosistem AI kustom yang menggabungkan seluruh titik data perusahaan menjadi satu 'otak sentral' yang bisa diajak diskusi strategis oleh eksekutif.",
-    "starterPrompt": "Kompilasikan posisi kas hari ini, data absensi fingerprint, dan status order stok dari Gudang. Buatkan Executive Brief."
+    "summary": "Editor kode cerdas berbasis AI yang menjadi pilihan populer para pengembang modern. Cursor dapat menulis fungsi, memperbaiki bug, dan berdiskusi tentang basis kode secara komprehensif, mengurangi beban kerja manual.",
+    "starterPrompt": "Jelaskan fungsi komponen React ini dan optimalkan agar bisa merender lebih cepat serta terhindar dari re-render yang tidak perlu."
+  },
+  {
+    "name": "Midjourney",
+    "category": "Desain & Pembuatan Gambar",
+    "pricing": "Premium",
+    "difficulty": "Menengah",
+    "impactScore": 4,
+    "url": "https://midjourney.com",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Pembuatan ilustrasi dan aset visual",
+      "Materi kampanye dan iklan digital",
+      "Moodboard visual untuk prafase desain"
+    ],
+    "summary": "Sistem AI pembuat gambar yang diakses melalui Discord. Sangat diandalkan oleh tim pemasaran dan kreatif untuk menghasilkan karya seni visual beresolusi tinggi dengan berbagai gaya yang spesifik.",
+    "starterPrompt": "/imagine prompt: A futuristic minimalist office workspace with green plants and natural lighting, soft cinematic lighting, ultra detailed 8k --ar 16:9"
+  },
+  {
+    "name": "Wavo",
+    "category": "Audio & Musik",
+    "pricing": "Freemium",
+    "difficulty": "Pemula",
+    "impactScore": 3,
+    "url": "https://wavo.me",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Promosi musik",
+      "Analisis audiens audio",
+      "Kampanye musikal berbasis data"
+    ],
+    "summary": "Platform AI yang lebih dikhususkan pada intelijen pemasaran musik, membantu mencocokkan kreativitas audio dengan audiens yang tepat di berbagai saluran digital.",
+    "starterPrompt": "Tolong berikan rekomendasi segmentasi audiens terbaik untuk mempromosikan trek lo-fi ini di kalangan penggemar produktivitas."
+  },
+  {
+    "name": "Lumio",
+    "category": "Edukasi & Interaksi",
+    "pricing": "Freemium",
+    "difficulty": "Pemula",
+    "impactScore": 3,
+    "url": "https://lum.io",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Presentasi interaktif untuk sesi pelatihan",
+      "Penilaian dan kuis langsung (live quiz)",
+      "Peningkatan interaksi tim jarak jauh"
+    ],
+    "summary": "Alat presentasi interaktif yang diperkuat oleh teknologi kecerdasan, memungkinkan pemateri menyulap presentasi biasa menjadi sesi berbasis kuis dan game interaktif yang melibatkan audiens secara aktif.",
+    "starterPrompt": "Ubah slide PDF materi onboarding ini menjadi 3 modul kuis interaktif yang bisa dikerjakan langsung oleh audiens dari ponsel mereka."
+  },
+  {
+    "name": "Gemini",
+    "category": "Ekosistem AI & Pencarian",
+    "pricing": "Freemium",
+    "difficulty": "Pemula",
+    "impactScore": 4,
+    "url": "https://gemini.google.com",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Pencarian informasi terkini dari web",
+      "Integrasi dengan Google Workspace (Docs, Sheets)",
+      "Analisis perbandingan pesaing secara real-time"
+    ],
+    "summary": "LLM unggulan Google yang memiliki keunggulan integrasi mulus dengan ekosistem Google Workspace serta akses pencarian web real-time yang dapat diandalkan untuk riset bisnis.",
+    "starterPrompt": "Cari informasi terbaru tentang tren adopsi AI di sektor ritel Asia Tenggara tahun ini dan rangkum dalam 3 paragraf singkat."
+  },
+  {
+    "name": "Perplexity AI",
+    "category": "Riset & Pencarian",
+    "pricing": "Freemium",
+    "difficulty": "Pemula",
+    "impactScore": 4,
+    "url": "https://perplexity.ai",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Riset data kompetitor yang komprehensif",
+      "Analisis berita terkini dengan sumber terpercaya",
+      "Eksplorasi strategi GEO (Generative Engine Optimization)"
+    ],
+    "summary": "Mesin pencari pintar yang berbasis AI (Answer Engine). Memberikan jawaban mendalam yang dilengkapi dengan kutipan sumber yang jelas, sangat berguna untuk meriset industri dan persaingan.",
+    "starterPrompt": "Jelaskan langkah demi langkah bagaimana sebuah UMKM di sektor F&B dapat memanfaatkan AI untuk mengurangi biaya operasional, dan berikan sumber akademis atau studi kasus terkait."
+  },
+  {
+    "name": "Notion AI",
+    "category": "Manajemen Pengetahuan",
+    "pricing": "Premium",
+    "difficulty": "Pemula",
+    "impactScore": 4,
+    "url": "https://notion.so",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Penulisan ulang dokumen SOP",
+      "Brainstorming langsung di dalam kanvas catatan",
+      "Pembuatan tabel matriks dari catatan lepas"
+    ],
+    "summary": "Integrasi AI ke dalam ekosistem Notion. Memungkinkan tim untuk langsung meringkas catatan panjang, menerjemahkan dokumen, atau mengubah catatan rapat yang berantakan menjadi tugas (action items) rapi.",
+    "starterPrompt": "Tolong rapikan catatan rapat yang acak-acakan di halaman ini menjadi struktur bullet point dan tabel action plan dengan penanggung jawabnya."
+  },
+  {
+    "name": "v0",
+    "category": "Pengembangan UI/UX",
+    "pricing": "Freemium",
+    "difficulty": "Menengah",
+    "impactScore": 5,
+    "url": "https://v0.dev",
+    "speaker": "Anjas Maradita",
+    "useCases": [
+      "Pembuatan komponen UI berbasis Tailwind",
+      "Pembuatan prototipe halaman pendaratan (landing page)",
+      "Eksperimen tata letak desain UI"
+    ],
+    "summary": "Alat AI dari Vercel untuk membangun antarmuka pengguna (UI) melalui prompt teks. Sangat ampuh untuk mempercepat pekerjaan desainer UI/UX maupun pengembang dalam menciptakan komponen visual secara instan.",
+    "starterPrompt": "Buatkan tampilan dashboard pengguna yang modern dengan mode gelap, sidebar di kiri, tabel analitik di tengah, dan grafik pendapatan bulanan di pojok kanan atas menggunakan Tailwind CSS."
   }
 ]

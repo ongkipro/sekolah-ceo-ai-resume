@@ -1,91 +1,99 @@
-{
-  "phases": [
-    {
-      "phase": 1,
-      "title": "Fase 1: Hari 1\u201330 (Personal CEO Intelligence & Executive Hotkeys)",
-      "subtitle": "Bangun kebiasaan kerja eksekutif berbasis AI & eliminasi friction kognitif.",
-      "items": [
-        {
-          "id": "r1-1",
-          "task": "Install Claude Desktop & Pasang Shortcut Global (Option+Space di Mac / Ctrl+Alt+Space di Windows)",
-          "detail": "Hubungkan folder Google Drive lokal ke Claude Projects agar file kerja tersinkron fisik.",
-          "speaker": "Pak Natali"
-        },
-        {
-          "id": "r1-2",
-          "task": "Terapkan Standar Prompt B.R.I.E.F. di Seluruh Instruksi Harian",
-          "detail": "Wajibkan konteks Background, Role, Instructions, Examples/Constraints, dan Format pada setiap prompt.",
-          "speaker": "Pak Natali"
-        },
-        {
-          "id": "r1-3",
-          "task": "Gunakan Google NotebookLM untuk Mencerna Laporan Audit & Tender Ratusan Halaman",
-          "detail": "Ubah dokumen tebal menjadi Audio Overview podcast untuk didengarkan saat bermobilitas.",
-          "speaker": "Mas Anjas"
-        },
-        {
-          "id": "r1-4",
-          "task": "Dekonstruksi Job Description dari 3 Posisi Paling Gemuk di Kantor",
-          "detail": "Pecah job desk menjadi 15-20 micro-tasks dan petakan mana tugas 100% AI vs 100% Manusia.",
-          "speaker": "Mas Satya"
-        }
-      ]
-    },
-    {
-      "phase": 2,
-      "title": "Fase 2: Hari 31\u201360 (Operational Intelligence & Growth Flywheels)",
-      "subtitle": "Mulai integrasikan otomasi divisi sales, marketing, dan pelaporan harian.",
-      "items": [
-        {
-          "id": "r2-1",
-          "task": "Bangun Prototipe Internal Dashboard di Lovable.dev",
-          "detail": "Buat dasbor ringkas untuk memantau performa bisnis tanpa menunggu antrean vendor software.",
-          "speaker": "Mas Anjas"
-        },
-        {
-          "id": "r2-2",
-          "task": "Pasang Otomasi Comment-to-DM ManyChat pada Akun Media Sosial",
-          "detail": "Gunakan hook konten viral + Suno sound untuk mengumpulkan leads gratis via DM otomatis.",
-          "speaker": "Mas Anjas"
-        },
-        {
-          "id": "r2-3",
-          "task": "Luncurkan Sistem 'Koran Perusahaan' Versi 1.0",
-          "detail": "Sintesis rekap harian jam 07.00 pagi berisi deals sales, absensi tim, stok gudang, dan posisi kas.",
-          "speaker": "Mas Satya"
-        },
-        {
-          "id": "r2-4",
-          "task": "Setup Folder Pengawasan Dokumen Masuk (Incoming Legal & NDA Ingestion)",
-          "detail": "Otomatisasi pemindaian red-flag pada kontrak dan NDA mitra sebelum masuk ke tim legal.",
-          "speaker": "Pak Natali"
-        }
-      ]
-    },
-    {
-      "phase": 3,
-      "title": "Fase 3: Hari 61\u201390 (System Integration & Organizational Reshaping)",
-      "subtitle": "Otomasi rantai pasok, kloning sales terbaik, dan restrukturisasi headcount.",
-      "items": [
-        {
-          "id": "r3-1",
-          "task": "Implementasi Auto-PO Purchasing Berbasis Sensor Minimum Stok",
-          "detail": "Hubungkan notifikasi batas stok gudang ke agen N8N untuk generate draft PO vendor secara otomatis.",
-          "speaker": "Mas Satya"
-        },
-        {
-          "id": "r3-2",
-          "task": "Kloning Objeksi Sales Terbaik ke Knowledge Base Chatbot AI",
-          "detail": "Ekstrak skrip closing sales nomor 1 agar CS/Sales bot bisa menangani ribuan prospek secara instan.",
-          "speaker": "Mas Satya"
-        },
-        {
-          "id": "r3-3",
-          "task": "Evaluasi Headcount & Alihkan Staf Repetitif ke Peran Ekspansi Pasar",
-          "detail": "Terapkan Sense of Urgency leadership: alihkan waktu yang dihemat AI ke negosiasi fisik & relasi strategis.",
-          "speaker": "Mas Satya & Pak Natali"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "phase": 1,
+    "title": "Fase 1: Penyadaran Eksekutif & Pembentukan Koalisi AI",
+    "duration": "Bulan 1",
+    "status": "completed",
+    "objectives": [
+      "Menciptakan urgensi adopsi AI di tingkat manajemen puncak (Kotter Step 1).",
+      "Membentuk tim perintis AI (AI Task Force) untuk mengawal transformasi (Kotter Step 2).",
+      "Menyadarkan manajemen tentang risiko tertinggal dalam adopsi AI vs kompetitor."
+    ],
+    "deliverables": [
+      "Audit kesiapan digital dan infrastruktur AI perusahaan.",
+      "Penunjukan sponsor eksekutif dan pembentukan 'AI Guiding Coalition'.",
+      "Sesi edukasi tentang potensi 'AI-Powered CEO'."
+    ],
+    "risks": [
+      "Resistensi dari pemimpin senior karena kurangnya pemahaman teknologi.",
+      "Keengganan mengalokasikan anggaran untuk inisiatif baru."
+    ]
+  },
+  {
+    "phase": 2,
+    "title": "Fase 2: Visi Strategis, Pemilihan Tools & Pelatihan",
+    "duration": "Bulan 2 - 3",
+    "status": "in-progress",
+    "objectives": [
+      "Merumuskan visi strategis AI yang selaras dengan tujuan bisnis (Kotter Step 3).",
+      "Mengkomunikasikan visi secara masif ke seluruh lapisan karyawan (Kotter Step 4).",
+      "Menyediakan akses ke tools AI dasar (Claude, ChatGPT) untuk eksplorasi."
+    ],
+    "deliverables": [
+      "Dokumen Visi dan Peta Jalan Transformasi AI.",
+      "Pengadaan lisensi AI premium untuk karyawan kunci.",
+      "Townhall meeting dan pelatihan dasar Prompting & Manajemen Halusinasi AI."
+    ],
+    "risks": [
+      "Visi yang terlalu kompleks dan sulit dipahami tim eksekusi.",
+      "Risiko kebocoran data rahasia karena kurangnya panduan keamanan (NDA/Data Privacy)."
+    ]
+  },
+  {
+    "phase": 3,
+    "title": "Fase 3: Pilot Project & Kemenangan Jangka Pendek (Short-term Wins)",
+    "duration": "Bulan 4 - 6",
+    "status": "pending",
+    "objectives": [
+      "Menghilangkan hambatan operasional dan birokrasi (Kotter Step 5).",
+      "Menciptakan 'Quick Wins' melalui implementasi AI pada proses berisiko rendah (Kotter Step 6)."
+    ],
+    "deliverables": [
+      "Otomatisasi proses pemasaran (ManyChat, pembuatan konten via HeyGen/Suno).",
+      "Penerapan NotebookLM untuk efisiensi rapat dan rekapitulasi data.",
+      "Laporan efisiensi biaya dan peningkatan output dari pilot project."
+    ],
+    "risks": [
+      "Kurangnya dukungan teknis saat karyawan pertama kali menggunakan tools.",
+      "Kegagalan pilot project yang dapat menurunkan moral tim."
+    ]
+  },
+  {
+    "phase": 4,
+    "title": "Fase 4: Ekspansi Zero-Code, GEO & Automasi Proses Bisnis",
+    "duration": "Bulan 7 - 9",
+    "status": "pending",
+    "objectives": [
+      "Memanfaatkan momentum kesuksesan untuk mengekspansi skala adopsi (Kotter Step 7).",
+      "Mengembangkan aplikasi internal tanpa kode (Zero-Code) dan optimasi pemasaran."
+    ],
+    "deliverables": [
+      "Pengembangan aplikasi internal (WMS/ERP ringan) menggunakan Lovable dan Claude.",
+      "Implementasi strategi Generative Engine Optimization (GEO) untuk dominasi pencarian.",
+      "Integrasi sistem Agentic AI untuk analitik data dan prediksi operasional."
+    ],
+    "risks": [
+      "Kelelahan perubahan (Change fatigue) pada karyawan.",
+      "Kesulitan mengintegrasikan aplikasi Zero-Code dengan sistem legacy perusahaan."
+    ]
+  },
+  {
+    "phase": 5,
+    "title": "Fase 5: Transformasi Budaya & Pelembagaan Agentic AI",
+    "duration": "Bulan 10 - 12",
+    "status": "pending",
+    "objectives": [
+      "Melembagakan perubahan dan menjadikan AI sebagai fondasi budaya kerja (Kotter Step 8).",
+      "Mengoperasionalkan AI sebagai 'lapisan optimalisasi' yang permanen pada sumber daya manusia."
+    ],
+    "deliverables": [
+      "Pembaruan SOP standar operasional perusahaan yang mewajibkan pendayagunaan AI.",
+      "AI Center of Excellence (CoE) untuk memantau tren teknologi baru.",
+      "Implementasi Agentic AI skala penuh sebagai asisten prediktif CEO."
+    ],
+    "risks": [
+      "Karyawan kembali ke cara kerja konvensional.",
+      "Memori AI yang bias seiring waktu tanpa adanya maintenance pembersihan memori."
+    ]
+  }
+]

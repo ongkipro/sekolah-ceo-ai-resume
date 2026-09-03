@@ -1,56 +1,92 @@
 [
   {
-    "id": "finance-audit",
-    "slug": "finance-audit",
-    "roleName": "Senior Finance & Internal Auditor",
-    "department": "Finance & Accounting",
-    "baseSalary": 15000000,
-    "tasks": [
-      { "name": "Rekonsiliasi Bank & Cek Anomali Transaksi", "type": "ai", "hoursPerWeek": 12, "toolRecommended": "Claude Desktop / Excel Script", "description": "AI memindai 12 bulan ledger dan mendeteksi anomali fraud." },
-      { "name": "Pembuatan Draf Memo Audit Resmi (.docx)", "type": "ai", "hoursPerWeek": 8, "toolRecommended": "Claude B.R.I.E.F. Prompt", "description": "Auto-generate memo resmi lengkap dengan nomor surat & tabel." },
-      { "name": "Analisis Kelayakan Finansial & Proyeksi Cash Flow", "type": "hybrid", "hoursPerWeek": 10, "toolRecommended": "Claude Projects + Sheets", "description": "AI membuat skenario proyeksi, manusia memvalidasi asumsi bisnis." },
-      { "name": "Investigasi Forensik Lapangan & Wawancara Fraud", "type": "human", "hoursPerWeek": 6, "toolRecommended": "Human Judgment", "description": "Empati psikologis dan pembuktian fisik yang tidak bisa digantikan AI." },
-      { "name": "Keputusan Rekomendasi Sanksi Dewan Direksi", "type": "human", "hoursPerWeek": 4, "toolRecommended": "Executive Board", "description": "Tanggung jawab legal dan etika final." }
-    ]
+    "id": "sim-hr-01",
+    "title": "Restrukturisasi Tim Marketing Berbasis AI",
+    "role": "Chief Executive Officer (CEO)",
+    "difficulty": "Sulit",
+    "scenario": "Perusahaan harus mengurangi tim pemasaran dari 8 orang menjadi 2 orang menggunakan AI generatif sambil menargetkan output konten 5 kali lipat lebih banyak.",
+    "context": "Efisiensi biaya dan otomatisasi mendesak dilakukan. Namun, keputusan ini membawa risiko reputasi perusahaan, moral karyawan yang tersisa, serta masalah hukum terkait pesangon. Anda harus merancang strategi transisi yang manusiawi namun tetap mencapai efisiensi.",
+    "variables": [
+      { "key": "currentTeamSize", "label": "Ukuran Tim Saat Ini" },
+      { "key": "targetOutput", "label": "Target Peningkatan Output" },
+      { "key": "severanceBudget", "label": "Anggaran Pesangon" },
+      { "key": "aiToolsBudget", "label": "Anggaran Langganan AI" }
+    ],
+    "initialPrompt": "Bertindaklah sebagai Direktur HR dan Penasihat Hukum Perusahaan. Berikan skenario reaksi tim terhadap pengumuman pemutusan hubungan kerja, dan tantang keputusan saya terkait risiko hukum dan moral. Saya akan memberikan rencana restrukturisasi saya."
   },
   {
-    "id": "marketing-content",
-    "slug": "marketing-content",
-    "roleName": "Content Creator & Growth Lead",
-    "department": "Marketing",
-    "baseSalary": 10000000,
-    "tasks": [
-      { "name": "Riset Ide & Skrip Konten Viral", "type": "ai", "hoursPerWeek": 10, "toolRecommended": "Claude / Perplexity", "description": "Mencari angle trending dan menyusun hook psikologis." },
-      { "name": "Produksi Jingle & Sound Branding", "type": "ai", "hoursPerWeek": 6, "toolRecommended": "Suno AI", "description": "Pembuatan audio komersial kualitas studio dalam 30 detik." },
-      { "name": "Video Presenter & Avatar Scaling", "type": "ai", "hoursPerWeek": 12, "toolRecommended": "HeyGen / Kling AI", "description": "Memproduksi video edukasi dan iklan tanpa studio fisik." },
-      { "name": "Otomasi Follow-up Leads Comment-to-DM", "type": "ai", "hoursPerWeek": 8, "toolRecommended": "ManyChat", "description": "Auto-distribusi PDF penawaran ke ribuan komentar." },
-      { "name": "Penetapan Brand Narrative & Partnership Strategis", "type": "human", "hoursPerWeek": 4, "toolRecommended": "Founder & Head of Mktg", "description": "Menjaga positioning brand jangka panjang." }
-    ]
+    "id": "sim-mkt-02",
+    "title": "Skalabilitas Kampanye 'Call to Value' dan GEO",
+    "role": "Chief Marketing Officer (CMO)",
+    "difficulty": "Sedang",
+    "scenario": "Mengimplementasikan strategi Generative Engine Optimization (GEO) dan otomatisasi balasan (ManyChat) untuk menangani lonjakan 10.000 komentar secara real-time.",
+    "context": "Anda beralih dari 'Call to Action' tradisional menjadi 'Call to Value'. Kampanye ini meledak, namun sistem Customer Service (CS) manual Anda kewalahan. Anda harus segera mengalihkan proses ke AI Agentic tanpa kehilangan sentuhan personal kepada prospek berharga.",
+    "variables": [
+      { "key": "socialPlatform", "label": "Platform Media Sosial" },
+      { "key": "leadVolume", "label": "Estimasi Volume Prospek" },
+      { "key": "botPersonality", "label": "Persona AI Chatbot" },
+      { "key": "conversionTarget", "label": "Target Konversi Penjualan" }
+    ],
+    "initialPrompt": "Berperanlah sebagai simulasi audiens yang skeptis, algoritma platform media sosial, dan staf CS yang kewalahan. Uji apakah alur otomatisasi ManyChat dan pesan 'Call to Value' saya dapat menangani lonjakan trafik tanpa akun saya terkena shadow-ban."
   },
   {
-    "id": "sales-ops",
-    "slug": "sales-ops",
-    "roleName": "Senior Sales Representative & CS",
-    "department": "Sales",
-    "baseSalary": 12000000,
-    "tasks": [
-      { "name": "Menjawab Pertanyaan Dasar & FAQ Pelanggan", "type": "ai", "hoursPerWeek": 15, "toolRecommended": "Pekerja.AI Bot / ManyChat", "description": "Menangani ribuan chat repetitif 24/7 tanpa delay." },
-      { "name": "Objection Handling Standard ('Kemahalan', dll.)", "type": "ai", "hoursPerWeek": 10, "toolRecommended": "Cloned Top-Sales AI Prompt", "description": "Menggunakan skrip closing sales terbaik nomor 1." },
-      { "name": "Kualifikasi Klien High-Ticket B2B", "type": "hybrid", "hoursPerWeek": 8, "toolRecommended": "CRM + AI Scoring", "description": "AI menyortir ICP, sales senior menjadwalkan meeting." },
-      { "name": "Negosiasi Tatap Muka & Closing Kontrak Bernilai Besar", "type": "human", "hoursPerWeek": 7, "toolRecommended": "Top Sales Executive", "description": "Membangun trust dan chemistry interpersonal." }
-    ]
+    "id": "sim-tech-03",
+    "title": "Pembangunan ERP Internal Zero-Code",
+    "role": "Chief Technology Officer (CTO)",
+    "difficulty": "Ekstrem",
+    "scenario": "Membatalkan kontrak vendor IT senilai ratusan juta dan memutuskan untuk membangun Sistem Manajemen Gudang (WMS/ERP) sendiri menggunakan alat Zero-Code seperti Lovable dan Claude.",
+    "context": "Vendor tradisional sangat lambat dan tidak fleksibel. Anda memiliki waktu 3 minggu sebelum musim puncak penjualan (peak season). Anda harus membuktikan kepada CEO dan staf gudang bahwa aplikasi yang dibangun AI dalam hitungan hari dapat diandalkan dan minim bug.",
+    "variables": [
+      { "key": "timeToLaunch", "label": "Sisa Waktu Peluncuran" },
+      { "key": "systemComplexity", "label": "Kompleksitas Modul Gudang" },
+      { "key": "warehouseStaffSkill", "label": "Literasi Digital Staf" },
+      { "key": "fallbackPlan", "label": "Rencana Cadangan" }
+    ],
+    "initialPrompt": "Bertindaklah sebagai Kepala Gudang yang gaptek dan skeptis terhadap teknologi baru, serta CEO yang khawatir akan gangguan operasional. Evaluasi penjelasan dan rencana saya dalam mengimplementasikan ERP berbasis Zero-Code di tengah kepanikan operasional."
   },
   {
-    "id": "procurement-ops",
-    "slug": "procurement-ops",
-    "roleName": "Purchasing & Inventory Officer",
-    "department": "Operations",
-    "baseSalary": 8000000,
-    "tasks": [
-      { "name": "Pemantauan Batas Minimum Stok Gudang", "type": "ai", "hoursPerWeek": 8, "toolRecommended": "N8N + Warehouse Sensor", "description": "Sensor memicu alert otomatis saat stok menipis." },
-      { "name": "Penyusunan Draf Purchase Order (PO)", "type": "ai", "hoursPerWeek": 12, "toolRecommended": "Auto-PO Prompt", "description": "Menghitung kuantitas reorder dan memilih vendor terbaik." },
-      { "name": "Approval Final & Relasi Vendor Strategis", "type": "human", "hoursPerWeek": 8, "toolRecommended": "Purchasing Manager", "description": "One-click approval dan negosiasi diskon volume besar." },
-      { "name": "Inspeksi Fisik Mutu Barang Tiba di Gudang", "type": "human", "hoursPerWeek": 12, "toolRecommended": "Gudang Quality Control", "description": "Pemeriksaan fisik langsung terhadap cacat barang." }
-    ]
+    "id": "sim-risk-04",
+    "title": "Krisis Halusinasi Data & Kebocoran NDA",
+    "role": "Chief Risk Officer (CRO)",
+    "difficulty": "Sulit",
+    "scenario": "Sebuah dokumen strategi finansial rahasia dimasukkan ke platform AI publik oleh karyawan, dan AI memberikan rekomendasi investasi yang berhalusinasi (fakta palsu).",
+    "context": "Perusahaan berada di ambang keputusan investasi jutaan dolar berdasarkan data dari AI yang ternyata mengalami bias memori dan halusinasi akut. Anda harus menyelidiki tingkat kebocoran data, menetapkan protokol AI (NDA/Private Server), dan mengamankan keputusan dewan direksi.",
+    "variables": [
+      { "key": "dataSensitivity", "label": "Tingkat Sensitivitas Data" },
+      { "key": "financialImpact", "label": "Dampak Finansial Keputusan" },
+      { "key": "infrastructureBudget", "label": "Anggaran Server Privat" },
+      { "key": "auditDeadline", "label": "Tenggat Waktu Audit Eksternal" }
+    ],
+    "initialPrompt": "Berperanlah sebagai auditor eksternal yang menemukan anomali pada laporan investasi dan perwakilan vendor AI publik. Tantang protokol keamanan data saya dan tanyakan bagaimana saya akan memitigasi kerugian dari halusinasi data ini."
+  },
+  {
+    "id": "sim-fin-05",
+    "title": "Prediksi Arus Kas dan Manajemen Inventaris",
+    "role": "Chief Financial Officer (CFO)",
+    "difficulty": "Sedang",
+    "scenario": "Menggunakan analitik AI (visi komputer dan pengolahan data instan) untuk meramalkan arus kas masa depan berdasarkan data transaksi dua tahun terakhir.",
+    "context": "Perusahaan mengalami masalah perputaran uang dan overstock barang. Anda harus memanfaatkan alat AI analitik instan (dari tangkapan layar hingga grafik Pareto) untuk menemukan pola pelanggan tersembunyi dan menyelamatkan perusahaan dari ancaman kebangkrutan.",
+    "variables": [
+      { "key": "cashReserves", "label": "Cadangan Kas (Runway)" },
+      { "key": "demandVolatility", "label": "Volatilitas Permintaan Pasar" },
+      { "key": "holdingCost", "label": "Biaya Penyimpanan Inventaris" },
+      { "key": "aiAnalyticsTool", "label": "Pilihan Alat Analitik" }
+    ],
+    "initialPrompt": "Bertindaklah sebagai dewan direksi yang menuntut laporan arus kas terperinci dan sistem AI (Interpreter Data) yang menyajikan anomali pada data historis penjualan. Uji ketajaman keputusan finansial saya dalam merespons pola anomali ini."
+  },
+  {
+    "id": "sim-ceo-06",
+    "title": "Adopsi AI Skala Enterprise (Manajemen Perubahan)",
+    "role": "Chief Executive Officer (CEO)",
+    "difficulty": "Sulit",
+    "scenario": "Mengimplementasikan langganan AI premium untuk ribuan karyawan di perusahaan konvensional berbirokrasi tinggi guna mengubah kultur kerja 'pasif' menjadi 'AI-Powered'.",
+    "context": "Terinspirasi oleh langkah raksasa konsultan (seperti KPMG), Anda ingin berinvestasi miliaran untuk meng-upgrade alat kerja karyawan. Namun, resistensi budaya tinggi, literasi AI rendah, dan serikat pekerja khawatir akan PHK masif. Anda harus memimpin orkestrasi manajemen perubahan.",
+    "variables": [
+      { "key": "totalEmployees", "label": "Total Karyawan" },
+      { "key": "resistanceLevel", "label": "Tingkat Penolakan Karyawan" },
+      { "key": "trainingBudget", "label": "Anggaran Pelatihan AI" },
+      { "key": "unionPower", "label": "Pengaruh Serikat Pekerja" }
+    ],
+    "initialPrompt": "Berperanlah sebagai Ketua Serikat Pekerja yang khawatir tentang keamanan pekerjaan dan Manajer Madya (Middle Manager) yang skeptis terhadap perubahan. Uji kemampuan negosiasi dan kepemimpinan visioner saya dalam meyakinkan mereka bahwa AI adalah 'lapisan optimalisasi', bukan pengganti manusia."
   }
 ]

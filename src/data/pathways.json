@@ -1,118 +1,176 @@
 [
   {
+    "id": "pathway-ceo",
     "role": "CEO & Business Owner",
-    "title": "Jalur CEO: Kepemimpinan, Efisiensi 90% & Pengambilan Keputusan Cepat",
-    "icon": "\ud83d\udc51",
-    "color": "blue",
-    "summary": "Fokus pada penghapusan birokrasi, sistem intelijen harian, penghematan anggaran besar, dan dekonstruksi struktur organisasi.",
-    "recommendedModules": [
-      {
-        "name": "Sistem Koran Perusahaan Jam 07.00",
-        "route": "/architecture",
-        "desc": "Ketahui kondisi bisnis setiap pagi tanpa rapat bertele-tele."
-      },
-      {
-        "name": "CEO Decision & Headcount Simulator",
-        "route": "/simulator",
-        "desc": "Hitung potensi efisiensi biaya hingga 90% di tiap divisi."
-      },
-      {
-        "name": "30-60-90 Days Roadmap",
-        "route": "/roadmap",
-        "desc": "Panduan langkah demi langkah memimpin transisi AI di perusahaan."
-      },
-      {
-        "name": "Kamus Istilah Bahasa Awam",
-        "route": "/glossary",
-        "desc": "Pahami istilah AI tanpa perlu belajar koding teknis."
-      }
+    "title": "Jalur CEO: Kepemimpinan AI & Efisiensi 90%",
+    "icon": "👑",
+    "description": "Fokus pada penghapusan birokrasi, sistem intelijen harian, penghematan anggaran besar, dan dekonstruksi struktur organisasi.",
+    "keyFocus": [
+      "Pengambilan Keputusan Berbasis Data Instan",
+      "Dekonstruksi Struktur Organisasi Tradisional",
+      "Efisiensi Headcount & Biaya Operasional",
+      "Strategi 30-60-90 Hari Implementasi AI"
+    ],
+    "requiredSkills": [
+      "Strategic Prompting",
+      "AI Change Management",
+      "System Thinking",
+      "Risk Mitigation"
+    ],
+    "aiTools": [
+      "ChatGPT Enterprise",
+      "Claude 3.5 Sonnet",
+      "Perplexity AI"
+    ],
+    "quickWins": [
+      "Sistem Koran Perusahaan jam 07.00 pagi",
+      "Simulasi pengurangan biaya operasional hingga 90%",
+      "Pembuatan SOP otomatis seluruh departemen"
+    ],
+    "metrics": [
+      "Penghematan OPEX (%)",
+      "Kecepatan Pengambilan Keputusan (Jam/Hari)",
+      "Tingkat Adopsi AI Perusahaan (%)"
     ]
   },
   {
+    "id": "pathway-cfo",
     "role": "CFO & Finance Director",
-    "title": "Jalur CFO: Audit Forensik Keuangan, Deteksi Fraud & Dynamic Pricing",
-    "icon": "\ud83d\udcb5",
-    "color": "emerald",
-    "summary": "Fokus pada otomatisasi rekonsiliasi kas, pelacakan anomali split-bill, penerbitan memo audit .docx resmi, dan optimasi margin harga.",
-    "recommendedModules": [
-      {
-        "name": "Executive Internal Audit Prompt (.docx)",
-        "route": "/prompts",
-        "desc": "Ekstrak anomali transaksi 12 bulan langsung jadi memo Word resmi."
-      },
-      {
-        "name": "Dynamic Pricing & Yield Model",
-        "route": "/prompts",
-        "desc": "Formula surge pricing otomatis untuk maksimalkan margin keuntungan."
-      },
-      {
-        "name": "Kurikulum Day 2 Sesi 2 (Pak Natali)",
-        "route": "/curriculum",
-        "desc": "Demo live audit keuangan 12 bulan dan mekanika LLM matematika."
-      },
-      {
-        "name": "Contract & NDA Red-Flag Scanner",
-        "route": "/prompts",
-        "desc": "Pindai pasal jebakan dalam kontrak vendor sebelum tanda tangan."
-      }
+    "title": "Jalur CFO: Audit Forensik & Dynamic Pricing",
+    "icon": "💸",
+    "description": "Fokus pada otomatisasi rekonsiliasi kas, pelacakan anomali, penerbitan memo audit resmi, dan optimasi margin harga.",
+    "keyFocus": [
+      "Otomatisasi Rekonsiliasi & Audit Internal",
+      "Analisis Prediktif Arus Kas",
+      "Strategi Dynamic & Surge Pricing",
+      "Pemindaian Risiko Kontrak (NDA & Vendor)"
+    ],
+    "requiredSkills": [
+      "Advanced Data Analysis (ADA)",
+      "Financial Modeling with AI",
+      "Risk & Compliance Scanning",
+      "Prompting Matematika/Statistik"
+    ],
+    "aiTools": [
+      "ChatGPT (Data Analysis)",
+      "Claude 3.5 Sonnet (Analisis Dokumen)",
+      "Excel AI Copilot"
+    ],
+    "quickWins": [
+      "Ekstrak anomali transaksi 12 bulan jadi memo Word",
+      "Formula dynamic pricing otomatis untuk margin",
+      "Deteksi jebakan kontrak dalam hitungan detik"
+    ],
+    "metrics": [
+      "Peningkatan Margin Laba (%)",
+      "Pengurangan Waktu Audit (Hari)",
+      "Akurasi Deteksi Fraud (%)"
     ]
   },
   {
+    "id": "pathway-cmo",
     "role": "CMO & Growth Lead",
-    "title": "Jalur CMO: Mesin Akuisisi 0-CAC, Avatar Video & Jingle Viral",
-    "icon": "\ud83d\udce3",
-    "color": "purple",
-    "summary": "Fokus pada produksi massal konten video iklan, audio branding, dan konversi otomatis dari komentar media sosial ke penjualan di DM.",
-    "recommendedModules": [
-      {
-        "name": "The Zero-CAC Growth Funnel",
-        "route": "/architecture",
-        "desc": "Alur Suno AI -> HeyGen -> TikTok -> ManyChat Comment-to-DM."
-      },
-      {
-        "name": "AI Video & Audio Tools (Kling, Suno)",
-        "route": "/tools",
-        "desc": "Produksi iklan produk sinematik tanpa biaya sewa studio."
-      },
-      {
-        "name": "Top-1% Sales Objection Prompt",
-        "route": "/prompts",
-        "desc": "Tanamkan keahlian closing sales terbaik ke chatbot WhatsApp."
-      },
-      {
-        "name": "Kurikulum Day 1 Sesi 1 & 2 (Mas Anjas)",
-        "route": "/curriculum",
-        "desc": "Praktek pembuatan video komersial dan strategi B2B vs Retail."
-      }
+    "title": "Jalur CMO: Mesin Akuisisi 0-CAC & Avatar Video",
+    "icon": "📣",
+    "description": "Fokus pada produksi massal konten video iklan, audio branding, dan konversi otomatis dari komentar media sosial ke penjualan.",
+    "keyFocus": [
+      "The Zero-CAC Growth Funnel",
+      "Produksi Massal Konten Kreatif (Video & Audio)",
+      "Personalisasi Kampanye Skala Besar",
+      "Automasi Chat to Sales (Comment-to-DM)"
+    ],
+    "requiredSkills": [
+      "Generative Video/Audio Directing",
+      "Prompt Engineering untuk Copywriting",
+      "Workflow Automation",
+      "AI-driven Sales Handling"
+    ],
+    "aiTools": [
+      "Suno AI",
+      "HeyGen",
+      "Kling AI",
+      "ManyChat",
+      "Midjourney"
+    ],
+    "quickWins": [
+      "Jingle branding perusahaan dibuat dalam 5 menit",
+      "Video komersial avatar tanpa biaya sewa studio",
+      "Tanamkan keahlian closing sales ke chatbot WhatsApp"
+    ],
+    "metrics": [
+      "Penurunan Biaya Akuisisi Pelanggan (CAC)",
+      "Peningkatan Return on Ad Spend (ROAS)",
+      "Volume Produksi Konten Kreatif (Per Minggu)"
     ]
   },
   {
+    "id": "pathway-coo",
     "role": "COO & Operations Lead",
-    "title": "Jalur COO: Otomasi Supply Chain, Auto-PO & Eliminasi Jam Kerja Repetitif",
-    "icon": "\u2699\ufe0f",
-    "color": "amber",
-    "summary": "Fokus pada pengawasan stok gudang otomatis, percepatan pengadaan barang ke supplier, dan peningkatan produktivitas staf operasional.",
-    "recommendedModules": [
-      {
-        "name": "Automated Supply Chain & Auto-PO",
-        "route": "/architecture",
-        "desc": "Sistem pembuat Purchase Order otomatis berbasis batas stok."
-      },
-      {
-        "name": "Rapid Prototyping di Lovable.dev",
-        "route": "/tools",
-        "desc": "Buat portal dasbor internal divisi sendiri dalam 15 menit."
-      },
-      {
-        "name": "Job Desk Micro-Task Allocation",
-        "route": "/simulator",
-        "desc": "Pilah tugas operasional yang 100% dialihkan ke agen AI."
-      },
-      {
-        "name": "Executive FAQ Keamanan Data",
-        "route": "/faq",
-        "desc": "Mitigasi risiko kebocoran data operasional perusahaan."
-      }
+    "title": "Jalur COO: Otomasi Supply Chain & Rapid Prototyping",
+    "icon": "⚙️",
+    "description": "Fokus pada pengawasan stok gudang otomatis, percepatan pengadaan barang ke supplier, dan eliminasi jam kerja repetitif.",
+    "keyFocus": [
+      "Otomasi Alur Supply Chain & Inventory",
+      "Auto-Purchase Order (Auto-PO)",
+      "Pengembangan Portal/Dasbor Internal Cepat",
+      "Job Desk Micro-Task Allocation"
+    ],
+    "requiredSkills": [
+      "AI Workflow Orchestration",
+      "No-Code/Low-Code Development",
+      "Process Bottleneck Analysis",
+      "Prompting untuk SOP Operasional"
+    ],
+    "aiTools": [
+      "Lovable.dev",
+      "Make.com",
+      "Zapier",
+      "Cursor",
+      "v0.dev"
+    ],
+    "quickWins": [
+      "Pembuatan portal dasbor internal dalam 15 menit",
+      "Sistem PO otomatis berbasis batas stok minimum",
+      "Delegasi 100% tugas administratif repetitif ke agen AI"
+    ],
+    "metrics": [
+      "Penghematan Jam Kerja Repetitif (Jam/Bulan)",
+      "Waktu Siklus Pengadaan (Cycle Time)",
+      "Kecepatan Pembuatan Tools Internal"
+    ]
+  },
+  {
+    "id": "pathway-chro",
+    "role": "CHRO & HR Director",
+    "title": "Jalur CHRO: Rekrutmen Presisi & Manajemen Talenta AI",
+    "icon": "👥",
+    "description": "Fokus pada penyaringan CV ribuan kandidat, analisis sentimen karyawan, pembuatan KPI berbasis AI, dan program reskilling.",
+    "keyFocus": [
+      "Otomasi Skrining CV & Wawancara Awal",
+      "Penyusunan KPI & OKR Terpersonalisasi",
+      "Analisis Sentimen Karyawan (Engagement)",
+      "Pemetaan Reskilling AI untuk Staf"
+    ],
+    "requiredSkills": [
+      "AI Resume Parsing Prompting",
+      "Data-Driven HR Analytics",
+      "Change Management & Empathy",
+      "Prompting Evaluasi Kinerja"
+    ],
+    "aiTools": [
+      "ChatGPT (Data Analysis)",
+      "Claude 3.5 Sonnet",
+      "HeyGen"
+    ],
+    "quickWins": [
+      "Filter otomatis 1.000+ CV menjadi Top 10 dalam 5 menit",
+      "Pembuatan modul video onboarding otomatis dengan Avatar",
+      "Penyusunan kamus KPI untuk 50+ peran dalam hitungan jam"
+    ],
+    "metrics": [
+      "Waktu Pengisian Lowongan (Time-to-Hire)",
+      "Tingkat Kepuasan & Retensi Karyawan (%)",
+      "Jumlah Karyawan yang Tersertifikasi AI"
     ]
   }
 ]

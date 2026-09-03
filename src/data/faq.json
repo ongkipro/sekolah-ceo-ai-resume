@@ -1,26 +1,66 @@
 [
   {
-    "question": "Apakah data keuangan dan rahasia perusahaan kami aman jika dimasukkan ke AI?",
-    "answer": "Aman jika menggunakan akun berbayar resmi (Claude Pro/Team/Enterprise atau OpenAI API). Penyedia model terikat kontrak bahwa data Anda TIDAK AKAN dipakai untuk melatih AI publik. Untuk data super sensitif (seperti formula obat Dexa Medica), perusahaan bisa membuat perjanjian Private Cloud atau memakai server lokal sendiri."
+    "question": "Bagaimana peran CEO dalam memimpin transisi perusahaan menuju AI?",
+    "answer": "Seorang CEO tidak perlu menguasai hal teknis (coding) secara mendalam, melainkan harus memahami kerangka kerja strategis (framework) dari AI. CEO bertugas merancang 'Otak Perusahaan' dan mendelegasikan eksekusi teknis kepada tim. AI harus diposisikan sebagai alat untuk melipatgandakan produktivitas dan efisiensi, bukan sekadar chatbot untuk interaksi pasif."
   },
   {
-    "question": "Apakah adopsi AI artinya kita harus mem-PHK semua karyawan?",
-    "answer": "Bukan mem-PHK, tapi mengalihkan peran. Tugas mengetik laporan, bikin gambar dasar, dan rekap spreadsheet dialihkan ke AI. Karyawan yang ada dialihkan untuk tugas bernilai tinggi: negosiasi tatap muka, melayani klien VIP, quality control fisik, dan mencari ekspansi pasar baru."
+    "question": "Apakah aman memasukkan data rahasia perusahaan ke dalam sistem AI publik seperti ChatGPT atau Claude?",
+    "answer": "Untuk perusahaan dengan skala besar dan data yang sangat sensitif, disarankan untuk melakukan perjanjian kerahasiaan (NDA) dengan penyedia platform AI (seperti Anthropic atau Google), atau membangun server AI lokal (on-premise). Untuk skala UMKM, pastikan menonaktifkan fitur pelatihan model dari riwayat obrolan agar strategi bisnis tidak terekspos."
   },
   {
-    "question": "Berapa biaya awal yang harus dikeluarkan perusahaan untuk memulai sistem AI ini?",
-    "answer": "Sangat terjangkau. Modal awal cukup langganan Claude Pro / ChatGPT ($20 atau ~Rp320.000/bulan) per eksekutif, dan platform no-code seperti Lovable atau ManyChat (~Rp250.000 - Rp500.000/bulan). Penghematannya bisa puluhan juta dibanding bayar software house atau lembur staf manual."
+    "question": "Mungkinkah AI menggantikan peran HR tradisional dalam proses rekrutmen?",
+    "answer": "AI secara radikal dapat mengotomatisasi proses penyaringan CV, mendeteksi kebohongan pelamar (melalui Lie Scale), hingga memprediksi kecocokan peran (Role Fit). Alat seperti Talent Blueprint mampu menyaring ribuan kandidat secara objektif tanpa bias manusia, sehingga peran HR bisa bergeser ke arah pengembangan budaya perusahaan dan retensi bakat strategis."
   },
   {
-    "question": "Bagaimana jika AI salah menganalisis laporan keuangan atau salah hitung?",
-    "answer": "Gunakan prinsip 'Trust, but Verify' dan framework B.R.I.E.F. Minta AI menyertakan tabel referensi angka dan nomor transaksi aslinya. AI bertindak sebagai auditor internal junior yang menyusun draf memo, sementara tanda tangan dan persetujuan akhir tetap di tangan CFO/CEO."
+    "question": "Apa itu GEO (Generative Engine Optimization) dan mengapa ia mulai menggantikan SEO tradisional?",
+    "answer": "Konsumen kini lebih sering bertanya kepada chatbot AI (seperti ChatGPT atau Perplexity) untuk mencari rekomendasi produk, alih-alih menggunakan mesin pencari konvensional. GEO adalah strategi memastikan data, FAQ, dan ulasan produk Anda mendominasi sumber-sumber tepercaya yang dirayapi oleh AI, sehingga bot AI akan merekomendasikan merek Anda secara otomatis."
   },
   {
-    "question": "Saya gaptek dan tidak paham koding, apakah saya bisa membuat portal web sendiri?",
-    "answer": "Bisa 100%. Di workshop dicontohkan menggunakan Lovable.dev atau Cursor. Anda cukup mengetikkan perintah dalam bahasa Indonesia/Inggris biasa (misal: 'Buatkan dasbor penjualan warna biru dengan tabel stok barang'), dan AI akan menyusun seluruh tampilan serta fungsinya dalam hitungan menit."
+    "question": "Apakah AI dapat menggantikan sistem ERP atau SaaS perusahaan yang mahal?",
+    "answer": "Bagi UMKM, AI (seperti platform No-Code Lovable atau Claude) bisa digunakan untuk membangun sistem manajemen internal yang kustom dalam hitungan menit, yang pada dasarnya dapat menggantikan ERP mahal. Namun, bagi perusahaan besar dengan regulasi dan kepatuhan yang ketat, AI lebih cocok bertindak sebagai 'lapisan optimalisasi' yang mempercepat alur kerja di atas ERP yang sudah ada."
   },
   {
-    "question": "Dari mana langkah pertama yang harus dilakukan CEO hari ini?",
-    "answer": "Ikuti Roadmap Fase 1: Pasang Claude Desktop di laptop, hubungkan ke folder kerja harian, aktifkan hotkey cepat (Option+Space), dan coba buat draf memo audit internal atau ringkasan dokumen tebal menggunakan Google NotebookLM."
+    "question": "Bagaimana AI dapat melipatgandakan output pemasaran dengan biaya yang jauh lebih rendah?",
+    "answer": "Tim pemasaran dapat dipangkas secara drastis dengan memanfaatkan AI. Contohnya, menggunakan Suno AI untuk membuat jingle musik, HeyGen untuk membuat video avatar presenter tanpa studio, dan ManyChat untuk mengotomatiskan balasan (leads). Satu staf dengan AI dapat memproduksi ribuan aset desain atau video dalam sehari, memangkas biaya operasional hingga 80%."
+  },
+  {
+    "question": "Apa yang dimaksud dengan 'Agentic AI' atau AI Agen?",
+    "answer": "Agentic AI adalah sistem AI yang tidak hanya menjawab pertanyaan teks, tetapi mampu mengeksekusi proses bisnis multi-langkah. Sistem ini dapat dihubungkan dengan database internal, POS, dan CRM, bertindak layaknya manajer otomatis yang memantau KPI, memberikan analitik, dan mengambil keputusan operasional secara mandiri."
+  },
+  {
+    "question": "Bagaimana menangani masalah AI yang sering memberikan informasi salah atau 'berhalusinasi'?",
+    "answer": "Halusinasi terjadi karena AI memiliki 'memori' percakapan yang terlalu panjang dan bias konteks masa lalu. Solusinya adalah secara berkala mereset atau membersihkan memori AI (context window), serta menggunakan teknik prompting yang spesifik (seperti formula B.R.I.E.F) dengan memberikan batasan (guardrails) yang jelas agar AI tidak menebak-nebak jawaban."
+  },
+  {
+    "question": "Apakah ada risiko pelanggaran hak cipta jika bisnis menggunakan gambar atau video yang dihasilkan oleh AI?",
+    "answer": "Umumnya, platform AI komersial yang berbayar (seperti Midjourney atau HeyGen) memberikan hak komersial kepada penggunanya untuk memanfaatkan aset yang dihasilkan. Selama wajah atau aset yang diciptakan adalah hasil acak yang digenerasi oleh AI (bukan meniru wajah artis/tokoh secara spesifik tanpa izin), penggunaannya dalam ranah pemasaran bisnis dianggap aman secara hukum."
+  },
+  {
+    "question": "Bagaimana kita harus menyikapi dilema etis terkait PHK akibat implementasi AI?",
+    "answer": "Fokus utamanya bukanlah AI menggantikan manusia, melainkan 'manusia yang menggunakan AI akan menggantikan manusia yang tidak menggunakan AI'. Pemangkasan tim mungkin terjadi pada tugas-tugas administratif rutin, namun ini membuka peluang bagi karyawan untuk meningkatkan keterampilan mereka ke peran operator AI atau strategis yang memberikan nilai tambah lebih tinggi."
+  },
+  {
+    "question": "Apa itu konsep pemasaran 'Call to Value' yang dioptimalkan oleh AI?",
+    "answer": "Alih-alih menggunakan 'Call to Action' konvensional (misal: 'Klik link di bio'), strategi modern menggunakan 'Call to Value'. Contohnya: 'Komen MAU untuk mendapatkan diskon'. Hal ini memancing komentar massal yang sangat disukai oleh algoritma media sosial, mendorong postingan menjadi viral. Komentar tersebut kemudian dibalas otomatis oleh bot AI (seperti ManyChat) untuk mengumpulkan leads."
+  },
+  {
+    "question": "Bagaimana cara melakukan analisis data keuangan yang rumit jika saya tidak menguasai Excel atau SQL?",
+    "answer": "Model visi AI terbaru memungkinkan Anda cukup mengambil tangkapan layar (screenshot) dari data penjualan atau laporan keuangan mentah. Anda kemudian dapat meminta AI untuk menganalisisnya secara instan, misalnya dengan membuat grafik Pareto atau mendeteksi anomali fraud, tanpa harus menginput data satu per satu ke dalam spreadsheet."
+  },
+  {
+    "question": "Jika perusahaan memiliki anggaran terbatas, alat AI apa saja yang harus diprioritaskan?",
+    "answer": "Prioritaskan langganan premium pada Large Language Model (LLM) utama seperti Claude atau ChatGPT untuk kebutuhan operasional sehari-hari. Selanjutnya, gunakan alat otomatisasi interaksi media sosial (ManyChat) untuk konversi penjualan, serta manfaatkan alat pembuatan konten generatif (Suno, HeyGen) jika fokus perusahaan adalah pemasaran digital masif."
+  },
+  {
+    "question": "Apa strategi terbaik untuk mengelola biaya dan konsumsi token AI yang cepat membengkak?",
+    "answer": "Konsumsi token yang berlebihan dapat dicegah dengan menggunakan 'Limiter', melakukan routing tugas sederhana ke model AI yang lebih murah, dan memastikan konteks percakapan di-reset secara rutin. Tidak semua tugas memerlukan model paling canggih; optimasi pemilihan model sesuai dengan kompleksitas tugas akan sangat menghemat biaya operasional."
+  },
+  {
+    "question": "Bagaimana perusahaan dapat memulai otomatisasi dengan AI jika seluruh tim sama sekali tidak bisa coding?",
+    "answer": "Gunakan platform pengembangan No-Code seperti Lovable. CEO atau manajer cukup mengetikkan apa yang mereka inginkan (misalnya: 'Buatkan sistem manajemen gudang untuk 5 lokasi dengan fitur peringatan stok rendah'). AI akan merancang antarmuka, struktur database, dan aplikasi web yang langsung dapat digunakan, mendemokratisasi pembuatan perangkat lunak bagi siapa saja."
+  },
+  {
+    "question": "Apakah peran atau pekerjaan tingkat Junior (Entry-Level) akan sepenuhnya hilang karena AI?",
+    "answer": "Ada risiko besar bahwa pekerjaan junior yang bersifat klerikal dan repetitif (seperti entri data, draf awal desain, atau merangkum dokumen) akan diambil alih oleh AI. Tantangan terbesarnya adalah bagaimana para profesional muda ini dapat mengembangkan pemikiran kritis (critical thinking) dan personal branding mereka, agar bisa langsung melompat menjadi pengelola atau 'konduktor' sistem AI."
   }
 ]

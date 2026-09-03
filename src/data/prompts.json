@@ -1,127 +1,175 @@
 [
   {
-    "id": "p-brief-audit",
-    "title": "Executive Internal Audit & Fraud Detection Memo",
-    "speaker": "Pak Natali Ardianto",
-    "category": "Finance & Audit",
-    "framework": "B.R.I.E.F.",
-    "description": "Menganalisis laporan keuangan mentah, mencari anomali pengeluaran (invoice splitting), dan menghasilkan memo internal audit resmi.",
-    "template": "Anda adalah Senior Forensic Auditor dengan pengalaman 15 tahun di Big 4.\n\n[BACKGROUND]\nPerusahaan kami {COMPANY_NAME} bergerak di bidang {INDUSTRY}. Berikut adalah data rincian transaksi pengeluaran selama {PERIOD}:\n{RAW_FINANCIAL_DATA}\n\n[INSTRUCTIONS]\n1. Lakukan audit forensik dan temukan pola anomali (split-bill, conflict of interest, double payment).\n2. Susun draf Memo Audit Internal resmi yang ditujukan kepada Dewan Direksi.\n3. Sertakan tabel ringkasan temuan, skor risiko (Low/Medium/High), dan langkah perbaikan SOP.\n\n[OUTPUT FORMAT]\nBuat output dalam format dokumen Word (.docx) siap cetak lengkap dengan Nomor Memo, Tanggal, dan rekomendasi.",
+    "id": "p-001",
+    "title": "Analitik Deteksi Fraud & Anomali Keuangan",
+    "speaker": "Satya Pradana",
+    "category": "Keuangan & Audit",
+    "framework": "Data-Driven Decision Intelligence",
+    "description": "Prompt tingkat lanjut untuk menganalisis laporan atau data transaksi guna menemukan anomali, pola mencurigakan, atau indikasi fraud (kecurangan) dengan pendekatan audit preskriptif.",
+    "template": "Anda adalah seorang Auditor Keuangan Eksekutif dan Data Scientist senior. Tugas Anda adalah menganalisis dataset transaksi keuangan berikut: {{data_transaksi}}.\n\nLakukan langkah-langkah berikut secara terstruktur:\n1. **Deteksi Anomali:** Identifikasi transaksi atau pola yang menyimpang dari tren normal (misal: pengeluaran tiba-tiba, duplikasi faktur, waktu transaksi tidak wajar).\n2. **Korelasi Data:** Temukan hubungan antara entitas (vendor, karyawan, waktu) yang berpotensi memiliki konflik kepentingan.\n3. **Penilaian Risiko:** Berikan skor risiko (0-100) untuk setiap anomali yang ditemukan beserta justifikasinya.\n4. **Rekomendasi Mitigasi:** Susun langkah-langkah audit investigatif lebih lanjut dan kontrol preventif yang harus diimplementasikan oleh manajemen.\n\nFormat output harus berupa laporan eksekutif yang ringkas namun komprehensif, disajikan dalam bentuk poin-poin dan tabel untuk temuan kritis.",
     "variables": [
       {
-        "key": "COMPANY_NAME",
-        "label": "Nama Perusahaan",
-        "defaultValue": "PT Mahakarya Digital"
+        "key": "data_transaksi",
+        "label": "Data Transaksi",
+        "defaultValue": "[Tempelkan data log transaksi atau laporan CSV Anda di sini]"
+      }
+    ]
+  },
+  {
+    "id": "p-002",
+    "title": "Evaluasi dan Screening Kandidat HR",
+    "speaker": "Natali Ardianto",
+    "category": "Sumber Daya Manusia (HR)",
+    "framework": "Objective Multi-Dimensional Scoring",
+    "description": "Mengotomatiskan evaluasi resume dan hasil wawancara kandidat berdasarkan kompetensi teknis, kecocokan budaya, dan riwayat rekam jejak, secara objektif.",
+    "template": "Bertindaklah sebagai Chief Human Resources Officer (CHRO) dari sebuah perusahaan teknologi terkemuka. Saya akan memberikan data resume kandidat dan/atau catatan wawancara: {{data_kandidat}}.\n\nKriteria Pekerjaan:\n- Posisi: {{posisi}}\n- Kebutuhan Keterampilan: {{skill_wajib}}\n\nTugas Anda:\n1. **Skoring Kompetensi:** Nilai kecocokan pengalaman dan keterampilan kandidat dengan kriteria (skor 1-10).\n2. **Analisis Kesenjangan (Gap Analysis):** Identifikasi area di mana kandidat kurang berpengalaman atau berpotensi menjadi risiko (red flags).\n3. **Kecocokan Budaya:** Prediksi bagaimana kandidat akan beradaptasi dengan budaya perusahaan yang cepat dan berbasis AI.\n4. **Rekomendasi Keputusan:** Berikan keputusan akhir (Hire, Hold, atau Reject) beserta tiga pertanyaan probing spesifik untuk wawancara tahap akhir jika diperlukan.\n\nBerikan analisis yang bebas dari bias dan berfokus murni pada meritokrasi serta probabilitas kesuksesan kandidat.",
+    "variables": [
+      {
+        "key": "data_kandidat",
+        "label": "Data Kandidat (Resume/Catatan)",
+        "defaultValue": "[Tempelkan profil kandidat atau catatan wawancara]"
       },
       {
-        "key": "INDUSTRY",
+        "key": "posisi",
+        "label": "Posisi yang Dilamar",
+        "defaultValue": "Manager Operasional"
+      },
+      {
+        "key": "skill_wajib",
+        "label": "Skill Wajib",
+        "defaultValue": "Kepemimpinan, Manajemen Proses, Adopsi AI"
+      }
+    ]
+  },
+  {
+    "id": "p-003",
+    "title": "Spesifikasi Prototipe Zero-Code (Lovable/Claude)",
+    "speaker": "Anjas Maradita",
+    "category": "Pengembangan Produk",
+    "framework": "Rapid Prototyping & No-Code Development",
+    "description": "Menerjemahkan ide bisnis kasar menjadi spesifikasi teknis lengkap (PRD) yang siap dieksekusi oleh AI generator antarmuka seperti Lovable atau Claude Artifacts.",
+    "template": "Anda adalah seorang Product Manager dan System Architect ahli. Saya memiliki ide untuk sebuah aplikasi/sistem: {{ide_aplikasi}}.\n\nTujuan saya adalah membangunnya menggunakan alat tanpa kode (No-Code AI) seperti Lovable.\nBuatkan sebuah spesifikasi antarmuka dan alur pengguna (User Flow) yang komprehensif, mencakup:\n\n1. **Arsitektur Halaman:** Daftar layar (screens) yang dibutuhkan (misal: Dasbor Utama, Manajemen Pengguna, Laporan).\n2. **Komponen UI/UX:** Tata letak rinci untuk setiap halaman (tabel, metrik KPI, tombol Call to Action).\n3. **Alur Interaksi:** Apa yang terjadi jika pengguna mengklik tombol atau mengirimkan formulir.\n4. **Struktur Data Dasar:** Tabel database sederhana atau struktur JSON yang diperlukan untuk mendukung fungsionalitas aplikasi ini.\n5. **Prompt Eksekusi:** Di akhir laporan, tuliskan 1 paragraf 'Master Prompt' berbahasa Inggris yang sangat spesifik yang bisa saya salin-tempel langsung ke Lovable untuk mulai menghasilkan kode antarmuka ini.",
+    "variables": [
+      {
+        "key": "ide_aplikasi",
+        "label": "Ide Aplikasi",
+        "defaultValue": "Aplikasi manajemen inventaris sederhana untuk memantau stok gudang dengan peringatan jika barang habis."
+      }
+    ]
+  },
+  {
+    "id": "p-004",
+    "title": "Generative Engine Optimization (GEO) & SEO AI",
+    "speaker": "Anjas Maradita",
+    "category": "Pemasaran & Strategi Konten",
+    "framework": "AI-Centric Visibility Strategy",
+    "description": "Strategi konten tingkat tinggi untuk mendominasi rekomendasi mesin pencari AI (seperti ChatGPT, Claude, dan Perplexity) alih-alih sekadar SEO tradisional.",
+    "template": "Anda adalah seorang Ahli Generative Engine Optimization (GEO) dan Strategis Pemasaran Digital. Target merek/produk saya adalah: {{nama_produk}}, yang berada di industri: {{industri}}.\n\nBantu saya menyusun rencana dominasi GEO agar AI LLM merekomendasikan produk saya, dengan menghasilkan:\n1. **Top 10 Pertanyaan Intensi Tinggi:** Apa saja pertanyaan (prompts) spesifik yang mungkin diajukan target pasar kepada AI saat mencari solusi di industri ini?\n2. **Struktur Konten Otoritatif (FAQ):** Susun draf 5 pertanyaan dan jawaban FAQ yang sangat padat informasi, berbasis fakta, dan objektif yang harus saya publikasikan di situs web agar dirayapi (crawled) oleh AI.\n3. **Strategi Rekayasa Sitasi:** Sebutkan jenis platform, forum, atau publikasi pihak ketiga yang harus saya sasar untuk mendapatkan penyebutan merek, sehingga LLM menganggap merek saya sebagai standar industri.\n4. **Call to Value (CTV):** Rancang 3 ide interaksi media sosial berbasis Call to Value yang memicu banyak komentar audiens secara organik.",
+    "variables": [
+      {
+        "key": "nama_produk",
+        "label": "Nama Produk/Merek",
+        "defaultValue": "Kopi Susu Literan Premium"
+      },
+      {
+        "key": "industri",
         "label": "Industri",
-        "defaultValue": "Retail & Distribution"
-      },
-      {
-        "key": "PERIOD",
-        "label": "Periode Laporan",
-        "defaultValue": "Semester 1 2026"
+        "defaultValue": "Food & Beverage (F&B)"
       }
     ]
   },
   {
-    "id": "p-run-my-day",
-    "title": "'Run My Day' - Agenda Briefing CEO Harian",
-    "speaker": "Pak Natali Ardianto",
-    "category": "Leadership",
-    "framework": "Contextual Retrieval",
-    "description": "Otomasi yang membaca kalender harian CEO, thread email, dan dokumen terkait untuk menyusun 1 halaman briefing eksekutif.",
-    "template": "Bertindaklah sebagai Chief of Staff dan Personal Assistant Eksekutif saya.\n\nBuka kalender saya untuk hari ini. Untuk setiap agenda meeting:\n1. Cari thread email dan dokumen terkait di ruang kerja {WORKSPACE_SOURCE}.\n2. Buat ringkasan 1 halaman berisi:\n   - Siapa yang saya temui dan latar belakang profilnya.\n   - Apa poin pembahasan terakhir kami.\n   - Apa keputusan penting yang harus saya ambil hari ini.\n3. Identifikasi potensi benturan jadwal dan hitung waktu tempuh antar lokasi jika relevan.",
+    "id": "p-005",
+    "title": "Peramalan Arus Kas Berdasarkan Historis",
+    "speaker": "Anjas Maradita",
+    "category": "Keuangan & Strategi Bisnis",
+    "framework": "Predictive Cash Flow Analysis",
+    "description": "Memanfaatkan AI sebagai penganalisis pola untuk memprediksi risiko arus kas berdasarkan siklus historis dan perilaku pelanggan.",
+    "template": "Berperanlah sebagai Chief Financial Officer (CFO) dan Data Analyst. Berikut adalah gambaran data arus kas dan historis penjualan saya selama {{periode_waktu}}: {{data_historis}}.\n\nLakukan analisis mendalam yang mencakup:\n1. **Deteksi Pola Musiman:** Kapan arus kas biasanya mengalami puncak tertinggi dan titik terendah (bottleneck)?\n2. **Analisis Perilaku Pelanggan:** Identifikasi segmen pelanggan yang menyebabkan keterlambatan pembayaran atau memberikan margin tertinggi.\n3. **Proyeksi 3 Bulan ke Depan:** Berdasarkan pola tersebut, buat proyeksi optimis dan pesimis untuk kuartal berikutnya.\n4. **Strategi Mitigasi Kas:** Berikan 3 langkah taktis konkret yang dapat saya ambil sebagai CEO untuk mengamankan likuiditas selama bulan-bulan paceklik (misalnya optimalisasi inventaris, restrukturisasi termin pembayaran).\n\nSajikan temuan dengan bahasa bisnis yang lugas, hindari jargon matematis yang rumit.",
     "variables": [
       {
-        "key": "WORKSPACE_SOURCE",
-        "label": "Sumber Data Workspace",
-        "defaultValue": "Google Workspace (Drive & Gmail)"
+        "key": "periode_waktu",
+        "label": "Periode Waktu Data",
+        "defaultValue": "1-2 Tahun Terakhir"
+      },
+      {
+        "key": "data_historis",
+        "label": "Data Historis (Ringkasan/Dataset)",
+        "defaultValue": "[Tempelkan tren pendapatan, pengeluaran, dan pola piutang di sini]"
       }
     ]
   },
   {
-    "id": "p-vibe-coding",
-    "title": "Vibe Coding - Prototipe Software Bisnis (WMS / ERP)",
-    "speaker": "Mas Anjas Maradita & Mas Satya",
-    "category": "Tech & Dev",
-    "framework": "Step-by-Step Generation",
-    "description": "Megaprompt untuk merancang arsitektur aplikasi (WMS/CRM/Trello clone) sebelum dimasukkan ke Lovable.dev atau Claude Code.",
-    "template": "Bertindaklah sebagai Principal Software Engineer & Cloud Architect kelas dunia.\n\nBuatkan prompt instruksi yang sangat presisi, lengkap dengan arsitektur database, komponen UI/UX, sistem keamanan, dan interaktivitas untuk membuat aplikasi {APP_TYPE} untuk perusahaan {COMPANY_NAME}.\n\nAplikasi ini harus mencakup fitur:\n{KEY_FEATURES}\n\nBuatkan instruksi tersebut dalam bahasa Inggris teknis agar siap saya copy-paste langsung ke {AI_BUILDER_TOOL} untuk di-build menjadi web app fungsional.",
+    "id": "p-006",
+    "title": "Audit Bias & Halusinasi AI",
+    "speaker": "Anjas Maradita",
+    "category": "Operasional AI & Keamanan",
+    "framework": "Fact-Checking & Context Reset",
+    "description": "Prompt meta-AI untuk mengevaluasi apakah output sistem AI yang digunakan sebelumnya mengandung halusinasi, bias memori, atau asumsi yang salah.",
+    "template": "Anda adalah AI Compliance Officer dan Auditor Logika yang bertugas mengevaluasi output dari AI lain. Berikut adalah klaim, teks, atau keputusan yang baru saja dihasilkan oleh sistem AI: {{output_ai}}.\n\nLakukan audit ketat dengan kriteria berikut:\n1. **Pemeriksaan Fakta & Klaim:** Pisahkan antara klaim yang dapat dibuktikan secara empiris, dan klaim yang tampaknya dihasilkan secara sintetis (halusinasi).\n2. **Deteksi Bias Konteks:** Periksa apakah terdapat asumsi tersembunyi yang mungkin berasal dari 'pergeseran memori' (shifting) dari percakapan sebelumnya.\n3. **Peringkat Kepercayaan:** Berikan skor 1-10 seberapa andal dan aman output ini untuk digunakan dalam keputusan bisnis.\n4. **Saran Koreksi:** Jika ada kelemahan logika atau informasi fiktif, tunjukkan di mana letaknya, dan berikan prompt perbaikan (context reset) agar sistem AI menghasilkan output yang lebih akurat dan terverifikasi di masa mendatang.",
     "variables": [
       {
-        "key": "APP_TYPE",
-        "label": "Tipe Aplikasi",
-        "defaultValue": "Warehouse Management System (WMS)"
-      },
-      {
-        "key": "COMPANY_NAME",
-        "label": "Nama Perusahaan",
-        "defaultValue": "Lovely (Sprei & Gorden)"
-      },
-      {
-        "key": "KEY_FEATURES",
-        "label": "Fitur Utama",
-        "defaultValue": "1. Inventory tracking real-time\n2. Incoming goods management\n3. QC dashboard dengan pass/fail\n4. Driver upload proof (mobile view)"
-      },
-      {
-        "key": "AI_BUILDER_TOOL",
-        "label": "Platform AI Builder",
-        "defaultValue": "Lovable.dev"
+        "key": "output_ai",
+        "label": "Teks/Output AI yang Dievaluasi",
+        "defaultValue": "[Tempelkan teks laporan atau jawaban AI yang ingin diverifikasi]"
       }
     ]
   },
   {
-    "id": "p-hr-screening",
-    "title": "Smart HR Assessment & Lie Scale Detection",
-    "speaker": "Mas Ugo & Ibnu",
-    "category": "HR",
-    "framework": "Psychometric Modeling",
-    "description": "Membuat tes kelayakan peran (Role Fit) dengan mekanisme pengecoh (Lie Scale) untuk menguji integritas dan skill pelamar.",
-    "template": "Bertindaklah sebagai Senior HR Assessor dan Psikolog Industri.\n\nBuat {QUESTION_COUNT} pertanyaan pilihan ganda skenario kerja nyata untuk posisi {ROLE_POSITION}. \n\nInstruksi Khusus:\n1. Integrasikan sistem Lie Scale: sisipkan butir pengecoh untuk mendeteksi anomali (kandidat yang menjawab asal atau straight-lining).\n2. Skoring harus mencerminkan Role Fit Index (0-100).\n3. Sertakan kunci jawaban beserta bobot logika psikologis di balik setiap opsi (A, B, C, D).",
+    "id": "p-007",
+    "title": "Desain Arsitektur Agentic AI untuk Otomatisasi Perusahaan",
+    "speaker": "Anjas Maradita",
+    "category": "Infrastruktur IT & Otomatisasi",
+    "framework": "Level 4 AI Adaptation System",
+    "description": "Merancang cetak biru alur kerja AI berbasis agen (Agentic AI) untuk menggantikan atau mengoptimalkan proses manual di sebuah departemen.",
+    "template": "Bertindaklah sebagai Chief Technology Officer (CTO) dan Ahli Otomatisasi Proses Bisnis. Saya ingin membangun sistem Agentic AI yang otonom untuk departemen: {{departemen}}.\n\nMasalah saat ini yang ingin diselesaikan adalah: {{masalah_bisnis}}.\n\nRancang arsitektur agen AI dengan komponen berikut:\n1. **Pemetaan Agen (Agents Mapping):** Berapa banyak 'agen' yang dibutuhkan (misal: Agen Ekstraksi Data, Agen Analisis, Agen Pengambil Keputusan) dan apa peran spesifik mereka?\n2. **Alur Integrasi Sensor/Data:** Dari mana agen-agen ini akan mengambil data secara real-time (API, email, ERP, database)?\n3. **Logika Eksekusi (Trigger & Action):** Jelaskan kondisi spesifik apa yang memicu agen untuk mengambil tindakan otonom.\n4. **Batasan Keamanan (Guardrails):** Apa langkah-langkah keamanan atau titik persetujuan manusia (human-in-the-loop) yang harus diterapkan sebelum AI mengeksekusi tindakan kritis?",
     "variables": [
       {
-        "key": "QUESTION_COUNT",
-        "label": "Jumlah Pertanyaan",
-        "defaultValue": "70"
+        "key": "departemen",
+        "label": "Departemen Target",
+        "defaultValue": "Layanan Pelanggan (Customer Service)"
       },
       {
-        "key": "ROLE_POSITION",
-        "label": "Posisi Jabatan",
-        "defaultValue": "Chief Marketing Officer (CMO)"
+        "key": "masalah_bisnis",
+        "label": "Masalah Bisnis",
+        "defaultValue": "Waktu respons lambat dan data pelanggan harus direkap manual dari berbagai platform."
       }
     ]
   },
   {
-    "id": "p-pareto-analysis",
-    "title": "Instant Pareto Analysis (80/20 Dashboard)",
-    "speaker": "Mas Anjas Maradita",
-    "category": "Data Analytics",
-    "framework": "Visual Grounding",
-    "description": "Mengubah gambar/screenshot laporan penjualan mentah menjadi grafik analisis Pareto interaktif.",
-    "template": "Tolong buatkan Pareto Analysis dari data penjualan pada gambar laporan {REPORT_NAME} ini.\n\nSajikan hasilnya dalam bentuk visualisasi dashboard interaktif menggunakan HTML/CSS.\nTampilkan grafik interaktif yang menunjukkan kontribusi kumulatif pendapatan per SKU serta identifikasi 20% produk yang menghasilkan 80% omset perusahaan.",
+    "id": "p-008",
+    "title": "Strategi Viralitas Sosmed & Call-to-Value",
+    "speaker": "Mas Anjas, Mas Hugo, Mas Ibnu, Mas Sem (Sammy)",
+    "category": "Pemasaran Digital & Konten",
+    "framework": "Algorithmic Growth & Automation",
+    "description": "Merancang skrip kampanye media sosial yang sangat menarik (engaging) berbasis algoritma, memaksimalkan komentar untuk memicu otomatisasi balasan (seperti ManyChat).",
+    "template": "Anda adalah Kepala Pemasaran Viral dan Ahli Rekayasa Sosial. Saya akan mempromosikan penawaran: {{penawaran_produk}} di platform: {{platform}}.\n\nBantu saya membuat strategi kampanye dengan fokus pada memicu interaksi massal (Call to Value) yang nanti akan ditangani oleh bot otomatisasi komentar (seperti ManyChat).\n\nBerikan:\n1. **Hook Psikologis:** 3 kalimat pembuka (hook) yang langsung menarik perhatian dalam 3 detik pertama.\n2. **Struktur Skrip Pendek:** Skrip video atau caption berdurasi 30-45 detik yang memberikan nilai tambah (value) langsung tanpa terkesan 'berjualan keras' (hard selling).\n3. **Call to Value (CTV):** Rancang ajakan bertindak yang membuat audiens sangat ingin meninggalkan komentar (misalnya: 'Komen MAU untuk panduan lengkap').\n4. **Skrip Balasan ManyChat:** Tuliskan template balasan otomatis untuk komentar tersebut (yang ramah, natural) beserta pesan langsung (DM) yang berisi tautan konversi akhir.",
     "variables": [
       {
-        "key": "REPORT_NAME",
-        "label": "Nama Laporan",
-        "defaultValue": "Sales Q3 2026"
+        "key": "penawaran_produk",
+        "label": "Penawaran/Produk",
+        "defaultValue": "E-book Gratis: Strategi Adopsi AI untuk Bisnis Lokal"
+      },
+      {
+        "key": "platform",
+        "label": "Platform Media Sosial",
+        "defaultValue": "Instagram Reels / TikTok"
       }
     ]
   },
   {
-    "id": "p-humanize-ai",
-    "title": "Skill: Humanize AI Writing (Anti-Slop)",
-    "speaker": "Pak Natali Ardianto",
-    "category": "Content",
-    "framework": "Skill Creator",
-    "description": "Instruksi custom untuk memaksa AI menulis tanpa gaya bahasa robotik, klise, atau em-dash.",
-    "template": "Tulis ulang teks {DOCUMENT_TYPE} ini.\n\nAturan mutlak (Skill 'Humanize AI'):\n- Hapus seluruh tanda em-dash (\u2014).\n- Hindari pola list klise 3 poin berturut-turut.\n- Gunakan kontraksi kata alami dan variasi panjang kalimat secara dinamis.\n- Terapkan gaya bahasa Indonesia percakapan profesional tanpa kosakata robotik AI (seperti 'Di era digital ini', 'Tentu saja', 'Sangat penting').",
+    "id": "p-009",
+    "title": "Ekstraksi Insight Rapat Eksekutif (Meeting-to-Action)",
+    "speaker": "Anjas Maradita",
+    "category": "Produktivitas & Manajemen",
+    "framework": "Knowledge Extraction & Audio Ready",
+    "description": "Mengekstrak transkrip rapat atau dokumen bisnis yang panjang menjadi rencana aksi yang terstruktur dan ringkasan bergaya podcast (seperti output NotebookLM).",
+    "template": "Anda adalah Asisten Eksekutif Senior dan Produser Konten. Saya memiliki transkrip rapat strategi atau dokumen laporan yang panjang: {{transkrip_rapat}}.\n\nTugas Anda adalah menyaring informasi ini secara maksimal:\n1. **Ringkasan Eksekutif (TL;DR):** Buat 3 paragraf singkat yang merangkum esensi perdebatan, keputusan utama, dan arah strategis.\n2. **Rencana Aksi Terstruktur:** Ekstrak semua keputusan menjadi daftar periksa (checklist) yang mencakup: Siapa yang bertanggung jawab (PIC), Tenggat Waktu (Deadline), dan Deskripsi Tugas.\n3. **Skrip Podcast Percakapan:** Ubah poin-poin penting dari dokumen ini menjadi skrip dialog singkat (sekitar 2 menit) antara dua pembawa acara (Host A dan Host B) yang santai namun berwawasan, yang dapat langsung disuarakan menggunakan alat audio AI.\n4. **Poin Belum Terselesaikan:** Sebutkan pertanyaan atau masalah yang masih menggantung dari rapat tersebut.",
     "variables": [
       {
-        "key": "DOCUMENT_TYPE",
-        "label": "Jenis Dokumen",
-        "defaultValue": "Artikel Blog Bisnis"
+        "key": "transkrip_rapat",
+        "label": "Transkrip/Dokumen Rapat",
+        "defaultValue": "[Tempelkan transkrip Zoom atau notulensi rapat di sini]"
       }
     ]
   }

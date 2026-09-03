@@ -1,72 +1,212 @@
 [
   {
     "term": "Vibe Coding",
-    "englishName": "Vibe Coding",
-    "laymanAnalogy": "Membangun software atau aplikasi hanya dengan 'ngobrol' santai ke AI. Anda menjelaskan maunya apa (vibes-nya), AI yang otomatis menulis kodenya.",
-    "businessImpact": "Tidak perlu lagi menyewa vendor IT mahal berbulan-bulan untuk membuat sistem internal sederhana seperti portal HR atau WMS.",
-    "category": "Tech",
-    "targetUrl": "/prompts",
-    "actionLabel": "Buka Prompt Vibe Coding",
-    "practicalPrompt": "Buatkan kode aplikasi kloning Trello berbasis web untuk mengatur proyek tim saya."
+    "category": "Pengembangan Perangkat Lunak",
+    "definition": "Pendekatan pembuatan aplikasi dengan menggunakan prompt bahasa alami kepada AI, tanpa perlu menulis kode secara manual.",
+    "context": "CEO dapat membuat aplikasi internal (seperti WMS) hanya dengan berdiskusi dengan AI layaknya rekan kerja.",
+    "laymanExample": "Seperti menyuruh asisten untuk membuatkan sistem pendaftaran lewat obrolan WhatsApp, lalu sistem itu langsung jadi dan bisa dipakai."
   },
   {
-    "term": "ZMOT (Zero Moment of Truth)",
-    "englishName": "Zero Moment of Truth",
-    "laymanAnalogy": "Momen krusial di mana calon pelanggan mencari info di internet sebelum membeli produk Anda. Syaratnya: 7 jam interaksi, 11 touchpoints, 4 kanal berbeda.",
-    "businessImpact": "Memaksa brand memproduksi ribuan konten per bulan menggunakan AI agar algoritma menganggap brand Anda kredibel dan omnipresent.",
-    "category": "Marketing",
-    "targetUrl": "/cheatsheet",
-    "actionLabel": "Lihat Cheatsheet",
-    "practicalPrompt": "Tuliskan 10 skrip video edukasi pendek untuk mendominasi ZMOT pencarian TikTok tentang produk [NAMA_PRODUK]."
+    "term": "Dark Factory",
+    "category": "Otomatisasi Bisnis",
+    "definition": "Pabrik atau operasi bisnis yang berjalan secara otonom dengan campur tangan manusia yang sangat minim berkat AI dan robotika.",
+    "context": "Masa depan efisiensi operasional di mana sistem Agentic AI mengelola rantai pasok secara penuh dengan otonomi tinggi.",
+    "laymanExample": "Pabrik yang bisa beroperasi penuh 24 jam bahkan dalam keadaan gelap gulita karena tidak ada manusia yang butuh penerangan untuk bekerja di sana."
   },
   {
-    "term": "Company Brain",
-    "englishName": "Company Brain / Central AI",
-    "laymanAnalogy": "Otak AI sentral di kantor yang tahu semua data rahasia perusahaan (keuangan, stok, absensi) dan melaporkannya ke CEO setiap pagi.",
-    "businessImpact": "Rekonsiliasi bank otomatis, laporan keuangan real-time, dan keputusan berbasis data tanpa campur tangan staf admin.",
-    "category": "Enterprise AI",
-    "targetUrl": "/tools",
-    "actionLabel": "Lihat Tool Company Brain",
-    "practicalPrompt": "Tarik data kas, stok gudang, dan penjualan hari ini, lalu buatkan 1 halaman Executive Brief untuk saya."
+    "term": "OCR (Optical Character Recognition)",
+    "category": "Analitik Data & Visi AI",
+    "definition": "Teknologi AI yang mampu mengenali dan mengekstrak teks dari gambar atau dokumen pindaian menjadi data digital yang dapat diolah.",
+    "context": "Digunakan untuk membaca data dari tangkapan layar (screenshot) laporan penjualan agar bisa dianalisis secara otomatis tanpa input manual.",
+    "laymanExample": "Memfoto struk belanja yang lecek, dan komputer otomatis memindahkan rincian angka-angkanya ke tabel Excel tanpa kita harus mengetik ulang."
   },
   {
-    "term": "GEO (Generative Engine Optimization)",
-    "englishName": "Generative Engine Optimization",
-    "laymanAnalogy": "Evolusi dari SEO. Bukan sekadar ranking di Google, tapi bagaimana agar ChatGPT/Claude merekomendasikan brand Anda saat orang bertanya ke AI.",
-    "businessImpact": "Pusat traffic baru masa depan, membutuhkan injeksi FAQ mendalam di website brand agar di-crawl oleh mesin LLM.",
-    "category": "Marketing",
-    "targetUrl": "/cheatsheet",
-    "actionLabel": "Lihat Insight GEO",
-    "practicalPrompt": "Buat 50 daftar FAQ teknis paling mendalam tentang produk kami agar mudah dibaca oleh algoritma ChatGPT saat di-crawl."
+    "term": "Tipping Point",
+    "category": "Strategi Bisnis",
+    "definition": "Titik balik di mana adopsi teknologi AI mengubah lanskap industri secara masif sehingga perusahaan yang tidak ikut serta akan tertinggal secara permanen.",
+    "context": "Momen krusial saat ini bagi para UMKM untuk segera mengadopsi AI agar bisa bersaing secara gesit dengan korporat besar.",
+    "laymanExample": "Sama seperti momen saat semua orang beralih dari HP jadul ke smartphone; mereka yang lambat beralih akan kesulitan berbisnis karena tertinggal zaman."
   },
   {
-    "term": "Call to Value (CTV)",
-    "englishName": "Call to Value",
-    "laymanAnalogy": "Mengganti ajakan lawas 'Klik Link di Bio' dengan 'Komen MAU untuk diskon DM' agar algoritma sosmed meledakkan jangkauan video Anda.",
-    "businessImpact": "Menghapus CAC (Customer Acquisition Cost) dan mengotomasi ribuan closing langsung di DM via ManyChat.",
-    "category": "Marketing",
-    "targetUrl": "/tools",
-    "actionLabel": "Lihat Tool ManyChat",
-    "practicalPrompt": "Buatkan script video dengan hook emosional dan akhiri dengan Call to Value yang memancing orang berkomentar 'MAU'."
+    "term": "B.R.I.E.F",
+    "category": "Teknik Prompting",
+    "definition": "Kerangka kerja terstruktur untuk memberikan perintah (prompting) kepada AI yang terdiri dari Background, Role, Instructions, Examples, dan Format.",
+    "context": "Metodologi yang digunakan oleh tim eksekusi untuk mendapatkan output yang paling presisi, dapat diprediksi, dan sesuai standar kualitas dari LLM.",
+    "laymanExample": "Seperti mendelegasikan tugas ke pegawai baru: kita kasih tahu latar belakang proyeknya, perannya apa, instruksinya, contoh hasilnya, dan format laporannya."
   },
   {
-    "term": "Model Tiering",
-    "englishName": "Model Tiering / Task Routing",
-    "laymanAnalogy": "Membagi tugas sesuai gaji: Tugas strategis ke Manajer (AI Mahal seperti Claude Opus), tugas harian ke Staf (AI Murah seperti Sonnet/Haiku).",
-    "businessImpact": "Mencegah tagihan token AI membengkak, menjaga ROI tetap positif tanpa mengurangi kecepatan operasi.",
-    "category": "Strategy",
-    "targetUrl": "/curriculum",
-    "actionLabel": "Lihat Sesi 2",
-    "practicalPrompt": "N/A"
+    "term": "Agentic AI",
+    "category": "Sistem AI",
+    "definition": "Sistem kecerdasan buatan tingkat lanjut yang tidak hanya merespons perintah (pasif), tetapi mampu merencanakan, mengambil keputusan, dan mengeksekusi alur kerja multi-langkah secara mandiri.",
+    "context": "Evolusi sistem bisnis di mana AI terintegrasi ke basis data perusahaan (penjualan, SDM) dan bertindak sebagai asisten atau manajer bayangan yang proaktif.",
+    "laymanExample": "Bukan sekadar bot yang menjawab 'halo', melainkan mesin pintar yang diam-diam memonitor stok gudang dan otomatis membuatkan pesanan ke supplier saat stok menipis."
   },
   {
-    "term": "B.R.I.E.F Prompting",
-    "englishName": "B.R.I.E.F Framework",
-    "laymanAnalogy": "Rumus wajib saat menyuruh AI: Background, Role, Inputs, Expectation, Finish Line. Agar AI kerja persis seperti Manajer Senior.",
-    "businessImpact": "Menghapus halusinasi AI dan menjamin format dokumen output langsung bisa dicetak atau dikirim (misal: Memo .docx resmi).",
-    "category": "Prompting",
-    "targetUrl": "/prompts",
-    "actionLabel": "Buka Prompt Vault",
-    "practicalPrompt": "N/A"
+    "term": "AI-Powered CEO",
+    "category": "Kepemimpinan Strategis",
+    "definition": "Pemimpin bisnis yang secara proaktif mengintegrasikan kapabilitas AI ke dalam kerangka pengambilan keputusan strategis, alur operasional, dan kepemimpinan perusahaan.",
+    "context": "Pola pikir baru bagi pemimpin (mindset shift) dari sekadar pengguna pasif ChatGPT menjadi arsitek yang merancang efisiensi bisnis mutlak berbasis kecerdasan buatan.",
+    "laymanExample": "Bos yang tidak cuma ikutan tren pakai ChatGPT buat iseng, tapi memanfaatkannya sebagai direktur strategi untuk memangkas biaya operasional dan mempercepat kerja tim."
+  },
+  {
+    "term": "Generative Engine Optimization (GEO)",
+    "category": "Pemasaran Digital",
+    "definition": "Strategi optimasi visibilitas agar nama perusahaan, produk, atau layanan direkomendasikan secara organik oleh model LLM/AI generatif ketika pengguna mengajukan pertanyaan.",
+    "context": "Evolusi radikal yang menggantikan SEO tradisional di era konsumen yang lebih condong bertanya kepada chatbot pintar daripada menelusuri daftar tautan di mesin pencari.",
+    "laymanExample": "Kalau SEO itu bikin website kita nongkrong di halaman 1 Google, GEO itu bikin nama toko kita disebut pertama kali oleh ChatGPT waktu ada yang nanya 'di mana beli kopi enak?'."
+  },
+  {
+    "term": "Call to Value",
+    "category": "Pemasaran Digital",
+    "definition": "Strategi ajakan bertindak (Call to Action modern) yang berfokus memberikan nilai instan kepada audiens agar mereka terdorong untuk berinteraksi lebih dalam, seringkali untuk memicu algoritma distribusi.",
+    "context": "Mendorong audiens untuk berkomentar di media sosial demi mendapatkan sesuatu yang berharga, yang pada gilirannya akan memanipulasi algoritma untuk menyebarkan konten secara luas.",
+    "laymanExample": "Daripada menyuruh orang 'Klik link di bio', kita bilang 'Ketik MAU di komentar dan panduan rahasianya akan langsung saya DM ke kamu'."
+  },
+  {
+    "term": "Zero-Code / No-Code",
+    "category": "Pengembangan Perangkat Lunak",
+    "definition": "Metodologi pengembangan perangkat lunak (web/aplikasi) menggunakan antarmuka grafis atau obrolan bahasa alami yang dimotori AI, tanpa perlu menyentuh bahasa pemrograman apa pun.",
+    "context": "Fasilitator yang mendemokratisasi teknologi, di mana pendiri atau CEO dengan latar non-teknis bisa merancang alat operasional internal (WMS/ERP sederhana) hanya melalui chat.",
+    "laymanExample": "Membangun aplikasi fungsional untuk kantor sekarang semudah merakit mainan Lego bongkar-pasang atau sekadar menyuruh asisten lewat ketikan WhatsApp."
+  },
+  {
+    "term": "Halusinasi AI",
+    "category": "Risiko AI & Keamanan",
+    "definition": "Kecenderungan sistem LLM untuk merangkai dan menghasilkan informasi, referensi, atau data statistik palsu yang terdengar sangat faktual dan logis.",
+    "context": "Bahaya laten yang didemonstrasikan dalam sesi eksperimen 'game benar atau salah', menggarisbawahi keharusan untuk selalu menyelaraskan AI dan memverifikasi keputusannya dalam konteks bisnis.",
+    "laymanExample": "Ketika AI tidak tahu jawabannya secara pasti, ia bisa saja mengarang-ngarang cerita yang terdengar sangat meyakinkan seolah-olah mengutip data ilmiah, padahal bohong total."
+  },
+  {
+    "term": "LLM (Large Language Model)",
+    "category": "Teknologi Dasar AI",
+    "definition": "Arsitektur kecerdasan buatan berbasis jaringan saraf tiruan berskala masif yang dilatih menggunakan volume triliunan kata teks untuk memahami, menyimpulkan, dan menghasilkan bahasa alami manusia.",
+    "context": "Katalis utama di balik kapabilitas alat AI generatif seperti ChatGPT atau Claude yang digunakan sebagai asisten curah pendapat untuk mengamplifikasi kapasitas intelijen perusahaan.",
+    "laymanExample": "Otak super besar di dalam komputer yang sudah dipaksa membaca hampir semua buku dan artikel di internet sehingga ia bisa merespons berbagai topik dengan bahasa yang sangat luwes."
+  },
+  {
+    "term": "Prompting",
+    "category": "Interaksi AI",
+    "definition": "Teknik, seni, sekaligus rekayasa merumuskan masukan (input teks) kepada LLM untuk membimbingnya menghasilkan output yang paling akurat, spesifik, dan tepat sasaran sesuai intensi awal pengguna.",
+    "context": "Kompetensi kritis bagi operator AI; CEO ditekankan untuk minimal paham kerangka logis di balik prompting sebelum mendelegasikan eksekusinya pada tim yang terjun langsung.",
+    "laymanExample": "Cara kita memberi perintah; ibarat menyuruh tukang kayu bikin kursi, kalau instruksinya terlalu umum kursinya bisa jelek, tapi kalau instruksinya detail hasilnya pasti presisi."
+  },
+  {
+    "term": "NDA (Non-Disclosure Agreement)",
+    "category": "Hukum & Etika Bisnis",
+    "definition": "Perjanjian kerahasiaan formal yang mengikat secara hukum antara entitas bisnis dengan perusahaan penyedia teknologi (seperti Google atau Anthropic) agar data proprietari terlindungi.",
+    "context": "Sebuah prasyarat mutlak bagi korporasi skala enterprise (seperti KPMG) ketika ingin menyuntikkan data tingkat tinggi ke dalam cloud agar AI platform tidak memakannya untuk pelatihannya sendiri.",
+    "laymanExample": "Surat kontrak bermeterai yang memastikan bahwa rahasia dapur resep perusahaan yang kita ajarkan ke AI tidak akan dibocorkan atau diajarkan balik ke kompetitor kita."
+  },
+  {
+    "term": "Memori AI",
+    "category": "Manajemen Alat AI",
+    "definition": "Kapasitas fungsional sistem AI kontemporer untuk mempertahankan (retensi) riwayat dari percakapan sebelumnya sehingga asisten selalu selaras dengan konteks dan preferensi pengguna.",
+    "context": "Fitur yang berpotensi memicu masalah operasional; jika tak direset, memori dapat bergeser (context shifting) dan menghasilkan jawaban bias dari konteks masa lalu saat beralih ke proyek baru.",
+    "laymanExample": "Seperti kita yang akan pusing kalau terus disuruh mikir banyak kerjaan beda-beda sekaligus. AI juga butuh 'dicuci otaknya' dengan reset obrolan agar tetap jernih kalau ganti topik tugas."
+  },
+  {
+    "term": "ERP (Enterprise Resource Planning)",
+    "category": "Sistem Bisnis",
+    "definition": "Sistem tulang punggung logis dan komputasional (perangkat lunak sentral) yang mengatur seluruh denyut nadi administratif harian perusahaan: mulai dari akuntansi, SDM, hingga distribusi logistik.",
+    "context": "Struktur legacy yang perlahan mulai digerus oleh Agentic AI untuk segmen UMKM, di mana alat zero-code bertindak sebagai solusi integrasi operasi lintas departemen yang jauh lebih ekonomis.",
+    "laymanExample": "Sistem sentral maha penting di sebuah kantor di mana tim gudang, tim marketing, kasir, dan akuntan bisa melihat data yang sama secara langsung di layar mereka masing-masing."
+  },
+  {
+    "term": "WMS (Warehouse Management System)",
+    "category": "Sistem Operasional",
+    "definition": "Aplikasi khusus yang memetakan, melacak, dan mengkoordinasikan distribusi pergerakan fisik seluruh stok inventory dalam suatu fasilitas pergudangan logistik secara komprehensif.",
+    "context": "Contoh klasik kerumitan pengembangan yang kini bisa dilompati oleh AI-Powered CEO; mereka dapat mendikte LLM untuk membuat kustomisasi tata kelola WMS-nya sendiri dalam hitungan jam.",
+    "laymanExample": "Komputer mandor di pabrik yang secara presisi mencatat letak barang nomor 101, jumlahnya tinggal berapa dus, dan apakah perlu kulakan ulang bulan depan."
+  },
+  {
+    "term": "AI as a Service (AIaaS)",
+    "category": "Infrastruktur IT",
+    "definition": "Penyediaan skalabel perangkat dan komputasi infrastruktur kecerdasan buatan dari pihak vendor ketiga kepada konsumen lewat jaringan cloud dengan lisensi berlangganan on-demand.",
+    "context": "Disrupsi masa depan yang diantisipasi menggeser model bisnis SaaS tradisional, di mana pengguna masa kini bebas beralih menyewa kapabilitas AI untuk menggenerasi sendiri aplikasi perusahaannya.",
+    "laymanExample": "Daripada pusing beli sistem software jadi (SaaS) seharga belasan juta tiap tahun, pengusaha masa kini cukup bayar bulanan langganan otak AI dan menyuruh AI-nya bikin sistem serupa."
+  },
+  {
+    "term": "Social Engineering",
+    "category": "Strategi Komunikasi",
+    "definition": "Eksploitasi, manipulasi halus, dan orkestrasi sentimen publik secara massal untuk mengarahkan preferensi, kepercayaan, atau pola tindakan masyarakat ke tujuan spesifik suatu merek.",
+    "context": "Pendekatan pemasaran yang dielevasi ke tahap superior karena pembuatan konten kampanye sugestif (menggunakan alat AI) berbiaya hampir nol dan tidak lagi terhambat kendala teknis produksi studio.",
+    "laymanExample": "Membuat audiens tanpa sadar merasa butuh dan bersimpati pada produk kita setelah mereka terus-terusan diterpa jingle yang enak didengar dan video yang seolah 'nyata' padahal buatan AI."
+  },
+  {
+    "term": "Predictive Intelligence",
+    "category": "Analisis Berbasis Data",
+    "definition": "Level teratas (Level 4) dari spektrum kedewasaan adopsi AI di korporat yang mampu merajut dataset historikal kolosal menjadi perkiraan skenario dan anomali tren masa depan dengan akurasi matematis.",
+    "context": "Dimanfaatkan oleh eksekutif operasional untuk mengekang volatilitas arus kas (cash flow) dengan membongkar tabir tersembunyi dari tren pesanan berulang pelanggan lama.",
+    "laymanExample": "Bola kristal cerdas yang bisa memberitahu bos perusahaan, 'Tolong siap-siap, bulan depan omzet dari produk X pasti jatuh berdasarkan tren iklim, jadi pangkaslah dana iklannya dari sekarang'."
+  },
+  {
+    "term": "Decision Intelligence",
+    "category": "Manajemen Bisnis",
+    "definition": "Integrasi sistemik alat analitis berlapis kecerdasan buatan (Level 3) untuk menopang ketajaman manuver eksekutif perusahaan, mengubah data mentah perusahaan menjadi saran eksekusi konkret.",
+    "context": "Kerangka di mana sistem terhubung langsung ke mesin kasir dan parameter KPI tim, sehingga ia bisa menyuarakan peringatan kepada manajemen kala produktivitas berbelok di bawah ambang standar.",
+    "laymanExample": "Dashboard angka yang tak hanya sekadar memampang untung-rugi statis, melainkan sistem interaktif yang bisa ngotot menganjurkan diskon gila-gilaan karena sistem melacak laju penjualan terlalu lambat."
+  },
+  {
+    "term": "Pareto Analysis",
+    "category": "Metodologi Bisnis",
+    "definition": "Analisa prioritas operasional berbasis prinsip empiris 80/20 yang berupaya memetakan ceruk 20 persen akar faktor dominan yang ternyata membidani kelahiran 80 persen dampak hasil krusial di perusahaan.",
+    "context": "Demonstrasi kekuatan Visi AI di mana pengguna cukup menjepret foto (screenshot) data ruwet dan AI lantas mengolahnya menjadi grafik Pareto dalam sekejap tanpa manipulasi sel Excel manual.",
+    "laymanExample": "Cara jenius menemukan kelompok produk pahlawan jualan yang mendatangkan untung besar, sehingga tenaga tim tak terbuang mengurus ratusan produk pajangan yang perputarannya seret."
+  },
+  {
+    "term": "SaaS (Software as a Service)",
+    "category": "Infrastruktur IT",
+    "definition": "Model komersialisasi dan pendistribusian aplikasi berbasis cloud di mana konsumen pengguna tak butuh instalasi lokal melainkan hanya sewa guna akses instan secara berkala.",
+    "context": "Ranah yang dikabarkan sedang diuji kelangsungannya gara-gara para pebisnis perintis mulai menyadari betapa mudahnya mengkloning fungsi alat-alat SaaS tertentu memakai kemampuan kreasi mandiri Agentic AI.",
+    "laymanExample": "Langganan aplikasi absen kantor per bulan; sangat praktis karena semua sistemnya sudah diurus pemilik server dan tak butuh teknisi jaringan untuk pasang instalasinya."
+  },
+  {
+    "term": "KPI (Key Performance Indicator)",
+    "category": "Metrik Bisnis",
+    "definition": "Pilar evaluasi parametrik, numerik, dan strategis yang merepresentasikan ukuran pasti pencapaian perusahaan dalam membidik gol besarnya serta memantau kualitas utilitas armada karyawan secara berkala.",
+    "context": "Sensor vital yang diawasi lekat secara periodik melalui lensa pengamatan Agentic AI guna memastikan tiap sen yang terbuang telah kembali dalam porsi produktivitas dan kepuasan audiens.",
+    "laymanExample": "Catatan rapor wajib bulanan yang menyatakan seberapa becus karyawan, diukur melalui parameter baku seperti: sukses menjual 100 potong pakaian atau menutup keluhan konsumen di bawah batas 5 menit."
+  },
+  {
+    "term": "Conversational AI",
+    "category": "Teknologi AI",
+    "definition": "Modul AI linguistik (Level 1) mutakhir yang menduplikasi kemampuan dan struktur wicara manusia, melahirkan nuansa dialog mengalir dan fleksibel yang mengelabui mesin agar terasa empatik layaknya asisten organik.",
+    "context": "Pintu masuk awal (entry point) dalam tahap adaptasi adopsi AI di ruang kerja, dipraktikkan para pemula sebagai lawan curah pendapat interaktif mematangkan ide bisnis sebelum dieksekusi real.",
+    "laymanExample": "Mesin atau robot di balik kolom chat cerdas yang mampu mengoceh, membalas, dan bercanda merespons berbagai tanya-jawab rumit sama amannya ketika kita bertegur sapa dengan staf administrasi biasa."
+  },
+  {
+    "term": "Vision AI",
+    "category": "Teknologi AI",
+    "definition": "Cabang kapabilitas komputasional kecerdasan mesin yang memberdayakannya untuk memilah, menyerap makna hierarkis, dan melakukan peramalan kontekstual semata-mata mengandalkan interpretasi elemen rupa (gambar dan video) murni.",
+    "context": "Fitur ajaib yang menihilkan kerja paksa para akuntan karena secarik bukti bon usang yang dipotret bakal langsung 'dibaca' secara holistik, diringkas algoritmanya, lalu divisualkan grafis presentasinya oleh AI secara spontan.",
+    "laymanExample": "Pemberian 'mata batin' ke arah layar komputer di mana alat AI ini bisa menafsir sendiri struk kumal belanja kita lalu instan mengatur deretan digit angka rincian harganya bersusun di halaman tabel spreadsheet."
+  },
+  {
+    "term": "Otomatisasi Bisnis (Automation)",
+    "category": "Manajemen Sistem",
+    "definition": "Arsitektur implementasi orkestrasi piranti keras maupun lunak yang mengambil alih mandat kerja klerikal manual repetitif ke dalam pengulangan siklus tiada henti secara otonom agar utilitas aset berangsur efisien.",
+    "context": "Gardan penggerak mesin penjualan pasif (seperti integrasi aplikasi ManyChat) yang dipercaya pebisnis tangguh mengkonversi kucuran keriuhan ribuan respons pengikut internet mendulang omzet instan sembari pengelola lelap tertidur.",
+    "laymanExample": "Bala bantuan dari robot virtual yang disetel buat menjaga gawang jualan media sosial kita 24/7 dan tanpa upah capek tetap getol membalas ratusan sapaan DM dari konsumen kepo saban jam dua pagi."
+  },
+  {
+    "term": "AI Avatar",
+    "category": "Pembuatan Konten",
+    "definition": "Cerminan fotorealistik tiruan visual digital hasil proyeksi algoritmik yang mendedah rona figur fasial, getar nada suara wicara, serta kepiawaian gerak bibir menyerupai cetak biru pemilik fisik dari persona nyata terkait.",
+    "context": "Amunisi andalan pemasaran radikal via media (diotaki perangkat HeyGen) sebagai peretas dominasi kendala ongkos logistik sewa kru, karena direktur cukup memasok naskah teks tertulis demi melahirkan klip penyuluhan orisinil tiap minggu.",
+    "laymanExample": "Tayangan video buatan super halus yang merekam kita sedang pidato presentasi menggunakan fasihnya pelafalan bahasa Inggris tanpa cacat, terlepas nyatanya kita murni sebatas tukang ketik skenario tanpa pernah benar-benar membuka mulut menatap kamera sekalipun."
+  },
+  {
+    "term": "AI Passive Use",
+    "category": "Interaksi AI",
+    "definition": "Pola penugasan integrasi teknologi AI untuk bermukim senyap di belakang panggung sirkulasi operasional secara lepas tangan sehingga perputaran utilitas ritme kinerjanya bergulir otonom mereduksi perlunya intervensi repetitif manusianya setiap hari.",
+    "context": "Praktik pelimpahan eksekusi balasan rutin, pendataan presensi tamu harian, dan respons salam interaktif dasar demi kebebasan para pendiri bisnis bisa rebahan menata fokus kepada urusan penaklukan omzet yang lebih vital bagi perusahaan.",
+    "laymanExample": "Ibarat mempekerjakan mesin kasir raksasa bersuara pintar atau mesin penjawab telepon luar biasa canggih, yang melayani seluruh cecaran keluhan tamu bawel seharian penuh tanpa kita perlu menekan sebiji tombol sama sekali sesudahnya."
+  },
+  {
+    "term": "AI Active Use",
+    "category": "Interaksi AI",
+    "definition": "Paradigma kemitraan yang dinamis, terus dikontrol secara eksplisit, serta bertumpu dari kolaborasi simbiosis berkelanjutan sang operator yang agresif melontarkan modifikasi berlapis dan terus berdiskusi merevisi ragam rancangan iterasi buatan alat AI generatif di hadapannya.",
+    "context": "Lanskap kerja produktif dan gesit yang dipraktikkan jajaran CEO progresif saat meracik strategi kampanye taktis baru dengan melontarkan bombardir pancingan prompt percakapan spesifik (B.R.I.E.F) ke arah LLM hingga menemui rumusan ide emas terobosan mutlak.",
+    "laymanExample": "Sesi lembur berhadapan empat mata bersama alat AI persis layaknya menongkrongi bawahan baru yang sangat patuh, lalu kita telaten membantah, memarahi, dan mendikte ulang hasil pekerjaannya secara berkesinambungan hingga cetak biru rancangannya dipoles sempurna bebas celah."
   }
 ]

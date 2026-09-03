@@ -1,94 +1,50 @@
 [
   {
-    "sessionId": "d1s1",
-    "sessionTitle": "Day 1 Sesi 1 - Mas Anjas Maradita",
-    "readTime": "3 Menit Baca",
-    "theme": "From AI User to AI-Powered CEO (Vibe Coding, GEO & Automation)",
-    "mustDoTomorrow": "Terapkan Algorithm-First marketing: Ganti CTA konvensional dengan Call to Value (CTV) di media sosial dan gunakan ManyChat untuk automasi DM.",
-    "fatalMistakeToAvoid": "Mengadopsi AI tanpa kesiapan tim, atau sekadar membagikan akun langganan $20 tanpa merombak KPI dan alur kerja (membiarkan presenteeism).",
-    "threeKeyNumbers": [
-      {
-        "metric": "Rp 100 Miliar",
-        "meaning": "Nilai adopsi Claude Enterprise oleh KPMG (276k karyawan)"
-      },
-      {
-        "metric": "< 15 Menit",
-        "meaning": "Waktu membangun portal web/WMS fungsional via Lovable.dev"
-      },
-      {
-        "metric": "Rp 13 Miliar",
-        "meaning": "Omzet afiliasi Plaud Note via ManyChat automation"
-      }
-    ],
-    "keyPrompt": "Anda adalah Senior Product Architect. Buatkan arsitektur WMS (Warehouse Management) dengan modul QC dan dashboard supir, lalu tuliskan prompt instruksinya untuk Lovable.dev."
+    "id": "cs-kotter",
+    "title": "Kerangka Kerja 8 Langkah John Kotter untuk Transformasi AI",
+    "category": "Kepemimpinan",
+    "format": "Framework",
+    "speaker": "Anjas Maradita",
+    "content": "## 8 Langkah Transformasi AI (John Kotter)\n\nKerangka kerja ini membantu perusahaan mengadopsi AI secara efektif tanpa penolakan dari tim:\n\n1. **Menciptakan Rasa Urgensi (Create a Sense of Urgency)**: Jelaskan mengapa AI penting sekarang (misal: efisiensi, kompetitor).\n2. **Membangun Koalisi Pemandu (Build a Guiding Coalition)**: Bentuk tim inti yang paham AI untuk memimpin perubahan.\n3. **Membentuk Visi Strategis (Form a Strategic Vision)**: Tetapkan tujuan jelas (misal: pangkas waktu operasional 50%).\n4. **Mengomunikasikan Visi (Enlist a Volunteer Army)**: Sampaikan visi ini ke seluruh karyawan secara transparan.\n5. **Menyingkirkan Hambatan (Enable Action by Removing Barriers)**: Hilangkan birokrasi, berikan akses premium ke tools AI.\n6. **Menciptakan Kemenangan Jangka Pendek (Generate Short-Term Wins)**: Buktikan keberhasilan kecil (misal: meeting summary otomatis) agar tim makin yakin.\n7. **Mempertahankan Momentum (Sustain Acceleration)**: Kembangkan implementasi ke divisi lain setelah sukses di satu divisi.\n8. **Melembagakan Perubahan (Institute Change)**: Jadikan AI bagian dari budaya kerja standar (SOP perusahaan).\n\n> **Tips CEO:** Jangan paksakan AI tanpa konteks. Mulailah dari satu masalah yang paling menyita waktu."
   },
   {
-    "sessionId": "d1s2",
-    "sessionTitle": "Day 1 Sesi 2 - Mas Anjas, Sammy, Ugo, Ibnu",
-    "readTime": "3 Menit Baca",
-    "theme": "Arsitektur Enterprise, Routing Token & AI HR Assessment",
-    "mustDoTomorrow": "Petakan ulang alur kerja, tentukan task mana yang perlu diproses model AI mahal (Perencanaan/Opus) vs model murah (Eksekusi/Haiku).",
-    "fatalMistakeToAvoid": "Menggunakan Claude Opus untuk tugas harian (pemborosan token), dan mempekerjakan AI tanpa limiter / Harnessing Agent.",
-    "threeKeyNumbers": [
-      {
-        "metric": "0-100",
-        "meaning": "Skala Role Fit Index untuk kelulusan kandidat"
-      },
-      {
-        "metric": "Skala 1-10",
-        "meaning": "Skor Lie Scale (Deteksi kebohongan pelamar)"
-      },
-      {
-        "metric": "3 Orang",
-        "meaning": "Ukuran tim inti compact yang menggerakkan ekosistem AI Daun.net"
-      }
-    ],
-    "keyPrompt": "Bertindaklah sebagai Senior HR Assessor. Buat 70 pertanyaan skenario untuk posisi CMO dengan sistem Lie Scale untuk mendeteksi anomali straight-lining jawaban."
+    "id": "cs-brief",
+    "title": "Formula Prompt B.R.I.E.F",
+    "category": "Prompting",
+    "format": "Framework",
+    "speaker": "Anjas Maradita",
+    "content": "## B.R.I.E.F Prompting Framework\n\nGunakan formula ini agar AI menghasilkan output yang spesifik, relevan, dan bisa langsung digunakan:\n\n- **B - Background (Latar Belakang)**: Berikan konteks (Siapa Anda, industri apa, situasi saat ini).\n  *Contoh: \"Saya CEO perusahaan retail fashion...\"*\n- **R - Role (Peran)**: Tentukan AI harus bertindak sebagai siapa.\n  *Contoh: \"Bertindaklah sebagai Konsultan Marketing Senior...\"*\n- **I - Instruction (Instruksi Utama)**: Sebutkan perintah dengan jelas.\n  *Contoh: \"Buatkan draf email untuk menyapa pelanggan lama...\"*\n- **E - Expectation (Harapan/Format)**: Jelaskan format yang diinginkan (Tabel, poin-poin, panjang kalimat).\n  *Contoh: \"Buat dalam 3 paragraf, gunakan bahasa kasual...\"*\n- **F - Feedback (Umpan Balik)**: Minta AI menanyakan hal yang kurang jelas sebelum mengeksekusi.\n  *Contoh: \"Tanyakan 2 hal yang kamu perlukan sebelum mulai menulis.\"*\n\n> **Tips:** Simpan prompt B.R.I.E.F terbaik Anda di dokumen bersama agar seluruh tim dapat menggunakannya."
   },
   {
-    "sessionId": "d2s1",
-    "sessionTitle": "Day 2 Sesi 1 - Mas Satya Pradana",
-    "readTime": "3 Menit Baca",
-    "theme": "Restrukturisasi Ekstrim, Hukum 15% & Company Brain",
-    "mustDoTomorrow": "Bongkar proses bisnis (Reverse Engineering) dari output akhir. Desain struktur di mana 1 AI Orchestrator menggantikan 10 fungsi spesialis.",
-    "fatalMistakeToAvoid": "Mencoba meyakinkan 100% karyawan. Cukup rekrut 15% tim militan untuk membuktikan hasil eksponensial, sisanya akan mengikuti atau punah.",
-    "threeKeyNumbers": [
-      {
-        "metric": "2.400",
-        "meaning": "Target produksi slide desain per hari per operator AI"
-      },
-      {
-        "metric": "15%",
-        "meaning": "The Tipping Point Kotter untuk transformasi budaya"
-      },
-      {
-        "metric": "Rp 450 M",
-        "meaning": "Omzet brand DVN menggunakan talent video virtual AI"
-      }
-    ],
-    "keyPrompt": "Bertindaklah sebagai Konsultan Restrukturisasi. Buatkan SOP operasional di mana 1 staf menggunakan ChatGPT, Lumio, dan Suno untuk memproduksi 2.000 aset per hari."
+    "id": "cs-restructure-marketing",
+    "title": "Restrukturisasi Pemasaran dengan AI (Call to Value & Automasi)",
+    "category": "Marketing",
+    "format": "Strategi",
+    "speaker": "Anjas Maradita",
+    "content": "## Strategi Konten Berbasis Algoritma\n\nAI mengubah cara audiens mengonsumsi konten. Berikut adalah langkah merestrukturisasi divisi pemasaran:\n\n### 1. Pergeseran ke \"Call to Value\"\n- **Tinggalkan CTA Kuno:** \"Klik link di bio\" sudah usang.\n- **Gunakan CTV:** Mintalah audiens berkomentar untuk mendapatkan nilai tambah (misal: \"Komen 'MAU' untuk dapatkan template gratis\"). Ini memicu algoritma (engagement) untuk menyebarkan konten Anda.\n\n### 2. Automasi Interaksi (ManyChat)\n- Saat audiens berkomentar, gunakan bot (seperti ManyChat) untuk membalas dan mengirimkan DM secara otomatis.\n- **Hasil:** Prospek (leads) meningkat secara eksponensial dengan biaya nol per interaksi tambahan.\n\n### 3. Pembuatan Aset Digital Cepat\n- Gunakan **HeyGen** untuk membuat avatar video diri sendiri untuk edukasi konsisten tanpa studio.\n- Gunakan **Suno AI** untuk mengubah ide kasar menjadi jingle pemasaran profesional.\n\n> **Eksekusi:** CEO merancang alurnya, tim mengeksekusi tools-nya."
   },
   {
-    "sessionId": "d2s2",
-    "sessionTitle": "Day 2 Sesi 2 - Pak Natali Ardianto",
-    "readTime": "3 Menit Baca",
-    "theme": "Claude Desktop, MCP, B.R.I.E.F & Audit Forensik",
-    "mustDoTomorrow": "Terapkan framework delegasi B.R.I.E.F (Background, Role, Inputs, Expectation, Finish Line) pada setiap perintah ke agen AI.",
-    "fatalMistakeToAvoid": "Menarasikan bahwa AI hadir untuk me-nol-kan jumlah karyawan, yang akan memicu sabotase psikologis internal.",
-    "threeKeyNumbers": [
-      {
-        "metric": "600",
-        "meaning": "Pertanyaan neuroscience untuk membentuk CEO Clone"
-      },
-      {
-        "metric": "< 10 Menit",
-        "meaning": "Waktu audit forensik pengeluaran Rp 3,9 Miliar"
-      },
-      {
-        "metric": "Rule of 3",
-        "meaning": "Jika aktivitas manual terjadi 3x berturut-turut, jadikan AI Skill"
-      }
-    ],
-    "keyPrompt": "Anda adalah Senior Forensic Auditor. Berdasarkan file Excel transaksi ini, temukan pola invoice splitting, conflict of interest, dan double payment."
+    "id": "cs-ai-security",
+    "title": "Keamanan Data & Manajemen Halusinasi AI",
+    "category": "Security",
+    "format": "Checklist",
+    "speaker": "Anjas Maradita",
+    "content": "## Checklist Keamanan AI untuk Perusahaan\n\nAI layaknya pedang bermata dua; sangat tajam namun dapat membahayakan perusahaan jika digunakan tanpa SOP.\n\n- [ ] **Batasi Input Data Konfidensial:** Jangan memasukkan rahasia dagang, laporan keuangan spesifik, atau data pelanggan langsung ke AI publik tanpa pengamanan.\n- [ ] **Gunakan Enterprise NDA:** Berlangganan AI tier bisnis (Enterprise) atau sepakati NDA dengan platform (seperti Google/Anthropic) agar data Anda tidak dilatih untuk model publik.\n- [ ] **Kelola Memori AI (Context Window):** AI sering 'berhalusinasi' jika memorinya terlalu penuh dari berbagai sesi tak terkait. Matikan fitur _memory_ jika perlu, atau buat sesi baru untuk setiap proyek.\n- [ ] **Verifikasi Output (Human-in-the-Loop):** Jangan menelan mentah-mentah data/statik yang disajikan AI. Halusinasi AI bisa sangat meyakinkan karena ia merangkai fakta fiktif.\n- [ ] **Edukasi Tim:** Pastikan tim tahu bahaya mengunggah dokumen internal (seperti kontrak NDA pihak ketiga) ke ChatGPT publik."
+  },
+  {
+    "id": "cs-geo",
+    "title": "Generative Engine Optimization (GEO)",
+    "category": "Marketing",
+    "format": "Panduan",
+    "speaker": "Anjas Maradita",
+    "content": "## Evolusi dari SEO menuju GEO\n\nKonsumen modern kini bertanya pada AI chatbot (ChatGPT, Perplexity, Gemini) untuk mencari produk, bukan lagi ke Search Engine tradisional. Anda harus mendominasi rekomendasi bot ini.\n\n### 3 Pilar GEO:\n\n1. **Kutipan dari Sumber Terpercaya (Citations):**\n   Bot AI lebih memprioritaskan penyebutan (mentions) brand Anda di portal berita besar, jurnal, atau platform ulasan independen dibandingkan klaim di website Anda sendiri.\n\n2. **Struktur Data & FAQ Komprehensif:**\n   Buat halaman Tanya Jawab (FAQ) yang sangat panjang dan detail di website Anda. AI merayapi (crawl) data terstruktur ini untuk memberi jawaban spesifik pada penggunanya.\n\n3. **Kata Kunci Berbasis Niat (Intent-Based Keywords):**\n   Optimalkan kata kunci berupa pertanyaan panjang (Long-tail Q&A) seperti \"Apa software HRIS terbaik untuk UMKM di Indonesia?\" dibandingkan hanya kata kunci pendek \"Software HRIS\".\n\n> **Tindakan:** Mulailah mempublikasikan press release dan kumpulkan ulasan asli agar AI engine punya alasan untuk merekomendasikan brand Anda."
+  },
+  {
+    "id": "cs-agentic-ai",
+    "title": "Implementasi Agentic AI & Zero-Code Development",
+    "category": "Teknologi",
+    "format": "Implementasi",
+    "speaker": "Anjas Maradita",
+    "content": "## Membangun Sistem Tanpa Tim IT (Zero-Code)\n\nCEO kini dapat membangun alat internal (CRM, ERP mini, Inventory System) hanya bermodalkan obrolan.\n\n### Tahapan Implementasi:\n1. **Brainstorming dengan LLM (Claude/ChatGPT):**\n   Ceritakan masalah operasional Anda (contoh: \"Saya butuh sistem pencatatan gudang karena sering selisih stok\"). Minta AI membuatkan struktur database dan fitur yang diperlukan.\n\n2. **Ekskusi dengan Platform Zero-Code (contoh: Lovable):**\n   Masukkan _prompt_ struktur aplikasi yang sudah rapi tadi ke dalam AI Builder (Lovable). AI akan menulis kode dan menghasilkan antarmuka web (UI) secara instan.\n\n3. **Agentic AI untuk Otomatisasi Lanjutan:**\n   Agentic AI tidak hanya menjawab chat, tetapi *bertindak*. Hubungkan AI dengan API bisnis (contoh: \"Jika stok menipis, AI otomatis mengirimkan email pemesanan ke supplier\").\n\n> **Keuntungan:** Mengurangi biaya pengembangan software ratusan juta menjadi langganan AI beberapa ratus ribu rupiah per bulan."
   }
 ]

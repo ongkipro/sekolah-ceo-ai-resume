@@ -1,58 +1,44 @@
 [
   {
-    "id": "growth-funnel",
-    "slug": "growth-funnel",
-    "title": "The Zero-CAC Organic Growth Funnel",
-    "speaker": "Mas Anjas Maradita",
-    "subtitle": "Mengubah tren audio dan avatar AI menjadi database prospek dan konversi instan tanpa bakar budget iklan.",
-    "nodes": [
-      { "step": 1, "title": "Viral Sound Branding", "description": "Membuat jingle komersial dan audio viral berkualitas studio dalam 30 detik.", "tool": "Suno AI", "icon": "🎵" },
-      { "step": 2, "title": "Avatar Video Production", "description": "Memproduksi puluhan video edukasi founder/presenter tanpa biaya sewa studio.", "tool": "HeyGen / Kling AI", "icon": "🎬" },
-      { "step": 3, "title": "Social Algorithmic Hook", "description": "Upload ke TikTok & Instagram dengan CTA: 'Komen [KATA KUNCI] untuk dapat PDF'.", "tool": "TikTok / IG Reels", "icon": "📱" },
-      { "step": 4, "title": "Comment-to-DM Loop", "description": "Bot otomatis mengirimkan link penawaran, PDF materi, dan direct checkout ke DM.", "tool": "ManyChat Automation", "icon": "💬" },
-      { "step": 5, "title": "Lead Ingestion to CRM", "description": "Data leads tersimpan di database penjualan untuk follow-up closing otomatis.", "tool": "CRM / Google Sheets", "icon": "📈" }
-    ]
+    "id": "diag-1",
+    "title": "Arsitektur Company Brain ERP Berbasis AI",
+    "type": "architecture",
+    "description": "Sistem ERP cerdas di mana Agentic AI bertindak sebagai otak perusahaan, mengintegrasikan data dari berbagai divisi operasional untuk memberikan dasbor keputusan real-time bagi CEO.",
+    "mermaidCode": "graph TD\n    A[Data Source: Penjualan & Operasional] --> B{Agentic AI Core}\n    B --> C[Manajemen Stok Otomatis]\n    B --> D[Analisis Laba/Rugi Real-time]\n    B --> E[Prediksi Arus Kas]\n    C --> F((Dashboard CEO))\n    D --> F\n    E --> F\n    style B fill:#f9f,stroke:#333,stroke-width:4px"
   },
   {
-    "id": "koran-perusahaan",
-    "slug": "koran-perusahaan",
-    "title": "The AI Morning Intelligence Engine ('Koran Perusahaan')",
-    "speaker": "Mas Satya Pradana",
-    "subtitle": "Sintesis otomatis seluruh divisi bisnis menjadi 1 halaman briefing terpadu jam 07.00 pagi untuk CEO.",
-    "nodes": [
-      { "step": 1, "title": "Multi-Source Data Feeds", "description": "Data sales harian, absensi fingerprint, tiket komplain pelanggan, dan stok gudang.", "tool": "POS / Fingerprint / DB", "icon": "📊" },
-      { "step": 2, "title": "N8N Pipeline Orchestration", "description": "Workflow otomatis menarik data mentah setiap jam 06.00 pagi.", "tool": "N8N / Webhooks", "icon": "⚡" },
-      { "step": 3, "title": "LLM Synthesis Agent", "description": "Claude / GPT menganalisis anomali, ringkasan omset, dan red-flag operasional.", "tool": "Claude / 9Router", "icon": "🧠" },
-      { "step": 4, "title": "Telegram Executive Dispatch", "description": "Koran 1 halaman dikirim ke Telegram pribadi CEO tepat jam 07.00 pagi.", "tool": "Telegram Bot API", "icon": "📰" },
-      { "step": 5, "title": "1-Click Executive Action", "description": "CEO membaca dalam 3 menit dan memutuskan persetujuan PO/Deal tanpa meeting pagi.", "tool": "CEO Decision", "icon": "🎯" }
-    ]
+    "id": "diag-2",
+    "title": "Alur Kerja Auto PO (Purchase Order) System",
+    "type": "sequence",
+    "description": "Proses otomasi di mana sistem AI mendeteksi stok yang menipis, menganalisis prediksi penjualan, dan secara otomatis mengirimkan dokumen Purchase Order ke vendor tanpa intervensi manual.",
+    "mermaidCode": "sequenceDiagram\n    participant S as Sistem Gudang (WMS)\n    participant AI as Agentic AI\n    participant V as Vendor/Supplier\n    S->>AI: Trigger Stok Menipis (<20%)\n    AI->>S: Analisis Tren Penjualan\n    AI->>V: Kirim Draft Purchase Order\n    V-->>AI: Konfirmasi PO & Estimasi Pengiriman\n    AI-->>S: Update Status Stok (On-Delivery)"
   },
   {
-    "id": "desktop-command",
-    "slug": "desktop-command",
-    "title": "Local-First Desktop AI Command Center",
-    "speaker": "Pak Natali Ardianto",
-    "subtitle": "Integrasi folder Google Drive lokal dengan Claude Desktop dan shortcut global Option+Space tanpa cognitive friction.",
-    "nodes": [
-      { "step": 1, "title": "Physical File Sync", "description": "Google Drive / OneDrive dipasang sinkron fisik di harddisk komputer.", "tool": "Google Drive Desktop", "icon": "📁" },
-      { "step": 2, "title": "Claude Projects Context", "description": "Menghubungkan folder fisik laporan keuangan dan dokumen ke Claude Desktop.", "tool": "Claude Desktop Projects", "icon": "🖥️" },
-      { "step": 3, "title": "Global Hotkey Invocation", "description": "Menekan Option+Space (Mac) atau Ctrl+Alt+Space (Win) di atas aplikasi apa pun.", "tool": "Global Keyboard Shortcut", "icon": "⌨️" },
-      { "step": 4, "title": "B.R.I.E.F. Prompting", "description": "Memberikan instruksi terstruktur dengan persona Senior Finance / Forensic Auditor.", "tool": "B.R.I.E.F. Framework", "icon": "📝" },
-      { "step": 5, "title": "Instant .docx Memo Output", "description": "AI langsung menghasilkan Memo Audit Word resmi lengkap dengan kop surat dan tabel.", "tool": "Microsoft Word .docx", "icon": "📄" }
-    ]
+    "id": "diag-3",
+    "title": "Sistem Trafik Afiliasi Otomatis (Automated Affiliate Traffic)",
+    "type": "flowchart",
+    "description": "Strategi konversi prospek otomatis yang memanfaatkan taktik 'Call to Value' di media sosial, dikombinasikan dengan ManyChat untuk membalas komentar dan mengirim tautan afiliasi melalui Direct Message.",
+    "mermaidCode": "graph LR\n    A[Kreator Konten] --> B(Upload Video TikTok/Reels)\n    B --> C{Algoritma Call to Value}\n    C -->|Komentar Masuk| D[ManyChat Auto-Reply]\n    D --> E[Kirim Link Afiliasi via DM]\n    E --> F[Konversi Penjualan]\n    D --> G[Kumpulkan Database Leads]"
   },
   {
-    "id": "auto-po",
-    "slug": "auto-po",
-    "title": "Automated Supply Chain & Auto-PO Purchasing Engine",
-    "speaker": "Mas Satya Pradana",
-    "subtitle": "Otomatisasi pemesanan barang ke vendor rekanan saat inventaris gudang menyentuh batas minimum.",
-    "nodes": [
-      { "step": 1, "title": "Warehouse Sensor Trigger", "description": "Sistem mendeteksi Current Stock <= Reorder Threshold pada SKU tertentu.", "tool": "Inventory Database", "icon": "📦" },
-      { "step": 2, "title": "Optimal Reorder Calculation", "description": "AI menghitung jumlah pemesanan optimal (Max Stock - Current Stock).", "tool": "AI Logic Agent", "icon": "🔢" },
-      { "step": 3, "title": "Best Vendor Selection", "description": "Mencocokkan harga kontrak terendah dengan lead time tercepat.", "tool": "Vendor Database", "icon": "🏢" },
-      { "step": 4, "title": "Auto-Draft Purchase Order", "description": "Menyusun dokumen PO lengkap dengan nomor PO, termin pembayaran, dan itemized list.", "tool": "PDF / PO Generator", "icon": "📋" },
-      { "step": 5, "title": "Manager 1-Click Approval", "description": "Manajer purchasing menerima draft di ponsel dan mengonfirmasi pemesanan 1-klik.", "tool": "Mobile Approval App", "icon": "✅" }
-    ]
+    "id": "diag-4",
+    "title": "Infrastruktur Desktop Command Center",
+    "type": "architecture",
+    "description": "Pusat kendali eksekutif yang dibangun menggunakan platform No-Code (seperti Lovable) yang merangkum berbagai modul (HR, Pemasaran, Keuangan) menjadi satu antarmuka terpadu.",
+    "mermaidCode": "graph TD\n    A[Desktop Command Center] --> B[Modul HR & KPI]\n    A --> C[Modul Pemasaran]\n    A --> D[Modul Keuangan]\n    B --> E(Evaluasi Kinerja Otomatis)\n    C --> F(Distribusi Konten AI)\n    D --> G(Laporan Arus Kas)\n    E --> H[Laporan Eksekutif Bulanan]\n    F --> H\n    G --> H"
+  },
+  {
+    "id": "diag-5",
+    "title": "Penanganan Pelanggan Berbasis AI (Customer Support)",
+    "type": "sequence",
+    "description": "Alur interaksi layanan pelanggan di mana chatbot AI menangani permintaan dasar (rekomendasi, FAQ) dan meneruskan masalah yang lebih kompleks (eskalasi) ke agen manusia.",
+    "mermaidCode": "sequenceDiagram\n    participant C as Customer\n    participant B as AI Chatbot\n    participant D as Database Produk\n    participant H as Human Agent\n    C->>B: Tanya Rekomendasi Produk\n    B->>D: Cari Data Berdasarkan Konteks\n    D-->>B: Hasil Pencarian & FAQ\n    B-->>C: Jawaban & Link Pembelian\n    C->>B: Masalah Kompleks (Komplain)\n    B->>H: Eskalasi ke Agen Manusia"
+  },
+  {
+    "id": "diag-6",
+    "title": "Alur Generative Engine Optimization (GEO)",
+    "type": "flowchart",
+    "description": "Strategi pemasaran modern yang mendominasi rekomendasi mesin pencari AI (seperti ChatGPT atau Perplexity) dengan membangun otoritas di platform tepercaya dan menyediakan data terstruktur.",
+    "mermaidCode": "graph TD\n    A[Riset Tren Konsumen] --> B[Buat Artikel & FAQ Terstruktur]\n    B --> C[Publikasi di Media Tepercaya / PR]\n    C --> D{Web Crawling oleh LLM}\n    D -->|ChatGPT/Claude| E[Rekomendasi AI ke Konsumen]\n    E --> F[Peningkatan Trafik & Brand Authority]"
   }
 ]
