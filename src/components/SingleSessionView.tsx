@@ -374,7 +374,7 @@ export default function SingleSessionView({ sessionId }: Props) {
                 <button
                   type="button"
                   onClick={() => handleTopicClick(topic)}
-                  className="w-full p-4 sm:p-5 text-left flex items-start justify-between gap-4 cursor-pointer"
+                  className="w-full p-4 sm:p-5 text-left flex items-start justify-between gap-4 cursor-pointer group"
                 >
                   <div className="space-y-1 flex-1">
                     <div className="flex items-center gap-2 text-xs">
@@ -388,8 +388,8 @@ export default function SingleSessionView({ sessionId }: Props) {
                     </h4>
                   </div>
 
-                  <div className={`p-1.5 rounded-lg transition-transform duration-200 shrink-0 flex items-center justify-center ${isActive ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400' : 'bg-slate-100 dark:bg-slate-800 text-slate-500 hover:bg-slate-200 dark:hover:bg-slate-700'}`} title="Putar video di topik ini">
-                    <Play className="w-4 h-4" />
+                  <div className={`transition-colors duration-200 shrink-0 flex items-center justify-center ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-300 dark:text-slate-600 group-hover:text-blue-500 dark:group-hover:text-blue-400'}`} title="Putar video di topik ini">
+                    <Play className={`w-4 h-4 ${isActive ? 'fill-current' : ''}`} />
                   </div>
                 </button>
 
