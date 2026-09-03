@@ -6,16 +6,17 @@ import { architectureSlugs } from '../../lib/slugs';
 import { Layers, ArrowRight, ArrowLeft, CheckCircle2, Cpu } from 'lucide-react';
 
 export async function getStaticPaths() {
-  return diagramsData.map((diagram) => {
+  return architectureSlugs.map(({ slug, id }) => {
+    const diagram = diagramsData.find((d) => d.id === id);
     return {
-      params: { slug: diagram.slug },
-      props: { diagram },
+      params: { slug },
+      props: { diagram, slug },
     };
   });
 }
 
-const { diagram } = Astro.props;
-const currentIndex = diagramsData.findIndex((d) => d.slug === diagram.slug);
+const { diagram, slug } = Astro.props;
+const currentIndex = architectureSlugs.findIndex((d) => d.slug === slug);
 const prevDiagram = currentIndex > 0 ? diagramsData[currentIndex - 1] : null;
 const nextDiagram = currentIndex < diagramsData.length - 1 ? diagramsData[currentIndex + 1] : null;
 
@@ -66,7 +67,7 @@ const subNavItems = architectureSlugs.map(a => ({
 
         <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 text-xs font-mono text-slate-500 dark:text-slate-400 shrink-0">
           <div>Rangkaian:</div>
-          <div class="font-bold text-slate-900 dark:text-white">{diagram.nodes.length} Tahap Terintegrasi</div>
+          <div class="font-bold text-slate-900 dark:text-white">{(diagram.nodes?.length || 0)} Tahap Terintegrasi</div>
         </div>
       </div>
 
@@ -78,7 +79,7 @@ const subNavItems = architectureSlugs.map(a => ({
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
-          {diagram.nodes.map((node: any) => (
+          {(diagram.nodes || []).map((node: any) => (
             <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-4 shadow-sm hover:border-blue-500/60 transition-all group">
               <div class="space-y-2.5">
                 <div class="flex items-center justify-between">
@@ -104,6 +105,7 @@ const subNavItems = architectureSlugs.map(a => ({
           ))}
         </div>
       </div>
+      )}
     </div>
 
     <!-- Navigation to Previous / Next Blueprint -->

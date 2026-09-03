@@ -45,7 +45,7 @@ const subNavItems = architectureSlugs.map(a => ({
     <!-- Blueprints Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
       {diagramsData.map((d) => {
-        const slugUrl = `/architecture/${d.slug}`;
+        const slugObj = architectureSlugs.find(s => s.id === d.id); const slugUrl = `/architecture/${slugObj?.slug || d.id}`;
 
         return (
           <div class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm hover:border-blue-500/60 dark:hover:border-blue-500/60 transition-all flex flex-col justify-between space-y-5 group">
@@ -53,7 +53,7 @@ const subNavItems = architectureSlugs.map(a => ({
               <!-- Top Metadata -->
               <div class="flex items-center justify-between gap-2">
                 <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900">
-                  {d.nodes.length} Langkah Alur
+                  {(d.nodes?.length || 0)} Langkah Alur
                 </span>
                 <span class="text-xs text-slate-400 font-medium">Arsitek: {d.speaker}</span>
               </div>
