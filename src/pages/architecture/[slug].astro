@@ -78,7 +78,7 @@ const subNavItems = architectureSlugs.map(a => ({
           <span>Alur Eksekusi Langkah demi Langkah:</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 relative">
           {(diagram.nodes || []).map((node: any) => (
             <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between space-y-4 shadow-sm hover:border-blue-500/60 transition-all group">
               <div class="space-y-2.5">
