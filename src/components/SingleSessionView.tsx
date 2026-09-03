@@ -388,12 +388,12 @@ export default function SingleSessionView({ sessionId }: Props) {
                     </h4>
                   </div>
 
-                  <div className={`transition-colors duration-200 shrink-0 flex items-center justify-center ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-300 dark:text-slate-600 group-hover:text-blue-500 dark:group-hover:text-blue-400'}`} title="Putar video di topik ini">
-                    <ChevronRight className="w-4 h-4" />
+                  <div className={`transition-colors duration-200 shrink-0 flex items-center justify-center ${isActive ? 'text-blue-600 dark:text-blue-400' : 'text-slate-300 dark:text-slate-600 group-hover:text-blue-500 dark:group-hover:text-blue-400'}`} title="Buka/Tutup Topik & Putar Video">
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-200 ${isActive ? 'rotate-90' : ''}`} />
                   </div>
                 </button>
 
-                {true && (
+                {isActive && (
                   <div className="px-4 pb-5 sm:px-5 sm:pb-6 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-slate-100 dark:border-slate-800/60 space-y-4 animate-in fade-in duration-200">
                     {/* Layman Explanation */}
                     {topic.laymanExplanation && (
